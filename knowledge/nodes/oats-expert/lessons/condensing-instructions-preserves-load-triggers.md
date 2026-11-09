@@ -78,7 +78,10 @@ stopped teaching the old rule. When the question is what a new skill
 should contain and whether to adopt a community pack at all,
 [the focused-rules lesson](/nodes/oats-expert/lessons/agent-skills-take-focused-rules-and-targeted-context-not-packs-or-procedures.md)
 holds the evidence; it relies on this lesson for the rule that each skill
-needs a trigger in the always-loaded text.
+needs a trigger in the always-loaded text. When the text in hand is a
+template copied and adapted rather than condensed, the mirror-image risk
+(a default kept that the organisation never adopted) is
+[verifying a template adaptation twice](/nodes/oats-expert/lessons/verify-a-template-adaptation-by-its-diff-against-the-tag-and-the-authorities-it-grants.md).
 
 [Enumerating the guarantees the old behavior held up](/nodes/oats-expert/lessons/enumerate-what-a-removed-behaviour-held-up.md)
 is the general method. Here the guarantee at risk is contextual instruction
