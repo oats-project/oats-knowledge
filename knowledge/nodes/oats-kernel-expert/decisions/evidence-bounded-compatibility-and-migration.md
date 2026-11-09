@@ -3,7 +3,7 @@ type: Decision
 title: Compatibility follows supported adoption, not every intermediate format
 description: Supported adoption bounds compatibility, unrepresentable migrations refuse, and rollout gates and pre-upgrade checks must match the actual outgoing reader rather than assume every new declaration fails the same way.
 tags: [kernel, compatibility, migration, locks, packages, manifests]
-timestamp: 2026-11-03
+timestamp: 2026-11-09
 ---
 # Rationale
 
@@ -120,6 +120,29 @@ check that the published upgrade instruction names an available operator
 action. No such cross-version or release-guidance matrix is certified by
 this harvest.
 
+**Requires-row refinement, 2026-11-09:** the same reader boundary covers an
+additive key on a `requires` row. The source reports, from reading kernel
+v0.68.0 and the then-current main, that runtime schema validation covers
+only the four declaration files (workspace, membership, soul, local), that
+capability manifests are not schema-validated at runtime, and that the
+harness-package requirement loop reads named fields only. An unknown key on
+a requires row is therefore inert on kernels 0.68.0–0.69.9: it is neither
+refused nor acted on. By itself it does not force a `compatibility.oats`
+raise; a provider that wants the new behaviour guaranteed raises its own
+floor, as the historical rule still requires for behaviour it relies on.
+The trap is on the repository side: the oats repository's own validate
+step checks the vendored provider mirror manifests against the closed
+schema, so a mirror refresh carrying the new key must land **after** the
+kernel change that adds the key to the schema, or the repository's CI
+fails on a manifest the runtime would have accepted. The runtime leniency
+and the repository strictness are different gates; sequence against the
+strict one. This is a source read, not a run of any released binary, and
+it says nothing about a kernel that later adds a runtime manifest
+validator [7]. The repository's validate step already catches a premature
+refresh; the lesson is the ordering, not a new check. The decision this
+refinement served was
+[closed before anything was built](compensating-manifest-fields-are-asked-of-the-provider-first.md).
+
 **A kernel upgrade is separable from a provider floor** (2026-09-19). A
 release note that pins a new provider version invites the reading that
 upgrading the kernel means adopting that provider. The pin is the pairing the
@@ -212,6 +235,17 @@ problems does not by itself authorize a stream or exit-status migration.
 5. [The 2026-11-03 contract record](https://github.com/awebai/oats/issues/1719#issuecomment-6603147412), read at harvest, reports the 0.69.9 unknown-workspace-key check, the absence of runtime manifest-schema validation, the rejected provider warning and the kernel-first adoption order. It corroborates the source's report, not an independent runtime test or direct human acceptance. The associated [PR #1721](https://github.com/awebai/oats/pull/1721) was open at `3885ca029dcb454b78c3f6a967ccb127259171e8` when checked; no feature release or new upgrade diagnostic is certified here.
 
 6. The [second-reader return](https://github.com/awebai/oats/pull/1721#issuecomment-6603829587), [product-lane delta approval](https://github.com/awebai/oats/pull/1721#issuecomment-6604134267) and [second-reader delta approval](https://github.com/awebai/oats/pull/1721#issuecomment-6604145043), read at harvest on 2026-11-03, corroborate the rejected workspace-floor instruction and the correction excluding ordinary start from the schema-refusal warning. These are agent review records, not direct human acceptance or independent runtime reproduction. PR #1721 is now recorded merged at `0da94ee00bf6e489b6f3f0b858733cceb9d66543`; this updates citation 5's earlier open-status observation, not a release or deployment receipt. The exact fallback exception and 0.69-series limit rest on the captured proposal and note; no implementation code or cross-version probe was audited here.
+
+7. [awebai/oats#1717](https://github.com/awebai/oats/issues/1717), read at
+   harvest on 2026-11-09, states under "Existing deployments" that kernels
+   0.68.0 to 0.69.9 ignore the key because capability manifests are not
+   schema-checked at runtime and the requirements loop reads named fields,
+   that no `compatibility.oats` raise is needed, and that the mirror
+   refresh must follow the schema change because the repository's validate
+   step is strict. It is the proposing instance's own public record and
+   corroborates the note's content, not an independent runtime test.
+
+Evidence: OKF proposal from oats-kernel-expert/oats-kernel-expert-pi-package-filter, 2026-11-09; notes/requires-rows-not-runtime-validated.md (requires-row refinement only).
 
 Evidence: OKF proposal from oats-kernel-expert/oats-kernel-expert-tasks-slot-payload, 2026-11-03; notes/new-workspace-root-key-fails-loudly-on-old-kernels.md (dated loader-premise qualification, rollout rationale, and later per-deployment gate and ordinary-start refinement).
 
