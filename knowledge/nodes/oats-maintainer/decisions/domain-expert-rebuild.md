@@ -3,7 +3,7 @@ type: Decision
 title: "The OATS soul roster: expert domains own knowledge nodes, developers own none"
 description: The one canonical record of the OATS roster — six domain experts and six package experts own nodes, four developer souls and the setup admin own none, release stewardship is a Playbook, and knowledge is rebuilt by audit, never bulk-copied.
 tags: [souls, roster, expertise, knowledge, developers, operator, integration]
-timestamp: 2026-09-20
+timestamp: 2026-11-09
 ---
 # Decision
 
@@ -127,6 +127,61 @@ expertise by moving repositories, and the base keeps no dated direction
 snapshot — dated direction lives in release notes and the lead's working
 state.
 
+# How the roster changes in a shared workspace (2026-11-09)
+
+The roster above is not changed by this section; it records how a change to
+it is decided and shipped. This rule is the node owner's, drawn from a
+source-reported exchange (below), and carries none of the human acceptance
+recorded at the top of this concept. Under the
+[lane model](/nodes/oats-maintainer/stewardship/release-lane-and-project-lanes.md)
+the framework's `souls/` directory sits in `lane:setup`'s area (the
+[lane map](https://github.com/awebai/oats/issues/1566) as read on
+2026-11-09, which owns the assignment), but the workspace is shared: the maintainers on each human's side spawn the
+same souls. Area ownership decides who reviews a change; it does not decide
+whose work the change rewires.
+
+- **Removing or folding a soul needs the agreement of every human's side
+  that spawns it**, asked directly. Before saying yes to a roster change,
+  list who spawns each affected soul and get those sides' agreement.
+- **A removal or fold ships whole.** Every text that names the old soul is
+  updated (the maintainer soul's "who leads what", the workspace-experts
+  table, the docs, and the lane routing table in the same release); the
+  removed souls' live homes are shown, in a scratch deployment, to still
+  restart, show in status and retire with a harvest; in-flight PRs keep their
+  owners; a release note names each removal and its successor; knowledge
+  paths stay valid, with one harvester rehearsal per rebound node before any
+  mass harvest.
+- **Staging is allowed, with one limit.** The additive part (new souls added,
+  nothing removed, routing unchanged) can go ahead on one side's word; the
+  removals wait for the others. Additive is real only while no shared package
+  pin moves: swapping the package that provides shared capabilities rewrites
+  every soul's next spawn, everyone's included, because
+  [every capability is copied whole into the instance](/nodes/oats-maintainer/decisions/workspace-model-v2.md).
+- **Node ownership follows the owner id, not the soul name.** The knowledge
+  package keys a node's owner to the id the soul's `okf.json` declares and
+  refuses a node whose recorded owner differs; the operator playbook records
+  why [identity must survive a move of the soul's files](/nodes/oats-operator-expert/playbooks/cutover-is-sequenced-per-deployment.md).
+  A renamed soul therefore keeps its old id to inherit its node. Two souls
+  declaring one id co-own the node, acceptable only as an interim state
+  during a fold. Moving a node to another soul is an `okf-base.json` change
+  made by the knowledge maintainer, never a rename on the soul's side.
+
+Rejected: treating the roster as a setup-lane-only call because `souls/`
+sits in its area.
+
+The rule arose from a 2026-11-09 roster proposal in the coordination rethink
+(experts folded, knowledge rebound by ownership only) that one side accepted
+and the other put to its human with the shipping conditions above; the
+removals and the knowledge reshape were not decided and are not recorded
+here. The 2026-11-02 direction to deliver coordination as templates
+([capability-owned coordination](/nodes/oats-maintainer/stewardship/coordination-policy-lives-in-capabilities.md))
+leaves the rule unchanged. Evidence: OKF proposal from
+oats-maintainer/setup-maintainer-pepe, 2026-11-09;
+notes/a-shared-workspace-roster-change-needs-every-affected-side.md. Both
+sides' positions are source-reported from the lead's exchange, not verified
+human acceptance; the owner-id refusal was not read in the package's code by
+the harvest.
+
 # Rejected alternatives
 
 - **String-replace `engineer` with `expert`** — the redesign is of
@@ -155,3 +210,4 @@ state.
 2. Migrated from agents/oats-expert/soul/knowledge @ 7838d3ca (`decisions/expert-souls-and-knowledge-rebuild`, `five-souls-are-the-roster-knowledge-centralised`, `roster-amendment-operator-and-integration-experts`, `portable-role-editions-and-bootstrap`).
 3. Developer souls: [awebai/oats#279](https://github.com/awebai/oats/pull/279); a source that owns no destination is retained, not dropped: `capabilities/oats-okf/lib/worker.mjs` (`E_OWNER`) in awebai/oats.
 4. `oats-apps-expert`: the oats-maintainer node owner's disposition on [awebai/oats-knowledge#57](https://github.com/awebai/oats-knowledge/pull/57), 2026-10-07.
+5. Roster-change rule: OKF proposal from oats-maintainer/setup-maintainer-pepe, 2026-11-09 (the coordination-rethink roster exchange, source-reported).
