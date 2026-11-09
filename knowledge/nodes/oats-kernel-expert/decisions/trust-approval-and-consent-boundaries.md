@@ -69,6 +69,8 @@ checked-in configuration.
 # Related
 
 [Capability resources must outlive package staging](contained-capability-lifetime.md);
+[A declaration-versus-content check runs at sync and reuses the integrity family](declaration-checks-run-at-sync-under-the-integrity-family.md)
+(how the `E_PACKAGE_INTEGRITY` family grew a `package-id` case, and why at sync);
 [Identity and location belong to the resolved object](../lessons/resolved-object-not-referring-string.md);
 [Harness authentication is native and user-managed](harness-native-authentication.md).
 
