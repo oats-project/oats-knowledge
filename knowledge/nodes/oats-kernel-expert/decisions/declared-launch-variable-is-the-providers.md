@@ -1,9 +1,9 @@
 ---
 type: Decision
 title: A provider-declared launch variable is the provider's to decide
-description: A capability-declared launch variable omitted by both the hook payload and explicit launch configuration is removed at the launch boundary, because ambient sources are open-ended and provider-specific or tmux-only fixes cannot close the class.
+description: A capability-declared launch variable omitted by both the hook payload and explicit launch configuration is removed at the launch boundary, because ambient sources are open-ended and provider-specific or tmux-only fixes cannot close the class; a name the kernel hands only to hooks is unset by the pane command for the same reason.
 tags: [kernel, capabilities, launch, environment, coherence]
-timestamp: 2026-10-14
+timestamp: 2026-10-30
 ---
 # Decision
 
@@ -70,6 +70,39 @@ launch settings. Exercise the real launched process as well as the shared
 check answer, including a broker-path launch followed by a channel-path
 launch. Keep the rationale here so a future change does not replace that
 boundary with one of the narrower fixes above.
+
+# Hook-only reserved names take the same pane boundary (2026-10-30)
+
+The boundary above also governs the opposite direction: a name the kernel
+hands **only to hooks**, such as
+[`OATS_HARNESS_EXECUTABLE`](hook-executable-is-the-pane-side-answer.md),
+must not reach the harness. The source reports, from review of a
+hook-only variable on real tmux on 2026-10-30, that **reserving the name
+is not enough**. Reservation covers the launch configuration, the
+environment OATS builds for a session it creates, and an automation's
+child. A tmux server that already runs is none of those: a new window
+inherits the server's and session's environment whatever the client's is,
+so a value set there reaches the harness while the hook sees the right
+one. The pane command is the one boundary that holds for every creator,
+so a hook-only name is **unset there as well as reserved**.
+
+This is consistent with rejecting a strip at server creation above: the
+launch removes the name, and this section records why the launch must,
+for a name the kernel itself hands to hooks. A test of the rule reads the
+**actual harness pane**, not the hook's log, on a server seeded with the
+name before the launch.
+
+Evidence: OKF proposal from oats-kernel-expert/oats-kernel-expert-failed-turn-reported, 2026-10-30; notes/hook-only-names-stop-at-the-pane.md.
+The harvest read [oats-project/oats#1675](https://github.com/oats-project/oats/issues/1675)
+and [implementation PR #1677](https://github.com/oats-project/oats/pull/1677),
+merged on 2026-10-30, whose body reports the review finding that a value
+on an existing tmux server reached the harness, the pane-command unset for
+both names and a real-tmux test reading the harness pane; and
+[PR #1690](https://github.com/oats-project/oats/pull/1690), merged on
+2026-10-31, which removed the unread yolo variable and kept the
+executable's pane handling. The review finding and tests are
+source-reported; nothing was rerun at harvest, and no human acceptance is
+certified.
 
 # Evidence
 

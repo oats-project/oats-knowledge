@@ -50,7 +50,10 @@ or a universal assertion about future harness versions.
   `attention` may still leave a menu that accepts Enter. The exclusion of
   attention from the hold depends on producer behavior, not on the error's
   name. Probing a generic provider error does not necessarily reproduce a
-  subscription-specific dialog.
+  subscription-specific dialog. The
+  [failed-turn class lesson](failed-turn-claims-split-by-error-class.md)
+  records which classes were measured to leave a menu and why `unknown`
+  stays `attention`.
 - **Do not mistake submitted input for model receipt.** A successful paste
   and Enter may only have acted on a dialog. This lesson supplies the
   counterexample, not a new delivery-acknowledgement protocol.

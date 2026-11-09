@@ -70,7 +70,10 @@ and [dialog-coverage lesson](../lessons/dialog-claims-do-not-enumerate-all-dialo
 
 Keep recording tied to actual hook runs, with tests for positive answer to
 absence, failed settings writes, unsupported or changed launch executables,
-and unrelated capabilities' entries. Separate the preview contribution
+and unrelated capabilities' entries. The executable a producer versions is
+the [kernel-handed pane-side answer](hook-executable-is-the-pane-side-answer.md),
+so "reported only when claims will actually fire" shares that variable and
+its absence rule. Separate the preview contribution
 contract from advisory observed support. These are enforcement targets,
 not a claim that this harvest executed the implementation.
 
