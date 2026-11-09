@@ -145,7 +145,9 @@ path assertions and feature-on/feature-off integration coverage so a gated
 no-op cannot count as new-behavior coverage. CI should exercise the relevant
 producer-consumer combination rather than rely on a stale branch base.
 These are test and CI enforcement targets, not delivered changes claimed
-here. For a tightened evidence rule, prefer shared, explicit unknown handling
+here. For the published evidence that telling an agent which tests a change
+affects beats test-first procedure alone, and what that means for a skill's
+content, see [the focused-rules lesson](/nodes/oats-expert/lessons/agent-skills-take-focused-rules-and-targeted-context-not-packs-or-procedures.md). For a tightened evidence rule, prefer shared, explicit unknown handling
 over divergent consumer defaults; encode the permitted behavior in
 transition-aware waits and regressions that deliberately exercise the
 inconclusive interval. Do not rely on its chance occurrence in CI or weaken
