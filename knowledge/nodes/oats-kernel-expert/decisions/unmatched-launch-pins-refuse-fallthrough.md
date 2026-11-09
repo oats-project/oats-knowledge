@@ -115,6 +115,9 @@ owns configuration placement, not this unmatched-pin policy.
 owns typed refusals and tested remedies.
 [A refusal that needs the old bytes is a pre-commit gate](/nodes/oats-kernel-expert/lessons/refusal-belongs-before-commit.md)
 owns refusal timing rather than the evidence that authorizes this one.
+[A souls.disabled entry that names no soul is diagnosed by doctor, never refused](/nodes/oats-kernel-expert/decisions/stale-disabled-soul-entry-is-diagnosed-not-refused.md)
+applies this proof boundary to the host's disabled-soul list without copying
+the refusal, and records why that list is allowed to fail open.
 
 # Citations
 
