@@ -1,5 +1,9 @@
 # integrations-expert log
 
+## 2026-11-09
+
+* **Update**: Maintainer review of oats-knowledge#333 added a pointer in the [tested-bound decision](/nodes/integrations-expert/decisions/newer-than-tested-warnings-follow-release-authority.md)'s rejected install pin to [the maintainer's tested-aw decision](/nodes/oats-maintainer/decisions/tested-aw-is-published-by-oats-aweb-and-pinned-only-for-byot.md), which narrows that rejection for the customer-run (BYOT) onboarding install only. The decision's warning-not-refusal choice, hosted exemption and rationale are unchanged; the narrowing rests on the source-reported agreement of the two maintainer sides, not verified human acceptance.
+
 ## 2026-11-04
 
 * **Harvest**: Added [capability-local helper copies with behavioral parity](/nodes/integrations-expert/decisions/capability-local-copies-need-parity-tests.md): preserve the deliberate small-helper copy, counterpart comments, success/refusal comparison and rejected runtime import, new-library contract and unpinned-copy alternatives. Link existing capability containment and release-mirror judgment without duplicating or superseding them. The cited agent maintainer approval corroborates the copy decision; it is not direct human acceptance, and the open PR's test and shipment claims are not independently verified.

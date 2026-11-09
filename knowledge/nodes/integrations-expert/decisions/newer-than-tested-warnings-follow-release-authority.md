@@ -3,7 +3,7 @@ type: Decision
 title: Newer-than-tested warnings follow the service's release authority
 description: A provider's tested client bound is evidence rather than a refusal ceiling, and a managed-service exemption depends on that service owning server-before-client release order.
 tags: [integrations, compatibility, releases, readiness, external-cli]
-timestamp: 2026-11-02
+timestamp: 2026-11-09
 ---
 
 # Decision and rationale
@@ -34,7 +34,11 @@ older client as the universal remedy.
 
 - **Pin the installation command to one aw version.** This would require a
   provider release for each client advance and strand hosts below client
-  fixes or newly required features.
+  fixes or newly required features. Narrowed on 2026-11-09 for the customer-run
+  (BYOT) onboarding install only, which installs the provider's published
+  tested version:
+  [the tested aw version is published by oats.aweb, and pinned only for a customer-run server](/nodes/oats-maintainer/decisions/tested-aw-is-published-by-oats-aweb-and-pinned-only-for-byot.md).
+  Hosted installs and the warning choice here are unchanged.
 - **Warn on the Cloud as well.** This would turn each client release into
   routine noise while the managed service owns the server-before-client
   release obligation.
