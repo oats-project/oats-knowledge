@@ -77,7 +77,10 @@ notification mechanism or skill change is claimed implemented here.
 For the missing-wake case, prefer a handoff mechanism that records the
 transition and reliably notifies its designated next actor. Test opening,
 verdict and rework transitions, including a recipient different from the
-lead. Where handoffs remain manual, the owning capability's template should
+lead. The sender's side of that rule, including why the recipient is every
+waiter rather than the author, is in
+[sending a hand-off by message to every waiter](/nodes/oats-expert/lessons/send-a-hand-off-by-message-to-every-waiter-at-an-exact-head.md).
+Where handoffs remain manual, the owning capability's template should
 name the record, recipient and notification responsibility for separate
 review. Keep this policy in
 [composed coordination capabilities](/nodes/oats-maintainer/stewardship/coordination-policy-lives-in-capabilities.md),
