@@ -331,6 +331,11 @@ supersedes the original area-lane routing and product-lane contract
 participation for this effort only. Both leave the release lane's ownership
 and all other kernel-tag and deploy approval requirements intact.
 
+A copy of generic role text that touches releases, merges or tags answers
+with this record, not with a stricter default of its own: see
+[an adapted template answers its release markers with the lane map](/nodes/oats-maintainer/stewardship/review-protocol.md#an-adapted-template-answers-its-release-markers-with-the-lane-map-never-with-a-stricter-per-person-gate-2026-11-09)
+(2026-11-09). That review lesson adds no authority here.
+
 # Citations
 
 Evidence: OKF proposal from oats-maintainer/oats-threaded-agent-ux-maintainer,

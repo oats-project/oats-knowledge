@@ -3,7 +3,7 @@ type: Lesson
 title: How the OATS project ships and reviews
 description: Maintainer review binds verdicts to content and issue-recorded contract decisions, carries them only across an unchanged delta, preserves same-area integration evidence, requires timely and safely obtained verification, uses fresh readers and one second reader per PR, checks hand-written release claims, and judges tests against requirements rather than implementations.
 tags: [stewardship, review, pull-requests, process]
-timestamp: 2026-11-05
+timestamp: 2026-11-09
 ---
 **Owner: oats-maintainer (the PR gate). Update-on-change: whoever changes the
 review skill, the repository gate or the delivery flow revises this concept in
@@ -192,6 +192,67 @@ the actual direction constraint. This refines the direction-first gate,
 not the authority to change a decision. Put the decision and any authorized
 split in the review evidence; the operating check belongs in the existing
 `direction-gate` skill rather than in a competing implementation plan.
+
+## An adapted template answers its release markers with the lane map, never with a stricter per-person gate (2026-11-09)
+
+When reviewing an adaptation of generic role text (a coordination template
+copied into OATS, or any copy of role skills), read every answer that touches
+merges, releases or tags against the authority lines of the
+[release-lane decision](/nodes/oats-maintainer/stewardship/release-lane-and-project-lanes.md)
+and the lane map it points to, not only against the safeguards the text
+keeps. In OATS the answer is the record's: `lane:release` has the final say
+on what is released; the lanes agree on its posted release plan through
+their maintainers; the tag and the publication rest on the authority of the
+release lane's human, in the form that human has recorded. A copy that keeps
+the template's default, or adds a "direct go" on top of it, writes a release
+process nobody decided.
+
+A "stricter" answer is not a safe default. Adding a go from each lane owner
+before a tag looks like a safeguard, but it creates an authority the record
+does not hold and binds the release lane; that is a direction question for
+whoever decides direction, not something a reviewer accepts because it is
+tighter. The release lane's human's own go, where the release-lane decision
+requires it, is the recorded authority, not such an addition.
+"Stricter" does not mean "recorded". The relayed-word safeguard (a relayed
+yes grants no tag) is already in the maintainer briefing, so a copy needs
+nothing extra for it; reading an override only against that safeguard, and
+not against who holds the authority, is the miss.
+
+The source reports one such case. In the PR that made OATS's souls compose
+its own copy of the engineering template, the copy's release planning and
+landing rules kept the template default (a card to, and a yes from, each
+lane owner whose lane has changes) and added that the tag waits for each
+owner's direct go. The source approved it, reading the addition as a
+relayed-word safeguard. The release lane returned it as a new release
+authority: taken together, the two texts would have made every OATS release
+wait on three humans. The fix answered the template's release markers with
+the lane map's release-lane rule at each site. Read on the public PR
+([oats-project/oats#1769](https://github.com/oats-project/oats/pull/1769))
+at harvest: the source's approval at `6c8ad151`, the release lane's return
+at the same head naming this finding, the correction at `51fb3ab3`, and the
+merge at `1af4a64c`.
+
+The general adaptation check, in the developer's and reviewers' briefs, is
+owned by
+[verify a template adaptation twice](/nodes/oats-expert/lessons/verify-a-template-adaptation-by-its-diff-against-the-tag-and-the-authorities-it-grants.md),
+which also records this PR's other return (unmarked overrides, found by a
+diff against the template's tag). This section holds only the maintainer's
+review judgment: a tighter answer is not a safe one, and the answer is read
+against who holds the authority, not against the safeguard it seems to add.
+
+This refines the direction-first gate; it changes no release, merge, tag or
+second-reader authority and records no new release arrangement. The
+template's default wording points the same way on every port and every new
+template release, so the check belongs in the existing `direction-gate` and
+`pr-review` guidance for template copies, not in a second roster of the
+authority lines here. A review checklist entry for marker answers that touch
+releases is the prevention route; no skill change or enforcement is
+delivered by this record.
+
+Evidence: OKF proposal from oats-maintainer/setup-maintainer-pepe, 2026-11-09;
+notes/a-copied-template-must-not-add-release-authority.md. One occurrence in
+one review; the PR's return, correction and merge were read on the forge,
+the source's reading of its own approval is source-reported.
 
 ## An agreed condition follows the advice across messages (2026-11-02)
 
