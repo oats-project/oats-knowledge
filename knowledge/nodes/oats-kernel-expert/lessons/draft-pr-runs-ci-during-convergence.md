@@ -1,9 +1,9 @@
 ---
 type: Lesson
 title: Open a CI-only draft during kernel review convergence
-description: When the kernel branch needs a PR to trigger CI, the expert opens a clearly non-review draft on the first push so exact-head CI runs during convergence rather than starting only after acceptance.
+description: When the kernel branch needs a PR to trigger CI, the expert opens a clearly non-review draft on the first push so exact-head CI runs during convergence rather than starting only after acceptance, and states green only from the completed run of the exact head, never from a watch that returned with zero checks.
 tags: [kernel, ci, review, handover]
-timestamp: 2026-10-27
+timestamp: 2026-10-30
 ---
 # Start the evidence loop without requesting review
 
@@ -28,6 +28,31 @@ A draft, an earlier green run or a promise of later CI is not acceptance.
 Required checks outside ordinary PR CI remain required. The
 [affected-test inventory](/nodes/oats-expert/lessons/check-affected-test-inventory-at-handback.md)
 addresses coverage, not when the first run starts.
+
+# A watch that reports zero checks has proved nothing (2026-10-30)
+
+Exact-head CI evidence is the run of that commit, read to completion. The
+source reports, twice on one PR on 2026-10-30, that `gh pr checks --watch`
+**returned at once while the run was still queued** behind a concurrent
+one: the rollup read clean with no failures and no checks, so a hand-over
+that trusted it would have called an untested head green.
+
+The practice that held: find the run of the exact commit
+(`gh run list --commit <sha>`), watch that run with an exit status
+(`gh run watch <id> --exit-status`), then read every check at the sha,
+count them and require none pending. A hand-over states green only from a
+completed run at that sha, and trusts the exit code over a matched word.
+
+The same day's other observation trap, a run reading success while jobs
+lacked conclusions during a GitHub API incident, is already the
+maintainer's [CI-watcher lesson](/nodes/oats-maintainer/lessons/ci-watcher-exit-is-not-the-run-result.md);
+this section adds the queued-run case, not a second general rule. A
+hand-over step that refuses a zero-check or pending reading would remove
+the manual check; until one exists, it stays in the expert's hand-over.
+
+Evidence: OKF proposal from oats-kernel-expert/oats-kernel-expert-failed-turn-reported, 2026-10-30; notes/gh-checks-watch-exits-on-zero-checks.md.
+The observations are source-reported from [oats-project/oats#1669](https://github.com/oats-project/oats/pull/1669);
+this harvest did not reproduce the queued-run reading.
 
 # Scope and elimination route
 
