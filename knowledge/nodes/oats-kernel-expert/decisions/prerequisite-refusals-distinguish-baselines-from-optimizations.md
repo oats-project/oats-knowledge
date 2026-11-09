@@ -62,3 +62,9 @@ Node 20 cost.
 
 The implementation PR was still a draft when read. No tests were rerun,
 and neither a merge nor installed enforcement is claimed.
+
+# Related
+
+- How the older-Git report is said, once per command and naming no
+  repository, is [its own decision](notice-frequency-follows-the-facts-subject.md);
+  it applies this boundary without changing it.
