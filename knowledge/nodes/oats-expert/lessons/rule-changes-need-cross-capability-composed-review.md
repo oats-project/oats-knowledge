@@ -52,7 +52,10 @@ to specify the cross-capability read and route its findings before the
 main change is considered complete. It complements
 [condensation review](/nodes/oats-expert/lessons/condensing-instructions-preserves-load-triggers.md):
 preserving a rule's words and load coverage is different from checking
-whether another capability still teaches a conflicting rule.
+whether another capability still teaches a conflicting rule. Within the
+text being written, [a nested skill's one stated order and host mapping](/nodes/oats-expert/lessons/a-skill-run-inside-another-states-one-order-mapped-to-the-hosts-steps.md)
+prevents the timing contradictions between a skill and the host that
+loads it, before a composed review looks across capabilities.
 
 Prefer one capability-owned definition with neutral shared guidance over
 independent copies. Composition tests should enforce known ownership and
