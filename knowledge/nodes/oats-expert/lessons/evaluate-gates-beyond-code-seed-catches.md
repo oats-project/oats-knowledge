@@ -79,6 +79,10 @@ is not waived by calling it ceremony.
 This is a way to discover avoidable human work before adoption, not a claim
 that re-asks measure all ceremony or predict human time. It complements
 [thread count versus reading burden](/nodes/oats-expert/lessons/digest-thread-count-is-not-human-time-or-deadline-safety.md).
+A later trial reading adds that a gate's cost, like its value, depends on
+how it is run: the same review as a standing label-woken station or as a
+call to a fresh reviewer; see
+[sorting a trial's costs into design, instructions or measurement](/nodes/oats-expert/lessons/sort-a-trials-costs-into-design-instructions-or-measurement.md).
 The related [refused custody question](/nodes/oats-expert/lessons/human-refusal-of-a-custody-question-is-design-direction.md)
 lesson owns how to read pushback as design direction; this refinement adds
 a pilot-audit method, not another custody or human-notification policy.
