@@ -2,6 +2,8 @@
 
 Placement, identity, verification and adoption judgement learned operating deployments.
 
+* [A gate-style label trigger needs a purpose unique per ask](a-gate-trigger-needs-a-purpose-unique-per-ask.md) - A PR-label trigger whose spawn purpose is the trigger name plus the PR number reportedly could not spawn again for the same PR after its first instance retired, and missed an unlabel and relabel inside one poll, so a gate a PR may need more than once needs a per-ask purpose or an operator backup.
+* [A separate GH_CONFIG_DIR does not separate the keyring token](a-separate-gh-config-dir-does-not-separate-the-keyring-token.md) - A gh auth login under its own GH_CONFIG_DIR reportedly stored its token in the system keyring under the same host and account key as the person's everyday login, replacing it and narrowing its scopes, so a scoped second gh credential on a host needs --insecure-storage or a separate token, and must never be logged out.
 * [Onboarding evidence follows the installed client, provider and live service](onboarding-evidence-follows-the-live-version-combination.md) - A newcomer onboarding result must name the client resolved by the ordinary install, the selected catalog provider and the observed live service release, because those versions can move independently.
 * [Scripted provider checks separate product questions from harness blockers](scripted-provider-checks-separate-product-from-harness.md) - Run a harness-free provider pre-check before newcomer onboarding to expose setup and join failures without waiting for model login, while keeping test-rig faults and full acceptance separate.
 
