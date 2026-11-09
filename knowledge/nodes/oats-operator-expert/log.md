@@ -1,5 +1,10 @@
 # oats-operator-expert log
 
+## 2026-11-09
+
+* **Harvest**: [A gate-style label trigger needs a purpose unique per ask](/nodes/oats-operator-expert/lessons/a-gate-trigger-needs-a-purpose-unique-per-ask.md) — preserve the reported once-only gate and poll-diff blind spot as an operator configuration lesson with the per-ask purpose or operator backup; omit PR numbers and exact times, leave the name-reservation rule to the kernel and trigger owners, and name event-derived purposes and event-based detection as the elimination route.
+* **Harvest**: [A separate GH_CONFIG_DIR does not separate the keyring token](/nodes/oats-operator-expert/lessons/a-separate-gh-config-dir-does-not-separate-the-keyring-token.md) — preserve the reported keyring overwrite and scope narrowing with the `--insecure-storage` or separate-token remedy and the never-log-out rule; bound the logout consequence as proposal-reported, omit the private configuration path, and link the accepted unattended-credentials decision rather than duplicate its refresh finding.
+
 ## 2026-11-05
 
 * **Harvest**: [Onboarding evidence follows the installed client, provider and live service](/nodes/oats-operator-expert/lessons/onboarding-evidence-follows-the-live-version-combination.md) — preserve the reported independent release movement and start-of-run evidence boundary; name trial-driver capture as the prevention route, without treating three versions as a complete environment or certifying a later deployment.

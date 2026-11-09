@@ -51,6 +51,10 @@ why that additional operational dependency was left outside this guided path.
   file-stored token to the keychain unless the storage choice was repeated.
   The durable decision is to carry that choice through the token lifecycle;
   version-specific flags belong in the setup skill, not a second recipe here.
+  A *second*, separate gh credential on the same host is a different case:
+  the [GH_CONFIG_DIR keyring lesson](/nodes/oats-operator-expert/lessons/a-separate-gh-config-dir-does-not-separate-the-keyring-token.md)
+  records that a configuration directory alone does not separate the stored
+  token.
 - **Explain the person's certification before enabling global DCO sign-off.**
   The sign-off applies to agents' commits under that person's identity too.
   Automation does not turn it into the agent's independent certification or
