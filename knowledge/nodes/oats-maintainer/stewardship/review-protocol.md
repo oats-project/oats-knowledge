@@ -958,6 +958,55 @@ source-reported (relay at the issue), and it is recorded here as what happened
 on that change, not as a general waiver: a lane still may not settle precedence
 alone, and the map's rule that both sides decide contract changes is unchanged.
 
+## A new refusal of accepted configuration is a contract change, whatever code it carries (2026-11-09)
+
+Turning configuration that a deployment's kernel accepts today into a
+refusal is a contract change, even when the refusal reuses an existing error
+code with a new discriminator. Reusing the code keeps clients' error handling
+stable; it does not make the change non-breaking, because existing
+deployments rely on what their configuration is accepted to say, not on which
+code a rejection carries. So the change is confirmed by both product sides
+before it is built, like a new code, item or field, and a lead's brief names
+**a new refusal of configuration that used to be accepted** among the
+contracts to stop at. A brief whose stop condition is only "a new error,
+item or warning code" lets a breaking refusal through without a decision.
+
+The review question for a refusal under an old code is the same as for a
+new one: who breaks, what they must change, and the message that tells them.
+The kernel's
+[declaration-check decision](/nodes/oats-kernel-expert/decisions/declaration-checks-run-at-sync-under-the-integrity-family.md)
+owns why that case extends the `E_PACKAGE_INTEGRITY` family with a
+discriminator rather than adding a code, and its rule that a new code is a
+new contract; this section adds the complement, that the refusal itself is
+one too. The same day's
+[disabled-soul decision](/nodes/oats-kernel-expert/decisions/stale-disabled-soul-entry-is-diagnosed-not-refused.md)
+applied the rule when it stopped short of refusing spawn over a stale entry.
+The [published-commitment boundary](/nodes/oats-maintainer/decisions/clean-contract-precedent.md#the-precedent-is-bounded)
+still governs what a confirmed refusal may break.
+
+The source reports one case, 2026-11-09: the brief for the package-identity
+fix told the lead to stop only at a new error, item or warning code; the
+requested refusal reused the integrity code with a new `why`, so the lead
+built it without asking; and an earlier yes from the other side had covered a
+different mechanism since dropped, so the refusal had no decision of its own
+until the confirmation was asked after the build. The prevention route is a
+line in the maintainer's launch and review guidance naming this stop
+condition; no skill or gate is changed here.
+
+Evidence: OKF proposal from oats-maintainer/product-maintainer-pepe,
+2026-11-09; notes/new-refusal-is-a-contract-even-on-an-old-code.md. Read on
+the forge at harvest: the confirmation request on
+[oats-project/oats#1759, comment 6743271645](https://github.com/oats-project/oats/issues/1759#issuecomment-6743271645)
+says the shape had no decision of its own, that the earlier yes covered the
+since-dropped mechanism, and that it was posted for an already built head;
+the other side's yes is
+[comment 6743282933](https://github.com/oats-project/oats/issues/1759#issuecomment-6743282933).
+Both present themselves as a maintainer side's position and are recorded as
+source-reported (relay). The brief's wording is source-reported; the brief
+was not read. [oats-project/oats#1763](https://github.com/oats-project/oats/pull/1763)
+was open and unmerged at harvest; no implementation, test or release is
+certified.
+
 ## Contract agreement stays on the issue through implementation (2026-10-28)
 
 The source reports a useful practice across three product-contract cases:
