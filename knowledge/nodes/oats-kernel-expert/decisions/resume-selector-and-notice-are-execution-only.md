@@ -2,6 +2,8 @@
 type: Decision
 title: Resume selectors and notices are execution-only
 description: Resume selectors and notices belong only to the current execution, because persisting them would make later ordinary starts reopen an old conversation and break pi transcript-root certification.
+about: [system/oats-kernel]
+id: dec-ed67a0c55c7b
 tags: [kernel, launch, recovery, persistence, native-record]
 timestamp: 2026-10-27
 ---

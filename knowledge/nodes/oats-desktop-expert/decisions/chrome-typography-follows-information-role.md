@@ -2,6 +2,8 @@
 type: Decision
 title: Desktop chrome uses sans names and role-based type hierarchy
 description: Give primary names foreground sans at weight 600 and reserve monospace for secondary machine strings, using a short size-and-weight hierarchy instead of extra colours or uppercase labels.
+about: [system/oats-desktop]
+id: dec-d3a5f460c7ea
 tags: [desktop, typography, hierarchy, design, accessibility]
 timestamp: 2026-10-15
 ---

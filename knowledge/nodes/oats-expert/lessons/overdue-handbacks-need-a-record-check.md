@@ -2,6 +2,9 @@
 type: Lesson
 title: An overdue handback needs a record check, not indefinite mail waiting
 description: Give delegated steps expected checkpoints and distinguish a recorded result from notification of its next actor, because overdue work can hide either a missing handoff wake or an undelivered one.
+about: [workstream/coordination]
+kind: lesson
+id: ins-1d7689e60bcb
 tags: [coordination, delegation, review, handover]
 timestamp: 2026-11-03
 ---

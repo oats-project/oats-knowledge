@@ -2,6 +2,8 @@
 type: Decision
 title: Prerequisite refusals distinguish supported baselines from optimizations
 description: Enforce the deliberately selected Node baseline with its real error preserved across consumers, while reporting an older Git's working whole-tree fallback instead of refusing it for a performance difference.
+about: [system/oats-kernel]
+id: dec-ea4489673b8c
 tags: [kernel, prerequisites, compatibility, errors, rejected-alternatives]
 timestamp: 2026-10-30
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Editor groups own layout and close succession
 description: Persistent groups preserve ordered work and focus better than temporary per-tab split slots or unrelated global recency.
+about: [system/oats-desktop]
+id: dec-dde08ef8d2a9
 tags: [desktop, layout, editor-groups, focus, accessibility]
 timestamp: 2026-07-27
 ---

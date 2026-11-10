@@ -2,6 +2,9 @@
 type: Lesson
 title: A shared checkout's local main leaks into every worktree spawned from it, and strands whatever reaches no remote
 description: Worktree instances branch from the clone's checked-out state, not the shared remote's main; unpushed commits there ride every developer's PR and never reach another machine. Branch from the remote main, deliver shared-tree changes by pull request, and keep the checkout's main equal to the remote.
+about: [workstream/operations]
+kind: lesson
+id: ins-624ef17b92e4
 tags: [lesson, operator, git, worktree, checkout-mode, harvest, pr-scope, placement]
 timestamp: 2026-09-24
 ---

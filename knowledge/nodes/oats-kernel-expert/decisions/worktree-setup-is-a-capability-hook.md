@@ -2,6 +2,8 @@
 type: Decision
 title: Worktree setup is a capability hook, not a repository-file contract
 description: A composed capability decides what repository setup runs, avoiding a second kernel trust mechanism based on a file's presence, host opt-in or script scanning.
+about: [system/oats-kernel]
+id: dec-25d1be012c57
 tags: [kernel, worktree, hooks, capabilities, trust]
 timestamp: 2026-10-08
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: A provider that owns an in-life lifecycle owns its state file and its verbs — it never rewrites the kernel's instance record, and its skills never teach the native mutations underneath
 description: Keep in-life state in a provider file mirrored through hook meta, never in instance.json, teach the provider's verbs, and use reported identity locations rather than derived paths or a silent default for an unavailable explicit task destination.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-52db13416bd7
 tags: [integrations, provider-state, hooks, instance-record, ownership, skills, lifecycle]
 timestamp: 2026-11-03
 ---

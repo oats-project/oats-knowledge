@@ -2,6 +2,9 @@
 type: Lesson
 title: Compare a code-reading leaning with alternatives before specifying it
 description: Before a risky implementation assumption becomes a spec, compare the lead's preferred approach with plausible alternatives under the same state-preservation and interruption checks.
+about: [workstream/coordination]
+kind: lesson
+id: ins-b5a2e9649b75
 tags: [planning, experiments, alternatives, user-state]
 timestamp: 2026-10-14
 ---

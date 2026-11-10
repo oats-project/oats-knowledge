@@ -2,6 +2,9 @@
 type: Lesson
 title: Fresh machines do not reset account history
 description: First-time onboarding needs fresh service-account evidence as well as a fresh machine, followed by a second machine joining the same workspace, because existing accounts and single-machine trials hide different failures.
+about: [workstream/operations]
+kind: lesson
+id: ins-3f91be2ec9da
 tags: [operator, onboarding, acceptance, accounts, multi-machine]
 timestamp: 2026-11-02
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: A partial catalog remains an answer in both CLI forms
 description: Exposing catalog problems preserves successful partial-answer semantics across text and JSON, the established diagnostic stream, and the distinction between a problem and a missing item.
+about: [system/oats-kernel]
+id: dec-dd0c56d9b7a7
 tags: [kernel, cli, compatibility, diagnostics, catalog]
 timestamp: 2026-10-13
 ---

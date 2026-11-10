@@ -2,6 +2,8 @@
 type: Decision
 title: Non-cancellable kernel work unlinks output at spawn
 description: A shared file-output boundary unlinks its temporary names immediately after spawn and reads through retained descriptors, because a Desktop crash can skip every cleanup callback.
+about: [system/oats-desktop]
+id: dec-12be5c4b54c6
 tags: [desktop, shared-client, process-lifetime, output, cleanup]
 timestamp: 2026-10-27
 ---

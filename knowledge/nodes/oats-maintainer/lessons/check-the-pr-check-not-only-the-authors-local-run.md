@@ -2,6 +2,9 @@
 type: Lesson
 title: Check the PR's own check before an ACK; the author's local run is not the runner's run
 description: A provider PR's check was red on every head while the author's local suite was green, because a test's skip guard threw when the runner lacked a host binary; read the PR's check conclusion and its failed log in every round, since a runner without the host's binaries is not a duplicate of a green local suite.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-165d932aedeb
 tags: [review, ci, testing, release]
 timestamp: 2026-09-25
 ---

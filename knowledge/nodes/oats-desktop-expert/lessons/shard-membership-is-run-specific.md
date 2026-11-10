@@ -2,6 +2,9 @@
 type: Lesson
 title: A shard number does not identify the same tests after main moves
 description: Before attributing a CI hang to a Desktop change, establish test membership in that exact run rather than treating absence from one shard's log as evidence of a hang.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-51f606be62ab
 tags: [desktop, verification, ci, triage]
 timestamp: 2026-10-14
 ---

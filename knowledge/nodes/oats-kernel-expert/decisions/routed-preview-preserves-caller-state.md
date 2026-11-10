@@ -2,6 +2,8 @@
 type: Decision
 title: A routed preview preserves caller state and includes caller-only consequences
 description: Routed spawn preview requires advertised host support, keeps apply's caller-side refusals, adds consequences only the caller knows, and never turns a preview answer into a saved route.
+about: [system/oats-kernel]
+id: dec-562298d88f78
 tags: [kernel, routing, preview, compatibility, state, feature-detection]
 timestamp: 2026-10-14
 ---

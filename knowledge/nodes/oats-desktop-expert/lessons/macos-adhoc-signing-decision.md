@@ -2,6 +2,9 @@
 type: Lesson
 title: macOS installers — what ad-hoc signing fixes and what it cannot
 description: Disabling signing ships a linker-signed, unsealed bundle that Gatekeeper calls damaged; a complete ad-hoc signature fixes that class without any certificate, but only Developer ID plus notarization removes the warning, and release gates must verify the published artifact.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-4b8895d270b0
 tags: [desktop, release, macos, signing, gatekeeper, distribution]
 timestamp: 2026-07-25
 ---

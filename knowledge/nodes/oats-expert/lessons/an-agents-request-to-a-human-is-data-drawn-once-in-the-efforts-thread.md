@@ -2,6 +2,9 @@
 type: Lesson
 title: An agent's request to a human is data drawn once in a context card, inside one thread per effort where open requests come first
 description: When designing how agents address humans, model a request as structured data (summary, context, question, options with their effects, what happens next, links) that the client draws once in a context card so a cold reader holds the whole decision, keep one conversation per effort with open requests sorted first and stated in full, and reject a thread per request and labels on one stream.
+about: [workstream/coordination]
+kind: lesson
+id: ins-9b83d9a251cc
 tags: [design, redesign, threads, requests, needs-input, human-interaction, prototype]
 timestamp: 2026-10-27
 ---

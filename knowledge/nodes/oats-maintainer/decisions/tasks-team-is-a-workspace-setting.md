@@ -2,6 +2,8 @@
 type: Decision
 title: A shared task list selects its team without changing messaging defaults
 description: Select the aweb tasks team once in the workspace's tasks payload, not through deployment-local overrides or messaging defaults, so deployments share a task list without moving unrelated identities.
+about: [workstream/oats-direction, workstream/messaging]
+id: dec-fb3a725cbbb1
 tags: [workspace, tasks, messaging, configuration, rejected-alternatives]
 timestamp: 2026-11-03
 ---

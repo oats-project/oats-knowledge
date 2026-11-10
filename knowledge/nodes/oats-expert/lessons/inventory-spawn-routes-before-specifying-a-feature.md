@@ -2,6 +2,9 @@
 type: Lesson
 title: Inventory spawn routes before specifying a feature
 description: Before specifying a spawn feature, enumerate each execution route and record its option handling, authoritative feature gate, older-side behavior and verification rather than treating one dialog as one implementation.
+about: [workstream/coordination]
+kind: lesson
+id: ins-1ae1b39605ae
 tags: [planning, spawn, routing, feature-gating, compatibility, verification]
 timestamp: 2026-10-27
 ---

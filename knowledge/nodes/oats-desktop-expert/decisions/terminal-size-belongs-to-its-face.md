@@ -2,6 +2,8 @@
 type: Decision
 title: A terminal font size belongs to the face it was chosen for
 description: Keep terminal size choices and defaults per face rather than per host, because carrying a size across different font metrics changes the user's intended appearance.
+about: [system/oats-desktop]
+id: dec-746ac9ed659a
 tags: [desktop, terminal, typography, preferences, native-fidelity]
 timestamp: 2026-10-27
 ---

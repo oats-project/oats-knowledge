@@ -2,6 +2,9 @@
 type: Lesson
 title: When the present human is the operator, run a TTY-free one-liner they ask for and report, instead of handing it back
 description: A skill that says an act "is the operator's" draws a line of authority, not of hands; when the human in the session is that operator and has asked for an act that needs no TTY, password or secret, run it and say so, or ask once and act on the answer, rather than handing it back repeatedly.
+about: [workstream/coordination, workstream/operations]
+kind: lesson
+id: ins-d848551877ea
 tags: [human-interaction, authority, skills, operator, friction]
 timestamp: 2026-10-26
 ---

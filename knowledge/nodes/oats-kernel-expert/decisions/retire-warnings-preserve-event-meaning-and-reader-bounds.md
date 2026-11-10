@@ -2,6 +2,8 @@
 type: Decision
 title: Retire warnings preserve event meaning and reader bounds
 description: Record retire-hook warnings under their own event kind before later failures can erase them, and enforce a shared text bound in the strict reader's units rather than widening launch semantics or relying on every writer.
+about: [system/oats-kernel]
+id: dec-59e05fe3b4ba
 tags: [kernel, retire, hooks, events, compatibility, rejected-alternatives]
 timestamp: 2026-11-05
 ---

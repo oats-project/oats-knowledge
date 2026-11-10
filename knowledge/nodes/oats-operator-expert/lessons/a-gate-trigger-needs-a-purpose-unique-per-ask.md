@@ -2,6 +2,9 @@
 type: Lesson
 title: A gate-style label trigger needs a purpose unique per ask
 description: A PR-label trigger whose spawn purpose is the trigger name plus the PR number reportedly could not spawn again for the same PR after its first instance retired, and missed an unlabel and relabel inside one poll, so a gate a PR may need more than once needs a per-ask purpose or an operator backup.
+about: [workstream/operations]
+kind: lesson
+id: ins-934260204f6f
 tags: [operator, triggers, github, labels, spawn, naming, polling]
 timestamp: 2026-11-09
 ---

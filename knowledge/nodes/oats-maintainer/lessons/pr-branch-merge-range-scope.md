@@ -2,6 +2,9 @@
 type: Lesson
 title: Review the whole PR merge range for scope, not only the intended feature files
 description: A feature PR can accidentally carry unrelated local, stewardship, or soul commits that are not on the shared main, so maintainers must inspect the actual merge range before running expensive gates.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-9d0dd6bdfc63
 tags: [lesson, pr-review, mergeability, stewardship, harvest, souls]
 timestamp: 2026-09-24
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Retire-hook retry stays inside the completion that was authorized
 description: Retry hook-only retirement debt within the bounded deferred completion, not a later automatic actor, and expose unfinished cleanup through doctor rather than cross-home claims.
+about: [system/oats-kernel]
+id: dec-8fa7c5b09c05
 tags: [kernel, retire, lifecycle, recovery, authority, rejected-alternatives]
 timestamp: 2026-11-05
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: The scheduled publisher reuses the kernel job lock
 description: A second publisher tick lockfile was rejected because the kernel already serializes runs of the scheduled job and another lock would add a stale-lock failure mode.
+about: [system/oats-aweb]
+id: dec-89d2c112f8cf
 tags: [oats.aweb, health, scheduling, concurrency, rejected-alternative]
 timestamp: 2026-10-15
 ---

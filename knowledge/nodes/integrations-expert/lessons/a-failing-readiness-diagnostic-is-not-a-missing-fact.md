@@ -2,6 +2,9 @@
 type: Lesson
 title: A client view that contradicts the source of truth is a client defect, not a missing fact — read the authoritative source, cite the message-level read, never rewrite a live identity
 description: When a client's health check contradicts a command's own success receipt, or a listing disagrees with the single-message read, report the discrepancy and read the authoritative source (the registry route, the message envelope) before treating anything as missing; never rotate, re-publish or re-mint a live identity to satisfy a view that may itself be broken, and let only the receiver's verdict accept a signed send.
+about: [workstream/provider-integration, workstream/messaging]
+kind: lesson
+id: ins-3eef01fb47c8
 tags: [lesson, integrations, messaging, e2ee, diagnostics, registry, verification, rehearsal]
 timestamp: 2026-09-24
 ---

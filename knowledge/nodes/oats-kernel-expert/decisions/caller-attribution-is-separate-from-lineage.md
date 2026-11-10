@@ -2,6 +2,8 @@
 type: Decision
 title: Caller attribution is separate from explicit lineage
 description: Ambient instance context may inform descriptive caller attribution because it gates no authority, while lineage still requires explicit intent.
+about: [system/oats-kernel]
+id: dec-87f4e384619e
 tags: [kernel, spawn, attribution, lineage, trust, rejected-alternatives]
 timestamp: 2026-10-18
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: A repository move's inventory follows what each consumer reads at run time and who writes it; a hand-kept per-host file never follows the declaration and needs its own step per host
 description: When a repository moves or a contract changes, inventory the places that name it by the file each consumer actually reads and by who writes that file, not by what the declarations say; a hand-kept per-host file that no command rewrites never follows a change to the declaration, so it gets a named step per host in the runbook, and a fix is chosen only after a trace through the code shows which source the consumer reads.
+about: [workstream/coordination, workstream/knowledge]
+kind: lesson
+id: ins-179070d48a99
 tags: [planning, migration, repositories, inventory, configuration, hosts, runbook, knowledge]
 timestamp: 2026-11-04
 ---

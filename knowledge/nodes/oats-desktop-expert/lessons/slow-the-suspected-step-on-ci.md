@@ -2,6 +2,9 @@
 type: Lesson
 title: Slow the suspected step on CI to expose a rare wait race
 description: Use a bounded delayed control to reproduce a rare terminal wait failure, expose missed dependants and challenge every affected exit path at the final head, while measuring timing margins separately from failure frequency.
+about: [system/oats-desktop, workstream/coordination]
+kind: lesson
+id: ins-d5734f3fc101
 tags: [verification, testing, tui, timing, controls, ci]
 timestamp: 2026-10-30
 ---

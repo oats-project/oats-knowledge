@@ -2,6 +2,8 @@
 type: Decision
 title: Shared terminal opening keeps invocation context and client scope
 description: Interpret attach outcomes with the facts that give them meaning, add a client-specific action without changing another client's menu, and preserve both kernel refusal texts.
+about: [system/oats-desktop]
+id: dec-8e79f784e862
 tags: [desktop, terminal, shared-code, contracts, rejected-alternatives]
 timestamp: 2026-10-14
 ---

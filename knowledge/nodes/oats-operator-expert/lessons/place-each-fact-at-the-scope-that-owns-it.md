@@ -2,6 +2,9 @@
 type: Lesson
 title: Place each fact at the scope that owns it — shared declarations in Git, host facts in the uncommitted local file, single-holder facts at spawn — and let meaning, not type, break ties
 description: A deployment has three legal homes for a provider fact and the docs say what each accepts, not which one a given fact belongs to. Place by ownership scope, and when a fact is legal in two homes let its meaning (how many holders it may have) decide, not its type (path, string, flag).
+about: [workstream/operations]
+kind: lesson
+id: ins-325fdea31cb9
 tags: [lesson, operator, placement, workspace, local-file, spawn, blast-radius, rebuild]
 timestamp: 2026-09-23
 ---

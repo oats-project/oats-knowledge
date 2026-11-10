@@ -2,6 +2,8 @@
 type: Decision
 title: External knowledge needs source-independent custody
 description: External custody separates source evidence from writer execution and separates proposal delivery from accepted reader knowledge; learning never rides the work branch.
+about: [workstream/oats-direction, workstream/knowledge]
+id: dec-3c64bd46f6a2
 tags: [knowledge, custody, review, architecture]
 timestamp: 2026-09-19
 ---

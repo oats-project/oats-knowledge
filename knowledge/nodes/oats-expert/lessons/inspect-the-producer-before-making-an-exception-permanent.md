@@ -2,6 +2,9 @@
 type: Lesson
 title: Inspect the producer before making a client limitation a permanent exception
 description: Before declaring a rule exception permanent because a client lacks provenance, inspect the producer that combines the sources and determine whether it can preserve the distinction.
+about: [workstream/coordination]
+kind: lesson
+id: ins-f52b0f35d546
 tags: [planning, provenance, shared-code, exceptions]
 timestamp: 2026-10-12
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: An unreached host keeps Stop and Retire available through a fresh plan
 description: Keep unknown remote rows actionable through the kernel's routed plan rather than hide Stop and Retire on the strength of an earlier failed roster read.
+about: [system/oats-desktop]
+id: dec-184f30c84c2a
 tags: [desktop, lifecycle, remote, cli-authority, observation]
 timestamp: 2026-10-14
 ---

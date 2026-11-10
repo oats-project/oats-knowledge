@@ -2,6 +2,8 @@
 type: Decision
 title: The messaging integration's readiness reports the host wake daemon's version, read from the daemon's own status answer
 description: Because the host wake daemon is a long-running process whose version the PATH floor gate cannot see, readiness asks the daemon for its version through its status command and compares it with the client floor, reporting an outdated or stopped daemon as a problem and an unknown version as a warning; no process inspection. A missing wake is diagnosed from the daemon's own log, never from its status rows.
+about: [workstream/provider-integration, workstream/messaging]
+id: dec-665fafcba485
 tags: [decision, integrations, messaging, wake, readiness, grants, versioning, diagnostics]
 timestamp: 2026-09-25
 ---

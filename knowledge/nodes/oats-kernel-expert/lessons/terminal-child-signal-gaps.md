@@ -2,6 +2,9 @@
 type: Lesson
 title: A raw-mode terminal child does not protect its wrapper's whole lifetime
 description: Terminal signal handling must cover setup through cleanup, protect cleanup children from group signals, and allow pending signals to dispatch before the next side effect while preserving the child's outcome.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-5df65117e908
 tags: [kernel, terminal, signals, cleanup, process-groups, event-loop, exit-status, testing]
 timestamp: 2026-10-15
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Harness authentication is native and user-managed; OATS never handles credentials
 description: Users authenticate their harness through its own mechanisms and OATS launches it in that native authenticated context; OATS never parses, copies, stores or wraps credentials, never imposes an API-key-only subset, and never swaps HOME or profiles to make isolation evidence pass.
+about: [system/oats-kernel]
+id: dec-a4a57f6dabe1
 tags: [kernel, runtime, harnesses, authentication, credentials, boundaries]
 timestamp: 2026-09-18
 ---

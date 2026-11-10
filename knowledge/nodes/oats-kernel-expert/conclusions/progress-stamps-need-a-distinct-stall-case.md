@@ -2,6 +2,9 @@
 type: Conclusion
 title: Require a distinct stall case before adding a progress stamp
 description: The source's provisional position defers a new progress record because missing handoff notifications call for waiter checkpoints, while neither reported activity nor elapsed silence justifies a kernel stalled verdict.
+about: [system/oats-kernel]
+kind: finding
+id: ins-64e172e81d4f
 tags: [kernel, coordination, activity, supervision, rejected-alternatives]
 timestamp: 2026-11-03
 ---

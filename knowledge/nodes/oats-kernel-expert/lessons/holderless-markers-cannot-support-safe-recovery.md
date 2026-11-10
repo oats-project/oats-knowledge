@@ -2,6 +2,9 @@
 type: Lesson
 title: A holderless lifecycle marker cannot support safe recovery
 description: Killed start and stop probes left permanent busy markers, while removing a live start's marker admitted two unmanageable harnesses, so recovery needs holder evidence rather than an age or deletion hint.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-b2ea0a4bf5ab
 tags: [kernel, lifecycle, concurrency, liveness, recovery]
 timestamp: 2026-10-10
 ---

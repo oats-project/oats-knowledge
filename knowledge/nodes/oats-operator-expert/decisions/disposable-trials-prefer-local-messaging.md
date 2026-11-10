@@ -2,6 +2,8 @@
 type: Decision
 title: Disposable trials prefer local messaging over throwaway hosted accounts
 description: Prefer a local rootless messaging stack when teardown must remove trial service state, reserving hosted trials for explicitly needed hosted-build behavior.
+about: [workstream/operations, workstream/messaging]
+id: dec-565f631a040a
 tags: [operator, trials, messaging, teardown, rejected-alternatives]
 timestamp: 2026-11-02
 ---

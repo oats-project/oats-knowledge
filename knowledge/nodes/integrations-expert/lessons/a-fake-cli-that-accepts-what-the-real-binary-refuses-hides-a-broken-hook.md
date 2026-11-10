@@ -2,6 +2,9 @@
 type: Lesson
 title: A fake CLI that accepts what the real binary refuses hides a broken hook — a provider that drives an external CLI is accepted on the whole lifecycle against the published binary
 description: Fakes model the released tool's refusals and outputs; acceptance needs the whole lifecycle on the published binary, one version floor, and explicit control of the binary and state the rehearsal actually exercises.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-cf384ff257b7
 tags: [lesson, integrations, hooks, testing, fake-cli, rehearsal, acceptance, versioning]
 timestamp: 2026-11-02
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: The capture service belongs to the record package and runs bounded passes
 description: Capture direction replaces the unbounded watcher with package-owned periodic passes, retaining progress and failure isolation while avoiding a second in-pass scheduling mode.
+about: [workstream/oats-direction]
+id: dec-19c1cc67440b
 tags: [direction, capture, package-boundary, scheduling, resource-limits]
 timestamp: 2026-10-14
 ---

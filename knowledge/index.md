@@ -18,3 +18,7 @@ okf_version: "0.1"
 * [oats-authoring-expert](nodes/oats-authoring-expert/index.md) - Authoring package expert (`oats.authoring`, repository `oats-authoring`): that package's facts.
 * [oats-apps-expert](nodes/oats-apps-expert/index.md) - App guidance package expert (`oats.apps`: `oats.folio`, `oats.library`; repository `oats-apps`): that package's facts.
 * [oats-setup-admin](nodes/oats-setup-admin/index.md) - Judgement from administering a workspace's OATS config: which changes went wrong and why, how refusals were read, what verification caught. Never one deployment's state.
+
+## Subjects
+
+* [Subjects](subjects/index.md) - What this base's knowledge is about, by kind; each subject has a generated index of its claims.

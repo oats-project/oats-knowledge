@@ -2,6 +2,8 @@
 type: Decision
 title: The viewer detach key is caller-chosen and has its own exit status
 description: An opt-in per-viewer key preserves harness input and legacy exit meanings, while a narrow grammar and positive feature detection prevent unsafe silent fallback.
+about: [system/oats-kernel]
+id: dec-3d168e47bd99
 tags: [kernel, terminal, tmux, compatibility, exit-status, feature-detection]
 timestamp: 2026-10-10
 ---

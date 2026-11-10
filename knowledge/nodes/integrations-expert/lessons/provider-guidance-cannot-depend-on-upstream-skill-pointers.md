@@ -2,6 +2,9 @@
 type: Lesson
 title: Provider guidance cannot depend on upstream skill pointers
 description: A provider must teach its selected slot's minimum loop in its composed guidance because upstream skill pointers do not establish local availability, and an agreed wording-based opt-in must be expressed where that capability is selected.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-4b6be6ebd10d
 tags: [integrations, composition, skills, guidance, testing]
 timestamp: 2026-11-03
 ---

@@ -28,6 +28,10 @@ export const OWNERS = Object.freeze({
   'oats-setup-admin': 'd9ccb5f0-1c69-406c-a4c8-0a2e0f41c76e',
   'oats-apps-expert': '6d8e9505-f2d2-4cd5-8a10-2beec836e733',
 });
+// The reserved nodes of the subject layout (a bridged version-1 base): path equal to the name, owned by
+// the placeholder UUID, never by a soul. Same review rule as OWNERS.
+export const PLACEHOLDER_OWNER = '00000000-0000-0000-0000-000000000000';
+export const RESERVED = Object.freeze(['claims', 'subjects', 'verdicts']);
 
 export async function loadOkf(source = process.env.OKF_SOURCE) {
   assert.equal(process.versions.node.split('.')[0], '22', 'Use Node 22');
@@ -48,8 +52,9 @@ export function validateOwnership(files, okf) {
   // Runtime metadata validation covers schema fields AND filesystem ownership:
   // canonical/nonoverlapping paths, required node index/log, no hidden/stray files.
   const base = okf.metadata(files, { id: BASE_ID });
-  assert.deepEqual(Object.keys(base.nodes).sort(), Object.keys(OWNERS).sort(), 'Unreviewed node roster');
-  assert.equal(new Set(Object.values(base.nodes).map(node => node.owner)).size, Object.keys(OWNERS).length, 'Owner UUIDs must be distinct');
+  assert.deepEqual(Object.keys(base.nodes).sort(), [...Object.keys(OWNERS), ...RESERVED].sort(), 'Unreviewed node roster');
+  assert.equal(new Set(Object.keys(OWNERS).map(name => base.nodes[name].owner)).size, Object.keys(OWNERS).length, 'Owner UUIDs must be distinct');
+  for (const name of RESERVED) assert.deepEqual(base.nodes[name], { path: name, owner: PLACEHOLDER_OWNER }, `Reserved node drift: ${name}`);
   for (const [name, owner] of Object.entries(OWNERS)) {
     assert.deepEqual(base.nodes[name], { path: `nodes/${name}`, owner }, `Ownership drift: ${name}`);
     const declaration = okf.validateDeclaration({ version: 1, owner, owns: [`oats/${name}`], reads: [] });

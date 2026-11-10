@@ -2,6 +2,9 @@
 type: Lesson
 title: Send a hand-off as a message that wakes every waiter at an exact head; the forge is the record, never the signal
 description: A plan, approval, verdict or merge written only on an issue or PR wakes nobody, and a merge mailed only to its author strands everyone else waiting on it, so the lead sends each hand-off as a message to every instance the plan says waits, naming the artefact at its exact head and the ask, and runs a check as a call to a fresh reviewer rather than a standing station.
+about: [workstream/coordination, workstream/messaging, workstream/oats-direction]
+kind: lesson
+id: ins-1c14597fb88f
 tags: [coordination, handover, messaging, review, gates, trials]
 timestamp: 2026-11-09
 ---

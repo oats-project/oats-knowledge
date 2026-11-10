@@ -2,6 +2,8 @@
 type: Decision
 title: A harvest is published only when the forge reads back an open PR at the exact head; an unlabelled PR is its own status
 description: After the push, knowledge publication is proven by reading the PR back from the forge (open, at the exact screened head, on its own branch, against the accepted base, on the canonical repository, not cross-repository), never by the returned URL's text; only idempotent forge calls are retried, the label is applied after the create, an open PR that could not be labelled gets its own status, and the fix is called fixed only after one live labelled harvest.
+about: [workstream/oats-direction, workstream/knowledge]
+id: dec-279ee8a255af
 tags: [knowledge, publication, read-back, review, release, okf]
 timestamp: 2026-11-06
 ---

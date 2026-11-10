@@ -2,6 +2,8 @@
 type: Decision
 title: Human attribution is an optional messaging-capability contract
 description: Add human attribution through a provider-neutral messaging contract, default new onboarding to human-bound mode where supported, and preserve unchanged operation for capabilities and deployments without human identities.
+about: [workstream/oats-direction, workstream/messaging, workstream/provider-integration]
+id: dec-a636bc699391
 tags: [messaging, human-identity, onboarding, compatibility, contracts]
 timestamp: 2026-11-06
 ---

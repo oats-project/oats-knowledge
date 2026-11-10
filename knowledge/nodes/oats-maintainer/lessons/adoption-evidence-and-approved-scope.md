@@ -2,6 +2,9 @@
 type: Lesson
 title: Adoption evidence and authority must match the claimed outcome
 description: Installation, usable execution, publication, delivery, consumption and learning are different evidence; an apparent gap is classified before anyone adds fields or authority; and review findings do not expand approved product scope.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-8f7abc0e73e4
 tags: [acceptance, evidence, scope, review]
 timestamp: 2026-09-05
 ---

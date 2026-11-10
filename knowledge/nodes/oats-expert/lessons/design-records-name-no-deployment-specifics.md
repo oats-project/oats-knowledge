@@ -2,6 +2,9 @@
 type: Lesson
 title: Design records and release notes name no hosts, people, paths or personal repositories
 description: Deployment specifics drift into a spec when its author reads the live deployment for facts; before hand-over, search the record for host names, the human's name, absolute paths and personal forge owners and replace them with neutral examples and "a pattern one deployment uses".
+about: [workstream/coordination]
+kind: lesson
+id: ins-45bc7a4330dd
 tags: [hand-over, specification, release-notes, review, provenance, privacy]
 timestamp: 2026-10-26
 ---

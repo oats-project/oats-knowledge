@@ -2,6 +2,9 @@
 type: Lesson
 title: A gate on "every host is updated" counts kernels, not hosts
 description: One host can run several kernels, one per node version, and its schedule unit records its own kernel path, so before a contract flip read every install and the unit's path and check a capability the update adds rather than a version number.
+about: [workstream/coordination]
+kind: lesson
+id: ins-84a8c632e5e0
 tags: [planning, migration, contracts, gates, hosts, kernels, schedule, evidence]
 timestamp: 2026-10-30
 ---

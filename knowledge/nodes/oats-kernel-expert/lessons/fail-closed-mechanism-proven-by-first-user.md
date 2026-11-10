@@ -2,6 +2,9 @@
 type: Lesson
 title: A kernel fail-closed guarantee is proven only by its first real capability user
 description: A required-hook mechanism shipped green and protected nothing because the capability it was built for exited clean on every fatal path; enforcement, its intended user, and the schema must move together.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-934556f1f2e8
 tags: [kernel, hooks, capabilities, fail-closed, contracts, testing]
 timestamp: 2026-07-27
 ---

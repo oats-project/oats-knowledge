@@ -2,6 +2,8 @@
 type: Decision
 title: The onboarding redesign has one reviewer on Pepe's side, the release lane
 description: For the onboarding redesign only, Juan's side decides the design and the release lane alone reviews for Pepe's side, returning changes that are too complicated, too slow or contrary to direction while preserving bilateral contract agreement before build.
+about: [workstream/oats-direction]
+id: dec-21b304584347
 tags: [stewardship, onboarding, review, delegation, contracts]
 timestamp: 2026-10-30
 ---

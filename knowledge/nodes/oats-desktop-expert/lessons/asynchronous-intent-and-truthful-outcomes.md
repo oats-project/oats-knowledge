@@ -2,6 +2,9 @@
 type: Lesson
 title: Async completion must still own the user's intent
 description: Background work preserves intent and separates creation, readiness and success; confirmations describe effect boundaries without suppressing unrelated reads or inventing stale-result state.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-9646baf4a439
 tags: [desktop, async, intent, mutations, truthfulness]
 timestamp: 2026-10-27
 ---

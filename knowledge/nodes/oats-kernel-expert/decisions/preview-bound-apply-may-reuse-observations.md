@@ -2,6 +2,8 @@
 type: Decision
 title: A preview-bound spawn apply may reuse observations
 description: Spawn apply may reuse observations only when a valued preview-decision fence binds the result to what was confirmed, rather than granting observation reuse to writers generally.
+about: [system/oats-kernel]
+id: dec-0cf212c79a7c
 tags: [kernel, spawn, preview, observations, cli, decision-fence]
 timestamp: 2026-10-15
 ---

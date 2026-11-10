@@ -2,6 +2,8 @@
 type: Decision
 title: A notice about a host fact is said once per command; a notice about a repository stays per repository
 description: A degraded-but-working fallback notice takes its frequency and scope from what the fact is about, deduplicated where it is produced rather than grouped by text at the printers, counted per repository or hidden behind a verbose flag.
+about: [system/oats-kernel]
+id: dec-0a18363d83bc
 tags: [kernel, cli, diagnostics, git, cache, prerequisites, rejected-alternatives]
 timestamp: 2026-11-09
 ---

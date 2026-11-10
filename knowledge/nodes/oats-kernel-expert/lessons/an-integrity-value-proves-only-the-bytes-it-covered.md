@@ -2,6 +2,9 @@
 type: Lesson
 title: An integrity value proves only the exact bytes it covered, and nothing about who produced them
 description: Digest the bytes a consumer will reproduce, never a leniently decoded string; and a content-derived id proves content matches its hash, not authorship, so capture calls native turns content-addressed and preserves source signatures rather than claiming to create them.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-5f6be75d15d4
 tags: [kernel, integrity, encoding, record, signatures, provenance]
 timestamp: 2026-09-05
 ---

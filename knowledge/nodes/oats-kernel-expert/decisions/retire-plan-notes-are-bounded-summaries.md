@@ -2,6 +2,8 @@
 type: Decision
 title: Retire plan notes are bounded summaries, not the full fact record
 description: Bound retirement summaries without truncating facts or silently extending the plan contract, because readable CLI output must also remain consumable by Desktop.
+about: [system/oats-kernel]
+id: dec-cb2e99bcb675
 tags: [kernel, retire, plan, diagnostics, json, compatibility]
 timestamp: 2026-10-09
 ---

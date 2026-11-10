@@ -2,6 +2,9 @@
 type: Conclusion
 title: Agent-definition names carry product meanings, not a shared lifecycle contract
 description: The 2026-11-02 source-reported survey identifies competing definition, template and persona meanings without establishing a universal agent-definition noun or measured reader comprehension.
+about: [workstream/positioning]
+kind: finding
+id: ins-9117dc70e26f
 tags: [research, naming, positioning, agent-definitions]
 timestamp: 2026-11-02
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Retirement leftovers are reported as facts, not deletion verdicts
 description: Commit reachability cannot establish preservation of uncommitted work, so leftover listings report bounded facts rather than declaring recovery copies or retained worktrees redundant or safe to delete.
+about: [system/oats-kernel]
+id: dec-9ec3b1ca7b06
 tags: [kernel, retire, recovery, diagnostics, contract, preservation]
 timestamp: 2026-10-09
 ---

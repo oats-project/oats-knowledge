@@ -2,6 +2,9 @@
 type: Limitation
 title: Persistent specialist-team outcomes remain unresolved in the product survey
 description: The 2026-11-02 product investigation establishes no outcome comparison for persistent multi-session specialist teams, so resumable execution and identity features do not substantiate a performance claim.
+about: [workstream/positioning]
+kind: constraint
+id: ins-35ad2e2ab25b
 tags: [research, persistent-agents, specialization, positioning, uncertainty]
 timestamp: 2026-11-02
 ---

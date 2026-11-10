@@ -2,6 +2,8 @@
 type: Decision
 title: A client reads reported host facts but may check its own local tool
 description: Clients consume kernel-reported host capabilities rather than copying host rules, while a client-owned local tool may be checked locally with mirrored behavior pinned by a cross-owner test.
+about: [workstream/oats-direction, system/oats-kernel]
+id: dec-30b04a4473b0
 tags: [clients, kernel, ownership, remote-hosts, testing]
 timestamp: 2026-10-27
 ---

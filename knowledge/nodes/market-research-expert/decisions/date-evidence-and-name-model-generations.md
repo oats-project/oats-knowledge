@@ -2,6 +2,8 @@
 type: Decision
 title: Date fast-moving research and name the measured model generation
 description: Source-reported human direction on 2026-11-02 prioritizes the last six months, explicitly searches the latest quarter, and requires model-generation labels and a dated recency pass.
+about: [workstream/positioning]
+id: dec-8cd7b48ab2fb
 tags: [research, recency, evidence-quality, model-capability]
 timestamp: 2026-11-02
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: The lead expert authors the cross-area plan and coordinates by default
 description: Source-reported pre-trial direction on 2026-11-02 keeps the integrated plan and coordination with the lead expert, with domain review and local specifications rather than separately authored plans assembled afterwards.
+about: [workstream/coordination, workstream/oats-direction]
+id: dec-d3624e1787b3
 tags: [planning, cross-area, coordination, ownership, direction]
 timestamp: 2026-11-02
 ---

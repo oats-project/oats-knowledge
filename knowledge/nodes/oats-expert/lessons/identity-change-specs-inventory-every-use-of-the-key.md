@@ -2,6 +2,9 @@
 type: Lesson
 title: When two spellings become one identity, the spec inventories every use of the key, not only the equality checks
 description: A spec that lists the literal compare sites to fix misses the Map keys, group-bys, cache keys and id hashes that also treat the key as an identity; name the behaviour that must hold and ask for every identity use, each converted or left literal with a reason.
+about: [workstream/coordination]
+kind: lesson
+id: ins-6fbda5634a91
 tags: [planning, specification, identity, keys, migration, review, contracts]
 timestamp: 2026-10-30
 ---

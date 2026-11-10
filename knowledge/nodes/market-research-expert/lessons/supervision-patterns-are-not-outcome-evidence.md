@@ -2,6 +2,9 @@
 type: Lesson
 title: Separate supervision product patterns from measured human outcomes
 description: The 2026-11-02 research synthesis identifies policy-based supervision and worker drill-down as a hybrid candidate, not proof of lower attention cost or safer outcomes.
+about: [workstream/positioning]
+kind: lesson
+id: ins-64fd41511240
 tags: [research, supervision, human-oversight, interfaces, evaluation]
 timestamp: 2026-11-02
 ---

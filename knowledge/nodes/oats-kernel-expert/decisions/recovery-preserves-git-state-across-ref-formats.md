@@ -2,6 +2,8 @@
 type: Decision
 title: Recovery preserves Git state across ref formats, not just paths
 description: Retirement recovery preserves a fixed set of Git operation refs and their available objects across ref formats, because path copies and matching status can silently omit them and the comparison must cover what the copier promises.
+about: [system/oats-kernel]
+id: dec-a972ee29532d
 tags: [kernel, retire, recovery, git, verification]
 timestamp: 2026-10-15
 ---

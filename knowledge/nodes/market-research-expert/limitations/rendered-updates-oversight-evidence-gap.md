@@ -2,6 +2,9 @@
 type: Limitation
 title: Rendered-update speed evidence does not establish better oversight judgment
 description: The 2026-11-02 investigation found navigation and resumption evidence but no controlled rendered-update-versus-chat judgment comparison, so presentation benefits and overreliance need separate evaluation.
+about: [workstream/positioning]
+kind: constraint
+id: ins-624603a9762e
 tags: [research, interfaces, human-oversight, trust, uncertainty]
 timestamp: 2026-11-02
 ---

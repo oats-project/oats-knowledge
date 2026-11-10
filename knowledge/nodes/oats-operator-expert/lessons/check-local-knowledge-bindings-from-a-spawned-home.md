@@ -2,6 +2,9 @@
 type: Lesson
 title: Check local knowledge bindings from a spawned home
 description: An oats.okf 5.7.0 trial failed to read a local Git base through a file URL and recovered with a plain path after respawn, so binding acceptance must include a spawned-home read rather than a configuration edit alone.
+about: [workstream/operations, workstream/knowledge]
+kind: lesson
+id: ins-fcdb480589f6
 tags: [operator, onboarding, knowledge, bindings, verification]
 timestamp: 2026-11-03
 ---

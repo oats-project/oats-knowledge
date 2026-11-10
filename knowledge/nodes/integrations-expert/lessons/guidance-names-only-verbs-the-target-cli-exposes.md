@@ -2,6 +2,9 @@
 type: Lesson
 title: Integration guidance and local validation follow the real contract — the manifest over prose, only verbs the target CLI exposes, every path that carries a service-defined value
 description: A capability's setup text and remedies name only verbs the real CLI exposes, pinned by a test; what a setting requires is read from the manifest, not from prose; and a value the service defines (an alias rule) is validated identically in every provider path that carries it.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-42f6947b845a
 tags: [lesson, integrations, setup, guidance, manifest, validation, testing]
 timestamp: 2026-09-24
 ---

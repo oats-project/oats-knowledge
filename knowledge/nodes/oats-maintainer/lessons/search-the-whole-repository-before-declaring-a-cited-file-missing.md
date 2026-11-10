@@ -2,6 +2,9 @@
 type: Lesson
 title: Search the whole repository before declaring a cited file missing
 description: A file cited by an older note that is absent from the directory you expected is not evidence that it was renamed or removed; a name search across the whole tree costs seconds and an invented history, once written into accepted knowledge, is a defect a reviewer has to catch.
+about: [workstream/oats-direction, workstream/knowledge]
+kind: lesson
+id: ins-4d0ff7892acf
 tags: [lesson, verification, knowledge, review]
 timestamp: 2026-09-21
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: Trial runtime redirection excludes host-service proof
 description: Linux trials reported excluded host-service access but surviving absolute temporary-file writes, so runtime redirection and a private temporary mount each prove only the boundary exercised.
+about: [workstream/operations]
+kind: lesson
+id: ins-f601923957cc
 tags: [operator, trials, isolation, runtime, evidence]
 timestamp: 2026-11-03
 ---

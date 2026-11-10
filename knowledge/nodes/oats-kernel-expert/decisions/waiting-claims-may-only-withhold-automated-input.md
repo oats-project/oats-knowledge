@@ -2,6 +2,8 @@
 type: Decision
 title: Waiting claims may withhold an automated keystroke but never authorize one
 description: Kernel wake delivery may defer on waiting claims because uncertainty must cost a late wake rather than an unseen approval, without expiring the message or turning a display summary into an input gate.
+about: [system/oats-kernel]
+id: dec-fb8025c7cafd
 tags: [kernel, wakes, claims, input-safety, rejected-alternatives]
 timestamp: 2026-10-30
 ---

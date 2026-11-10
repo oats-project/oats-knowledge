@@ -2,6 +2,8 @@
 type: Decision
 title: Removing a row's visible menu trigger must not remove its actions
 description: Keep sidebar instance actions in the row's context menu without a visible ellipsis trigger, because a panel tied to an active terminal cannot serve rows with no terminal.
+about: [system/oats-desktop]
+id: dec-80f6afb7c6ef
 tags: [desktop, interaction, accessibility, navigation, lifecycle]
 timestamp: 2026-10-27
 ---

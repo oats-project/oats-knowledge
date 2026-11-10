@@ -2,6 +2,9 @@
 type: Lesson
 title: The CLI as a machine boundary
 description: A machine CLI owes one stdout envelope, honest failure classification and phase-aware refusals, stable typed codes, semantic exit status, deployment-independent explanations and tested remedies.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-e37b902a5294
 tags: [kernel, cli, contract, json, diagnostics, exit-status]
 timestamp: 2026-11-05
 ---

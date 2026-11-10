@@ -2,6 +2,8 @@
 type: Decision
 title: Closed panels return their space to the main area
 description: Closing a sidebar or instance panel removes its entire footprint, and instance selection must not undo the user's choice to keep the panel closed.
+about: [system/oats-desktop]
+id: dec-3ad12665d1ba
 tags: [desktop, navigation, panels, focus, accessibility, preferences]
 timestamp: 2026-10-14
 ---

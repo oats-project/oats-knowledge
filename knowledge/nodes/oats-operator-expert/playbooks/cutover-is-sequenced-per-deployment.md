@@ -2,6 +2,8 @@
 type: Playbook
 title: "A kernel cutover is sequenced per deployment: retire under the kernel that made the homes, rebuild on fresh provider state, and hold the previous kernel until the last deployment has moved"
 description: When a new kernel generation shares no files with the previous one nothing forces the move, so the operator orders it deployment by deployment. Each deployment's instances retire under the kernel that spawned them, the rebuild starts on a fresh provider state directory while the old one is frozen as custody, and the previous kernel stays installed until the last deployment you care about is rebuilt.
+about: [workstream/operations]
+id: pb-daaf7d97c667
 tags: [playbook, operator, cutover, rebuild, migration, kernel-generation, provider-state, custody, sequencing]
 timestamp: 2026-09-23
 ---

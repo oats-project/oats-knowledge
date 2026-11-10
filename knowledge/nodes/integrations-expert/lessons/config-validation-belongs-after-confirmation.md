@@ -2,6 +2,9 @@
 type: Lesson
 title: Live config validation belongs after confirmation, not in a reusable preview cache
 description: Validate an isolated baseline and candidate after confirmation and just before an atomic guarded write, because unchanged copied bytes do not prove an executable config's dependencies stayed unchanged.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-d58853df6999
 tags: [integrations, config, validation, confirmation, environment]
 timestamp: 2026-10-19
 ---

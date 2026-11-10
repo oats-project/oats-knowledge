@@ -2,6 +2,9 @@
 type: Lesson
 title: Expertise lives in the soul and its node, so the lead weighs context and ownership against hand-off cost, not specialist against generalist
 description: In two trials with the same model and the same knowledge content on every arm, generalist sessions won coding on checks and time while the expert arm won where ownership and standing context mattered, so the lead keeps a unit of work whole in one fresh session of the soul whose knowledge fits it, adds a hand-off only where ownership or context needs one, and keeps standing instances only for what must persist between events.
+about: [workstream/coordination, workstream/oats-direction]
+kind: lesson
+id: ins-89f31278aa3a
 tags: [coordination, roster, souls, ownership, hand-offs, trials]
 timestamp: 2026-11-09
 ---

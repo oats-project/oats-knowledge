@@ -2,6 +2,9 @@
 type: Lesson
 title: Host-only settings are declared in the manifest and refused by the resolver, never enforced by the provider
 description: A setting that must come only from the host (a custody directory, a minting root) is declared hostOnly in the capability manifest so the resolver, which still sees the layers, refuses it from every committed file and spawn flag; the provider's hook receives one merged payload and is the wrong place to police provenance.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-2d787c59b183
 tags: [lesson, integrations, settings, provenance, security, manifest, resolver, host-only]
 timestamp: 2026-09-24
 ---

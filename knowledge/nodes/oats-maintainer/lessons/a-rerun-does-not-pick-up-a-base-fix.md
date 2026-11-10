@@ -2,6 +2,9 @@
 type: Lesson
 title: A failed-job rerun does not pick up a later base fix
 description: When PR CI failed on an old merge revision, rerunning that run does not test a fix subsequently merged to main; obtain fresh combination evidence and distinguish a branch update from an unchanged-head retrigger.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-40596dd7e121
 tags: [review, ci, merge, evidence]
 timestamp: 2026-10-28
 ---

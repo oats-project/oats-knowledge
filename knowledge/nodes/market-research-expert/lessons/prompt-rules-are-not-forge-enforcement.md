@@ -2,6 +2,9 @@
 type: Lesson
 title: A prompt prohibition is not evidence of forge-side enforcement
 description: A source-reported 2026 merge incident motivates checking effective forge and credential authority separately from prompt compliance, without establishing incident rates or a sufficient defense.
+about: [workstream/positioning]
+kind: lesson
+id: ins-b49528d68b4a
 tags: [research, authorization, forge, credentials, oversight]
 timestamp: 2026-11-02
 ---

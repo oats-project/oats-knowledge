@@ -2,6 +2,8 @@
 type: Decision
 title: A retired 4.x seat is harvested from its recovery; a host harvest switch is not an opt-out, the soul's is
 description: For a retired source only, the knowledge package ignores the removed 4.x harvest keys written by the host, spawn or workspace layer, because they never carried the soul's consent; the opt-out stays the recorded soul.yaml text, which no layer can mask, and a 4.x host harvest-off switch is not a privacy opt-out, since under 5.x the deployment's own act of writing a proposal and spawning a harvester is the consent. Live 4.x homes keep refusing, with the remedy to retire first.
+about: [workstream/oats-direction, workstream/knowledge]
+id: dec-5fa04fe0ab4f
 tags: [knowledge, harvest, authority, consent, privacy, upgrade, okf]
 timestamp: 2026-11-06
 ---

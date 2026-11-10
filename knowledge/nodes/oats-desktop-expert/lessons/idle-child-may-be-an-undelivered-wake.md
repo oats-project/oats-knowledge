@@ -2,6 +2,9 @@
 type: Lesson
 title: An idle child may be an undelivered wake, not an idle agent
 description: Under broker delivery, a child that stopped to wait on its coordinator's mail can stay idle because its broker registration never delivered; the coordinator checks the registration and nudges, and a wedged registration clears by re-registering, not by pause and resume.
+about: [system/oats-desktop, workstream/messaging]
+kind: lesson
+id: ins-696e59aef3a1
 tags: [coordination, messaging, wake, delivery, diagnostics]
 timestamp: 2026-10-08
 ---

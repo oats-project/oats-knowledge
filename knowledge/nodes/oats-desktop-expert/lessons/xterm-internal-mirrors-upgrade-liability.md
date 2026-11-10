@@ -2,6 +2,9 @@
 type: Lesson
 title: xterm upgrades must revalidate private reads and copied behavior
 description: A major xterm upgrade can leave private reads and copied algorithms working syntactically but wrong semantically, so qualify those dependencies against the new version rather than trusting a green build.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-e008fea3c99e
 tags: [desktop, terminal, xterm, upgrades, dependency-debt, verification]
 timestamp: 2026-10-15
 ---

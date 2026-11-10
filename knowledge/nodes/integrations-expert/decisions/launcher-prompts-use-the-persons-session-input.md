@@ -2,6 +2,8 @@
 type: Decision
 title: A launcher's prompt is the person's session input, not agent mail
 description: Deliver an explicitly entered launcher prompt through kernel session input rather than reclassifying it as agent mail, with no automatic retry and an attach path that preserves uncertainty.
+about: [workstream/provider-integration, workstream/messaging]
+id: dec-f5c1fd231298
 tags: [integrations, launchers, session-input, messaging, trust, delivery]
 timestamp: 2026-10-26
 ---

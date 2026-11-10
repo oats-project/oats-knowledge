@@ -2,6 +2,8 @@
 type: Decision
 title: A workspace definition, a source library and a capability package are different responsibilities
 description: Shared team composition lives in a Git-backed workspace definition; behaviour lives in capabilities; a distribution package transports them; a local deployment realises them — different responsibilities that may share a repository, joined only by reciprocal membership; consuming is never joining.
+about: [workstream/oats-direction]
+id: dec-5530c921ff42
 tags: [workspace, packages, composition, membership, supersession]
 timestamp: 2026-09-24
 ---

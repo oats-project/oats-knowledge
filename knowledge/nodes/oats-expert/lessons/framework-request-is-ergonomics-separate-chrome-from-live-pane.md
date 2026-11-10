@@ -2,6 +2,9 @@
 type: Lesson
 title: A framework request is about ergonomics, not rendering architecture; separate a terminal client's chrome from its live agent pane
 description: A human's "build it with Ink" asks for Claude-Code-like ergonomics, not a renderer; a React-style terminal framework can carry a client's chrome but rebuilds the whole grid per frame, so a live agent pane needs an in-process terminal emulator whatever the chrome, and the honest proposal measures the frame floor and names the gating spikes and packaging decisions instead of promising fidelity.
+about: [workstream/coordination]
+kind: lesson
+id: ins-d56e2175b82e
 tags: [terminal, tui, frameworks, feasibility, proposals, spikes, honesty]
 timestamp: 2026-10-30
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Needs-input attention preserves liveness and roster recognition
 description: A separate text-and-icon marker and collapsed-parent roll-up expose waiting agents without overloading liveness, reordering rows or displaying a stale elapsed time.
+about: [system/oats-desktop]
+id: dec-a1c653205b62
 tags: [desktop, roster, attention, accessibility, liveness]
 timestamp: 2026-10-30
 ---

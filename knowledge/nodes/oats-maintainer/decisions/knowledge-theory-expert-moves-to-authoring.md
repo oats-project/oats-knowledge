@@ -2,6 +2,8 @@
 type: Decision
 title: Put the reference-theory authoring aid in oats.authoring
 description: Move the optional knowledge-theory soul and capability to the existing authoring package rather than expose them in every new framework workspace, with release continuity and existing-home preservation.
+about: [workstream/oats-direction, workstream/knowledge]
+id: dec-a0f08a3153ab
 tags: [knowledge, packaging, onboarding, authoring, direction]
 timestamp: 2026-11-02
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Official OATS development runs on the architecture it offers adopters
 description: The framework and its official package repositories develop as one multi-repository OATS workspace, so the project exercises its own workspace, curriculum and discovery architecture at real scale under one cross-package stewardship gate; a repository may be a member and a package publisher without the two roles collapsing.
+about: [workstream/oats-direction]
+id: dec-8a564ed28c70
 tags: [workspace, packages, development, stewardship, dogfooding, supersession]
 timestamp: 2026-10-29
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: A fresh-profile demonstration does not prove an upgraded user's experience
 description: Reproduce preference-dependent changes with representative saved state as well as a fresh profile, because an old override can hide a new default or change meaning when another setting changes.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-c0eb1cfac3b8
 tags: [desktop, preferences, verification, upgrades, typography]
 timestamp: 2026-10-27
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Onboarding passes on the newcomer's experience
 description: Judge onboarding through the newcomer's real entry path and plain-language experience, with agents doing permitted routine commands; passing command predicates alone is insufficient.
+about: [workstream/operations]
+id: dec-064d01469b20
 tags: [operator, onboarding, acceptance, user-experience, human-direction]
 timestamp: 2026-11-02
 ---

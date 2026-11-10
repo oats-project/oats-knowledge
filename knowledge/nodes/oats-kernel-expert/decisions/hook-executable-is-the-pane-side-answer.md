@@ -2,6 +2,8 @@
 type: Decision
 title: A hook is handed the pane-side lookup's answer at that moment; a later replacement is warned, not prevented
 description: OATS_HARNESS_EXECUTABLE is the kernel's own pane-side lookup as a real path, absent where it has no answer; sessions stay created after hooks, so a replacement on the real session is warned in the answer and the home with both real paths, rather than prevented by reordering spawn or checked through the hook's PATH.
+about: [system/oats-kernel]
+id: dec-fa8830f8dd91
 tags: [kernel, hooks, launch, harnesses, rejected-alternatives]
 timestamp: 2026-10-30
 ---

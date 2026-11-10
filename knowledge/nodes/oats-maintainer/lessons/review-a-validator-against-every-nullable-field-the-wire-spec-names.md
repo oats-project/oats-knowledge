@@ -2,6 +2,9 @@
 type: Lesson
 title: Review a validator against every nullable field the wire spec names, and probe the binary with the null
 description: When a provider validates a request shape the kernel defines, the reviewer walks the spec's field list and checks each field the spec marks nullable or optional against the validator's rule; a green test that always sends a string proves nothing about null, so drive the binary once with the null.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-43c1eb4ad50d
 tags: [lesson, review, wire, validation, providers]
 timestamp: 2026-09-24
 ---

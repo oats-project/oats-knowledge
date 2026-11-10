@@ -2,6 +2,9 @@
 type: Lesson
 title: Configure against what the installed provider reads, not the grammar the kernel accepts or previews — and keep declared intent the provider does not yet honour
 description: A setting has effect only if the installed provider's reader consumes it; the kernel's payload model and spawn preview are a writer's view that can carry no-op keys. Verify by observing provider behaviour, let the provider's own declared settings outrank guide text, and keep declared per-team intent in the workspace file while obtaining the effect by placement.
+about: [workstream/operations]
+kind: lesson
+id: ins-9263823143cc
 tags: [lesson, operator, provider, settings, versions, verification, workspace]
 timestamp: 2026-09-23
 ---

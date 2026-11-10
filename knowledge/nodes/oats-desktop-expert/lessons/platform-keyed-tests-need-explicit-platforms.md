@@ -2,6 +2,9 @@
 type: Lesson
 title: Platform-keyed tests need explicit platforms and a native baseline
 description: Pin platform-keyed policy cases independently of the host, and scope a platform failure with a whole-surface baseline on that OS rather than treating an in-process platform fake as native evidence.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-7f53b9fe442c
 tags: [verification, testing, platform, keybindings, tui, ci]
 timestamp: 2026-10-27
 ---

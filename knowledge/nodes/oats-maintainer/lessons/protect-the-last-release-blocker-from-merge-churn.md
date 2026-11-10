@@ -2,6 +2,9 @@
 type: Lesson
 title: Protect the last release blocker from merge churn
 description: When one PR is the release's last blocker, arrange a temporary hold on competing merges to its paths so repeated base updates do not consume the critical path, without relaxing integration evidence.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-37e2e5707414
 tags: [stewardship, release, merge-order, ci]
 timestamp: 2026-10-27
 ---

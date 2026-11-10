@@ -2,6 +2,8 @@
 type: Decision
 title: Identity marks show a two-letter abbreviation, never a first initial
 description: One deterministic, roster-independent rule turns a soul, capability or workspace name into two glyphs, because namespaced names made first-initial marks collide; overlapping mark stacks overlap by 1px so no letter hides.
+about: [system/oats-desktop]
+id: dec-46cd46917b96
 tags: [desktop, identity, marks, roster, legibility, accessibility]
 timestamp: 2026-10-08
 ---

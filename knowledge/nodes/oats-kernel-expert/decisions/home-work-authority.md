@@ -2,6 +2,8 @@
 type: Decision
 title: Separate operational home from granted work authority
 description: Keeping lifecycle identity outside disposable work prevents work topology from silently becoming operational or knowledge authority.
+about: [system/oats-kernel]
+id: dec-c7393e557167
 tags: [kernel, instances, work-modes, boundaries, custody]
 timestamp: 2026-09-20
 ---

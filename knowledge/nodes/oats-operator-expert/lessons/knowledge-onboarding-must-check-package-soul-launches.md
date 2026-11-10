@@ -2,6 +2,9 @@
 type: Lesson
 title: Knowledge onboarding must check package-soul launches
 description: A Claude-only trial launched its working souls successfully but refused harvesters until an explicit host launch preference was selected, so onboarding must check the knowledge-operation souls before the first checkpoint.
+about: [workstream/operations, workstream/knowledge]
+kind: lesson
+id: ins-d2f53c2db1c1
 tags: [operator, onboarding, knowledge, launch, verification]
 timestamp: 2026-11-03
 ---

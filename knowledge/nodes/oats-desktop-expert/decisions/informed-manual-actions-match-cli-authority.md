@@ -2,6 +2,8 @@
 type: Decision
 title: Manual execution keeps CLI authority and requires an informed press
 description: When a Desktop verb gains an execution effect, preserve the CLI's manual-action authority and map informed confirmation to the kernel's explicit intent flag rather than adding a trust gate.
+about: [system/oats-desktop]
+id: dec-1302c5eb1b11
 tags: [desktop, consent, cli-authority, triggers, trust]
 timestamp: 2026-10-09
 ---

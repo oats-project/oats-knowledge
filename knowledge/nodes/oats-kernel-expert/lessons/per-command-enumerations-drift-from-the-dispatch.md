@@ -2,6 +2,9 @@
 type: Lesson
 title: A CLI decision made in two layers, or copied per command, drifts
 description: Keep CLI policy in one authoritative rule, pin unavoidable mirrors, make fallbacks structural, and check a proposed writer's flags against write semantics before approval.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-a7fa51b4a1d7
 tags: [kernel, cli, dispatch, guards, flags, servers, review]
 timestamp: 2026-10-15
 ---

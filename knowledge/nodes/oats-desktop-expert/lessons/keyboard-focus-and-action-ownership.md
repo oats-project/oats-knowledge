@@ -2,6 +2,9 @@
 type: Lesson
 title: Keyboard policy follows actions and user intent
 description: Focus intent, effective bindings and event ownership must agree without consuming native terminal or control input.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-92683497c350
 tags: [desktop, keyboard, focus, keybindings, terminal]
 timestamp: 2026-10-15
 ---

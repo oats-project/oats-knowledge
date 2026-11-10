@@ -2,6 +2,8 @@
 type: Decision
 title: The loopback interface is Desktop's trust boundary
 description: Because Desktop's backend can type into live agent terminals, it binds loopback only, guards Host on every request and Origin on every command-running route, and treats remote use as the operator's own SSH forward; polling over push transport was a deliberate deferral.
+about: [system/oats-desktop]
+id: dec-28db07ceee3a
 tags: [desktop, security, trust-boundary, loopback, transport, renderer]
 timestamp: 2026-07-27
 ---

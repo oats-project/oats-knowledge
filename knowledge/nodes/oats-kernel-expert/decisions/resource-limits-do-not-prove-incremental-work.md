@@ -2,6 +2,8 @@
 type: Decision
 title: Resource limits do not prove bounded or incremental reconciliation
 description: Reconciliation acceptance separately qualifies memory, staged-data backing storage, content work and durability work with caps disabled, then proves continued progress with caps enabled.
+about: [system/oats-kernel]
+id: dec-37c4d940131a
 tags: [kernel, reconciliation, performance, evidence, resource-limits]
 timestamp: 2026-10-13
 ---

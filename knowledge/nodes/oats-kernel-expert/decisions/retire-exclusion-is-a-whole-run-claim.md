@@ -2,6 +2,8 @@
 type: Decision
 title: Retire exclusion belongs to a whole-run claim, not a plan or retry key
 description: A whole-run lifecycle claim separates exclusion from freshness and replay; starts preserve contention answers and span restart's stop and relaunch, but cannot borrow stop's claim-write fallback or claim a path without a readable home record.
+about: [system/oats-kernel, workstream/oats-direction]
+id: dec-524ffa3770d8
 tags: [kernel, lifecycle, retire, resume, start, concurrency, fail-closed]
 timestamp: 2026-10-30
 ---

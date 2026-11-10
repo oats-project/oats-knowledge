@@ -2,6 +2,9 @@
 type: Lesson
 title: Plan a composed review beyond the capability changing a rule
 description: When changing an instruction rule, put a review of neighboring capability text in the spec and route contradictions to their owning repositories rather than treating per-capability approval as composition evidence.
+about: [workstream/coordination]
+kind: lesson
+id: ins-831d5641ed39
 tags: [planning, instructions, review, composition, cross-area]
 timestamp: 2026-10-28
 ---

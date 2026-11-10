@@ -2,6 +2,8 @@
 type: Decision
 title: Recovery copies preserve work, not repository-local Git behavior
 description: Nested-repository recovery deliberately omits local Git configuration beyond status semantics, rather than reinstalling agent-selected executable behavior for a later operator.
+about: [system/oats-kernel]
+id: dec-6596383792d5
 tags: [kernel, retire, recovery, git, security]
 timestamp: 2026-10-08
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: Help that teaches keys is a temporary sheet on the prefix, not an always-on column
 description: Anything "always on" that exists to teach the keys steals the width the content needs; in a keyboard-first client the help panel is off by default and opens as a small temporary sheet on the prefix key, and the human reversed an always-on help column in one comment round.
+about: [workstream/coordination]
+kind: lesson
+id: ins-45e3b839fc25
 tags: [design, redesign, keyboard, help, layout, panels, prototype]
 timestamp: 2026-10-27
 ---

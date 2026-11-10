@@ -2,6 +2,9 @@
 type: Lesson
 title: Establish the cause before changing a restore-test baseline
 description: Before changing what a restore test compares against to cure a platform-specific failure, use controls to distinguish the program's effect from the harness or environment's effect.
+about: [workstream/coordination]
+kind: lesson
+id: ins-27d893d9015d
 tags: [testing, planning, controls, regression]
 timestamp: 2026-10-12
 ---

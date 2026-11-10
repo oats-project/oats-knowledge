@@ -2,6 +2,8 @@
 type: Decision
 title: A forge connection is a workstation fact, not a capability
 description: Signing in to GitHub or GitLab changes what the operator's machine can see, not what any agent is, so it lives in the Desktop as a per-machine Connection under the forge CLI's own credential custody — no capability, no kernel dispatch contract, and automatic PR becomes ADE-owned.
+about: [workstream/oats-direction, system/oats-desktop]
+id: dec-4d6eebf2b8fa
 tags: [architecture, desktop, forge, connections, credentials, capabilities, levels]
 timestamp: 2026-09-22
 ---

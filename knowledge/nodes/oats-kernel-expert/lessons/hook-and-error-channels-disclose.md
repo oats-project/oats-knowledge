@@ -2,6 +2,9 @@
 type: Lesson
 title: Hook failures and error messages are output channels
 description: Output safety requires caller-aware redaction or suppression, and a disclosure claim must exercise its real entry point rather than infer reachability from an unsafe renderer.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-f4fd4c506505
 tags: [kernel, hooks, security, secrets, capabilities, logging, verification]
 timestamp: 2026-10-13
 ---

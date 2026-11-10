@@ -37,6 +37,9 @@ copy of framework code, API tables, command manuals or old task/release queues.
 | `integrations-expert` | Cross-package provider-integration judgement, read by the package experts |
 | `oats-okf-expert`, `oats-aweb-expert`, `oats-jira-expert`, `oats-linear-expert`, `oats-authoring-expert`, `oats-apps-expert` | One per official package: that package's facts, nothing cross-package |
 
+It also declares the reserved nodes `claims`, `subjects` and `verdicts` (path = name) under the
+placeholder owner `00000000-0000-0000-0000-000000000000`.
+
 Market and most package-expert nodes currently have navigation only: absence of researched
 knowledge is not permission to invent it. Owner UUIDs route responsibility,
 not access control. Declaring nodes does not register live owners, activate
@@ -83,7 +86,7 @@ whole-base** concept validator and requires **zero errors and warnings**. It
 uses the same pinned public source's metadata/declaration checks for base
 structure, canonical nonoverlapping node paths, required navigation/history,
 unowned or hidden files, and owner resolution. Local assertions enforce the
-fourteen reviewed UUIDs. Tests include malformed metadata, owner drift, unauthorized
+fourteen reviewed UUIDs and the three reserved nodes. Tests include malformed metadata, owner drift, unauthorized
 cross-node ownership and warning-as-failure cases, without provisioning anything.
 These pinned helpers are a CI adapter, not a promise of a stable runtime API.
 

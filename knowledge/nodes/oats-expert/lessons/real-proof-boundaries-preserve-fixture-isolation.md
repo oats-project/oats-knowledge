@@ -2,6 +2,9 @@
 type: Lesson
 title: Real proof boundaries must preserve fixture isolation
 description: Before accepting a fixture-based end-to-end proof, separate the boundary that must be real from the isolation that must remain, and verify harness actions and the child process's principal independently.
+about: [workstream/coordination, workstream/messaging]
+kind: lesson
+id: ins-2c37d01de9b6
 tags: [verification, fixtures, isolation, terminal, messaging]
 timestamp: 2026-10-27
 ---

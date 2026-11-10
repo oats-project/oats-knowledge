@@ -2,6 +2,9 @@
 type: Lesson
 title: A missing tmux socket does not prove the server exited
 description: A tmux server can retain sessions after its socket file is removed, so a missing endpoint needs independent liveness evidence before lifecycle code treats work as stopped.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-80a38900080d
 tags: [kernel, tmux, process, liveness, lifecycle, recovery]
 timestamp: 2026-10-09
 ---

@@ -2,6 +2,8 @@
 type: Reference
 title: What a messaging provider must do to serve a resident through grants — the layer contract behind the served-identity decision
 description: The obligations a messaging capability takes on when an instance may act as a durable resident identity through a scoped, expiring grant: lifecycle (mint from custody, verify the team, revoke idempotently, renew from the host), the identity meta key the kernel shows, the boundaries a served instance keeps, and the acceptance an integrator runs.
+about: [workstream/provider-integration, workstream/messaging]
+id: ref-e0a31275eb58
 tags: [reference, integrations, messaging, identity, grants, contract, acceptance]
 timestamp: 2026-09-24
 ---

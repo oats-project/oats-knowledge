@@ -2,6 +2,9 @@
 type: Lesson
 title: Check the affected-test inventory, not only the green runs
 description: Brief and check the affected-test inventory by changed surface and transition, with results or explicit gaps and evidence that gated behavior ran on a feature-enabled integration tree.
+about: [workstream/coordination, system/oats-desktop]
+kind: lesson
+id: ins-037410ff73dc
 tags: [verification, handover, testing, coordination]
 timestamp: 2026-10-29
 ---

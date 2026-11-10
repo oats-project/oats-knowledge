@@ -2,6 +2,8 @@
 type: Decision
 title: A filtered roster answer must not erase groups it did not ask about
 description: Narrow roster replacement to the requested workspace scope while retaining unasked groups as old observations, so filtering cannot forget machines or erase the route back to another workspace.
+about: [system/oats-desktop]
+id: dec-6e556afd20b5
 tags: [desktop, roster, workspaces, observation, identity]
 timestamp: 2026-10-14
 ---

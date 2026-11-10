@@ -2,6 +2,9 @@
 type: Lesson
 title: Trial stdin stalls are harness faults, not coordination outcomes
 description: A Claude trial stalled on bare cat commands reading a socket that did not close, so background-task waiting and any reaper intervention must be separated from measured coordination behavior.
+about: [workstream/operations]
+kind: lesson
+id: ins-18ff63372b5b
 tags: [operator, trials, claude, stdin, measurement]
 timestamp: 2026-11-03
 ---

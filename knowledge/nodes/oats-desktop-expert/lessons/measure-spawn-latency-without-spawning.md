@@ -2,6 +2,9 @@
 type: Lesson
 title: Attribute spawn latency before choosing the component to fix
 description: Combine existing phase evidence with preview tracing, caller profiling and repeated read timings to assign spawn costs to their owners without creating an instance on the measured deployment.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-24946fca76c9
 tags: [desktop, spawn, performance, measurement, verification]
 timestamp: 2026-10-15
 ---

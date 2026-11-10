@@ -2,6 +2,8 @@
 type: Decision
 title: Capability-local helper copies need a behavioral parity test
 description: For small helpers needed by separately composed capabilities, keep a copy in each capability, cross-reference the copies, and test their behavior on the same success and refusal fixtures rather than adding a runtime dependency.
+about: [workstream/provider-integration]
+id: dec-fe6b671e71c6
 tags: [integrations, capabilities, composition, dependencies, testing]
 timestamp: 2026-11-04
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Pre-adoption contracts are removed, not translated
 description: While a configuration or integration shape has no external adopters, OATS removes the old shape with a pointed error naming the new spelling instead of shipping an auto-migrating shim; published commitments keep reader compatibility.
+about: [workstream/oats-direction]
+id: dec-892ed7083736
 tags: [compatibility, config, packages, precedent]
 timestamp: 2026-07-29
 ---

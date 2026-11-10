@@ -2,6 +2,8 @@
 type: Decision
 title: A provider-declared launch variable is the provider's to decide
 description: A capability-declared launch variable omitted by both the hook payload and explicit launch configuration is removed at the launch boundary, because ambient sources are open-ended and provider-specific or tmux-only fixes cannot close the class; a name the kernel hands only to hooks is unset by the pane command for the same reason.
+about: [system/oats-kernel]
+id: dec-c9d3f2b2ea3a
 tags: [kernel, capabilities, launch, environment, coherence]
 timestamp: 2026-10-30
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Installers start from existing tools and preserve their ownership
 description: An OATS installer reuses suitable existing tools, installs only missing ones, upgrades only its own installs, preserves user state for adoption, and filters bundled teaching from its runtime install path rather than merely documenting the composition leak.
+about: [workstream/provider-integration]
+id: dec-b26ecf33e9b3
 tags: [integrations, installers, adoption, ownership, human-direction]
 timestamp: 2026-11-03
 ---

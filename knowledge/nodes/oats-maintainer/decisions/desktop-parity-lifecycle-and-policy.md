@@ -2,6 +2,8 @@
 type: Decision
 title: "Desktop parity: the design's semantics win where safe; where they imply authority OATS lacks, the UI tells the truth"
 description: Five policy questions the Desktop redesign forced on the kernel, decided 2026-09-22 under delegated human authority — Remove retains and re-homes work, Stop is a recursive lifecycle action, membership and trust rows render only what the kernel established, child-spawn permission is enforced at the spawn route, automatic PR is ADE-owned — and the rule that the kernel's JSON is the Desktop's model.
+about: [workstream/oats-direction, system/oats-desktop, system/oats-kernel]
+id: dec-7d2ad3227906
 tags: [decision, desktop-parity, lifecycle, retire, stop, enrollment, trust, signature, child-spawns, pull-request]
 timestamp: 2026-09-22
 ---

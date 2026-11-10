@@ -2,6 +2,9 @@
 type: Lesson
 title: Check the running Desktop's version before debugging behaviour
 description: Establish the running Desktop's version before diagnosing post-upgrade behaviour, because a new launch can hand off to old code and a restart remedy cannot retrofit that running process.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-24d5c18e7bd9
 tags: [desktop, diagnosis, upgrades, single-instance, user-consent]
 timestamp: 2026-10-26
 ---

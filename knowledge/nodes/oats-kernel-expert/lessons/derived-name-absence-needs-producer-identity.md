@@ -2,6 +2,9 @@
 type: Lesson
 title: A derived name's absence proves nothing unless it is the producer's name
 description: Lost-receipt recovery must establish the producer's actual instance-name derivation before freeing a schedule slot, because a lookup under another spelling can miss a live run.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-007f312b995b
 tags: [kernel, schedules, recovery, identity, custody, testing]
 timestamp: 2026-11-03
 ---

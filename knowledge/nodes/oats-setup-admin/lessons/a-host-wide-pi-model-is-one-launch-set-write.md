@@ -2,6 +2,9 @@
 type: Lesson
 title: "All souls on pi with this model" on one machine is one host-fact write, with the model resolved to pi's provider-qualified id first
 description: A request to run every soul on pi with a named model on one machine is a `souls.launch` host fact written by `oats soul launch set`, not a PR, a launch-config or a hand edit; resolve the person's model nickname to pi's `provider/model-id` before writing, and verify with spawn previews, not the launch-config preview.
+about: [workstream/workspace-administration]
+kind: lesson
+id: ins-45c0e2272ddb
 tags: [lesson, setup-admin, launch, pi, model, host-fact, verification]
 timestamp: 2026-10-26
 ---

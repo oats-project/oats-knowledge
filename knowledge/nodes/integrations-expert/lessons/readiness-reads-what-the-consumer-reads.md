@@ -2,6 +2,9 @@
 type: Lesson
 title: Readiness reads the setting source its consumer uses
 description: A readiness check predicting a live consumer must use that consumer's setting source, because a spawn capture can miss a later enable or keep a stale enable after disable; captured settings still describe the home's composition.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-4d7ac7489658
 tags: [integrations, readiness, settings, resolver, testing]
 timestamp: 2026-11-02
 ---

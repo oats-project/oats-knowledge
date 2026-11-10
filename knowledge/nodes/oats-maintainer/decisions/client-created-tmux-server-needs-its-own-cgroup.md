@@ -2,6 +2,8 @@
 type: Decision
 title: A client-created tmux server needs its own cgroup
 description: When a client becomes the usual creator of the OATS tmux server on a systemd host, server placement must keep the agents outside the client's cgroup so a whole-cgroup kill does not take them down together.
+about: [workstream/oats-direction]
+id: dec-2173dc915b4f
 tags: [runtime, clients, tmux, systemd, resource-isolation]
 timestamp: 2026-10-27
 ---

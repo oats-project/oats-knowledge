@@ -2,6 +2,8 @@
 type: Decision
 title: Working and idle are producer-reported facts, not terminal heuristics
 description: Harness producers report main-thread activity through one kernel writer, within the existing hook budget, so clients never infer idleness from terminal silence or turn unknown into idle.
+about: [workstream/oats-direction, system/oats-desktop]
+id: dec-4eaa8d223e4c
 tags: [runtime, activity, ownership, harnesses, desktop, truthfulness]
 timestamp: 2026-10-26
 ---

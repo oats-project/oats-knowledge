@@ -2,6 +2,9 @@
 type: Conclusion
 title: Capability distribution does not establish fleet pinning or safe provenance
 description: The 2026-11-02 investigation separates organization-wide capability distribution from content pinning and rollout evidence, without establishing a vendor-wide lockfile gap or measured copy-drift cost.
+about: [workstream/positioning]
+kind: finding
+id: ins-aa109a7bbbaf
 tags: [research, capabilities, distribution, provenance, uncertainty]
 timestamp: 2026-11-02
 ---

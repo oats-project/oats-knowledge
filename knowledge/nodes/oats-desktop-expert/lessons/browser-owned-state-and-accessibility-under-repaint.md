@@ -2,6 +2,9 @@
 type: Lesson
 title: Browser-owned state and accessibility under repaint
 description: Rebuilding DOM while the browser owns state inside it — a live selection, an unsubmitted form, a modal's focused control — breaks copy, typing and keyboard containment; declared modality is not containment, and two integration limits shape copy in the terminal surface.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-37a30a6d6a17
 tags: [desktop, accessibility, focus, selection, repaint, xterm, tmux, electron]
 timestamp: 2026-07-25
 ---

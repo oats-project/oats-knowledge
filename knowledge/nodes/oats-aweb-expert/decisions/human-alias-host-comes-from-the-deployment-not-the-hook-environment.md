@@ -2,6 +2,8 @@
 type: Decision
 title: The human alias's host part is read from the deployment's local settings, not the hook environment, by one exported derivation
 description: The kernel's hook environment carries no host name, so the provider derives the human alias `<os-user>-<host>` by reading `host.name` from the deployment's `oats-local.yaml` with its own block-style reader, falling back to the short OS hostname, with the real OS user from `os.userInfo()`; one exported function serves the spawn brief and the later mint so a re-mint yields the same alias.
+about: [system/oats-aweb]
+id: dec-9b1b22ef2b59
 tags: [oats.aweb, threads, human-identity, alias, hooks, oats-local, determinism]
 timestamp: 2026-10-26
 ---

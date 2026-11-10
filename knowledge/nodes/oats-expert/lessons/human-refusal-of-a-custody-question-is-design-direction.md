@@ -2,6 +2,9 @@
 type: Lesson
 title: A custody question the human refuses in the system's vocabulary is a design signal, not an input to collect
 description: When a brief tells the lead to ask the human which identity is theirs or where a key should live and the human declines the question itself, take the refusal as direction: decide the mechanics with the domain experts and the maintainer, make the concept invisible in the product, and let the human review behaviour only.
+about: [workstream/coordination]
+kind: lesson
+id: ins-9c410a70dc48
 tags: [planning, human-direction, identity, custody, product]
 timestamp: 2026-10-26
 ---

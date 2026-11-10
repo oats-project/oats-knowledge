@@ -2,6 +2,8 @@
 type: Decision
 title: New kernel lines roll out fresh-install-first; historical migration is deferred, never destructive
 description: A kernel line that changes its declaration contracts rolls out by provisioning fresh deployments and parks in-place conversion of historical state, without erasing anything or relabelling partial history as complete; the workspace model made this literal as "no migration".
+about: [workstream/oats-direction]
+id: dec-baba9fc9fcbd
 tags: [rollout, migration, acceptance, portable-souls]
 timestamp: 2026-09-17
 ---

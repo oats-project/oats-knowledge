@@ -2,6 +2,8 @@
 type: Decision
 title: A retire revision binds reviewed facts, not selected exceptions
 description: A retire revision covers the facts the caller reviews in every home, with code-derived field coverage and mutation tests replacing exception lists and untested claims of derivation.
+about: [system/oats-kernel]
+id: dec-68fac0fc7342
 tags: [kernel, lifecycle, retire, freshness, verification]
 timestamp: 2026-10-15
 ---

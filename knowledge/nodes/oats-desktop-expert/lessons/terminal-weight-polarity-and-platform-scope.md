@@ -2,6 +2,9 @@
 type: Lesson
 title: Terminal stroke-weight comparisons depend on polarity and platform
 description: A macOS Retina comparison found polarity-dependent Chromium stroke coverage, so native-terminal calibration must control colours and remain scoped to the measured platform.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-5277d91a9f92
 tags: [desktop, terminal, typography, measurement, macos, verification]
 timestamp: 2026-10-03
 ---

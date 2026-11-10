@@ -2,6 +2,9 @@
 type: Lesson
 title: Presence-dependent floors follow the component serving each identity
 description: Before gating a presence-dependent feature, map each identity to its active heartbeat producer, keep task prerequisites in the task capability, and distinguish presence-only registration from message delivery.
+about: [workstream/provider-integration, workstream/messaging]
+kind: lesson
+id: ins-bbc1f32ec82f
 tags: [integrations, presence, readiness, messaging, tasks, versioning]
 timestamp: 2026-11-03
 ---

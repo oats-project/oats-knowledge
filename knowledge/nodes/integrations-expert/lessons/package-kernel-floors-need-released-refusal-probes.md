@@ -2,6 +2,9 @@
 type: Lesson
 title: Prove where a package's kernel floor refuses
 description: When a packaged soul gains a kernel key, probe the oldest supported released reader and distinguish locking, discovery and composition failures before choosing or describing the floor's protection.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-18bca631d10f
 tags: [integrations, compatibility, packaging, testing, release]
 timestamp: 2026-10-28
 ---

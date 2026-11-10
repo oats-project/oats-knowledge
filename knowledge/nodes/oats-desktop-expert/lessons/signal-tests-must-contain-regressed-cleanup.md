@@ -2,6 +2,9 @@
 type: Lesson
 title: Signal tests must contain even regressed cleanup
 description: Run real-process signal tests only on disposable CI runners or inside an isolated Linux PID namespace, and keep every signal target test-owned even when the code under test regresses.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-c2ffc4fbe116
 tags: [verification, operator-safety, testing, signals, process-groups, tui, ci]
 timestamp: 2026-10-28
 ---

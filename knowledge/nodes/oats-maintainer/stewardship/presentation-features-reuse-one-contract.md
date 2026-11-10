@@ -2,6 +2,8 @@
 type: Decision
 title: Presentation features reuse one state contract unless divergence is justified
 description: Review new instance-presentation features against the established state and mutation boundaries, requiring a reason for divergence so display choices do not acquire identity, policy or lifecycle meaning.
+about: [workstream/oats-direction]
+id: dec-ac1d7340db51
 tags: [stewardship, coherence, presentation, review]
 timestamp: 2026-10-27
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: The tested aw version is published by oats.aweb in its own data file, and onboarding pins aw to it only for a customer-run server
 description: oats.aweb publishes the aw versions it was tested with as a public provider-owned data file ({min, tested}) that its floor module reads as the one source and that CI must run exactly; getting-started reads that file only at the catalog-pinned oats.aweb ref and installs aw@tested only on the customer-run (BYOT) branch, while hosted installs keep npm latest and record the installed version, narrowing, for that branch only, the integrations decision's rejection of pinning the install.
+about: [workstream/oats-direction]
+id: dec-0d099aabf650
 tags: [stewardship, compatibility, oats.aweb, onboarding, pins, releases, byot]
 timestamp: 2026-11-09
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Workspace model v2 — membership is trust, location is not version, every capability is copied whole into the instance
 description: One workspace per organisation whose reciprocal membership is the whole trust decision for member capabilities; a soul says where each capability comes from and never which version, packages are the only versioned thing, nothing is installed, every capability is copied whole into the instance at spawn, and harnesses start normally. Supersedes the revision-pinned import model of 2026-09-20 and the classic per-deployment activation surface.
+about: [workstream/oats-direction, system/oats-kernel]
+id: dec-052c18aad32c
 tags: [workspace, membership, capabilities, packages, provenance, materialization, teams, harness, supersession]
 timestamp: 2026-09-24
 ---

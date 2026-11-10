@@ -2,6 +2,9 @@
 type: Lesson
 title: A re-dated claim must be re-verified against the release it now names
 description: Verify version-qualified behavior against the named release; an unreleased-feature gate keeps its fallback without a guessed floor, and mirror-keyed checks prompt release-qualified wording when the feature ships.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-e5b8d9e34293
 tags: [lesson, review, docs, release, versions]
 timestamp: 2026-11-03
 ---

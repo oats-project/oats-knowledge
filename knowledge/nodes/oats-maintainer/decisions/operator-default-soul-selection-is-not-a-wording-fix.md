@@ -2,6 +2,8 @@
 type: Decision
 title: Operator-default soul selection is not a wording fix
 description: Preserve first-by-name operator soul selection when clarifying a confusing notice, because choosing a friendlier soul changes the command's resolved settings and teams rather than just its presentation.
+about: [workstream/oats-direction]
+id: dec-99a344ad76aa
 tags: [operator-commands, compatibility, direction, wording]
 timestamp: 2026-11-02
 ---

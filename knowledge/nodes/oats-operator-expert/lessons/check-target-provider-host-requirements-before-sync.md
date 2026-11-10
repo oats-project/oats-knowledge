@@ -2,6 +2,9 @@
 type: Lesson
 title: Check the target provider's host requirements before sync
 description: Green checks against the current lock do not establish readiness for a moving provider; compare the target version's host requirements and satisfy them before writing the new lock.
+about: [workstream/operations]
+kind: lesson
+id: ins-acae848b5dd6
 tags: [lesson, operator, provider, upgrades, host-requirements, sequencing]
 timestamp: 2026-10-13
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: Automatic per-user writes need runner isolation in the same change
 description: When ordinary commands gain a per-user write side effect, plan runner isolation, a personal-file mutation guard, eligible positive fixtures and interruption cleanup in the same change rather than discovering them in CI.
+about: [workstream/coordination]
+kind: lesson
+id: ins-b96996289076
 tags: [planning, testing, isolation, cleanup]
 timestamp: 2026-10-19
 ---

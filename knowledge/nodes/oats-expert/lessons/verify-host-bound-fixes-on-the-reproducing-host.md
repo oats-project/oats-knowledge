@@ -2,6 +2,9 @@
 type: Lesson
 title: Verify host-bound fixes on the reproducing host
 description: When the fixing host lacks the runtime that exposes a bug, obtain exact-head evidence on the reproducing host using the same minimal repro and a no-fix control, with harness failures reported separately.
+about: [workstream/coordination]
+kind: lesson
+id: ins-df22cf58d0c7
 tags: [verification, coordination, runtime, controls, evidence]
 timestamp: 2026-10-14
 ---

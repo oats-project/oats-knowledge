@@ -2,6 +2,9 @@
 type: Lesson
 title: Attribute multi-agent gains to tested mechanisms, not persona labels
 description: The 2026-11-02 research synthesis does not isolate a causal benefit from job-title personas, so compare artifacts, feedback and authority separately from role names.
+about: [workstream/positioning]
+kind: lesson
+id: ins-9ee3f4afcf8d
 tags: [research, personas, multi-agent, evaluation]
 timestamp: 2026-11-02
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: Check human briefs, proposed choices and doc-review statements against the lane's decisions
 description: Check the lane's records before designing or treating review remarks as facts, resume parked direction, route supersessions to the deciding human with citation, reason and loss even under delegated review, distinguish decisions from leanings or questions, and publish drafts where their readers can open them.
+about: [workstream/coordination, system/oats-desktop]
+kind: lesson
+id: ins-52766a1cc76d
 tags: [planning, briefs, decisions, supersession, resumption, maintainer, cross-area, review, delegation, documentation]
 timestamp: 2026-11-04
 ---

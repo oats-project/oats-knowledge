@@ -2,6 +2,8 @@
 type: Decision
 title: Host-bound automation is declared in the workspace with explicit execution selectors
 description: Declare shared host-bound automation in the workspace with its required host and account selectors, retaining host-local consent rather than hiding the automation locally or redesigning the binding contract merely to omit those names.
+about: [workstream/oats-direction]
+id: dec-e10156fd61fc
 tags: [workspace, automation, review, consent, privacy, rejected-alternatives]
 timestamp: 2026-10-29
 ---

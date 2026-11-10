@@ -2,6 +2,8 @@
 type: Decision
 title: Reference display is rebuilt from recognized parts or withheld
 description: One allow-list renderer serves messages and JSON alike, accepting the diagnostic cost of withholding unrecognized references rather than trying to strip every possible credential span.
+about: [workstream/oats-direction]
+id: dec-d9bacbf05afa
 tags: [coherence, security, diagnostics, references, rendering]
 timestamp: 2026-10-14
 ---

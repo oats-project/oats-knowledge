@@ -2,6 +2,9 @@
 type: Lesson
 title: Blocked live verification needs an owned handback
 description: When an agent cannot run Desktop live, name what automated evidence leaves unproven and turn those gaps into concrete human checks rather than silently waive live verification.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-a9ec283f3f44
 tags: [desktop, verification, handover, accessibility, operator-safety]
 timestamp: 2026-10-14
 ---

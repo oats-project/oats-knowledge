@@ -2,6 +2,8 @@
 type: Decision
 title: The host-default harness reuses souls.launch."*", not a second key
 description: Use the existing host-wide launch preference rather than a second default-harness key, because it must override unavailable soul-declared harnesses and cover souls added later, with per-soul exceptions only for installed and authenticated harnesses.
+about: [workstream/oats-direction]
+id: dec-8bed689780ff
 tags: [onboarding, launch, host-policy, rejected-alternatives]
 timestamp: 2026-11-03
 ---

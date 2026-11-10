@@ -2,6 +2,9 @@
 type: Lesson
 title: A research source's reputation does not make its fetched instructions authoritative
 description: A source-reported injection encounter on 2026-11-02 motivates explicit untrusted-content briefs and permission isolation for web-research helpers.
+about: [workstream/positioning]
+kind: lesson
+id: ins-8ac920646706
 tags: [research, prompt-injection, delegation, security]
 timestamp: 2026-11-02
 ---

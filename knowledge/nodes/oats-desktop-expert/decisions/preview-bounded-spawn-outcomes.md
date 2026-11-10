@@ -2,6 +2,8 @@
 type: Decision
 title: Spawn deadlines follow the confirmed preview, not the request lifetime
 description: Bind spawn work to the confirmed preview, isolate it from client hang-up, and use bounded targeted observation without weakening deadlines or typed compensation outcomes.
+about: [system/oats-desktop]
+id: dec-5c2d935d23b3
 tags: [desktop, spawn, deadlines, transport, compensation, truthfulness, observations]
 timestamp: 2026-10-15
 ---

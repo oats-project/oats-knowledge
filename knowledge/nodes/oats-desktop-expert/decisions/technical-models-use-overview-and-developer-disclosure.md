@@ -2,6 +2,8 @@
 type: Decision
 title: Explain a technical model with an overview and a closed developer disclosure
 description: Lead with one plain user-facing sentence and place developer-only mechanisms in a native disclosure, sharing state meanings with the visible rows rather than maintaining a second explanation.
+about: [system/oats-desktop]
+id: dec-639c98c45f46
 tags: [desktop, explanation, progressive-disclosure, accessibility, design]
 timestamp: 2026-10-23
 ---

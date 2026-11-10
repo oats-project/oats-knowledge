@@ -2,6 +2,8 @@
 type: Decision
 title: A client probe must not turn kernel unknown into a confident state
 description: Preserve a kernel-unknown row and its recorded session facts rather than manufacture liveness or terminal eligibility from a weaker client probe.
+about: [system/oats-desktop]
+id: dec-d26e5e3f46fc
 tags: [desktop, liveness, observation, shared-code, truthfulness]
 timestamp: 2026-10-14
 ---

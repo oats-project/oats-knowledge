@@ -2,6 +2,9 @@
 type: Lesson
 title: Verify decision fields and silence semantics separately in human-request protocols
 description: Source-reported protocol and trial checks distinguish decision fields, silence, identity, scoring eligibility and prior-action context without treating a cold-decidability rating as authorized, safe action.
+about: [workstream/positioning]
+kind: lesson
+id: ins-494a790ecf6a
 tags: [research, human-oversight, protocols, consent, uncertainty]
 timestamp: 2026-11-03
 ---

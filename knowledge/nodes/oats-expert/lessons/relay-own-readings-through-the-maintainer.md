@@ -2,6 +2,9 @@
 type: Lesson
 title: Send a relay's own reading to the maintainer before offering a remedy
 description: Submit a relay's own remedy to the maintainer first, then preserve the accepted answer's wording and attribution without adding fix-version promises or making general setup advice host-specific.
+about: [workstream/coordination]
+kind: lesson
+id: ins-52232ff81b82
 tags: [coordination, adoption, relay, authority]
 timestamp: 2026-10-27
 ---

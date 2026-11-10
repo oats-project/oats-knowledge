@@ -2,6 +2,9 @@
 type: Lesson
 title: A device-login code expires on the server's clock, not aw's timeout
 description: An aweb device-login code reportedly lasted ten minutes whatever `aw auth login --timeout` asked for, so when a person approves through a relay, confirm they are at their browser first, then start the code and send the link within a minute.
+about: [workstream/operations]
+kind: lesson
+id: ins-553a94707cd2
 tags: [operator, onboarding, aweb, authentication, device-flow, relay]
 timestamp: 2026-11-09
 ---

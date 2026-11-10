@@ -2,6 +2,9 @@
 type: Lesson
 title: A tmux viewer's key table is server state, not session state
 description: Viewer-specific bindings need isolated table ownership and cleanup, while copy-mode and prefix precedence limit what a session key table can promise.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-2053d6926082
 tags: [tmux, viewers, key-tables, ownership, integration-limits]
 timestamp: 2026-10-10
 ---

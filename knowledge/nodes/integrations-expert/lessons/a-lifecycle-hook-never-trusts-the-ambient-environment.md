@@ -2,6 +2,9 @@
 type: Lesson
 title: A lifecycle hook never trusts the ambient environment — hooks inherit the operator's process, and the operator can be another instance
 description: Spawn, launch and retire hooks run with the invoking process's environment; a hook that reads a locator, credential home or team from that environment can act for the wrong principal when the invoker is itself an instance, so every such input comes from the hook's own payload, its persisted meta or the instance home.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-da1e231121de
 tags: [lesson, integrations, hooks, environment, locator, custody, launch]
 timestamp: 2026-11-02
 ---

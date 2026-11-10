@@ -2,6 +2,9 @@
 type: Lesson
 title: A delivery acknowledgement must name the stage its receipt proves
 description: A provider records a delivery mark only after the component that owns the agreed stage has acknowledged that stage; callback completion and whole-turn waits can prove the wrong thing.
+about: [workstream/provider-integration, workstream/messaging]
+kind: lesson
+id: ins-5d758219e283
 tags: [lesson, integrations, messaging, delivery, acknowledgements, acceptance]
 timestamp: 2026-10-05
 ---

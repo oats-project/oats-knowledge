@@ -2,6 +2,9 @@
 type: Lesson
 title: A fake CLI that hangs must start a child of its own
 description: A single-process hang fake hides descendant leaks, so timeout and reader-termination tests must observe both the fake and its child on every external-CLI call path.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-87a6e2593242
 tags: [integrations, testing, fake-cli, process-groups, timeout, signals]
 timestamp: 2026-10-19
 ---

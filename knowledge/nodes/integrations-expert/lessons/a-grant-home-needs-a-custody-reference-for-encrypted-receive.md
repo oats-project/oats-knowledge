@@ -2,6 +2,9 @@
 type: Lesson
 title: A grant is proven per path at the receiver — custody attachment is necessary, not sufficient, and scopes do not name the endpoints a path calls
 description: A session grant signs and decrypts only when its record carries the custody locator, so custody readiness is not grant readiness; and a grant holding every offered scope can still be refused on a path whose client makes a call no scope names; rehearse each operation per path and direction, read the receiver's verification, and trace a refusal to its request.
+about: [workstream/provider-integration, workstream/messaging]
+kind: lesson
+id: ins-df8db34215a1
 tags: [lesson, integrations, messaging, grants, custody, scopes, e2ee, rehearsal]
 timestamp: 2026-09-24
 ---

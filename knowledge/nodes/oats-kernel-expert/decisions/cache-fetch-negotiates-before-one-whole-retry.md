@@ -2,6 +2,8 @@
 type: Decision
 title: Cache fetch negotiates before one whole-pack retry
 description: A filtered cache keeps cheap negotiated fetches, then retries once without negotiation on an unknown failure because advertised commits can imply missing delta bases and negotiated non-thin HTTPS fetch was unavailable.
+about: [system/oats-kernel]
+id: dec-e5fd3127da42
 tags: [kernel, git, cache, partial-clone, negotiation, retry]
 timestamp: 2026-10-13
 ---

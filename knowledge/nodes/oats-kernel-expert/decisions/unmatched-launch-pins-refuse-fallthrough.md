@@ -2,6 +2,8 @@
 type: Decision
 title: Proven unmatched launch pins refuse fall-through; unchecked pins stay visible
 description: An unmatched host launch pin blocks launches that would fall through, but incomplete discovery cannot prove a mismatch and must remain visibly unchecked.
+about: [system/oats-kernel]
+id: dec-f15d11eb0a17
 tags: [kernel, launch, configuration, discovery, diagnostics]
 timestamp: 2026-10-13
 ---

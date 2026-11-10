@@ -2,6 +2,8 @@
 type: Decision
 title: Stop intent is recorded before termination, but recording is best effort
 description: Every intentional kernel stop attempts to record the ended start before termination, but a failed write must not block retirement, accepting a documented double-failure recovery ambiguity.
+about: [system/oats-kernel]
+id: dec-5458031c99c1
 tags: [kernel, lifecycle, stop, retire, recovery, failure-tradeoff]
 timestamp: 2026-10-28
 ---

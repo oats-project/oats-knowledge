@@ -2,6 +2,9 @@
 type: Lesson
 title: Anything read through a shared checkout is only as current as that tree — validity is not currency, and repair belongs to the tree's owner
 description: Content an instance reads through a shared checkout is a coherent but possibly weeks-old picture, and nothing in it signals that. Verify the tree's position against the remote before trusting what you read, read canonical content from the remote ref when behind, and leave repair of a shared tree to its owner.
+about: [workstream/operations, workstream/knowledge]
+kind: lesson
+id: ins-9e9998dfce3c
 tags: [lesson, operator, placement, orientation, knowledge, shared-checkout, custody, verification, currency]
 timestamp: 2026-09-19
 ---

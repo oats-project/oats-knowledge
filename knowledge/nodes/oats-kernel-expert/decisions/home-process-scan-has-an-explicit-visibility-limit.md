@@ -2,6 +2,8 @@
 type: Decision
 title: Home process scans state their visibility limit instead of refusing on every unreadable process
 description: A home-wide process scan accepts a documented inspection blind spot because rejecting unreadable processes would prevent ordinary lifecycle work, while failure of the scan itself remains unknown.
+about: [system/oats-kernel]
+id: dec-d49b1c7665a8
 tags: [kernel, process, liveness, lifecycle, portability, fail-closed]
 timestamp: 2026-10-08
 ---

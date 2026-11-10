@@ -2,6 +2,9 @@
 type: Lesson
 title: Before attributing a coordination trial's cost to a design, sort each cost into the design, the trial's instructions or its measurement
 description: In the T7 v2 paired trial most of the redesign arm's lost time came from ceremony the trial built in (standing label-woken gates, a separate gated knowledge path, human approvals restated on the forge) and from the measurement (a time cap, an idle-end rule, a mail-only human seat blind to needs-input), not from fresh experts or hand-offs as such; a lead comparing designs names the cause of each cost before reading it as a verdict, and a gate's cost, like its value, depends on whether it runs as a standing station or as a call.
+about: [workstream/coordination]
+kind: lesson
+id: ins-f54329195fc3
 tags: [coordination, trials, gates, measurement, evaluation, ceremony]
 timestamp: 2026-11-09
 ---

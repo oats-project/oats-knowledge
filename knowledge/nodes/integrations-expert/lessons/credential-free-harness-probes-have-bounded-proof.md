@@ -2,6 +2,9 @@
 type: Lesson
 title: Credential-free harness probes establish only the boundary they exercise
 description: A real TUI with a local stub provider can test input consumption without login, while real sandbox commands test particular permissions; neither substitutes for authenticated end-to-end acceptance.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-d96f545456ff
 tags: [integration, testing, harnesses, authentication, sandbox, evidence]
 timestamp: 2026-10-30
 ---

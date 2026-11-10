@@ -2,6 +2,8 @@
 type: Decision
 title: Messaging does not compose task coordination
 description: Keep task teaching and prerequisites capability-scoped, default onboarding to aweb tasks only without an existing tracker, and keep OATS-installed aweb skills within composition so messaging alone never opts a home into tasks.
+about: [workstream/oats-direction, workstream/messaging]
+id: dec-2a251cd41168
 tags: [capabilities, composition, messaging, tasks, readiness]
 timestamp: 2026-11-03
 ---

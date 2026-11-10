@@ -2,6 +2,9 @@
 type: Lesson
 title: A team per workspace needs a service primitive
 description: The messaging service has no idempotent create-or-return for a team, so a zero-step team per workspace cannot be improvised by the provider; the provider exposes setup as a guided step and never invents local shims, and the fix proposed here (a human CLI login in the provider's path) is superseded by team creation as the owner's account-level act outside OATS.
+about: [workstream/provider-integration, workstream/messaging]
+kind: lesson
+id: ins-f0081105d3e8
 tags: [lesson, aweb, messaging, teams, defaults, integrations]
 timestamp: 2026-09-27
 ---

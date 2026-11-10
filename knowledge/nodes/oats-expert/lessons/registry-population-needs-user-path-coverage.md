@@ -2,6 +2,9 @@
 type: Lesson
 title: Check who never reaches a registry's writers
 description: Before fixing a per-user registry's writer set, check that CLI-only, client-only and pre-existing users reach it, and weigh automatic population by its steady-state cost and preservation of explicit removal.
+about: [workstream/coordination]
+kind: lesson
+id: ins-fa9c4b1d02ae
 tags: [planning, registries, user-paths, performance]
 timestamp: 2026-10-19
 ---

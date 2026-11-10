@@ -2,6 +2,8 @@
 type: Decision
 title: One design authority, a stated quality bar, and a native terminal
 description: The Desktop expert owns UX and design direction and the developer implements it; the quality bar is calm, coherent and accessible; a visual redesign never restyles the native terminal surface.
+about: [system/oats-desktop]
+id: dec-2ed3f2973e95
 tags: [desktop, design, ux, quality, accessibility, terminal, ownership]
 timestamp: 2026-10-27
 ---

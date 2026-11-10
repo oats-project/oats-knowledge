@@ -2,6 +2,8 @@
 type: Decision
 title: Package probes must see the configuration used by the launch
 description: Refuse launch-config args beside a harness package requirement when the native package probe cannot carry them, rather than maintaining a drifting kernel allowlist or a second settings contract.
+about: [system/oats-kernel]
+id: dec-1f13d4fc327a
 tags: [kernel, launch, probes, native-settings, rejected-alternatives]
 timestamp: 2026-10-30
 ---

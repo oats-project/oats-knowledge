@@ -2,6 +2,9 @@
 type: Lesson
 title: Verify a template adaptation twice, by its diff against the tag and by the authorities its text grants
 description: When a template is copied into an organisation's repository and adapted, the developer's and reviewers' briefs name two checks; diff each copied file against the template at its tag so every changed hunk sits at an adapt marker or carries its reason, and read every grant of authority in the copied text, marked or not, against the organisation's record, because an unchanged default can add a gate nobody decided.
+about: [workstream/coordination, workstream/oats-direction]
+kind: lesson
+id: ins-9aa5c155e4df
 tags: [templates, adaptation, review, briefs, authority, release, cross-area]
 timestamp: 2026-11-09
 ---

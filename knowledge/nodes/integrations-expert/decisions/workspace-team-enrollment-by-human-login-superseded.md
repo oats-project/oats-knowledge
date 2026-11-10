@@ -2,6 +2,8 @@
 type: Decision
 title: Superseded — enrolling a workspace's team through a human login on the host
 description: SUPERSEDED 2026-09-26 by "a workspace has a default team; there is no personal team". Was: the design agreed with the messaging service for a zero-step team per workspace and for an entitled human joining a mapped team without a hand-carried token; implementation requirements, not released commands, and the integration composes them without changing its per-spawn path.
+about: [workstream/provider-integration, workstream/messaging]
+id: dec-9e864bbeb89a
 tags: [decision, superseded, integrations, messaging, identity, admission, onboarding]
 timestamp: 2026-09-24
 ---

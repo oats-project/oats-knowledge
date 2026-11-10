@@ -2,6 +2,9 @@
 type: Lesson
 title: A skill run inside another skill's steps states one order and maps each step onto the host's
 description: When a procedure skill is loaded from inside a host skill's steps, write its order once, name the host step each part runs in and have the host name the nested steps it runs, point every other mention at that order, and write down what applies while a person has not answered; in one effort the timing contradictions between a nested skill and its host cost two of three adversarial review rounds.
+about: [workstream/coordination]
+kind: lesson
+id: ins-afef72b617fd
 tags: [instructions, skills, review, planning, cross-area]
 timestamp: 2026-11-09
 ---

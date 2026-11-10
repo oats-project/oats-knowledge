@@ -2,6 +2,9 @@
 type: Lesson
 title: Kernel-composed instructions are executable surface and may assert only what every instance has
 description: Instructions win over code because they are what the agent acts on; shared text states the invariant and defers the variable part, composed blocks are a set, and anything a capability supplies belongs in that capability's own injection.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-10a93d4a3d43
 tags: [kernel, instructions, injections, composition, provider-neutrality]
 timestamp: 2026-07-27
 ---

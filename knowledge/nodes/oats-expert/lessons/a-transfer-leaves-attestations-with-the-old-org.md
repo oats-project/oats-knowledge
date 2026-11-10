@@ -2,6 +2,9 @@
 type: Lesson
 title: A repository transfer leaves its build attestations with the old organisation; put attestation verification in the move's inventory and scope the old-owner fallback to old versions
 description: After a GitHub transfer, verifying an earlier release's attestation by repository or by the new owner gets a 404 and only the old owner finds it, so a move plan lists attestation verification among the redirect-dependent paths, verifies new releases by the new repository and old versions only by the old owner, pins each form to its workflow and tag, and tests the verify line's failure paths by failing each step.
+about: [workstream/coordination]
+kind: lesson
+id: ins-5774905f4eb7
 tags: [planning, migration, repositories, releases, attestations, supply-chain, verification, shell]
 timestamp: 2026-11-04
 ---

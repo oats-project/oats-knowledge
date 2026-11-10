@@ -2,6 +2,8 @@
 type: Decision
 title: Background defaults belong to short-lived OKF services, not OATS maintainers
 description: Default the OKF harvester and knowledge-maintainer to background, while keeping OATS maintainers visible as the human's working peers and respecting package-qualified request scope.
+about: [workstream/oats-direction]
+id: dec-c3da5fef7882
 tags: [presentation, soul-defaults, package-scope, rejected-alternatives]
 timestamp: 2026-10-28
 ---

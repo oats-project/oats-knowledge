@@ -2,6 +2,9 @@
 type: Lesson
 title: Condensing instructions must preserve load coverage and deliberate text contracts
 description: Map text consumers before setting a compression target, preserve deliberate wording contracts and skill load triggers, and have an independent reader per capability compare the complete original.
+about: [workstream/coordination]
+kind: lesson
+id: ins-7009a640aa84
 tags: [instructions, review, skills, condensation, cross-area]
 timestamp: 2026-10-27
 ---

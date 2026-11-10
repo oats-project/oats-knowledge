@@ -2,6 +2,9 @@
 type: Lesson
 title: Distinguish forge-account attribution from agent and human attribution
 description: The 2026-11-02 forge investigation distinguishes claimed authorship, authenticated account, credential use and human approval, without establishing a universal per-agent attribution mechanism.
+about: [workstream/positioning]
+kind: lesson
+id: ins-6f64b28ffe66
 tags: [research, forge, attribution, identity, oversight]
 timestamp: 2026-11-02
 ---

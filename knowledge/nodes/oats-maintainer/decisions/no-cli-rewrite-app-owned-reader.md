@@ -2,6 +2,8 @@
 type: Decision
 title: CLI speed comes from Node fixes and an app-owned warm reader, not a native rewrite
 description: Reject native CLI rewrites in favor of Node fixes and an app-owned warm reader, with a source-reported bilateral contract preserving request freshness, installation checks and CLI fallback.
+about: [workstream/oats-direction, system/oats-desktop, system/oats-kernel]
+id: dec-f8e65604af42
 tags: [direction, performance, cli, desktop, tui, rejected-alternatives]
 timestamp: 2026-10-29
 ---

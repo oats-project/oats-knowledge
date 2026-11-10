@@ -2,6 +2,8 @@
 type: Decision
 title: Report-only prompt recognition may use derived labels
 description: A recogniser that cannot send input may match derived whole option labels together, because a false waiting report has a different consequence from an unwanted keystroke.
+about: [system/oats-kernel]
+id: dec-d34ed90c500d
 tags: [kernel, launch, prompts, evidence, input-safety]
 timestamp: 2026-10-27
 ---

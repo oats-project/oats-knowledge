@@ -2,6 +2,9 @@
 type: Lesson
 title: Test what a change strands through a real start, not by reading recorded paths
 description: A stated risk about what a swap or removal leaves broken must be tested through a real start with real kernels, because static reads of generated state miss the hook that regenerates it; what a kernel swap strands is running sessions and the schedule unit, not homes.
+about: [workstream/coordination]
+kind: lesson
+id: ins-44229aa7a182
 tags: [planning, migration, evidence, risk, kernels, hooks, verification]
 timestamp: 2026-10-30
 ---

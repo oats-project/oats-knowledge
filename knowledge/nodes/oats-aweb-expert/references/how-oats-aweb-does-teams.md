@@ -2,6 +2,8 @@
 type: Reference
 title: How oats.aweb does teams (1.16.1)
 description: The package facts introduced in the first workspace-model-only release (1.14.0) and current in 1.16.1: eligible teams arrive through the environment only (the check stdin stays strict), every instance is minted into the workspace's default team, wider teams are joined by an explicit spawn setting or the teams/join/leave verbs and home operations, each joined team is a further local identity beside the primary that sends with an identity-home selector and receives live through the host wake broker where the runtime supports it (else by polling), joined-team state lives in a provider-owned file mirrored through hook meta, a failed leave keeps the credential, an unmapped primary label falls back to the default team with a warning, and readiness warns on each joined team's receive mode and on the host wake daemon.
+about: [system/oats-aweb]
+id: ref-f0e889131359
 tags: [oats.aweb, teams, readiness, provider-state, wake, identity]
 timestamp: 2026-09-25
 ---

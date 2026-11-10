@@ -2,6 +2,8 @@
 type: Decision
 title: The served identity is a messaging-layer fact the kernel binds and shows, never kernel vocabulary
 description: A per-spawn choice between an instance-lifetime messaging identity and serving a durable resident through a grant travels through the existing provider payload with no new spawn flags; the kernel binds every provider fact in the spawn decision and shows the served principal on the roster, while the messaging capability owns every identity rule.
+about: [workstream/oats-direction, system/oats-desktop, workstream/messaging]
+id: dec-ae8d8a31d188
 tags: [identity, messaging, provider-payload, spawn, kernel-boundary, desktop]
 timestamp: 2026-09-24
 ---

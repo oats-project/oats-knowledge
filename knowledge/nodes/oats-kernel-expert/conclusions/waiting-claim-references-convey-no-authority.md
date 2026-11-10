@@ -2,6 +2,9 @@
 type: Conclusion
 title: An optional waiting-claim reference would convey no authority
 description: The source proposes an opaque capability-and-id reference as a claim-to-request join key, with no kernel dereference or mandatory permission reference because a claim cannot establish consent.
+about: [system/oats-kernel, workstream/messaging]
+kind: finding
+id: ins-f658b0831be8
 tags: [kernel, claims, messaging, authority, rejected-alternatives]
 timestamp: 2026-11-03
 ---

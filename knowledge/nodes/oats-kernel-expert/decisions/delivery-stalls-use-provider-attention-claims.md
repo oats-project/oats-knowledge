@@ -2,6 +2,8 @@
 type: Decision
 title: Delivery stalls use the messaging provider's attention claim
 description: Delivery failures reach the roster through a provider-owned attention claim because live network reads do not belong on the status hot path and liveness does not establish idleness.
+about: [system/oats-kernel, workstream/messaging]
+id: dec-224d5ab3ec78
 tags: [kernel, messaging, attention, ownership, rejected-alternatives]
 timestamp: 2026-10-30
 ---

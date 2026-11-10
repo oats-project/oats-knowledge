@@ -2,6 +2,9 @@
 type: Lesson
 title: A text check of a soul.yaml declaration must match a key position, not a word boundary
 description: The harvester reads the source soul's soul.yaml as text on purpose, so every check of a declaration there is a regex over the whole file; anchor it to a key position (a line start, or after `{` or `,` in a flow mapping), never to `\b`, which sits between `-` and a letter and makes a bare-word setting match a capability id such as `oats.okf-harvest:`; and sweep the repository's real soul files when reviewing or testing a new text check, because a fixture without such a capability cannot catch it.
+about: [system/oats-okf]
+kind: lesson
+id: ins-6853946f2fea
 tags: [lesson, okf, harvest, soul-yaml, opt-out, regex, review, test]
 timestamp: 2026-11-06
 ---

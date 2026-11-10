@@ -2,6 +2,8 @@
 type: Decision
 title: Teams in the messaging provider: the workspace's default team, explicit join and leave, one local identity per joined team
 description: Agreed 2026-09-25 on the human's priority: every instance lives in the workspace's default team; a soul's team labels only make wider teams eligible; joining is a spawn choice or one idempotent command at any time, leaving is the same command or automatic when eligibility disappears on live evidence; each joined team is a further local identity the provider records and revokes at retire; clarified 2026-11-03: a joined team that becomes the exact live default is not eligibility loss, and only respawn moves the primary identity.
+about: [workstream/provider-integration, system/oats-desktop, workstream/messaging]
+id: dec-2d28a5b061fa
 tags: [decision, integrations, messaging, teams, identity, lifecycle, desktop]
 timestamp: 2026-11-03
 ---

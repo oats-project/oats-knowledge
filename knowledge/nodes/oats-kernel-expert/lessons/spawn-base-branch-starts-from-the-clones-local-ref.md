@@ -2,6 +2,9 @@
 type: Lesson
 title: spawn --base <branch> starts from the clone's local branch, which may be far behind
 description: oats spawn --repo <clone> --base main names a ref in the clone, so the worktree starts at the clone's local main even when origin is far ahead, unlike a same-repository spawn without --base or worktree add --base; read the preview's from main@<oid> against the remote, omit --base for the soul's own repository, or pass --base origin/<branch>.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-7cea7ef15e71
 tags: [kernel, spawn, worktree, git, coordination, process]
 timestamp: 2026-11-10
 ---

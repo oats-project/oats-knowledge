@@ -2,6 +2,9 @@
 type: Lesson
 title: Verification judgment for Desktop's privileged surfaces
 description: Prove guards at real boundaries, include source-evaluating tests of main and renderer code, and contain native verification with enforced lifetime and output bounds rather than trusting test selection or a passing assertion.
+about: [system/oats-desktop, workstream/coordination]
+kind: lesson
+id: ins-c2c8f7c69861
 tags: [desktop, verification, security, review, testing-judgment, operator-safety, node-test, native-effects]
 timestamp: 2026-11-06
 ---

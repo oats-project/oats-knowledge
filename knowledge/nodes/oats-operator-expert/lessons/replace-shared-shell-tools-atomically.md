@@ -2,6 +2,9 @@
 type: Lesson
 title: Replace shared shell tools atomically
 description: A trial setup reportedly failed when its shared shell tool was rewritten during execution, so tool publication must preserve the bytes already-running readers use rather than mutate them in place.
+about: [workstream/operations]
+kind: lesson
+id: ins-ec27d7f63a08
 tags: [operator, trials, shared-tooling, publication, concurrency]
 timestamp: 2026-11-03
 ---

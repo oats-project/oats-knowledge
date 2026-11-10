@@ -2,6 +2,8 @@
 type: Decision
 title: Pre-answer first-run offers through home-scoped native settings
 description: Avoid a blocking renderer offer through an absent-only project setting, accepting the classic-renderer tradeoff instead of sending a key or mutating user-global seen state.
+about: [system/oats-kernel]
+id: dec-cb075783a735
 tags: [kernel, harnesses, launch, settings, input-safety, rejected-alternatives]
 timestamp: 2026-10-30
 ---

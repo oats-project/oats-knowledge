@@ -2,6 +2,8 @@
 type: Decision
 title: The trust writer refuses metadata it cannot preserve
 description: The native trust writer retains verified atomic replacement rather than stripping or speculatively copying file metadata, with a check-specific refusal and the harness's own trust dialog as the supported alternative.
+about: [system/oats-kernel]
+id: dec-bfac46a44580
 tags: [kernel, harness, trust, metadata, atomicity, refusal]
 timestamp: 2026-10-14
 ---

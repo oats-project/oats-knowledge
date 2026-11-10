@@ -2,6 +2,8 @@
 type: Decision
 title: A soul's page shows its own AGENTS.md and the composed one, read through a flagged field of the soul inspection
 description: The soul page reads the soul's own instructions and the AGENTS.md a spawn would write, separating the soul's part from every injected part; the composed text is an opt-in field of `inspect --soul` because its cost is paid only where it is shown, and routed souls needed the host to report its own features.
+about: [system/oats-desktop]
+id: dec-ee04677e36d5
 tags: [desktop, souls, instructions, composition, feature-gating, latency, remote]
 timestamp: 2026-10-08
 ---

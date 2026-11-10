@@ -2,6 +2,9 @@
 type: Lesson
 title: The lead checks user-facing claims against evidence, not just reviewed wording
 description: Test interaction claims before handover, propagate corrections to every consumer, and finish a fresh-context claim review of human-polished public docs against a pinned tree before the PR.
+about: [workstream/coordination]
+kind: lesson
+id: ins-0a5d923aa677
 tags: [specification, documentation, review, handover]
 timestamp: 2026-11-04
 ---

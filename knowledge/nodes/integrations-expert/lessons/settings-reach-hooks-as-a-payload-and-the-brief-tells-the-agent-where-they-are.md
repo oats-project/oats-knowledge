@@ -2,6 +2,9 @@
 type: Lesson
 title: Settings reach hooks as a payload, and the brief tells the agent where they are — an advisory hook briefs and persists meta without calling the service
 description: A capability's settings arrive at its hooks as one merged JSON payload; the spawn hook returns a one-line brief naming the facts the agent must know and persists what a later event needs as meta, the skill tells the agent to find those facts in the brief or the instance record and stop when they are unset, and an advisory hook never contacts the external service.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-17110e4ebac9
 tags: [lesson, integrations, hooks, settings, brief, meta, advisory]
 timestamp: 2026-07-10
 ---

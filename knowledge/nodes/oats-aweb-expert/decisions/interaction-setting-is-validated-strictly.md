@@ -2,6 +2,8 @@
 type: Decision
 title: settings.oats.aweb.interaction is validated strictly, at spawn and at launch, before any aw call
 description: Absent means `terminal`; null, empty, non-string or unknown values are refused with a message naming the key, the received value and both accepted values, following the package's `claudeChannelMode` precedent rather than `delivery`'s silent coercion, because a mis-typed `threads` that silently became `terminal` would give Desktop no panel and the human no explanation.
+about: [system/oats-aweb]
+id: dec-4e946c9a95ea
 tags: [oats.aweb, threads, interaction, settings, validation, spawn, launch]
 timestamp: 2026-10-26
 ---

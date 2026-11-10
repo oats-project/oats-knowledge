@@ -2,6 +2,8 @@
 type: Decision
 title: Consult explores accepted knowledge remotely; instances get no knowledge copy
 description: Instances read their soul's OKF bases remotely at the accepted commit through read-only consult commands served from one host-wide cache, with receipts and base confinement; no instance holds a knowledge copy, and consultation works whether harvest is on or off.
+about: [system/oats-okf, workstream/knowledge]
+id: dec-515608970d00
 tags: [decision, okf, knowledge, consult, skill]
 timestamp: 2026-09-26
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: Measure cached gains through the real client and across expiry
 description: A cache-backed before/after comparison must exercise each installation's real client path, include an observed expiry refresh and count fallbacks so warm-only samples and omitted client work do not misstate the gain.
+about: [workstream/coordination]
+kind: lesson
+id: ins-f5f7a4917569
 tags: [performance, measurement, caching, verification]
 timestamp: 2026-10-29
 ---

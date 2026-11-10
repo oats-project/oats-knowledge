@@ -2,6 +2,9 @@
 type: Lesson
 title: Use a short paper-style page for this human's decisions
 description: In one 2026-11-02 effort, the human's corrections favored a concise single-column decision page organized around practices, proposed behavior and reasons, with worked examples and familiar names.
+about: [workstream/coordination]
+kind: lesson
+id: ins-3d58f21d8839
 tags: [communication, proposals, human-review, writing]
 timestamp: 2026-11-02
 ---

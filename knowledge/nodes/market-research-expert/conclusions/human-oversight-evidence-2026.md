@@ -2,6 +2,9 @@
 type: Conclusion
 title: Attention is an oversight risk, not a measured universal agent limit
 description: The 2026-11-02 research motivates testing oversight timing, reviewer context and agent influence separately, without establishing a best merge gate, sustainable human capacity or downstream quality.
+about: [workstream/positioning]
+kind: finding
+id: ins-17f724dd36a0
 tags: [human-oversight, coordination, research, uncertainty]
 timestamp: 2026-11-02
 ---

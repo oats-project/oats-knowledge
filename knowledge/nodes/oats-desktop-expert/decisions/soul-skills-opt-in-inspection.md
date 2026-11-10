@@ -2,6 +2,8 @@
 type: Decision
 title: A soul's own skills are an opt-in field of the soul inspection
 description: Read a soul's own skills through an opt-in `inspect --soul --skills` field with bounded inline text, gated at the server by the authoritative host's features, and keep its unavailable, empty, failed and malformed answers distinct.
+about: [system/oats-desktop]
+id: dec-4c9751e72c18
 tags: [desktop, souls, skills, inspection, feature-gating, latency, remote]
 timestamp: 2026-10-30
 ---

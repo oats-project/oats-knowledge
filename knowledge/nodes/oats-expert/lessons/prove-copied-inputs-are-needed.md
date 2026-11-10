@@ -2,6 +2,9 @@
 type: Lesson
 title: A passing composition does not prove every copied input is needed
 description: Before requiring a second client to retain state copied from the first, compare its composition with and without each candidate input and establish which consumer path actually needs it.
+about: [workstream/coordination]
+kind: lesson
+id: ins-af3146f4e65c
 tags: [planning, second-consumer, shared-code, state, verification]
 timestamp: 2026-10-13
 ---

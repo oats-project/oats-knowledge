@@ -2,6 +2,9 @@
 type: Lesson
 title: "Retire ordering for self-custodial identities: de-register from inside the home before removing it, and treat stranded-record cleanup as a deferred re-check"
 description: When an instance's external identity is self-custodial (its signing key lives in the instance home), retire must stop the runtime, self-delete the identity from inside the home, and only then remove the directory. If that step was skipped, the stranded remote record is liveness-guarded and cleaned by one scheduled re-check after the staleness window, never by an immediate roster check or a retry loop.
+about: [workstream/operations, workstream/messaging]
+kind: lesson
+id: ins-97f9b5f6ec52
 tags: [lesson, operator, lifecycle, retire, identity, custody, messaging, teardown]
 timestamp: 2026-07-08
 ---

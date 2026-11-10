@@ -2,6 +2,8 @@
 type: Decision
 title: Record locks favor recoverable refusal over live-holder theft
 description: Record-store lock age must not override a live local holder, with foreign-lock fallback and the check-unlink race remaining explicit limits.
+about: [system/oats-kernel]
+id: dec-a483c063ddff
 tags: [kernel, record-store, locks, concurrency, fail-closed]
 timestamp: 2026-09-05
 ---

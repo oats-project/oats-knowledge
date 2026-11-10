@@ -2,6 +2,8 @@
 type: Decision
 title: Compatibility follows supported adoption, not every intermediate format
 description: Supported adoption bounds compatibility, unrepresentable migrations refuse, and rollout gates and pre-upgrade checks must match the actual outgoing reader rather than assume every new declaration fails the same way.
+about: [system/oats-kernel]
+id: dec-3ab7a3c3e51f
 tags: [kernel, compatibility, migration, locks, packages, manifests]
 timestamp: 2026-11-09
 ---

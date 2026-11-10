@@ -2,6 +2,9 @@
 type: Lesson
 title: Plan dependent soul text to land with or after its capability pin
 description: When soul text relies on a package capability change, record the pin dependency in the plan and soul PR rather than treating two text changes as independent landings.
+about: [workstream/coordination]
+kind: lesson
+id: ins-e06b000eb2a5
 tags: [planning, instructions, dependencies, packages, cross-area]
 timestamp: 2026-10-27
 ---

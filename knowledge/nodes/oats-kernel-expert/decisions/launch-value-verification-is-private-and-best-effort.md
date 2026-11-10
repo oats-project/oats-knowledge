@@ -2,6 +2,8 @@
 type: Decision
 title: Launch-value verification is private and best-effort
 description: A launch-value verifier must resist low-entropy guessing without becoming credential custody, and recording failure must not become a new reason to fail a start.
+about: [system/oats-kernel]
+id: dec-0d317787dff3
 tags: [kernel, launch, credentials, recovery, rejected-alternatives]
 timestamp: 2026-10-27
 ---

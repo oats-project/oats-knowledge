@@ -2,6 +2,8 @@
 type: Decision
 title: The pi bridge prefers the home's kernel shim over ambient discovery
 description: The pi bridge explicitly consults the home's launching-kernel shim before ambient discovery, avoiding a new launch variable or public package-root field for a failure confined to an outside-instance wrapper.
+about: [system/oats-kernel]
+id: dec-34024360e82f
 tags: [kernel, pi, bootstrap, compatibility, verification]
 timestamp: 2026-10-28
 ---

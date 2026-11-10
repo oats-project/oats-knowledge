@@ -2,6 +2,9 @@
 type: Lesson
 title: A separate GH_CONFIG_DIR does not separate the keyring token
 description: A gh auth login under its own GH_CONFIG_DIR reportedly stored its token in the system keyring under the same host and account key as the person's everyday login, replacing it and narrowing its scopes, so a scoped second gh credential on a host needs --insecure-storage or a separate token, and must never be logged out.
+about: [workstream/operations]
+kind: lesson
+id: ins-ea6191bdf61b
 tags: [operator, github, gh, credentials, keyring, trials, least-privilege]
 timestamp: 2026-11-09
 ---
