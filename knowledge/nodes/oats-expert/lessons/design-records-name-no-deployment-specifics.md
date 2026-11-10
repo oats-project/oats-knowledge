@@ -41,7 +41,9 @@ This is the repository-text counterpart of the rule that [host facts belong
 in task evidence, not durable
 knowledge](/nodes/oats-expert/lessons/date-host-read-facts-before-an-adoption-gate.md):
 the same facts that must be dated and attributed as evidence must not
-become anonymous content in a record.
+become anonymous content in a record. When the facts at risk are someone
+else's private material handed to a child, the check moves to the brief:
+[a brief that hands a child private material names every public destination](/nodes/oats-expert/lessons/a-brief-passing-private-material-names-every-public-destination.md).
 
 # Elimination route
 
