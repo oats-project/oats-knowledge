@@ -391,6 +391,54 @@ approved head instead; a queue is the repository-level route for enforcing
 CI on the combination. The operating procedure belongs in the
 `oats.maintainer` `pr-review` skill, not in a second checklist here [7].
 
+## A conflict in an approved PR is resolved as a merge of the default branch, and read only where it differs from the mechanical merge (2026-11-10)
+
+The carry rule above covers two ways an approved head is brought up to date:
+the forge's update (own diff unchanged) and an owner's rebase (every commit
+`=` in `git range-diff`). Neither covers a **conflict**: the forge's update
+cannot resolve one, and the branch goes back to its owner. When that
+happens, ask the owner for a **merge of the default branch into the
+branch, not a rebase.** A rebase rewrites every commit, so the range-diff
+shows each conflicted commit as changed and every reader re-reads more than
+the resolution. A merge keeps the reviewed commit as a parent, and the
+mechanical merge of its two parents is a reproducible baseline, so the only
+thing anyone has to read is what the owner decided by hand.
+
+The reader then verifies the new head against that baseline, with
+`git merge-tree --write-tree <reviewed-head> <default-branch-tip>` compared
+to the new head's tree, alongside the own-diff comparison the carry rule
+already uses for an updated branch. The difference is the hand-resolved
+hunk. Each verdict **re-binds on that hunk alone**: the maintainer's own, the
+release lane's sign-off, and any second reader whose read was pending at the
+old head, who is told the new head once and reads the old diff plus the
+hunk rather than starting over. Do not hold the owner's update merge for a
+reader pending at the old head: the head has to move before the PR can merge,
+so the pending read is re-bound to the new head, not waited for. The re-bound
+read must still return before the PR merges; the one-second-reader rule is
+unchanged. Record the two heads, the merge-tree result and
+the hunk on the PR, as the carry rule requires: a content-bound carry, not
+approval of a future head. A rebase is not forbidden by this; it is the
+worse route in the conflict case because it costs the readers more than the
+resolution, and the
+[cherry-pick lesson](/nodes/oats-maintainer/lessons/a-cherry-pick-across-a-base-change-must-be-reread-as-a-diff-against-the-new-base.md)
+says what a rewrite across a moved base then demands of them.
+
+This is the conflict case of the `pr-review` skill's "bringing a branch up to
+date"; it changes neither the human-accepted carry rule nor the updated-head
+CI and same-area requirements, which still apply to the merged head. The
+procedure (the merge request, the `merge-tree` check, the re-bind message)
+belongs in that skill; until it is there, this is review-procedure debt
+recorded as judgement. No skill or gate is changed here.
+
+Evidence: OKF proposal from oats-maintainer/product-maintainer-pepe,
+2026-11-10; notes/hand-resolved-conflict-as-merge-of-main.md. One occurrence
+on a signed-off product-lane PR whose conflict was a single documentation
+sentence; the owner's merge, the merge-tree comparison, the re-bound sign-off
+and second read, equal trees at merge and green CI on the default branch are
+source-reported from the session. This harvest did not identify or read the
+PR, reproduce the comparison or observe a code conflict; whether a
+hand-resolved code conflict stays this cheap to re-read is not established.
+
 ## A release heading is part of an entry's meaning (2026-11-03)
 
 After updating or rebasing a PR across a release cut, inspect the heading
