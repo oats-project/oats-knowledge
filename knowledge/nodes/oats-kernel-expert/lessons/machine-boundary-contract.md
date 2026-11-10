@@ -155,6 +155,10 @@ where a correct host preview must not become a saved route.
 extends the tested-remedy obligation to upgrade guidance: a before-upgrade
 check is proven on the outgoing releases, not only on the new diagnostic.
 
+[A --repo that is not a repository key is refused with the key to pass, never with a Git remedy](/nodes/oats-kernel-expert/decisions/non-key-repo-refusal-names-the-key-never-a-git-remedy.md)
+applies the tested-remedy obligation to the input a remedy is built from: a
+remedy assumes a shape the input must actually have.
+
 [Retire exclusion belongs to a whole-run claim, not a plan or retry key](/nodes/oats-kernel-expert/decisions/retire-exclusion-is-a-whole-run-claim.md)
 separates exclusion from plan freshness and replay of an already recorded
 outcome; neither existing guard serializes an in-flight retirement.
