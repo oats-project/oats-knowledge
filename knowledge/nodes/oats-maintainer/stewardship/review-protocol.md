@@ -6,7 +6,7 @@ about: [workstream/oats-direction, system/oats-kernel, workstream/provider-integ
 kind: lesson
 id: ins-db8a67988ea3
 tags: [stewardship, review, pull-requests, process]
-timestamp: 2026-11-09
+timestamp: 2026-11-10
 ---
 **Owner: oats-maintainer (the PR gate). Update-on-change: whoever changes the
 review skill, the repository gate or the delivery flow revises this concept in
@@ -894,6 +894,47 @@ its producer, fix the producer and keep the consumer's guard as defence in
 depth. A stand-in producer proves only the shapes we assumed: before shipping a
 contract change, recapture the consumer's fixtures from the real producer.
 
+## A kernel-owned file that several kernel versions read is a closed-shape contract; a new field goes in a sidecar or waits for a tolerant reader (2026-11-10)
+
+The additive-field rule above applies to files on one machine, not only to
+wire contracts. A kernel-owned file that more than one kernel version may
+read on the same host (the server registry, the lock, the instance record
+the Desktop reads) is a closed-shape contract when its reader refuses
+unknown fields. An optional field added to such a file breaks every older
+kernel that shares it: the reader refuses the whole file once one entry
+carries the field, and every command that reads it fails on that machine.
+Older kernels are ordinary there: a Desktop whose bundled kernel lags the
+CLI, or a CLI after a downgrade.
+
+In review, for a new field in any such file, check how the oldest supported
+reader treats unknown fields. A refusal makes the field a breaking contract,
+and a downgrade or release note does not make it safe: when the field holds
+a value the person needs, telling them to remove it is no remedy. The fix is
+either a sidecar file that older readers never open, read and written under
+the same lock as the file it extends, or a reader that tolerates the field
+shipped one release before any writer uses it. Strict unknown-field
+validation itself stays: it is what keeps keys and passwords out of such
+registries, and the cost of that choice is exactly this rule.
+
+The source reports one case on oats-project/oats#1787: an optional operator
+route field first added to each server registration was moved, at review,
+into its own file beside the registry so that older kernels keep reading the
+registry. The reviewer had asked only for a downgrade note; the sidecar was
+the author's better answer. A kernel fixture that reads each shared file
+with the oldest supported validator is the prevention route; none is
+delivered here.
+
+Evidence: OKF proposal from oats-maintainer/product-maintainer-pepe,
+2026-11-10; notes/additive-field-in-a-strict-shared-file-is-breaking.md.
+The decision comment
+[oats-project/oats#1787, comment 6771655475](https://github.com/oats-project/oats/pull/1787#issuecomment-6771655475),
+read at harvest, accepts the route field in its own file so that the
+registry stays readable by older kernels; it is a lane maintainer's posting
+and is recorded as source-reported (relay). The proposal's commit locator
+for the sidecar change names a different fix and is not confirmed; the
+reader's refusal behaviour was not read in code. The PR was open and
+unmerged at harvest.
+
 ## One reference contract must agree across schemas without widening display (2026-11-03)
 
 A repository-reference form must be accepted consistently wherever that same
@@ -1059,6 +1100,25 @@ expressly says the human had not ruled on that representation. Record the
 practice without turning non-objection into human acceptance or granting
 future maintainers authority to decide on a human's behalf. Routine launch
 autonomy is not that delegation.
+
+**Recorded 2026-11-10: a direct answer on Pepe's side.** The source reports
+that on 2026-11-10, asked directly about four open product and contract
+questions, Pepe answered "Feel free to apply your best judgement for these
+things". His lane maintainer took Pepe's side's calls on those questions on
+that word, quotes it where it posts each decision so the other side and the
+reviewer can see on whose authority the position rests, and still passes
+each decision through the direction gate and posts it where the other side
+reads it. This refines the limit above for those decisions: their
+representation rests on a direct answer, not on non-objection. The words
+answer the questions Pepe was asked that day; a later contract question
+cites a delegation that covers it, or asks. The answer is source-reported
+(the session). Read on the forge at harvest: the
+[oats-project/oats#1787 decision comment](https://github.com/oats-project/oats/pull/1787#issuecomment-6771655475)
+quotes those words and states that the decision is Pepe's side's, taken on
+them; it is the lane maintainer's posting under its human's account and is
+recorded as source-reported (relay). Evidence: OKF proposal from
+oats-maintainer/product-maintainer-pepe, 2026-11-10;
+notes/contract-decisions-between-the-two-sides.md.
 
 The operating route is the existing maintainer `direction-gate` and review
 guidance. Prefer one linked issue record and review evidence requiring the
