@@ -1099,6 +1099,80 @@ was not read. [oats-project/oats#1763](https://github.com/oats-project/oats/pull
 was open and unmerged at harvest; no implementation, test or release is
 certified.
 
+## A command that starts refusing a flag it used to ignore is a contract change; its review reads every argv a client or a `--server` route builds (2026-11-10)
+
+The rule above holds for command-line input as it holds for configuration.
+A command that used to ignore a flag it does not define and now refuses it
+makes a new refusal of input that used to be accepted, so it is a contract
+change even when it ships as a fix for failing closed. A future maintainer
+meeting such a change should neither wave it through as a plain bug fix nor
+block it as a contract with no criterion. Pepe's side's criterion, applied
+once on 2026-11-10: the refusal is accepted when the ignored flag did the
+unprotected thing, that is, when a typo of a protective flag silently ran
+the unprotected command; and it is accepted with a refusal that names the
+flag and gives the command's usage line, and a release note that lists
+every flag that used to be accepted and is refused now.
+
+**What the review reads.** A newly refused flag can be sent by callers the
+change's author never typed, and a static scan of the repository does not
+find them, because argv built from variables cannot be scanned. So the
+reviewer reads the builders themselves, in three places:
+
+- **every client builder** that composes an argv for the command (the
+  lifecycle, start, resume and automation paths of the client package, and
+  the Desktop and TUI paths that use them);
+- **every argv a `--server` route builds on the host's side**: the routes
+  append flags such as `--dir <workspace>` or `--home` to the host's argv
+  that the caller never typed, so a host command that refuses `--dir`
+  breaks every routed call that gets one, on upgrade, with no change at the
+  caller;
+- **the skills and docs** that tell agents which flags to type.
+
+The review verdict names what was read at the reviewed head, because the
+cost of a miss is not one bad call: an older client or a routed call that
+keeps sending a newly refused flag fails on every call once the host
+upgrades, with no change at the caller.
+
+**Rejected alternatives**, source-reported: a warning instead of a refusal,
+because a warning still does the unprotected thing; and a per-command opt-in
+to the check, because the command's flags are declared once and an opt-in
+would be a second way to declare them.
+
+The other side of this contract is the kernel's: an older host that still
+ignores an unknown flag runs the old command, so a consumer never detects a
+mode by trying it ([the machine boundary](/nodes/oats-kernel-expert/lessons/machine-boundary-contract.md)).
+That lesson owns the advertisement rule; this section is the maintainer's
+review rule for the day a command stops ignoring.
+
+The source reports one case, [oats-project/oats#1813](https://github.com/oats-project/oats/pull/1813),
+closing [#1791](https://github.com/oats-project/oats/issues/1791): the
+state-changing commands refuse a flag they do not define with `E_BAD_ARGS`,
+before they run and before a `--server` command is sent to its host. The
+review read the client package's lifecycle and start builders, session
+resume, automations and the host routes, and found no caller sending a
+newly refused flag. A prevention route the review left open: the docs test
+pins the flag table to the declaration, not the declaration to the list of
+state-changing commands, so a command missing from the declaration is
+silently unchecked; a test that every state-changing command has a
+declaration row would close that, and none is delivered here.
+
+Evidence: OKF proposal from oats-maintainer/product-maintainer-pepe,
+2026-11-10; notes/refusing-ignored-flags-is-a-contract.md. Read on the
+forge at harvest: the PR body states the mechanism, the list of flags
+refused now though accepted and ignored before, and the author's caller
+scan; the acceptance comment
+[oats-project/oats#1813, comment 6777069678](https://github.com/oats-project/oats/pull/1813#issuecomment-6777069678)
+states the contract criterion, lists the client builders, host routes and
+skill and doc trees read, and rests the decision on Pepe's 2026-11-10
+delegation quoted in
+[the delegation record](/nodes/oats-maintainer/stewardship/review-protocol.md#contract-agreement-stays-on-the-issue-through-implementation-2026-10-28).
+That comment is the lane maintainer's posting under its human's account and
+is recorded as source-reported (relay); the approval from the other side
+is the authoring side's own, since Juan's side wrote the change. The PR was
+merged on 2026-11-10. The rejected
+alternatives come from the note alone and were not read on the forge; the
+builders and routes were not read in code by this harvest.
+
 ## Contract agreement stays on the issue through implementation (2026-10-28)
 
 The source reports a useful practice across three product-contract cases:
