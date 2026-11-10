@@ -68,6 +68,12 @@ was kept that the organisation never adopted. Both efforts found release
 authority to be the rule most easily lost or gained in a text change, which
 is why the semantic check starts with who tags.
 
+Both checks look at text that is present. When a new template is derived
+from another and drops roles, a safety rule that lived only in a dropped
+role's text is in neither the diff nor the granted authorities;
+[a template derived from another carries over the safety rules of the roles it drops](/nodes/oats-expert/lessons/a-template-derived-from-another-carries-the-safety-rules-of-the-roles-it-drops.md)
+adds the third check for that case.
+
 # Elimination route
 
 The mechanical check can live in the template itself: a template that
