@@ -67,7 +67,7 @@ prose.
 
 # Evidence and limits
 
-Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-lfx-desktop-queue, 2026-10-14; notes/a-root-test-on-live-kernel-text-holds-the-reader-not-the-kernels-sentences.md; notes/a-test-of-absence-reads-the-words-from-their-owner-and-has-a-positive-control.md.
+Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-partner-desktop-queue, 2026-10-14; notes/a-root-test-on-live-kernel-text-holds-the-reader-not-the-kernels-sentences.md; notes/a-test-of-absence-reads-the-words-from-their-owner-and-has-a-positive-control.md.
 
 The source reports the collision between
 [awebai/oats#1080](https://github.com/awebai/oats/pull/1080) and

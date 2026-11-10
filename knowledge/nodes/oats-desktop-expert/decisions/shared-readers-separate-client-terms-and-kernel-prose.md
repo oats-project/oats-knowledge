@@ -95,7 +95,7 @@ deployment model.
 
 # Evidence and limits
 
-Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-lfx-desktop-queue, 2026-10-14; notes/shared-readers-carry-desktop-wording.md; notes/an-error-reader-says-whose-words-it-carries-and-answers-the-parts.md; notes/the-terms-brand-fails-loudly-on-a-second-copy-of-the-module.md.
+Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-partner-desktop-queue, 2026-10-14; notes/shared-readers-carry-desktop-wording.md; notes/an-error-reader-says-whose-words-it-carries-and-answers-the-parts.md; notes/the-terms-brand-fails-loudly-on-a-second-copy-of-the-module.md.
 
 The proposal and notes report the expert's terms decision and agreement on
 the attributed parts in [awebai/oats#855](https://github.com/awebai/oats/issues/855)

@@ -70,7 +70,7 @@ this record does not claim that coverage or an alternative writer has shipped.
 The operational contract remains in the repository's
 [harness-trust documentation](https://github.com/awebai/oats/blob/main/docs/harness-trust.md).
 
-Evidence: OKF proposal from oats-kernel-expert/oats-kernel-expert-lfx-kernel-bugs, 2026-10-14; notes/harness-trust-writer-keeps-refusing-xattrs.md.
+Evidence: OKF proposal from oats-kernel-expert/oats-kernel-expert-partner-kernel-bugs, 2026-10-14; notes/harness-trust-writer-keeps-refusing-xattrs.md.
 
 The proposal and note attribute the incident and decision to
 [awebai/oats#1109](https://github.com/awebai/oats/issues/1109). The proposal

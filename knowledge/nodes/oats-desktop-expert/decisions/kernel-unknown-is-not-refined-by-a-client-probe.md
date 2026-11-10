@@ -58,7 +58,7 @@ accepted liveness tradeoff, complementing
 
 # Evidence and limits
 
-Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-lfx-desktop-queue, 2026-10-14; notes/kernel-unknown-is-not-probed.md; notes/an-unprobed-row-shows-only-the-session-the-kernel-recorded.md.
+Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-partner-desktop-queue, 2026-10-14; notes/kernel-unknown-is-not-probed.md; notes/an-unprobed-row-shows-only-the-session-the-kernel-recorded.md.
 
 The notes identify [awebai/oats#855](https://github.com/awebai/oats/issues/855)
 (comments 6102201022 and 6110081333). The first note's initial pending status

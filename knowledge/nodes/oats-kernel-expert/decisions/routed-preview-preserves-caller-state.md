@@ -71,7 +71,7 @@ not a second specification here.
 
 # Evidence
 
-Evidence: OKF proposal from oats-kernel-expert/oats-kernel-expert-lfx-kernel-bugs, 2026-10-14; notes/routed-preview-forwards-and-saves-nothing.md.
+Evidence: OKF proposal from oats-kernel-expert/oats-kernel-expert-partner-kernel-bugs, 2026-10-14; notes/routed-preview-forwards-and-saves-nothing.md.
 
 The proposal and note attribute the decision to
 [awebai/oats#610](https://github.com/awebai/oats/issues/610), including

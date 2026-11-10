@@ -42,7 +42,7 @@ and handback rather than relying on the expert to remember the discussion.
 
 # Evidence
 
-Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-lfx-desktop-queue, 2026-10-14; notes/a-decided-rule-is-not-staged-across-prs-without-saying-so.md.
+Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-partner-desktop-queue, 2026-10-14; notes/a-decided-rule-is-not-staged-across-prs-without-saying-so.md.
 
 The source identifies [awebai/oats#855](https://github.com/awebai/oats/issues/855)
 section 5a(a), the start-lock rationale in

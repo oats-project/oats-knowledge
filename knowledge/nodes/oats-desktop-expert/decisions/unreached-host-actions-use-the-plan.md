@@ -51,7 +51,7 @@ reader. These are regression targets, not claims of completed verification.
 
 # Evidence
 
-Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-lfx-desktop-queue, 2026-10-14; notes/an-unreached-hosts-row-keeps-stop-and-retire-the-plan-checks-reach.md.
+Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-partner-desktop-queue, 2026-10-14; notes/an-unreached-hosts-row-keeps-stop-and-retire-the-plan-checks-reach.md.
 
 The source cites [awebai/oats#855](https://github.com/awebai/oats/issues/855),
 comments 6169172718 and 6169179279, terminal-lead concurrence, and shipment in

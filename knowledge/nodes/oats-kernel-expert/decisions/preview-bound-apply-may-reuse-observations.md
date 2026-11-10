@@ -9,7 +9,7 @@ timestamp: 2026-10-15
 ---
 # Decision and rationale
 
-The source reports LFX maintainer acceptance on 2026-10-15 of one exception to
+The source reports the partner maintainer's acceptance on 2026-10-15 of one exception to
 the write-verb refusal of `--max-age`: spawn apply with
 `--expect-decision <revision>` may reuse observations [1]. Without that flag,
 or with it bare and binding no revision, the refusal remains.

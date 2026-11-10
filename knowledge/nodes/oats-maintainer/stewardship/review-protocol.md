@@ -1149,7 +1149,7 @@ guidance. This is not permission to skip generated material, weaken release
 gates or assume all errors occur in hand-written text; the small reported
 sample establishes a useful review focus, not a general defect rate.
 
-Evidence: OKF proposal from oats-maintainer/pepe-lfx-maintainer, 2026-10-28; notes/release-prep-second-read-checks-the-hand-written-parts.md.
+Evidence: OKF proposal from oats-maintainer/pepe-partner-maintainer, 2026-10-28; notes/release-prep-second-read-checks-the-hand-written-parts.md.
 
 The proposal identifies reads of awebai/oats#1606, #1619, #1623 and #1622 on
 2026-10-27–28; the note specifically describes #1606 and the Upgrade claim
@@ -1189,7 +1189,7 @@ dislodge than the original.
 3. Migrated from agents/oats-expert/soul/knowledge/lessons/window-gone-completed-vs-killed-triage.md @ 7838d3ca.
 4. Harvested 2026-10-01 (paired maintainers). OKF input c15a51880924deaff3fb01859f1c90b8aa09ad3a815c75af48410a708b5862c3 (turns t1:e06654b04457084a49aa064a418ef9a08d6f2e8fd0c0090c1c0edc683f99b78a).
 5. Harvested 2026-10-01 (paired maintainers). OKF input 6fe3e66661e1fb9bcef9dd2a99d0d8c0f3ebcc7aa9882e1a1d6591edc1cb899c (note maintainer-pairing-agreement.md; second-reader rationale only, not the still-proposed operating terms).
-6. Evidence: OKF proposal from oats-maintainer/polaris-oats-maintainer-lfx, 2026-10-14; notes/a-human-gate-gets-a-time.md; notes/merge-rule-base-moved.md. The proposal reports human and both-side acceptance on 2026-10-13 in [awebai/oats#1103](https://github.com/awebai/oats/issues/1103), proposal comment 6150614496 and answers 6150639181, 6150651275, 6150667299, 6150671879. The first note records the lane decision and rejected duplicated tracking/notices; the second explains why changed test files, not file overlap alone, determine integration evidence. Its earlier rebase-and-reconfirmation procedure is historical evidence, not an additional current rule. Acceptance references are source-reported, not independently verified by this harvest.
+6. Evidence: OKF proposal from oats-maintainer/polaris-oats-maintainer-partner, 2026-10-14; notes/a-human-gate-gets-a-time.md; notes/merge-rule-base-moved.md. The proposal reports human and both-side acceptance on 2026-10-13 in [awebai/oats#1103](https://github.com/awebai/oats/issues/1103), proposal comment 6150614496 and answers 6150639181, 6150651275, 6150667299, 6150671879. The first note records the lane decision and rejected duplicated tracking/notices; the second explains why changed test files, not file overlap alone, determine integration evidence. Its earlier rebase-and-reconfirmation procedure is historical evidence, not an additional current rule. Acceptance references are source-reported, not independently verified by this harvest.
 7. The proposal reports the replacement procedure shipped in [awebai/oats-engineering#14](https://github.com/awebai/oats-engineering/pull/14), oats.engineering 1.10.0 at 944470be, and mirrored/pinned in [awebai/oats#1119](https://github.com/awebai/oats/pull/1119) at 9a3ae4b2. The recorded source composition confirms oats.engineering 1.10.0 at 944470be71a96299ae4a1cfb7df0fba94a592899; this harvest did not inspect the source's copied skills or independently verify the release/tag.
 
 Evidence: OKF proposal from oats-maintainer/polaris-oats-maintainer-pepe, 2026-10-14; notes/a-path-ci-does-not-run-is-run-before-the-hand-over.md.
@@ -1201,7 +1201,7 @@ qualifications for [#1056](https://github.com/awebai/oats/issues/1056) and
 exceptions are source-reported; this harvest did not reproduce or independently
 audit them.
 
-Evidence: OKF proposal from oats-maintainer/polaris-oats-maintainer-lfx, 2026-10-14; notes/a-batch-window-keeps-the-same-area-rule.md; notes/merge-rule-base-moved.md; notes/merge-on-old-base-run-the-combination.md; notes/a-pr-that-defers-part-of-a-decided-rule-cites-the-split.md; notes/a-real-terminal-check-is-bounded-and-cleans-up.md.
+Evidence: OKF proposal from oats-maintainer/polaris-oats-maintainer-partner, 2026-10-14; notes/a-batch-window-keeps-the-same-area-rule.md; notes/merge-rule-base-moved.md; notes/merge-on-old-base-run-the-combination.md; notes/a-pr-that-defers-part-of-a-decided-rule-cites-the-split.md; notes/a-real-terminal-check-is-bounded-and-cleans-up.md.
 
 The source reports the batch failure in
 [awebai/oats#1151](https://github.com/awebai/oats/pull/1151) with

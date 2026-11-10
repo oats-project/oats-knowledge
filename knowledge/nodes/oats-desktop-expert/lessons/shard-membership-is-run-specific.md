@@ -38,7 +38,7 @@ what ran before attributing a failure to the change under review.
 
 # Evidence
 
-Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-lfx-desktop-queue, 2026-10-14; notes/a-ci-shard-holds-different-files-when-main-moves.md.
+Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-partner-desktop-queue, 2026-10-14; notes/a-ci-shard-holds-different-files-when-main-moves.md.
 
 The incident and green rerun are source-reported. No run identifier was
 supplied, and this harvest did not inspect CI logs or reproduce the hang.

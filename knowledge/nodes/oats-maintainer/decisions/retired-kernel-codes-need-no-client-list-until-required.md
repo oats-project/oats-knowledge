@@ -95,4 +95,4 @@ error-code rendering; it does not supersede that rule or the
    file at `6e9cf9be` cites awebai/oats#1047. This review did not run the
    test or read the source's note.
 
-Evidence: OKF proposal from oats-maintainer/polaris-oats-maintainer-lfx, 2026-10-14; notes/a-retired-kernel-code-gets-no-client-list-until-needed.md.
+Evidence: OKF proposal from oats-maintainer/polaris-oats-maintainer-partner, 2026-10-14; notes/a-retired-kernel-code-gets-no-client-list-until-needed.md.
