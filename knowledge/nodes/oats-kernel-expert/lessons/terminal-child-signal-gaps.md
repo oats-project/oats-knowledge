@@ -98,7 +98,7 @@ tmux version's hooks fail or that SIGKILL cleanup is now guaranteed.
 The 2026-10-09 review below correctly described the then-unchanged plain
 attach path, but its warning that widening HUP/TERM/INT lifetime still needed
 a decision is superseded by the 2026-10-15 proposal. The source reports that
-the LFX maintainer lane treated coverage from before preparation through completed
+the partner maintainer lane treated coverage from before preparation through completed
 cleanup as a repair without a contract change, implemented in
 [awebai/oats#1249](https://github.com/awebai/oats/pull/1249). Preserve the
 reason: exit meanings do not change merely because those handlers now cover

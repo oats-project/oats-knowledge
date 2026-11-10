@@ -10,7 +10,7 @@ timestamp: 2026-10-08
 # Decision and rationale
 
 The proposal and named notes record agreement on 2026-10-08 by maintainers
-`oats-maintainer-partner` and `oats-expert-juan`: repository worktree setup belongs
+`oats-maintainer-REDACTED` and `oats-expert-juan`: repository worktree setup belongs
 at a capability `worktree` hook, not at a special executable file discovered
 in the target repository. The source identifies awebai/oats#801 as the
 implementation merged for OATS 0.49.0 [1].

@@ -212,7 +212,7 @@ Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-client-spawn
    created answer's wait of at most min(5 s, the remainder of the answer
    window, never past 50 s), and at most two post-spawn reads beside the
    cycle's own, one running and one waiting per deployment. It reports the
-   decision as approved by the LFX maintainer. The merged #1263 (2026-10-15)
+   decision as approved by the partner maintainer. The merged #1263 (2026-10-15)
    passes `--max-age` on apply only where the kernel advertises
    `spawn-apply-max-age`. No separate human acceptance is established, and
    the tests these PRs name were not read or run here.

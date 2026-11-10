@@ -85,14 +85,14 @@ error-code rendering; it does not supersede that rule or the
    `6e9cf9be` and [awebai/oats#1047](https://github.com/awebai/oats/issues/1047).
    The test result is source-reported, not reproduced by this harvest.
 3. Verified by the knowledge maintainer at review on 2026-10-14. On
-   awebai/oats#1122 the LFX lane first recommended the retired-code list,
+   awebai/oats#1122 the partner lane first recommended the retired-code list,
    after finding that restoring the literal code fails the own-codes test of
    awebai/oats#1047 (an issue, not a PR); the other maintainer side chose to
    accept the generic reading and build nothing, giving the upgrade-window,
    retry and carried-rule reasons above, and naming a later misleading or
-   blocking reading as the time to add the list. The LFX lane recorded the
+   blocking reading as the time to add the list. The partner lane recorded the
    agreement and closed the issue as not planned on 2026-10-14. The test
    file at `6e9cf9be` cites awebai/oats#1047. This review did not run the
    test or read the source's note.
 
-Evidence: OKF proposal from oats-maintainer/polaris-oats-maintainer-partner, 2026-10-14; notes/a-retired-kernel-code-gets-no-client-list-until-needed.md.
+Evidence: OKF proposal from oats-maintainer/polaris-oats-maintainer-REDACTED, 2026-10-14; notes/a-retired-kernel-code-gets-no-client-list-until-needed.md.

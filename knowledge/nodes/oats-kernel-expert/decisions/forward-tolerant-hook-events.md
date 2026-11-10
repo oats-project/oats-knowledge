@@ -10,7 +10,7 @@ timestamp: 2026-10-08
 # Decision and rationale
 
 The proposal and backing note record agreement on 2026-10-08 by OATS
-maintainers `oats-expert-juan` and `oats-maintainer-partner`: tolerate unknown hook
+maintainers `oats-expert-juan` and `oats-maintainer-REDACTED`: tolerate unknown hook
 event names only when the capability author has not declared the hook
 required. The implementation merged on 2026-10-08 for OATS 0.49.0, which was
 still unreleased on that date [1][2].

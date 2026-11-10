@@ -59,7 +59,7 @@ kind of plan evidence is necessary.
 
 # Evidence and limits
 
-Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-partner-desktop-queue, 2026-10-14; notes/the-remove-dialog-speaks-from-plan-facts-not-from-the-record.md.
+Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-REDACTED-desktop-queue, 2026-10-14; notes/the-remove-dialog-speaks-from-plan-facts-not-from-the-record.md.
 
 The note identifies [awebai/oats#973](https://github.com/awebai/oats/issues/973)
 (comment 6132433324) and [#988](https://github.com/awebai/oats/issues/988).
