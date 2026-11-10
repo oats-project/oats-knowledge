@@ -87,6 +87,9 @@ copy; this decision confirms and applies it without superseding it.
 [A local schedule's soul check reuses spawn](/nodes/oats-kernel-expert/decisions/local-schedule-soul-check-reuses-spawn.md)
 is the other case of checking soul names through spawn's own rule rather
 than a second resolver.
+[A souls pattern key is judged against discovered souls and reuses team-soul-unknown](/nodes/oats-kernel-expert/decisions/souls-pattern-key-typo-guard-judges-discovered-souls.md)
+owns what the team-key typo guard rejected here judges, and under which
+code; its proof limits recorded above are unchanged.
 [The host supplies host-only facts](/nodes/oats-kernel-expert/decisions/soul-declares-kind-config-assigns-policy.md)
 owns where `souls.disabled` lives, not this diagnostic policy.
 [The CLI as a machine boundary](/nodes/oats-kernel-expert/lessons/machine-boundary-contract.md)

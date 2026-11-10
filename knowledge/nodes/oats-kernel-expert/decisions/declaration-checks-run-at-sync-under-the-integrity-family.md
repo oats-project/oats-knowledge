@@ -5,7 +5,7 @@ description: A pin whose fetched manifest names another package id is refused by
 about: [system/oats-kernel]
 id: dec-f804310bc660
 tags: [kernel, packages, sync, lock, integrity, error-codes, compatibility]
-timestamp: 2026-11-09
+timestamp: 2026-11-10
 ---
 # Rationale
 
@@ -67,14 +67,30 @@ gives the check to run on the version being left. The enumeration is the
 compatibility claim's evidence; a check over published artifacts that cannot
 show such an enumeration has not earned its tightening.
 
+# Status (2026-11-10)
+
+The refusal's shape was confirmed by **both product sides** on the issue on
+2026-11-09, before the implementation was handed over: `E_PACKAGE_INTEGRITY`
+with `why: "package-id"`, `manifestPackage` and `commit`; nothing written;
+the message naming the `packages:` line to write; an existing mismatched lock
+refused at the next sync while existing homes and spawns from the current
+lock keep working [4]. Both records are agent relays under maintainer
+accounts, so the acceptance is **source-reported (relay)**, not verified
+human acceptance. The implementation
+([oats-project/oats#1763](https://github.com/oats-project/oats/pull/1763))
+**merged on 2026-11-10** at `e835d88172af8a8600dccefd8153d64ce37121f6`, with
+the same tree as its approved head and all ten main checks green [5]. A
+future instance should treat the shape as decided by both product sides and
+on `main`, not as an open proposal; whether a given release carries it is
+for the repository's release notes.
+
 # Limits
 
-- The implementation ([oats-project/oats#1763](https://github.com/oats-project/oats/pull/1763))
-  was open at `d8f5f29fd`, with CI green and handed to the product lane, when
-  this was harvested on 2026-11-09: not merged, released or deployed [1]. The
-  release lane's choice to keep the change with this effort is
-  source-reported. The decision's rationale stands either way; whether the
-  shipped behaviour matches it is for the repository and its release notes.
+- At the first harvest on 2026-11-09 the implementation was open at
+  `d8f5f29fd`, CI green and handed to the product lane [1]; the status
+  above records the merge. The release lane's choice to keep the change with
+  this effort is source-reported. Neither harvest audited the code or reran
+  its tests, and no release or deployment run is certified.
 - The tag enumeration is a dated source-reported run, not reproduced here,
   and it says nothing about `git:` pins or about tags published after it.
 - No human-accepted decision is superseded. The integrity decision's
@@ -87,6 +103,9 @@ show such an enumeration has not earned its tightening.
 [A refusal that needs the old bytes is a pre-commit gate](../lessons/refusal-belongs-before-commit.md);
 [Compatibility follows supported adoption, not every intermediate format](evidence-bounded-compatibility-and-migration.md);
 [Capability resources must outlive package staging](contained-capability-lifetime.md).
+[A souls pattern key is judged against discovered souls and reuses team-soul-unknown](souls-pattern-key-typo-guard-judges-discovered-souls.md)
+is item 4 of the same report and applies the same family-over-new-code rule
+to a warning.
 
 # Current contracts
 
@@ -105,6 +124,27 @@ show such an enumeration has not earned its tightening.
    source's proposal and note; it was not rerun at harvest.
 3. The `why` discriminators `branch`, `capabilities` and `souls` on
    `E_PACKAGE_INTEGRITY` were read in `docs/packages.md` on
-   oats-project/oats `main` at harvest; `package-id` was not yet there.
+   oats-project/oats `main` at the first harvest; `package-id` was not yet
+   there. On 2026-11-10, after the merge, `docs/packages.md` on `main` names
+   `why: "package-id"` at sync.
+4. The two confirmations on oats-project/oats#1759, both 2026-11-09:
+   [comment 6743271645](https://github.com/oats-project/oats/issues/1759#issuecomment-6743271645)
+   states the shape for the lane:product side and asks the other side to
+   answer before hand-over;
+   [comment 6743282933](https://github.com/oats-project/oats/issues/1759#issuecomment-6743282933)
+   is the other product side's yes to that shape. Both were read by the
+   harvester on 2026-11-10 and say what is recorded here; each presents
+   itself as an agent relaying its side, so both are **source-reported
+   (relay)**.
+5. [oats-project/oats#1763](https://github.com/oats-project/oats/pull/1763)
+   was approved at head `5c04ed6bfbbcdc14cb5a29ac20a2579444488de0` by the
+   lane:product maintainer
+   ([PR comment 6775535046](https://github.com/oats-project/oats/pull/1763#issuecomment-6775535046),
+   a merge-delta review on top of the earlier approval at `d8f5f29fd`) and
+   merged on 2026-11-10 as `e835d88172af8a8600dccefd8153d64ce37121f6`. The
+   harvester read the PR state, compared the two commits' tree ids (equal)
+   and read ten successful checks on the merge commit on 2026-11-10. The
+   release lane's sign-off on the delta is source-reported.
 
 Evidence: OKF proposal from oats-kernel-expert/oats-kernel-expert-package-id-truth, 2026-11-09; notes/manifest-id-check-reuses-integrity-code.md.
+The 2026-11-10 status: OKF proposal from the same instance, 2026-11-10; notes/manifest-id-check-reuses-integrity-code.md.
