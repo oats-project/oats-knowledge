@@ -10,14 +10,14 @@ timestamp: 2026-10-08
 # Decision and rationale
 
 The proposal and backing note record agreement on 2026-10-08 by OATS
-maintainers `oats-expert-juan` and `oats-maintainer-lfx`: tolerate unknown hook
+maintainers `oats-expert-juan` and `oats-maintainer-partner`: tolerate unknown hook
 event names only when the capability author has not declared the hook
 required. The implementation merged on 2026-10-08 for OATS 0.49.0, which was
 still unreleased on that date [1][2].
 
 A closed event set made adding one event reject the whole capability on an
 older host, not merely disable the new step. Every soul composing that
-capability then became unavailable. The source reports that LFX encountered
+capability then became unavailable. The source reports that the partner encountered
 this failure, and that introducing the `worktree` event would repeat it.
 Optional event evolution should not impose that capability-wide failure;
 a step declared essential must still fail closed when the kernel cannot run

@@ -57,7 +57,7 @@ not a manual timeout table in knowledge.
 
 # Evidence and limits
 
-Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-lfx-desktop-queue, 2026-10-14; notes/an-outcome-must-outlive-every-hop-deadline.md.
+Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-partner-desktop-queue, 2026-10-14; notes/an-outcome-must-outlive-every-hop-deadline.md.
 
 The note dates the launch-prompt review for
 [awebai/oats#917](https://github.com/awebai/oats/issues/917) to 2026-10-11 and

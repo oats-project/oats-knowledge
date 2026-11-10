@@ -197,7 +197,7 @@ Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-client-spawn
 
 Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-client-spawn, 2026-10-15; notes/a-spawn-reads-only-what-it-changed.md.
 
-3. The source identifies the investigation and LFX maintainer's K1/K2
+3. The source identifies the investigation and the partner maintainer's K1/K2
    decisions in [awebai/oats#1246](https://github.com/awebai/oats/issues/1246),
    and reports the Desktop changes in [#1260](https://github.com/awebai/oats/pull/1260)
    and [#1263](https://github.com/awebai/oats/pull/1263), with kernel support

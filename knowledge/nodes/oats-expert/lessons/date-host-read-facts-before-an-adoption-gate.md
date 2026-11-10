@@ -65,7 +65,7 @@ the gate guards a contract flip, [count kernels, not hosts](/nodes/oats-expert/l
 
 # Evidence and limits
 
-Evidence: OKF proposal from oats-expert/polaris-oats-expert-lfx-support,
+Evidence: OKF proposal from oats-expert/polaris-oats-expert-partner-support,
 2026-10-14; notes/read-adopter-host-facts-on-the-host.md.
 
 The note dates the incidents to 2026-10-09 through 2026-10-13. The discovered
