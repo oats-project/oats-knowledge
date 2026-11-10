@@ -1,5 +1,9 @@
 # oats-operator-expert log
 
+## 2026-11-10
+
+* **Update**: [Onboarding evidence follows the installed client, provider and live service](/nodes/oats-operator-expert/lessons/onboarding-evidence-follows-the-live-version-combination.md) — merge the operator's pinned-client check into the canonical version-combination lesson: when the install pins aw to the provider's published tested bound, record the bound and the ref it was read at, and compare it with the client the onboarding path was proven on, because the bound can lag the registry (reported 1.36.53 against a fix proven on 1.36.56); raise the bound in the provider release, never loosen the pin. The proposed BYOT pin decision itself was dropped as a duplicate of the maintainer decision accepted in harvest #333, whose node the source does not own.
+
 ## 2026-11-09
 
 * **Harvest**: [Claude Code's subscription login needs the approver at the server](/nodes/oats-operator-expert/lessons/claude-code-login-needs-the-approver-at-the-server.md) — preserve the reported paste-back login direction and its consequence for headless or remote onboarding, bounded to one harness release and one run; keep the agent out of the code path under the kernel's native-authentication decision, and omit campaign stage labels and the authorization page address.

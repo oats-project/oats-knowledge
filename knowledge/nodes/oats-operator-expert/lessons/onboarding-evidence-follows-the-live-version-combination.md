@@ -2,8 +2,8 @@
 type: Lesson
 title: Onboarding evidence follows the installed client, provider and live service
 description: A newcomer onboarding result must name the client resolved by the ordinary install, the selected catalog provider and the observed live service release, because those versions can move independently.
-tags: [operator, onboarding, acceptance, versions, hosted-services]
-timestamp: 2026-11-05
+tags: [operator, onboarding, acceptance, versions, hosted-services, pins]
+timestamp: 2026-11-10
 ---
 # The release a newcomer gets is part of the test
 
@@ -44,6 +44,36 @@ that the later deployment passed. Combine it with
 [fresh-account and same-workspace second-machine coverage](/nodes/oats-operator-expert/lessons/fresh-machines-do-not-reset-account-history.md):
 matching versions alone does not reproduce service-side account history.
 
+# A pinned client is checked against the client the path was proven on
+
+When the install pins the client to a provider's published tested bound
+instead of taking `latest`, as the customer-run (BYOT) onboarding branch does
+under
+[the tested aw version is published by oats.aweb and pinned only for a customer-run server](/nodes/oats-maintainer/decisions/tested-aw-is-published-by-oats-aweb-and-pinned-only-for-byot.md),
+the bound is a coordinate too: record the value read and the provider ref it
+was read at, not only the version installed.
+
+Before accepting such a pin, compare the bound with the client the onboarding
+path was actually proven on. A tested bound can lag the registry: the source
+reports that on 2026-11-09 the provider's tested aw was 1.36.53 while npm
+`latest` was 1.36.56, and the customer-run create fix had been proven on
+1.36.56. Pinning to the unchanged bound would have installed a client the
+path was not built on, with every acceptance check reading green. The remedy
+is to raise the bound in the provider's own release, with the real-client
+evidence its matrix requires, before the consumer pins to it; never to loosen
+the pin, read the bound from a moving branch, or hard-code the newer version
+in the skill. The source reports that the provider release did raise `tested`
+to 1.36.56 together with publishing the bounds file; this harvest confirmed on
+the forge that [awebai/oats-aweb#211](https://github.com/awebai/oats-aweb/pull/211)
+merged on 2026-11-09 with that title, and read nothing else of it.
+
+The pin decision, its rejected alternatives and the hosted-versus-customer-run
+split are owned by the maintainer decision above; why a newer-than-tested
+client warns rather than refuses is owned by
+[newer-than-tested warnings follow the service's release authority](/nodes/integrations-expert/decisions/newer-than-tested-warnings-follow-release-authority.md).
+This section adds only the operator's check, and the version values are a
+dated example, not a current compatibility table.
+
 # Elimination route and evidence
 
 Make version capture part of the trial driver and bind each result to that
@@ -54,6 +84,7 @@ an unobserved service state. This is proposed acceptance automation, not an
 implemented detector or a second provider API specification.
 
 Evidence: OKF proposal from oats-operator-expert/oats-operator-expert-onboarding-vm-campaign, 2026-11-05; notes/newcomer-version-is-what-a-plain-install-gets.md.
+The pinned-client check: OKF proposal from oats-operator-expert/oats-operator-expert-onboarding-vm-campaign, 2026-11-10; notes/byot-aw-pin-reads-provider-file-at-catalog-ref.md.
 
 The release movement and account-setup change are source-reported. This
 harvest read the captured note, not service logs or the trial driver, and did
