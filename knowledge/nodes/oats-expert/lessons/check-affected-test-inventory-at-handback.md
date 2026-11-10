@@ -158,7 +158,9 @@ the producer's evidence rule to make a wait pass.
 
 The residual handback requirement belongs in specification and verification
 guidance, not a permanent list of test filenames in knowledge. No soul skill
-is changed.
+is changed. Reading the results of the runs that did happen is a separate
+check at the same hand-over:
+[a "CI green" claim is the count of failures being zero at the exact head](a-green-claim-is-the-count-of-failures-at-the-exact-head.md).
 
 # Evidence and limits
 

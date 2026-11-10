@@ -47,6 +47,8 @@ the same facts that must be dated and attributed as evidence must not
 become anonymous content in a record. When the facts at risk are someone
 else's private material handed to a child, the check moves to the brief:
 [a brief that hands a child private material names every public destination](/nodes/oats-expert/lessons/a-brief-passing-private-material-names-every-public-destination.md).
+When the search finds a name, whose it is comes before any report:
+[check who a flagged name belongs to before reporting a privacy finding](/nodes/oats-expert/lessons/check-who-a-flagged-name-is-before-reporting-a-privacy-finding.md).
 
 # Elimination route
 

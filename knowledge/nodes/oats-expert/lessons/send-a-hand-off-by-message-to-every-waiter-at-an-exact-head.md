@@ -67,6 +67,10 @@ a call change who may merge: where the workspace's
 [review protocol](/nodes/oats-maintainer/stewardship/review-protocol.md)
 makes a maintainer the PR gate, the call goes to that gate and it keeps its
 authority; this lesson is about waking it by message instead of by label.
+What the message says about CI and about review state has its own two
+lessons: [the counts, not the word "green"](/nodes/oats-expert/lessons/a-green-claim-is-the-count-of-failures-at-the-exact-head.md),
+and [a fix after the last round reopens the loop](/nodes/oats-expert/lessons/a-fix-after-the-last-review-round-reopens-the-loop.md),
+so the handed head is compared with the last approved head before routing.
 
 # Prevention route
 
