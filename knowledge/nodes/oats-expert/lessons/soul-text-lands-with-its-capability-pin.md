@@ -35,7 +35,10 @@ and the integration owner's [mirror-and-pin lesson](/nodes/integrations-expert/l
 own release mechanics. This lesson adds the generalist's earlier planning
 check for a semantic consumer: the soul's instructions. It complements
 [tracing promised outcomes to their producer](/nodes/oats-expert/lessons/trace-done-items-to-owning-code-before-accepting-repo-list.md),
-rather than duplicating package release procedure.
+rather than duplicating package release procedure. Where no pin stands
+between merge and reader, because a deployment resolves its souls from the
+workspace repository's main, the ordering question is the roster's:
+[a soul removal is a live change for deployments that follow main](/nodes/oats-expert/lessons/a-soul-removal-is-live-for-deployments-that-follow-main-so-add-first-remove-later.md).
 
 Prefer keeping a shared rule in one capability-owned home instead of two
 independently changing definitions. Where the soul must specialize it,
