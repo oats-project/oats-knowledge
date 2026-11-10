@@ -1,5 +1,9 @@
 # oats-desktop-expert log
 
+## 2026-11-10
+
+* **Harvest**: refined [Client wording across code producers](lessons/client-wording-must-hold-at-every-code-producer.md#a-documented-discriminator-is-worded-as-data-with-the-family-meaning-as-fallback) with the sync `E_PACKAGE_INTEGRITY` case: when a kernel code discriminates its causes with a documented `details.why`, word per `why` as data, and fall back to the family's cause-neutral meaning for no or unknown `why`; rejected a single cause-neutral sentence because the remedy differs per producer. Recorded the source-reported no-`details` reader stance with its one-slug exception, and the source-reported producer regression test as this code's elimination route. Linked the kernel's [integrity-family decision](/nodes/oats-kernel-expert/decisions/declaration-checks-run-at-sync-under-the-integrity-family.md) and pointed the [shared-readers decision](decisions/shared-readers-separate-client-terms-and-kernel-prose.md) at the rule rather than restating prose-is-not-a-contract. Change open and unmerged at capture; no release, code audit or test rerun is claimed.
+
 ## 2026-11-06
 
 * **Harvest**: added [Launch view without input focus](decisions/launch-instance-opens-view-without-input-focus.md), recording source-reported human acceptance (GitHub relay checked) of the partial D3 supersession: a running local row opens its terminal on launch, while a non-running row stays select-only and keyboard input requires the person's explicit focus action. Linked the new decision from [Verification judgment](lessons/verification-judgment-for-privileged-surfaces.md#launch-diagnosis-must-reach-the-persons-view) and retained the earlier no-decision finding as capture history. Preserved validation, later human choice and bounded pending-request semantics; omitted CI bookkeeping and any claim of shipment or cross-platform proof.
