@@ -42,7 +42,7 @@ The source exhausted the shared temporary filesystem's inodes by retaining
 large per-trial homes and recovery copies. Checking free bytes alone missed
 the limiting resource. Cleaning each trial afterwards reduced the peak but
 did not bound it. The note attributes the resulting 2026-10-10 rule to
-`oats-maintainer-partner`, relayed by the lead: a reproduction needing tens of
+`oats-maintainer-REDACTED`, relayed by the lead: a reproduction needing tens of
 thousands of files uses its own size- or inode-capped fixture root, or asks
 first. This is source-reported maintainer guidance, not independently
 established human acceptance. Account for both inode and byte use; other

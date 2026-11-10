@@ -44,7 +44,7 @@ the tested revision and reject stale combination evidence; until enforced,
 revision-aware retry judgment belongs in `pr-review`. No queue, guard or
 skill change is delivered by this lesson.
 
-Evidence: OKF proposal from oats-maintainer/pepe-partner-maintainer, 2026-10-28; notes/a-rerun-tests-the-old-merge-ref.md.
+Evidence: OKF proposal from oats-maintainer/pepe-REDACTED-maintainer, 2026-10-28; notes/a-rerun-tests-the-old-merge-ref.md.
 
 The note dates the failed rerun to 2026-10-15 and identifies
 [awebai/oats#1163](https://github.com/awebai/oats/pull/1163),

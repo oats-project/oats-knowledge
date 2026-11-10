@@ -304,7 +304,7 @@ part of the guidance change. A map-update check belongs in maintainer
 handoff and policy-change guidance. Semantic agreement still needs review;
 no automated freshness check or skill change is claimed here.
 
-Evidence: OKF proposal from oats-maintainer/pepe-partner-maintainer, 2026-10-28; notes/lanes-release-and-projects.md.
+Evidence: OKF proposal from oats-maintainer/pepe-REDACTED-maintainer, 2026-10-28; notes/lanes-release-and-projects.md.
 
 The dates, omission and later correction are source-reported from one
 incident. This harvest did not inspect private logs or correspondence and

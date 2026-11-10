@@ -152,7 +152,7 @@ Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-tui-readers,
 2026-10-09; notes/terminal-client-narrows-one-product-decision.md.
 
 For the refinement, the source identifies [awebai/oats#855](https://github.com/awebai/oats/issues/855):
-section 0 decisions A and D record the LFX-side acceptance, section 2 records
+section 0 decisions A and D record the partner side's acceptance, section 2 records
 the narrowing and preview rollback, and decision F records shared-reader
 ownership. It identifies the [other maintainer side's acceptance](https://github.com/awebai/oats/issues/855#issuecomment-6090292949)
 at 2026-10-09T22:27Z, with that side's human's agreement. Acceptance by both
@@ -169,7 +169,7 @@ Both records stand under the `juanre` account and present themselves as that
 human's maintainer agent reporting the human's agreement to this narrowing,
 so they are agents' reports, not the human's own record. The comment set the
 two durable terms above; its third term, merge sequencing, is task residue and
-is left out. The [LFX-side yes](https://github.com/awebai/oats/issues/855#issuecomment-6086919046)
+is left out. The [partner-side yes](https://github.com/awebai/oats/issues/855#issuecomment-6086919046)
 is that side's maintainer agent and quotes no human; its human's agreement is
 source-reported by the proposal and note, which this review could not read.
 

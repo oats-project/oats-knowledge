@@ -83,7 +83,7 @@ those judgments remain at the communication boundary.
 
 # Evidence and limits
 
-Evidence: OKF proposal from oats-expert/polaris-oats-expert-partner-support,
+Evidence: OKF proposal from oats-expert/polaris-oats-expert-REDACTED-support,
 2026-10-14; notes/relay-own-reading-goes-to-maintainer-not-adopter.md.
 
 The note dates both incidents to 2026-10-13. The retraction, release-tag
@@ -92,7 +92,7 @@ verified by this harvest. No human acceptance is inferred and no product
 decision is superseded. Third-party message text and incident-specific
 remedies are not reproduced.
 
-Evidence: OKF proposal from oats-expert/polaris-oats-expert-partner-support,
+Evidence: OKF proposal from oats-expert/polaris-oats-expert-REDACTED-support,
 2026-10-27; notes/relay-answers-name-issues-not-fix-versions.md;
 notes/verbatim-relay-marks-lines-addressed-to-the-relay.md.
 

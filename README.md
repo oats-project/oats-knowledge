@@ -59,6 +59,10 @@ map; changes to it and base metadata require explicit ownership review.
 4. Review semantic correctness, scope, freshness and ownership as well as CI.
    Merge only with authority and exact reviewed evidence; do not push knowledge
    directly to accepted `main`. Git-backed harvests use this same PR boundary.
+   Names of people and organisations outside the team are removed from
+   provenance: in an instance or soul name the uppercase segment `REDACTED`
+   (which no real slug contains) replaces the removed name, so the name as
+   written never existed; prose says "the partner" instead.
 5. Reconcile acceptance and verify a fresh reader actually consumes the accepted
    change before claiming learning or cutover. A green structural test is not
    semantic approval, deployment or model-learning evidence.

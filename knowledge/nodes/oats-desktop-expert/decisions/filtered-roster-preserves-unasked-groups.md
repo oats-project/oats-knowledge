@@ -63,7 +63,7 @@ routes, not an assertion that every case already has coverage.
 
 # Evidence
 
-Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-partner-desktop-queue, 2026-10-14; notes/a-filtered-roster-read-replaces-only-what-it-asked-about.md.
+Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-REDACTED-desktop-queue, 2026-10-14; notes/a-filtered-roster-read-replaces-only-what-it-asked-about.md.
 
 The proposal cites [awebai/oats#1124](https://github.com/awebai/oats/issues/1124),
 comments 6169153192 and 6169160731, and implementation PRs

@@ -61,7 +61,7 @@ specification or a claim that every case already has coverage.
 
 # Evidence and limits
 
-Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-partner-desktop-queue, 2026-10-14; notes/4a-what-the-shared-home-gives-a-client-that-opens-an-agent.md.
+Evidence: OKF proposal from oats-desktop-expert/oats-desktop-expert-REDACTED-desktop-queue, 2026-10-14; notes/4a-what-the-shared-home-gives-a-client-that-opens-an-agent.md.
 
 The source identifies [awebai/oats#855](https://github.com/awebai/oats/issues/855)
 (comments 6137903269, 6137979565 and 6137988436), reports agreement, and reports

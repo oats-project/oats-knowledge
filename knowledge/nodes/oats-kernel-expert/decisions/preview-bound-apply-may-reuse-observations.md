@@ -66,7 +66,7 @@ Evidence: OKF proposal from oats-kernel-expert/oats-kernel-expert-spawn-resoluti
    Maintainer acceptance and shipment are source-reported, not independently
    audited by this harvest. No separate human acceptance is established.
 2. Checked by the knowledge maintainer at review of the harvest on
-   2026-10-15. On #1246 the decision on K1 is signed as the LFX maintainer's:
+   2026-10-15. On #1246 the decision on K1 is signed as the partner maintainer's:
    accepted behind the `spawn-apply-max-age` feature, the decision fence
    unchanged, the client passing `--max-age` only when the feature is
    advertised. This review did not establish it as a human acceptance. The
