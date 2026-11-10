@@ -2,6 +2,9 @@
 type: Lesson
 title: Trace each "done" item to the code that owns it before accepting the task's repository list
 description: Before a cross-area spec adopts the brief's repository list, open the code that produces each promised outcome today and name its repository, owner, function or command and version; a dependency outside the named repositories goes to the maintainer before building.
+about: [workstream/coordination]
+kind: lesson
+id: ins-2b8f93ba0737
 tags: [planning, scope, ownership, dependencies, cross-area]
 timestamp: 2026-10-26
 ---

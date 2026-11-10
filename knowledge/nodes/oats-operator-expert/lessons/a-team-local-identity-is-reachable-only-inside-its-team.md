@@ -2,6 +2,9 @@
 type: Lesson
 title: A team-local identity is reachable only inside its team — a seat that other teams must contact needs a global identity served from custody
 description: Instances minted at spawn get team-local identities with no durable address, which other teams and outside parties cannot use for first contact; a standing seat that must be reachable across teams is a resident global identity created once by its owner and served to instances through custody, never a per-instance mint.
+about: [workstream/operations]
+kind: lesson
+id: ins-44350fd8d781
 tags: [lesson, operator, identity, reachability, teams, residents, custody]
 timestamp: 2026-09-21
 ---

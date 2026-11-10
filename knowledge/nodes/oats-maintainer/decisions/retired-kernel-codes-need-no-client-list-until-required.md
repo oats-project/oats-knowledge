@@ -2,6 +2,8 @@
 type: Decision
 title: Retired kernel codes need no client list until a removal requires one
 description: A client may use a truthful generic rendering for retired kernel codes still in its accepted band, deferring a retired-code list until a concrete removal needs it.
+about: [workstream/oats-direction]
+id: dec-df35fe791c8a
 tags: [compatibility, clients, review, error-codes]
 timestamp: 2026-10-14
 ---

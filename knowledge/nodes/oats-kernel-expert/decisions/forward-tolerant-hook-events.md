@@ -2,6 +2,8 @@
 type: Decision
 title: Unknown hook events are forward-tolerant unless required
 description: Non-required hook events may be skipped to preserve capability composition, but required events still refuse and the tolerance starts only at OATS 0.49.0.
+about: [system/oats-kernel]
+id: dec-23278819c0b2
 tags: [kernel, hooks, capabilities, compatibility, manifests, fail-closed]
 timestamp: 2026-10-08
 ---

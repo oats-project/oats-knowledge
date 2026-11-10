@@ -2,6 +2,8 @@
 type: Decision
 title: Integrity, origin and consent are different proofs
 description: Membership trusts member capabilities and declaring a package trusts it; the lock proves reproducible contained bytes, not approval; host-install consent is a separate, explicit step.
+about: [system/oats-kernel]
+id: dec-10074274ce33
 tags: [kernel, trust, integrity, consent, packages, security]
 timestamp: 2026-09-24
 ---

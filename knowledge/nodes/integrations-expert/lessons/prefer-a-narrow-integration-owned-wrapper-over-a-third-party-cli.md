@@ -2,6 +2,9 @@
 type: Lesson
 title: Prefer a narrow integration-owned wrapper over a third-party CLI, and document its boundary as a support matrix
 description: When a service's official CLI covers too little and third-party CLIs have unstable contracts, an integration owns a small JSON-first wrapper over the service's API with credentials from the environment and missing authentication surfaced early; its guide and skill state a support matrix (command-supported, human-only, not supported) and tell the agent to escalate rather than improvise outside it.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-9fd1a7de2322
 tags: [lesson, integrations, wrappers, cli, secrets, authentication, tasks, documentation, guardrails]
 timestamp: 2026-07-10
 ---

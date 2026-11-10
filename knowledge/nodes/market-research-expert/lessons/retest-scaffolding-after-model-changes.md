@@ -2,6 +2,9 @@
 type: Lesson
 title: Re-test coordination scaffolding when model capability changes
 description: The 2026-11-02 research synthesis treats a harness component's value as model- and task-dependent and does not equate durable files with demonstrated learning gains.
+about: [workstream/positioning]
+kind: lesson
+id: ins-2364c8e2a4b0
 tags: [research, harnesses, memory, evaluation, model-capability]
 timestamp: 2026-11-02
 ---

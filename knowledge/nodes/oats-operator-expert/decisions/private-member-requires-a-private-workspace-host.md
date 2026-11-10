@@ -2,6 +2,8 @@
 type: Decision
 title: If any workspace member is private, host the workspace definition in a dedicated private repository that is not itself a public member
 description: The workspace definition names every member, so whoever can read its host sees the member list; with mixed public/private membership the only honest host is a dedicated private repository, chosen before the first sync because every deployment points at it.
+about: [workstream/operations]
+id: dec-d7aec9abc694
 tags: [decision, operator, workspace, disclosure, privacy, membership, hosting]
 timestamp: 2026-09-23
 ---

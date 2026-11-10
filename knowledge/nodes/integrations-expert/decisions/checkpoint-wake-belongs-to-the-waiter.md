@@ -2,6 +2,8 @@
 type: Decision
 title: An idle waiter's checkpoint wake belongs to the waiter
 description: A waiter-owned kernel job supplies an external checkpoint without depending on harness timers or messaging, but does not prove a child stalled or guarantee timely delivery.
+about: [workstream/provider-integration]
+id: dec-13b1b09f75c8
 tags: [integration, delegation, scheduling, harnesses, rationale]
 timestamp: 2026-10-31
 ---

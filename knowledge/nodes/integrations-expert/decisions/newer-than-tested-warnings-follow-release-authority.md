@@ -2,6 +2,8 @@
 type: Decision
 title: Newer-than-tested warnings follow the service's release authority
 description: A provider's tested client bound is evidence rather than a refusal ceiling, and a managed-service exemption depends on that service owning server-before-client release order.
+about: [workstream/provider-integration]
+id: dec-220aa928ec7a
 tags: [integrations, compatibility, releases, readiness, external-cli]
 timestamp: 2026-11-09
 ---

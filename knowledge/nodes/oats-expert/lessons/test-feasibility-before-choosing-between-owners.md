@@ -2,6 +2,9 @@
 type: Lesson
 title: Test feasibility before committing to a plan
 description: Use bounded, authorized CI spikes to settle feasibility disagreements and recheck inherited limitations before planning hardware, rental or recurring manual work around them.
+about: [workstream/coordination]
+kind: lesson
+id: ins-530f27cf29a4
 tags: [coordination, feasibility, ci, experiments]
 timestamp: 2026-10-15
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: A --repo that is not a repository key is refused with the key to pass, never with a Git remedy
 description: When worktree add's --repo parses as no repository reference, the refusal keeps its codes and details and names the clone's matching remote as --repo <key> plus the clone's path, never a set-url, remote add or clones: hint built from the input; accepting member names, an E_BAD_ARGS member listing and changing the shared remedy helper were rejected.
+about: [system/oats-kernel]
+id: dec-d1565940df39
 tags: [kernel, cli, worktree, diagnostics, remedies, git, rejected-alternatives]
 timestamp: 2026-11-10
 ---

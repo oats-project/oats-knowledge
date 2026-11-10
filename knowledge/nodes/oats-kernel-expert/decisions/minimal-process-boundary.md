@@ -2,6 +2,8 @@
 type: Decision
 title: A minimal process boundary avoids permanent private coupling
 description: A structured public CLI lets independent consumers evolve without turning each private kernel function into a permanent API.
+about: [system/oats-kernel]
+id: dec-e3d6bc674cf0
 tags: [kernel, cli, api, packages, compatibility, runtimes]
 timestamp: 2026-07-26
 ---

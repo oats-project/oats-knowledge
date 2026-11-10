@@ -2,6 +2,8 @@
 type: Decision
 title: One standalone Desktop product, no hidden operational kernel, with a bounded terminal-client exception
 description: Desktop owns operator-product succession while the installed compatible CLI is the model it renders and the only way it changes a deployment; the one exception is a preview terminal client through shared kernel JSON readers, with no second model, kernel-internal client or session ownership.
+about: [system/oats-desktop]
+id: dec-901e276157cc
 tags: [desktop, product, cli-authority, succession, degradation, workspace-v2, terminal-client]
 timestamp: 2026-10-30
 ---

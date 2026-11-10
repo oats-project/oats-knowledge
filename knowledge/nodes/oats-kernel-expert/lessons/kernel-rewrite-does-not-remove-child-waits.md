@@ -2,6 +2,9 @@
 type: Lesson
 title: A kernel rewrite does not remove unchanged child waits
 description: Separate process startup and kernel compute from child waits before estimating a language rewrite's benefit, because measured warm-read gains do not remove provider, network or harness costs.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-624979831a77
 tags: [kernel, performance, profiling, runtimes]
 timestamp: 2026-10-28
 ---

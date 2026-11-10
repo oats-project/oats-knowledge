@@ -2,6 +2,9 @@
 type: Lesson
 title: A client's sentence must hold at every producer of a kernel code
 description: Audit a client-authored sentence separately from its outcome classification, because a shared kernel code can cover causes the first example does not.
+about: [system/oats-desktop, system/oats-kernel]
+kind: lesson
+id: ins-2428b03a3b69
 tags: [desktop, kernel, wording, contracts, verification]
 timestamp: 2026-10-30
 ---

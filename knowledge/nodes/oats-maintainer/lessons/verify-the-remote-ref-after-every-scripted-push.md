@@ -2,6 +2,9 @@
 type: Lesson
 title: Report an outcome only from a read-back of the target
 description: A chained push, merge or release script can fail mid-way while a later step still announces the intended outcome; a head, a merge or a tag is named to a reviewer only from a read-back of the remote or the forge, in its own step, guarded by what the read-back says.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-63e4ef0ea9c2
 tags: [lesson, release, git, review, notices, read-back]
 timestamp: 2026-09-24
 ---

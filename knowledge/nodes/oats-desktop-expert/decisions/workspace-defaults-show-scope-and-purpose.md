@@ -2,6 +2,8 @@
 type: Decision
 title: Workspace defaults show shared scope, Core and Additional groups, and purpose
 description: Present workspace defaults above the capability catalogue with one visual grammar for Core and Additional groups, and explain their shared-working purpose without promising compulsory or automatic learning.
+about: [system/oats-desktop]
+id: dec-ca980407b0a0
 tags: [desktop, capabilities, workspace-defaults, composition, copy, design]
 timestamp: 2026-10-23
 ---

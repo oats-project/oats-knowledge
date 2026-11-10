@@ -2,6 +2,9 @@
 type: Lesson
 title: GPU restart recovery follows the shared glyph atlas's scope
 description: Recover xterm's shared atlas across all live terminals in one debounced pass, because independent terminal clears can corrupt a resource shared by the window.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-c262e5390ff5
 tags: [desktop, terminal, xterm, webgl, gpu, recovery, verification]
 timestamp: 2026-10-14
 ---

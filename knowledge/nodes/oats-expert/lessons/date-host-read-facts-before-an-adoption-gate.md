@@ -2,6 +2,9 @@
 type: Lesson
 title: Date host-read facts before a cross-workspace adoption gate
 description: Before a version-dependent adoption gate, enumerate the adopter's hosts from team presence and require each version to be read on the named host with its observation time and reporting route.
+about: [workstream/coordination]
+kind: lesson
+id: ins-5682434e67b9
 tags: [coordination, adoption, hosts, evidence, freshness]
 timestamp: 2026-10-14
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: An unknown hook key makes Claude Code skip the whole settings file, and a headless check hides it
 description: Before 2.1.78 a StopFailure key voids a Claude Code settings file and stops an interactive start at a Settings Error dialog no unattended instance can answer, while a -p run shows nothing, so a new Claude hook key is written only after versioning the executable the launch runs and any failure of that check leaves the key out.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-cc580f124ebd
 tags: [kernel, harnesses, claude, hooks, settings, evidence]
 timestamp: 2026-10-30
 ---

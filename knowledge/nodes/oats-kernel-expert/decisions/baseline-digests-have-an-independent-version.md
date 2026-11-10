@@ -2,6 +2,8 @@
 type: Decision
 title: Version baseline digests independently of baseline authority
 description: Separate digest evolution from the baseline version that gates lifecycle authority, preserving legacy comparisons without rewriting spawn-time evidence.
+about: [system/oats-kernel]
+id: dec-568ffb6c05dd
 tags: [kernel, baseline, digest, compatibility, lifecycle, retire]
 timestamp: 2026-10-09
 ---

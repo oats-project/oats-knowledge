@@ -2,6 +2,11 @@
 type: Roadmap
 title: Reassess coordination across use cases before adaptive onboarding
 description: Treat the current role model as a candidate rather than a design constraint, evaluate alternatives through research and real trials with human oversight central, and hold use-case-adaptive onboarding for the coordination outcome.
+about: [workstream/oats-direction]
+kind: direction
+status: decided
+decided-by: human
+id: dec-ca48c1230aa1
 tags: [coordination, direction, onboarding, human-oversight, research]
 timestamp: 2026-11-02
 ---

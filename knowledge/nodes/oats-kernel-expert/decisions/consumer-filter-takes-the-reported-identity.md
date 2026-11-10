@@ -2,6 +2,8 @@
 type: Decision
 title: A consumer filter takes the identity the kernel already reported
 description: A Desktop-facing roster filter accepts the reported workspace key rather than reinterpreting a repository ref, because the consumer holds host identity and a member ref can resolve to a different key.
+about: [system/oats-kernel, system/oats-desktop]
+id: dec-a78c90479233
 tags: [kernel, desktop, cli, identity, workspaces]
 timestamp: 2026-10-15
 ---

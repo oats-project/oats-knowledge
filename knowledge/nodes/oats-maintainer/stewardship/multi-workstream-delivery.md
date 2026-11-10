@@ -2,6 +2,9 @@
 type: Lesson
 title: Cross-workstream delivery: freeze the contract first, adopt then adapt, prove the merge
 description: Freeze shared contracts before implementation, adopt then adapt sibling suites, and prove merge fidelity; ship-together sets need whole-set evidence before the first merge or an explicit release hold, and a paused shared-package contract stage is reverted before release.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-3b3df523e71a
 tags: [stewardship, delivery, integration, contracts, releases]
 timestamp: 2026-10-27
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: A commit cherry-picked across a base change must be re-read as a diff against the new base
 description: When a developer rebuilds a branch on a newer base by cherry-picking, hunks written against the old base can reintroduce text the new base removed; the reviewer reads the full diff against the remote main, not only the lines the change was meant to touch.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-cb5daaa232cd
 tags: [lesson, pr-review, git, cherry-pick, docs]
 timestamp: 2026-09-24
 ---

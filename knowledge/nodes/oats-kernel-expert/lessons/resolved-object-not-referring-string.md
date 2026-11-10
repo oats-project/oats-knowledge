@@ -2,6 +2,9 @@
 type: Lesson
 title: Identity and location belong to the resolved object, never to the string that named it
 description: Resolved-object checks need independent intended-object authority, including receipt-bound requested homes, native on-disk directory spelling and descriptor identity before reads.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-296ca0333459
 tags: [kernel, security, containment, symlinks, identity, spawn, lifecycle]
 timestamp: 2026-10-30
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Host Git credentials must work for unattended agents
 description: Design the host account's shared Git credentials for unattended use, explicitly accepting the key-protection trade-off while minimizing token authority and preserving the person's sign-off responsibility.
+about: [workstream/operations]
+id: dec-20ab5dc9b80a
 tags: [operator, git, github, credentials, unattended, least-privilege]
 timestamp: 2026-10-15
 ---

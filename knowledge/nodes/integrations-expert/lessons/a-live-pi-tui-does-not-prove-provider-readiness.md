@@ -2,6 +2,9 @@
 type: Lesson
 title: A live Pi TUI does not prove provider readiness
 description: Pi 1.3.0 could accept a prompt and remain silently running without a logged-in provider, so omitting a shared model pin avoids a portability assumption but does not establish an executable session.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-fe9b17bd5b9d
 tags: [integration, pi, harnesses, readiness, portability, testing]
 timestamp: 2026-10-30
 ---

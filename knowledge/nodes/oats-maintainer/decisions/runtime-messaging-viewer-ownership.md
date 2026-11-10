@@ -2,6 +2,8 @@
 type: Decision
 title: Runtime, messaging and viewers have separate owners; a wake is a hint, not consumption
 description: The kernel owns execution lifecycle, the messaging capability owns identity and delivery, viewers are clients; the wake broker never fetches or acknowledges mail for an agent, and recovery means a fresh receipt with one identity holder.
+about: [workstream/oats-direction, workstream/messaging, workstream/provider-integration]
+id: dec-1328de872184
 tags: [integrations, messaging, runtime, recovery, ownership]
 timestamp: 2026-09-05
 ---

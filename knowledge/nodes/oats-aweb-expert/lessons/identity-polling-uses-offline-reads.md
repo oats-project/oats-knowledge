@@ -2,6 +2,9 @@
 type: Lesson
 title: Identity polling should not buy a server request for local facts
 description: The health publisher chooses offline identity inspection because a per-minute whoami call adds a server request per identity for identifiers already held locally.
+about: [system/oats-aweb]
+kind: lesson
+id: ins-ac0866d4cd18
 tags: [oats.aweb, identity, polling, performance]
 timestamp: 2026-10-15
 ---

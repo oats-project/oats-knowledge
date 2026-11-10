@@ -2,6 +2,9 @@
 type: Limitation
 title: Personal-agent retention was unresolved in the November 2026 research pass
 description: The 2026-11-02 investigation found no published retention, opt-out or churn data for its named scheduled-agent products, so anecdotes and popularity measures do not establish durable use.
+about: [workstream/positioning]
+kind: constraint
+id: ins-4efc6701ca08
 tags: [research, personal-agents, retention, adoption, uncertainty]
 timestamp: 2026-11-02
 ---

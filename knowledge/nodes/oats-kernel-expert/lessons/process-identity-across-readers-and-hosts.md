@@ -2,6 +2,9 @@
 type: Lesson
 title: Process identity must survive different readers and host conventions
 description: Process identity needs stable readers and fail-closed unknown handling; empty arguments can precede exit, while PID existence and a matching start token do not prove an unreaped holder can still act.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-23639600d205
 tags: [kernel, process, liveness, portability, recovery, fail-closed]
 timestamp: 2026-10-30
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: OATS moves to its own GitHub org and npm scope by full transfer, in separate stages
 description: Move OATS and its non-aweb packages to the oats-project GitHub org and npm scope by repository transfer, in stages: the bridge release ships first because it is inert until a declared string changes, the transfer needs no kernel release, the string flip waits for every kernel and schedule unit to be on the bridge, the npm rename comes last under a closed seven-repository contract with a frozen probe name; old names are held by staying empty, never by a placeholder.
+about: [workstream/oats-direction]
+id: dec-adccf4392c7e
 tags: [organisation, repositories, npm, compatibility, migration, stewardship]
 timestamp: 2026-11-04
 ---

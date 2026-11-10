@@ -2,6 +2,9 @@
 type: Lesson
 title: Binary replacement can require re-bootstrapping a launchd job
 description: A reported post-upgrade launchd refusal needed re-bootstrap rather than kickstart, so upgrade handling must distinguish loaded from runnable and wait for confirmed job absence between bootout and bootstrap.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-d1f53cd03050
 tags: [integrations, launchd, services, upgrades, acceptance]
 timestamp: 2026-11-04
 ---

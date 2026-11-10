@@ -2,6 +2,9 @@
 type: Lesson
 title: A bridge's home marker is retirement state, not harmless bookkeeping
 description: Home bookkeeping needs separate work-retention and copy-permission decisions; avoiding an undeclared bridge marker prevents needless recovery, but classifying a kernel file as a receipt does not keep sensitive bytes out of recovery storage.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-b010cb8c2e4e
 tags: [kernel, runtime, bridges, retirement, baseline, credentials]
 timestamp: 2026-10-27
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: A readiness cache needs measured publisher cost
 description: The health publisher deferred a readiness cache below an agreed approximate one-second per-home threshold, using bounded CLI CPU measurements and a remeasurement trigger rather than treating scratch timings as a production budget.
+about: [system/oats-aweb, system/oats-kernel]
+id: dec-fe2c84923aab
 tags: [oats.aweb, health, performance, caching, kernel]
 timestamp: 2026-10-15
 ---

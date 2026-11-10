@@ -2,6 +2,8 @@
 type: Decision
 title: Explicit sibling links are shown on both ends and apart from parentage
 description: Show only direct explicit sibling links on both endpoints, using separate dotted sibling and solid lineage cues in the sidebar and palette with an accessible word-based reading so siblinghood cannot be mistaken for parentage.
+about: [system/oats-desktop]
+id: dec-4098247f8e33
 tags: [desktop, siblings, lineage, roster, accessibility, rejected-alternatives]
 timestamp: 2026-10-19
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Background is presentation, not identity or lifecycle
 description: Background is an instance-owned presentation choice with a soul default, not identity or lifecycle policy; ancestor-based client placement avoids inherited state and a separate presentation record survives restarts.
+about: [workstream/oats-direction]
+id: dec-baa2c00637e1
 tags: [clients, presentation, lifecycle, configuration, rejected-alternatives]
 timestamp: 2026-10-27
 ---

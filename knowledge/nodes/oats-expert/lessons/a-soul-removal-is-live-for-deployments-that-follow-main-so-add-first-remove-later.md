@@ -2,6 +2,9 @@
 type: Lesson
 title: A soul removal or rename is a live change for every deployment that follows main; plan the roster change as add first, remove later
 description: A deployment that resolves its souls from the head of the workspace repository's main takes a soul removal or rename the moment the PR merges, failing its next spawn of that soul while agents may still run on it, and no review catches it; so the lead asks at planning time which deployments follow main and plans add-then-remove from the start, with the old souls kept composing and marked deprecated and the removals in a separate PR on each such operator's word.
+about: [workstream/coordination]
+kind: lesson
+id: ins-065c6e85bb6a
 tags: [planning, souls, roster, deployments, landing-order, cross-area]
 timestamp: 2026-11-10
 ---

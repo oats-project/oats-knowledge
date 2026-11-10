@@ -2,6 +2,8 @@
 type: Decision
 title: Workspace admission is privileged and transactional
 description: Validated suggestions or a privileged picker admit workspaces only after identity, readiness and rollback authority are established.
+about: [system/oats-desktop]
+id: dec-5a7ef5775bf8
 tags: [desktop, security, workspaces, privileged-process, transactions]
 timestamp: 2026-10-08
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: An exit status read after a pipe is the filter's, not the tool's
 description: Filtering a tool's output through a pipe to keep secrets out of the transcript makes `$?` the filter's status, which reportedly produced a false defect report to another team; when an exit code is evidence, redirect to a file and filter that, or use pipefail or PIPESTATUS, and mark any status read through a pipe as unverified.
+about: [workstream/operations]
+kind: lesson
+id: ins-8704e4a70ef3
 tags: [operator, verification, evidence, shell, defect-reports, trials]
 timestamp: 2026-11-09
 ---

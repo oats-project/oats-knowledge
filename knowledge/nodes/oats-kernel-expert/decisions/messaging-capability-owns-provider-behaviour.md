@@ -2,6 +2,8 @@
 type: Decision
 title: Kernel supplies provider-neutral messaging inputs; the capability owns identity, membership, transport and qualification
 description: The kernel selects the messaging slot, copies the module, runs its hooks with the merged payload and the soul's teams in the environment, and relays its readiness answer; the selected capability resolves identities, joins teams, delivers and reports, and that state never becomes an OATS user database.
+about: [system/oats-kernel, workstream/messaging]
+id: dec-98797dfccd59
 tags: [kernel, messaging, capabilities, contract, qualification]
 timestamp: 2026-09-16
 ---

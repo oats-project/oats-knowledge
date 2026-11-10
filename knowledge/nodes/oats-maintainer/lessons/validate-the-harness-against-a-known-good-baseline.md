@@ -2,6 +2,9 @@
 type: Lesson
 title: A test harness must reproduce a known-good baseline before any delta it reports means anything
 description: An isolated copy of a project can fail for environmental reasons that have nothing to do with the change under test, so run the unmodified control first and require it to match the trusted result.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-15aab98fde8f
 tags: [lesson, testing, verification, methodology]
 timestamp: 2026-09-21
 ---

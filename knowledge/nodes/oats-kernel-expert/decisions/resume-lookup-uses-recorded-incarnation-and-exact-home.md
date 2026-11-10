@@ -2,6 +2,8 @@
 type: Decision
 title: Resume lookup uses the recorded incarnation and exact home
 description: Resume conversation lookup uses recorded creation and start times with exact home cwd, because native receipts survive same-name respawns and a newest-conversation lookup is not a complete-history inventory.
+about: [system/oats-kernel]
+id: dec-1a981e699861
 tags: [kernel, recovery, native-record, incarnation, evidence]
 timestamp: 2026-10-27
 ---

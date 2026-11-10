@@ -2,6 +2,9 @@
 type: Lesson
 title: Tests of kernel text own the client's reading, not the kernel's sentences
 description: Test the client's handling of live producer text without freezing relations between kernel sentences, and derive forbidden-text checks from the producer rather than copied wording.
+about: [system/oats-desktop, system/oats-kernel]
+kind: lesson
+id: ins-71e808d1543d
 tags: [desktop, testing, kernel, wording, integration]
 timestamp: 2026-10-14
 ---

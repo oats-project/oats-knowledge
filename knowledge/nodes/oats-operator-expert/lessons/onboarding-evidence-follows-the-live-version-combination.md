@@ -2,6 +2,9 @@
 type: Lesson
 title: Onboarding evidence follows the installed client, provider and live service
 description: A newcomer onboarding result must name the client resolved by the ordinary install, the selected catalog provider and the observed live service release, because those versions can move independently.
+about: [workstream/operations]
+kind: lesson
+id: ins-ad641471f401
 tags: [operator, onboarding, acceptance, versions, hosted-services, pins]
 timestamp: 2026-11-10
 ---

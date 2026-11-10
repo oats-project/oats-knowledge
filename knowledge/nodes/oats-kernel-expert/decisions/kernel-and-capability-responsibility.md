@@ -2,6 +2,8 @@
 type: Decision
 title: Keep kernel responsibilities generic and capability runtimes complete
 description: The kernel discovers, resolves, copies and runs the lifecycle through generic seams; replaceable capabilities own concrete knowledge, messaging and tasks behaviour, and operating on OATS is itself capability content.
+about: [system/oats-kernel]
+id: dec-d4e7657427ec
 tags: [kernel, capabilities, layers, composition, boundaries]
 timestamp: 2026-09-21
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: Run the consumer spec against the built producer before handover
 description: When a consumer spec predates its shared producer, exercise its compositions against the built code before handing it to the developer; matching names does not establish matching behavior.
+about: [workstream/coordination]
+kind: lesson
+id: ins-f40b9e58d786
 tags: [planning, integration, shared-code, verification]
 timestamp: 2026-10-12
 ---

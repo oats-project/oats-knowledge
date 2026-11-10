@@ -2,6 +2,8 @@
 type: Decision
 title: Display observation reuse reports; it never authorizes
 description: Reuse a login observation only for display, keep host-execution decisions live, and accept bounded display staleness rather than putting secret-derived values in reuse keys.
+about: [workstream/oats-direction]
+id: dec-cc79dc759528
 tags: [performance, observations, authorization, privacy, rejected-alternatives]
 timestamp: 2026-10-29
 ---

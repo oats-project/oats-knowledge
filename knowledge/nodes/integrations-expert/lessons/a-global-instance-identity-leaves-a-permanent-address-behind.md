@@ -2,6 +2,9 @@
 type: Lesson
 title: A global instance identity's address is released only by the authority that owns its lifecycle, so per-spawn global identities need that retire path settled first
 description: On the messaging service a global identity can hold several team memberships and retire can revoke them all, but releasing its address is a separate lifecycle act with its own authority (a namespace controller key on a customer-controlled namespace; on the hosted service an owner's archive or the member's own deprovision with address deletion, under a human session or the member's own key), and enrolling an existing global identity into a further hosted team needs a human owner session; settle which of those a provider's retire and join can actually call before defaulting instances to global.
+about: [workstream/provider-integration, workstream/messaging]
+kind: lesson
+id: ins-30669e92e959
 tags: [messaging, identity, teams, retire, registry]
 timestamp: 2026-09-25
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: Verified recovery does not prove that a home stays removed
 description: Stop-retire overlap preserved work in the reported probes but could recreate or strand a receipt-only home, so cross-command exclusion must cover removal and late writes as well as preservation.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-5ad87fda1c7e
 tags: [kernel, lifecycle, concurrency, recovery, cleanup]
 timestamp: 2026-10-10
 ---

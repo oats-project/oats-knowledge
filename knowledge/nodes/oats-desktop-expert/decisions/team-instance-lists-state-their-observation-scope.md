@@ -2,6 +2,8 @@
 type: Decision
 title: A team view names your instances, not the team's full membership
 description: Label team instance lists and counts as the user's observed deployments and state their machine scope, so a partial view never implies a complete team roster.
+about: [system/oats-desktop]
+id: dec-293f4a6ef57e
 tags: [desktop, teams, scope, wording, information-architecture]
 timestamp: 2026-10-15
 ---

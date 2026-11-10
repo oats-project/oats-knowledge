@@ -2,6 +2,8 @@
 type: Decision
 title: Parent-child lines require declared shared work, not inferred organisation
 description: Keep parent-child placement while drawing its connector only from a parent-bound shared-work declaration, with coordination guidance owned by capabilities rather than the kernel or oats.core.
+about: [workstream/oats-direction]
+id: dec-97cfed58e463
 tags: [clients, lineage, coordination, capabilities, rejected-alternatives]
 timestamp: 2026-10-27
 ---

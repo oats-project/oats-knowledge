@@ -2,6 +2,9 @@
 type: Lesson
 title: A transfer rehearsal must check what the forge returns and keeps per owner, not only that operations succeed through the old name
 description: A rehearsal that proves every operation succeeds through a redirected old name misses tools that compare the new name the forge returns and state the forge keeps per owner, so before a move inventory what each consumer reads, including hand-kept host files and returned URLs, and change the consumers that will break before transferring.
+about: [workstream/oats-direction, workstream/coordination]
+kind: lesson
+id: ins-70dd2b076899
 tags: [migration, repositories, rehearsal, planning, stewardship]
 timestamp: 2026-11-04
 ---

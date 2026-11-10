@@ -2,6 +2,8 @@
 type: Decision
 title: Dialog-claim support is a per-start hook statement, not a manifest promise
 description: A real hook run reports this home's claim support after setup, replacing earlier answers even by absence, because module capability and past claims cannot prove what this start installed.
+about: [system/oats-kernel]
+id: dec-d71cf13bf3a8
 tags: [kernel, hooks, claims, observations, rejected-alternatives]
 timestamp: 2026-10-30
 ---

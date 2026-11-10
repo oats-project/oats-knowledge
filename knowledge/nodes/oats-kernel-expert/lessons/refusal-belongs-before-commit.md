@@ -2,6 +2,9 @@
 type: Lesson
 title: A refusal that needs the old bytes is a pre-commit gate, never a post-hoc rollback
 description: Any policy decision that would need the pre-operation state to recover must run inside the transaction while that state is still live; "do it, then undo it" is safe only when the undo is a pure inverse.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-2995d1f34005
 tags: [kernel, transactions, packages, rollback, fail-closed]
 timestamp: 2026-09-22
 ---

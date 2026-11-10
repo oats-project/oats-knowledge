@@ -2,6 +2,9 @@
 type: Lesson
 title: Review shared-client prerequisites with their owner before depending on them
 description: Review shared modules and callers with their owner before estimating a second client, then isolate and test small shared prerequisites for owner review at an exact commit before building their consumers.
+about: [workstream/coordination]
+kind: lesson
+id: ins-721ac72e316c
 tags: [integration, shared-code, planning, second-consumer, review]
 timestamp: 2026-10-15
 ---

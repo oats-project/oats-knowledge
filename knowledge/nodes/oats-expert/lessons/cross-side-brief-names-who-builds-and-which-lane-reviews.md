@@ -2,6 +2,9 @@
 type: Lesson
 title: A cross-side brief names who builds and which lane reviews; a single "owner" column is read as "who builds"
 description: When one side builds and the other side's lanes review, the brief's ownership table must say for each piece who builds it and which area lane reviews it, and name the lanes on each side that decide contract changes, because a table with one "owner" column is read as the build assignment and contradicts a covering mail that says the other side builds.
+about: [workstream/coordination]
+kind: lesson
+id: ins-117ee992c8ca
 tags: [planning, briefs, cross-area, lanes, review, ownership, contracts]
 timestamp: 2026-10-30
 ---

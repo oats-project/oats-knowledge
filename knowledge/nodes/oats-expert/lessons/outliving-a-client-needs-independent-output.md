@@ -2,6 +2,9 @@
 type: Lesson
 title: Outliving a client requires independent output, not only no signals
 description: A lifecycle change promised to outlive its client needs output destinations independent of that client's readers, because detachment and a no-signal policy alone leave a broken-pipe failure path.
+about: [workstream/coordination]
+kind: lesson
+id: ins-f32dcfdf431a
 tags: [integration, lifecycle, process-lifetime, client-boundary]
 timestamp: 2026-10-15
 ---

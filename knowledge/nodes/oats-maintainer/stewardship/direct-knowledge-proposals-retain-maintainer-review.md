@@ -2,6 +2,11 @@
 type: Roadmap
 title: Direct knowledge proposals should retain doctrine and maintainer review
 description: Move toward working agents opening knowledge PRs themselves under unchanged promotion doctrine, but retain current harvest duties until the knowledge-package owner designs and ships the authority and independent-review transition.
+about: [workstream/oats-direction, workstream/knowledge]
+kind: direction
+status: decided
+decided-by: human
+id: dec-ab8abe185811
 tags: [knowledge, direction, review, capabilities, authority]
 timestamp: 2026-11-02
 ---

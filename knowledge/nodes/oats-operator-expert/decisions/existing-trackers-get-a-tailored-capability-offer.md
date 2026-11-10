@@ -2,6 +2,8 @@
 type: Decision
 title: Existing trackers get a tailored capability offer
 description: After onboarding defers an existing tracker with tasks none, the setup expert offers a workspace-owned tasks capability shaped by how the person uses that tracker rather than silently abandoning integration or selecting a generic provider.
+about: [workstream/operations]
+id: dec-b0565c3fe62e
 tags: [operator, onboarding, tasks, adoption, human-direction]
 timestamp: 2026-11-03
 ---

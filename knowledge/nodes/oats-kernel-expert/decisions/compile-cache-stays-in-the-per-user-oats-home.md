@@ -2,6 +2,8 @@
 type: Decision
 title: The CLI compile cache stays in the per-user OATS home
 description: Keep the CLI's automatic compile cache in the existing per-user OATS home to avoid a shared-directory trust dependency, a second location override and an inherited hook-environment change.
+about: [system/oats-kernel]
+id: dec-bc510fd6398c
 tags: [kernel, performance, cache, trust, environment, testing]
 timestamp: 2026-10-28
 ---

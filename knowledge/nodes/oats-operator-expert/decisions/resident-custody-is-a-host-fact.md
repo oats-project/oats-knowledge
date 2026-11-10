@@ -2,6 +2,8 @@
 type: Decision
 title: "A resident's custody is a host fact: one custody host per resident, one custody per resident across teams, custody services co-located and fail-closed"
 description: Fixes the multi-machine custody layout for residents whose external identity reaches instances through grants — custody lives on exactly one host, declared in that host's local config, shared by every team the resident acts in, with custody-class services co-located and reporting unavailability instead of serving stale or from another machine. Renewal is a host action at restart, never something an instance does for itself.
+about: [workstream/operations]
+id: dec-d722f2d71c2e
 tags: [decision, operator, custody, residents, grants, multi-machine, identity, lifecycle, degraded-mode]
 timestamp: 2026-09-24
 ---

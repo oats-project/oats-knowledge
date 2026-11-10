@@ -2,6 +2,9 @@
 type: Lesson
 title: Nested deadlines must let the inner outcome reach the view
 description: A view's promise to show a bounded kernel answer requires every enclosing wait to outlast the inner one, including intermediary proxy classes omitted by endpoint-only review.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-e048f7151195
 tags: [desktop, deadlines, transport, verification, truthfulness]
 timestamp: 2026-10-14
 ---

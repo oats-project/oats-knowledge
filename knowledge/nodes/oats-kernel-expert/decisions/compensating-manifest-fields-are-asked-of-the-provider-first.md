@@ -2,6 +2,8 @@
 type: Decision
 title: A manifest field that compensates for a provider package's contents is asked of the provider first
 description: When a provider wants a kernel manifest field whose only job is to work around what its own package ships, ask whether the package can change before adding permanent contract surface under the closed schema; the pi skills-filter field was shaped, conditionally accepted and then closed as unneeded once the provider split its package.
+about: [system/oats-kernel]
+id: dec-448caa328fc8
 tags: [kernel, manifests, packages, harness-packages, pi, rejected-alternatives, contract-surface]
 timestamp: 2026-11-09
 ---

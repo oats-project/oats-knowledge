@@ -2,6 +2,9 @@
 type: Lesson
 title: Spawn probe telemetry can masquerade as Git cost
 description: Attribute synchronous child cost before optimizing Git, and keep the Claude telemetry opt-out local to the plugin probe because carrying it into a launch disables channels.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-07815a4268dd
 tags: [kernel, spawn, performance, profiling, claude-code, environment]
 timestamp: 2026-10-28
 ---

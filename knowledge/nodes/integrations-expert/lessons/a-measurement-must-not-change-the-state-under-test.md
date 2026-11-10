@@ -2,6 +2,9 @@
 type: Lesson
 title: A rehearsal's measurement must not change the state under test
 description: Establish that a diagnostic preserves the state being measured, and compare unexplained transitions with the observer's own actions before attributing them to the system under test.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-2b95fa963f77
 tags: [integration, testing, rehearsal, measurement, evidence]
 timestamp: 2026-10-30
 ---

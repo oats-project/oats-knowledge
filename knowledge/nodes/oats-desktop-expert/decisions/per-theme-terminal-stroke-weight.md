@@ -2,6 +2,8 @@
 type: Decision
 title: Calibrate terminal stroke weight per theme without changing cell geometry
 description: Theme-specific stroke weight matches the native terminal reference without changing cell geometry or adding a user setting.
+about: [system/oats-desktop]
+id: dec-5a55431a2b7b
 tags: [desktop, terminal, typography, themes, native-fidelity]
 timestamp: 2026-10-03
 ---

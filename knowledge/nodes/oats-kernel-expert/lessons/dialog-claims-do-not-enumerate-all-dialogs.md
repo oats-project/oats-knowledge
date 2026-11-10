@@ -2,6 +2,9 @@
 type: Lesson
 title: Dialog claims neither enumerate every dialog nor prove one is still open
 description: A hook-silent usage-limit menu and a claim surviving refusal show why automated input must treat claim coverage as partial evidence and a long hold as a reason to inspect.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-1e2bce78d707
 tags: [kernel, harnesses, dialogs, evidence, input-safety]
 timestamp: 2026-10-30
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: Trial model identity needs launch enforcement and observation
 description: A controlled Claude trial ran unintended models despite soul preferences, so a fixed-model comparison needs an enforced launch boundary and observed model identity for participating seats.
+about: [workstream/operations]
+kind: lesson
+id: ins-140a2ac15c57
 tags: [operator, trials, measurement, launch, claude]
 timestamp: 2026-11-03
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Committed-only settings prevent deployment drift, not committed soul choice
 description: Refuse host and spawn contributions to committed-only settings in the resolver while allowing soul payloads, because the restriction prevents deployment-local drift rather than privileging workspace files over other reviewed sources.
+about: [system/oats-kernel]
+id: dec-40efc78f3506
 tags: [kernel, settings, provenance, compatibility, rejected-alternatives]
 timestamp: 2026-11-03
 ---

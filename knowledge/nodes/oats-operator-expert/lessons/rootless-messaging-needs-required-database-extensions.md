@@ -2,6 +2,9 @@
 type: Lesson
 title: Rootless messaging needs the server's database extensions, not just PostgreSQL
 description: A rootless aweb trial failed with the pgserver wheel because pgcrypto was absent and succeeded with a PostgreSQL 16 build including that extension.
+about: [workstream/operations]
+kind: lesson
+id: ins-924972c1aa6f
 tags: [operator, trials, rootless, postgresql, dependencies]
 timestamp: 2026-11-02
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Personal-data exclusion is one shared instruction, not a publication guarantee
 description: The personal-data exclusion uses one shared wording to preserve lessons without identifying outsiders, while a pre-push hold was rejected as a guarantee unless publication authority is separated.
+about: [system/oats-okf]
+id: dec-d60b5a9ccd2d
 tags: [okf, harvest, privacy, publication, enforcement]
 timestamp: 2026-10-10
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: An own-home checkpoint wake is a routine instance act
 description: Classify an instance's own checkpoint registration and removal as routine rather than operator work, while retaining the wake-hold prerequisite, its coverage limits, and separate gates for host installation and other-home wakes.
+about: [workstream/oats-direction]
+id: dec-2614bd084ea6
 tags: [permissions, checkpoints, scheduling, rationale]
 timestamp: 2026-10-31
 ---

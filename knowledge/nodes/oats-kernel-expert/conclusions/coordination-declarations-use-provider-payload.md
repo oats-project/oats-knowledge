@@ -2,6 +2,9 @@
 type: Conclusion
 title: Keep coordination scopes and budgets in the provider payload
 description: The source's provisional position routes coordination declarations through capability settings rather than adding kernel fields, because recording a team's scope or budget does not make the kernel its enforcer or token meter.
+about: [system/oats-kernel]
+kind: finding
+id: ins-d052b716ae39
 tags: [kernel, coordination, capabilities, budgets, rejected-alternatives]
 timestamp: 2026-11-03
 ---

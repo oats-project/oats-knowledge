@@ -2,6 +2,9 @@
 type: Lesson
 title: Second-operator acceptance — what the gate is for, how to read its failures, and the contract-siblings rule
 description: A published definition or operator guide is accepted only when an operator holding none of the authoring state reproduces it against the published combination and verifies by positive enumeration; its exit criterion is "every remaining item is named and owned", its failures fall into four owner-distinct classes, and its recurring finding — a contract adopted by one provider but not its siblings — is prevented by a same-release adoption rule.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-47231c883f3c
 tags: [acceptance, second-operator, outsider, verification, diagnostics, contracts]
 timestamp: 2026-09-21
 ---

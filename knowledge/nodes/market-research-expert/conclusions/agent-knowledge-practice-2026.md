@@ -2,6 +2,9 @@
 type: Conclusion
 title: Separate knowledge consolidation from approval and review outcomes
 description: The 2026-11-02 investigation reports proposal and consolidation workflows but establishes neither a universal vendor approval contract nor the outcome advantage of a separate knowledge judge.
+about: [workstream/positioning, workstream/knowledge]
+kind: finding
+id: ins-d24d1147e6f9
 tags: [research, knowledge, consolidation, review, uncertainty]
 timestamp: 2026-11-02
 ---

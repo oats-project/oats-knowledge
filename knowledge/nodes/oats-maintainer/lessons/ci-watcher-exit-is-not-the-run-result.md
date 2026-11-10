@@ -2,6 +2,9 @@
 type: Lesson
 title: A CI watcher's exit is not the run's result
 description: During a GitHub API incident, a watcher can fail while the run succeeds and the run summary can lead its job results, so reconcile the run and complete job list before reporting CI green.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-84437bc31e20
 tags: [ci, github, release, verification]
 timestamp: 2026-10-30
 ---

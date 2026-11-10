@@ -2,6 +2,9 @@
 type: Lesson
 title: Claude trial metrics need run, origin and message identity
 description: Claude trial measurements need run, origin and message identity, with per-command timing evidence retained before teardown rather than attributing whole-turn duration to component owners.
+about: [workstream/operations]
+kind: lesson
+id: ins-c1322b3cbc58
 tags: [operator, trials, measurement, claude, transcripts]
 timestamp: 2026-11-03
 ---

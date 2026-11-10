@@ -2,6 +2,8 @@
 type: Decision
 title: Desktop copy names a soul's instances and instruction injection
 description: Say a soul's instances rather than its agents, and describe capability instructions as injected into the instance's composed AGENTS.md so explanations preserve the definition/runtime and authored/injected distinctions.
+about: [system/oats-desktop]
+id: dec-7228ee560fc3
 tags: [desktop, copy, souls, instances, capabilities, composition]
 timestamp: 2026-10-23
 ---

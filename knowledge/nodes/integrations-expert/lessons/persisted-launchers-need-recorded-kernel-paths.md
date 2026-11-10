@@ -2,6 +2,9 @@
 type: Lesson
 title: Persisted launchers need recorded kernel paths, not the installer's PATH
 description: Record and verify absolute CLI and Node paths for commands an integration leaves behind, reject instance shims, and detect paths lost to upgrades rather than promising that absolute means permanent.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-0a0f381f1a75
 tags: [integrations, launchers, environment, paths, lifetime, upgrades]
 timestamp: 2026-10-19
 ---

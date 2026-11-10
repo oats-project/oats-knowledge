@@ -2,6 +2,9 @@
 type: Lesson
 title: Check role names for inherited meanings and human oversight effects
 description: The 2026-11-02 naming investigation motivates checking product and everyday meanings separately from task performance, while leaving function-gloss benefits and roster-comprehension outcomes untested.
+about: [workstream/positioning]
+kind: lesson
+id: ins-7a7b13e79310
 tags: [research, naming, human-oversight, personas]
 timestamp: 2026-11-02
 ---

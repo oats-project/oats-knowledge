@@ -2,6 +2,8 @@
 type: Decision
 title: Durable specialization preserves judgment across sessions
 description: Preserve expertise as a versioned project artifact and the soul as canonical curated birth context, while treating agent genomics and speciation as direction rather than replacing shared specialization with per-instance configuration.
+about: [workstream/oats-direction]
+id: dec-d211774b6b32
 tags: [positioning, specialization, providers, architecture]
 timestamp: 2026-11-02
 ---

@@ -2,6 +2,8 @@
 type: Reference
 title: How oats.aweb attaches a grant home to the resident's custody service (1.16.1)
 description: The spawn hook's attachment contract, introduced in oats.aweb 1.13.1 and current in 1.16.1: the concrete socket from the custody preflight goes to the mint, the grant record is read back from disk, attachment is proven by the custody status command run as the grant home (never by whoami), a failed proof revokes and removes the fresh grant, renewal keeps the old grant until the new one is proven, and readiness inspects the newest grant home.
+about: [system/oats-aweb]
+id: ref-deac1bd686b4
 tags: [oats.aweb, grants, custody, spawn-hook, readiness, renewal]
 timestamp: 2026-09-25
 ---

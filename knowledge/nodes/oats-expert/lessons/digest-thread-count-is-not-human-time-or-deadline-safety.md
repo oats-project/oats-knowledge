@@ -2,6 +2,9 @@
 type: Lesson
 title: Digest thread count is not human time or deadline safety
 description: A three-per-arm routine trial reduced threads without reducing reported human minutes and delayed one deadline card in every digest run, so evaluate reading burden and deadline latency separately from batching.
+about: [workstream/coordination, workstream/messaging]
+kind: lesson
+id: ins-1e51fe0be233
 tags: [coordination, trials, routines, messaging, human-oversight]
 timestamp: 2026-11-03
 ---

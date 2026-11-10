@@ -2,6 +2,9 @@
 type: Lesson
 title: Ask whether children follow when moving tree rows out of the way
 description: When a tree-partitioning request leaves descendant placement unresolved, show the human the per-row and whole-subtree outcomes before specifying the clients.
+about: [workstream/coordination]
+kind: lesson
+id: ins-2fad6f3f4560
 tags: [planning, trees, product-intent, alternatives, cross-client]
 timestamp: 2026-10-27
 ---

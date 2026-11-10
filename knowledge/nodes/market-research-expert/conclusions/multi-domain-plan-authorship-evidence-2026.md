@@ -2,6 +2,9 @@
 type: Conclusion
 title: Multi-domain planning practice does not establish an authorship winner
 description: The 2026-11-02/03 investigation distinguishes plan authorship, interface ownership, integration and verifiable review from feedback-only revision without establishing a software planning winner.
+about: [workstream/positioning]
+kind: finding
+id: ins-6bbc6c6cff59
 tags: [research, planning, contracts, coordination, uncertainty]
 timestamp: 2026-11-03
 ---

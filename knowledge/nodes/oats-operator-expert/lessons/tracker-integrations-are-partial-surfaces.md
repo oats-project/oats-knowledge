@@ -2,6 +2,9 @@
 type: Lesson
 title: Tracker integrations are partial surfaces; set expectations before adopting one
 description: A tasks-slot integration deliberately exposes only the issue-execution slice of a tracker, so an adopter must be told up front what agents can operate, what stays human/UI-only, and that unsupported operations escalate rather than improvise.
+about: [workstream/operations, workstream/provider-integration]
+kind: lesson
+id: ins-f60dc4cf7713
 tags: [lesson, onboarding, adoption, tasks, integrations, expectations]
 timestamp: 2026-07-10
 ---

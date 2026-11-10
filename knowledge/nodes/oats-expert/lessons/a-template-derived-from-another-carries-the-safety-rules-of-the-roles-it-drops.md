@@ -2,6 +2,9 @@
 type: Lesson
 title: A template derived from another carries over the safety rules of the roles it drops
 description: When a new template copies some of another template's roles and drops others, a safety rule that lived only in a dropped role's text (where fetched code runs, shared and read-only hosts, secrets) vanishes silently and neither the diff against the tag nor the read for granted authorities sees it; before specifying a derived template, list the source's safety rules by role, name where each lives in the new template or why it does not apply, put that list in the spec's "done when", and give a rule every role needs one shared home.
+about: [workstream/coordination]
+kind: lesson
+id: ins-408d22b6239e
 tags: [templates, derivation, specification, review, safety, hosts, secrets, cross-area]
 timestamp: 2026-11-10
 ---

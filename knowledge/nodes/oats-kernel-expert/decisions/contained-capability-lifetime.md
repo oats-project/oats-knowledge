@@ -2,6 +2,8 @@
 type: Decision
 title: Capability resources must outlive package staging
 description: A package is a transport and review unit and a capability is the behaviour; an explicit payload boundary and a complete, contained copy of each capability keep discarded staging and neighbouring paths from becoming runtime authority.
+about: [system/oats-kernel]
+id: dec-63a6f2f6d55f
 tags: [kernel, packages, capabilities, materialization, integrity]
 timestamp: 2026-07-29
 ---

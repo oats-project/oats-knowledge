@@ -2,6 +2,9 @@
 type: Lesson
 title: Scoped release approval covers delivered behavior, including package pins
 description: Check an effort-scoped release approval against all behavior the candidate delivers, including package pins, rather than only its kernel diff.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-85f308054956
 tags: [stewardship, release, scope, approval, pins]
 timestamp: 2026-10-31
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: The OATS development workspace does not compose oats.cloning
 description: Deliberately leave oats.cloning unpinned and uncomposed in the OATS development workspace while retaining its catalog entry and member repository; restoring consumption needs the deciding human's approval.
+about: [workstream/oats-direction]
+id: dec-5be609ddbc40
 tags: [workspace, composition, cloning, packages, stewardship]
 timestamp: 2026-10-29
 ---

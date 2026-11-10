@@ -2,6 +2,8 @@
 type: Reference
 title: The kernel's provider readiness check wire
 description: What the kernel sends a bound provider's binding check on the workspace model, the exact answer it decodes, the four statuses and how they are relayed, and the rules a provider's check must follow to be read as pass or fail rather than unknown.
+about: [workstream/provider-integration, system/oats-kernel]
+id: ref-7544d7d043fd
 tags: [reference, integrations, readiness, providers, wire, kernel]
 timestamp: 2026-09-24
 ---

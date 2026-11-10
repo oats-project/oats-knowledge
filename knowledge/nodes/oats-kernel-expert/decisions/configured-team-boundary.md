@@ -2,6 +2,8 @@
 type: Decision
 title: Configured scope is not messaging membership
 description: A declared configuration boundary establishes team scope independently of ambient messaging identity.
+about: [system/oats-kernel, workstream/messaging]
+id: dec-8f3acb3e3354
 tags: [kernel, team, workspace, config, discovery, messaging]
 timestamp: 2026-09-20
 ---

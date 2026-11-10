@@ -2,6 +2,8 @@
 type: Reference
 title: What OATS borrowed and where it diverges
 description: The open standards and prior art OATS built on (OKF, Agent Skills, agents.md, Pi packages, plugin marketplaces), what was taken from each, and where OATS deliberately departs.
+about: [workstream/oats-direction]
+id: ref-18ce652ae382
 tags: [genealogy, standards, okf, skills, packages]
 timestamp: 2026-07-26
 ---

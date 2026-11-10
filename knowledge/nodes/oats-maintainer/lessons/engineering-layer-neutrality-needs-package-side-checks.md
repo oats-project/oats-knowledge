@@ -2,6 +2,9 @@
 type: Lesson
 title: Engineering layer neutrality needs package-side checks
 description: Use the package's own bounded neutrality check rather than importing the kernel test harness; retire the duplicate manual grep but retain the consumer guard until all pinnable releases are covered.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-7f7e7e829903
 tags: [review, capabilities, composition, ci, release]
 timestamp: 2026-10-29
 ---

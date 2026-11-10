@@ -2,6 +2,9 @@
 type: Lesson
 title: Pending lifecycle state is not evidence of failure
 description: Require producer liveness to interpret held lifecycle rows, keep unknown retirement outcomes non-failing with secondary recovery, and reconcile each local apply only against a later covering observation.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-4608e065b023
 tags: [desktop, lifecycle, retire, liveness, async, truthfulness]
 timestamp: 2026-10-15
 ---

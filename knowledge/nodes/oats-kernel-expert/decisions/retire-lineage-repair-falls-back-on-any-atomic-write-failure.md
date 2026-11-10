@@ -2,6 +2,8 @@
 type: Decision
 title: Retire's lineage repair falls back on any atomic-write failure
 description: Retire's lineage repair tries atomic replacement but falls back in place on any failure, preserving the legacy write's outcome rather than adding a new retirement refusal.
+about: [system/oats-kernel]
+id: dec-9b824fb9a582
 tags: [kernel, lifecycle, retire, lineage, atomicity, compatibility]
 timestamp: 2026-10-30
 ---

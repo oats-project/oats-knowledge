@@ -2,6 +2,8 @@
 type: Decision
 title: A souls.disabled entry that names no soul is diagnosed by doctor, never refused, although it fails open
 description: A stale host disabled-soul entry is reported only by oats doctor, reusing the launch-pin check's matching rule, per-entry proof boundary and nearest-soul ranking; spawn refusal and the team typo guard were rejected, and the fail-open cost is accepted and documented.
+about: [system/oats-kernel]
+id: dec-91fbec07c6aa
 tags: [kernel, configuration, discovery, diagnostics, doctor, spawn]
 timestamp: 2026-11-09
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Live lineage is deliberately bounded
 description: Sparse explicit current relations favor truthful ambiguity refusal over a permanent history or multi-file transaction promise.
+about: [system/oats-kernel]
+id: dec-91d09035f61b
 tags: [kernel, lineage, spawn, relations, concurrency]
 timestamp: 2026-10-18
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: A provider pin carries its upgrade consequences into the kernel release
 description: Carry crossed provider releases' operator-visible changes and upgrade steps into the kernel Upgrade section, and check prescribed installs against registry selection, upgrade commands against their platform paths, and each prescribed step against who may run it before tagging.
+about: [workstream/oats-direction, workstream/provider-integration]
+kind: lesson
+id: ins-878b04ec0e03
 tags: [release, providers, pins, upgrade, review]
 timestamp: 2026-11-06
 ---

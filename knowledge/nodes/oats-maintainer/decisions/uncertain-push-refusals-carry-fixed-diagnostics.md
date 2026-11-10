@@ -2,6 +2,8 @@
 type: Decision
 title: An uncertain publication refusal carries fixed diagnostic constants, never git's or the remote's text
 description: The knowledge package's uncertain push and delete refusals carry a phase, exit code, allowlisted signal, timeout, elapsed time and an optional cause token from a fixed table matched only on git's own client-side stderr under a C locale; raw and redacted stderr were both rejected, because a gate that withholds output for safety still owes a fixed-vocabulary diagnosis of its own failures.
+about: [workstream/oats-direction, workstream/knowledge]
+id: dec-19bb83edf17a
 tags: [knowledge, publication, diagnostics, security, review, okf]
 timestamp: 2026-11-04
 ---

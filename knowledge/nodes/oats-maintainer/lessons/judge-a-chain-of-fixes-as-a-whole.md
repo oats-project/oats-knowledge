@@ -2,6 +2,9 @@
 type: Lesson
 title: Judge a chain of sensible fixes as a whole
 description: When each fix answers the last objection by adding another mechanism, compare the accumulated design with changing the original premise before approving the next step.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-9fa3a92c47e0
 tags: [design-review, complexity, rejected-alternatives]
 timestamp: 2026-10-31
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: Prove coupled Desktop changes on main and on the prospective kernel merge
 description: When a kernel change would make Desktop actively wrong, keep the Desktop delta reviewable on main but prove the combined tree before maintainers land the pair together.
+about: [system/oats-desktop, system/oats-kernel]
+kind: lesson
+id: ins-837ede000839
 tags: [desktop, integration, kernel, release, verification]
 timestamp: 2026-10-30
 ---

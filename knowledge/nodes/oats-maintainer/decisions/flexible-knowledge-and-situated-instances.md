@@ -2,6 +2,8 @@
 type: Decision
 title: Centralised per-soul knowledge is the default; capabilities own learning; instances are situated, not short
 description: The default routes knowledge centrally per soul within the adopter's base while knowledge capabilities own their learning model and placement; an instance is a situated continuity of any duration, speciation follows evidence, and a mandatory topic model or permanent one-soul/one-folder rule is rejected.
+about: [workstream/oats-direction, workstream/knowledge]
+id: dec-41d5bfdaa7a5
 tags: [knowledge, capabilities, souls, instances, speciation]
 timestamp: 2026-09-19
 ---

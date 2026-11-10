@@ -2,6 +2,9 @@
 type: Lesson
 title: A file argument does not bound the repository test runner
 description: A single-file request through the repository runner unexpectedly selected the full suite, so kernel briefs need an explicit bounded invocation until runner semantics enforce the requested scope.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-4d4a59d9f6dd
 tags: [kernel, testing, safety, tooling, knowledge-debt]
 timestamp: 2026-10-28
 ---

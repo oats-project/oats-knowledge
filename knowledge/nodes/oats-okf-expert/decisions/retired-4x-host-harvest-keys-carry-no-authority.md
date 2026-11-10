@@ -2,6 +2,8 @@
 type: Decision
 title: The package's retired 4.x source admission ignores non-soul removed harvest keys and decides the soul opt-out first
 description: For a source resolved through its retirement recovery, the knowledge package ignores the removed 4.x keys `harvest`, `harvest-runtime` and `harvest-model` when the host, spawn or workspace recorded them, decides the opt-out first from the recorded soul.yaml text, keeps refusing live 4.x records and refuses any soul `harvest:` value other than `off`; the decision and its rationale are canonical in the oats-maintainer node.
+about: [system/oats-okf]
+id: dec-0b205612ea95
 tags: [decision, okf, harvest, opt-out, retired-source, legacy, 4.x]
 timestamp: 2026-11-06
 ---

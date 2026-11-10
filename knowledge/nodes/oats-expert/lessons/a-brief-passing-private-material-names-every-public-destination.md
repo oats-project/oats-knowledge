@@ -2,6 +2,9 @@
 type: Lesson
 title: A brief that hands a child someone else's private material names every public destination and forbids describing it, not only copying it
 description: "Read in place, no text into the public design" let a child paraphrase a partner's private document, attribute it and derive facts from it on a branch of a public repository, and its harvest notes carried more towards the public knowledge base; before passing private material to a child, check and name the visibility of every place its work can land (the branch's repository, the knowledge base its harvest feeds, any doc it writes), brief the owner's rule as given ("nothing from it, described or copied, goes anywhere public"), say where reasoning that needs it goes instead, cover the harvest, and at verification search the head for the owner's name before reading anything else.
+about: [workstream/coordination]
+kind: lesson
+id: ins-231bba735b91
 tags: [briefs, delegation, privacy, third-party, publication, harvest, verification, cross-area]
 timestamp: 2026-11-10
 ---

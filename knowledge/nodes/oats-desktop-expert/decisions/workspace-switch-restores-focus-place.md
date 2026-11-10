@@ -2,6 +2,8 @@
 type: Decision
 title: Workspace switching restores the operator's place, not the transit control
 description: Restore the last non-transit focus place in the arriving workspace while preserving explicit destinations and yielding to later operator action.
+about: [system/oats-desktop]
+id: dec-e183995aa712
 tags: [desktop, workspaces, focus, navigation, rejected-alternatives]
 timestamp: 2026-10-27
 ---

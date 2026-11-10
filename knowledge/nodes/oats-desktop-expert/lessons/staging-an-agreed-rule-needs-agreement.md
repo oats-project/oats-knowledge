@@ -2,6 +2,9 @@
 type: Lesson
 title: Splitting an agreed rule across PRs also needs agreement
 description: A Desktop implementation plan cannot silently narrow an agreed rule; obtain agreement on omitted cases before building a staged delivery and verify every included case through its actual defaults.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-ff8d85afd3dc
 tags: [desktop, planning, review, contracts, deadlines]
 timestamp: 2026-10-14
 ---

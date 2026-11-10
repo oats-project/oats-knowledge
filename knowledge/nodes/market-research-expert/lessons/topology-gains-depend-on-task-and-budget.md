@@ -2,6 +2,9 @@
 type: Lesson
 title: Compare agent topologies by task dependence, capability baseline and budget
 description: The 2026-11-02/03 research separates task, capability, budget, interface coverage and handoff opportunities when comparing topologies, without establishing a universal single-writer or multi-agent advantage.
+about: [workstream/positioning]
+kind: lesson
+id: ins-e96ff6947fbc
 tags: [research, multi-agent, topology, evaluation, compute, model-capability]
 timestamp: 2026-11-03
 ---

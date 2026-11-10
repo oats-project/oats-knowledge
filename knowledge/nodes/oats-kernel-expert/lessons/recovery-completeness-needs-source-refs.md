@@ -2,6 +2,9 @@
 type: Lesson
 title: Recovery completeness must be measured against the source, not Git's advertised refs
 description: A successful Git transport copy can omit hidden branches, so recovery must derive its required refs from the source and verify the destination against that independent set.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-8cc208096387
 tags: [kernel, retire, recovery, git, verification]
 timestamp: 2026-10-08
 ---

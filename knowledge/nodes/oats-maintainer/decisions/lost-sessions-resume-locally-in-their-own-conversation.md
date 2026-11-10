@@ -2,6 +2,8 @@
 type: Decision
 title: Lost sessions resume locally through the kernel into their own conversation
 description: Lost-session recovery is always on and retriggered by local loss, with a per-boot bound and proven harness selectors, while preserving the instance's conversation, user-owned prompt choices and local-only scope.
+about: [workstream/oats-direction, system/oats-kernel]
+id: dec-b629b2a252c9
 tags: [runtime, recovery, lifecycle, clients, locality, supersession]
 timestamp: 2026-10-30
 ---

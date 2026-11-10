@@ -2,6 +2,8 @@
 type: Decision
 title: Shorten SSH fixture paths without moving nested runs beyond the guard
 description: SSH socket pressure is handled in fixture path budgets rather than by lowering the runner's relocation threshold, because a nested run must remain visible to its outer leftover guard.
+about: [system/oats-kernel]
+id: dec-8d6fd471b0d0
 tags: [kernel, testing, ssh, containment, cleanup]
 timestamp: 2026-10-15
 ---

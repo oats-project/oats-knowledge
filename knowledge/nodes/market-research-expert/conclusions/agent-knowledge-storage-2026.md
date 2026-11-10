@@ -2,6 +2,9 @@
 type: Conclusion
 title: Compare knowledge systems by authority and retrieval evidence, not storage format
 description: The 2026-11-02 research distinguishes authority, recall, retrieval and maintenance evidence without treating storage format, layout or edit frequency as guarantees of knowledge quality.
+about: [workstream/positioning, workstream/knowledge]
+kind: finding
+id: ins-bb36a6cb89f9
 tags: [research, knowledge, memory, retrieval, authority]
 timestamp: 2026-11-02
 ---

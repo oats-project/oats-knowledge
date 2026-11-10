@@ -2,6 +2,9 @@
 type: Lesson
 title: Separate verifier evidence from the builder's control
 description: Source-reported research distinguishes test integrity, held-out generalization and reviewer independence, and a trial audit motivates checking mechanism claims against primary run records rather than matching summaries.
+about: [workstream/positioning]
+kind: lesson
+id: ins-f4fbfd6ae1b1
 tags: [research, verification, reward-hacking, evaluation]
 timestamp: 2026-11-03
 ---

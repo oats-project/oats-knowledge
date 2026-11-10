@@ -2,6 +2,9 @@
 type: Lesson
 title: Healthy defaults do not warn merely because an optional feature is off
 description: Readiness warnings identify a fault or actionable consequence of a chosen configuration, not an invitation to enable an intentionally optional feature, because permanent warnings on healthy defaults train operators to ignore real problems.
+about: [workstream/oats-direction]
+kind: lesson
+id: ins-0c4a716a3f07
 tags: [readiness, review, defaults, operator-experience]
 timestamp: 2026-10-31
 ---

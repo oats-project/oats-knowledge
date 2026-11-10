@@ -2,6 +2,8 @@
 type: Decision
 title: Shared readers separate client terms from attributed kernel prose
 description: Share facts and code meanings, require explicit client terms, keep control-specific next steps in a closed code set worded by each client, and return attributed kernel prose as separate parts.
+about: [system/oats-desktop]
+id: dec-190560635f99
 tags: [desktop, shared-code, wording, attribution, rejected-alternatives]
 timestamp: 2026-10-15
 ---

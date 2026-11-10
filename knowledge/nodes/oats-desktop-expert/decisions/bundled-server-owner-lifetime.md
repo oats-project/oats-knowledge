@@ -2,6 +2,8 @@
 type: Decision
 title: The bundled server ends with its app owner, without interrupting CLI children
 description: An owner-only stdin pipe bounds the bundled server's lifetime across app crashes without claiming authority over another app's server or in-flight CLI work.
+about: [system/oats-desktop]
+id: dec-903fca1fe43f
 tags: [desktop, server, ownership, process-lifetime, shutdown]
 timestamp: 2026-10-08
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: A workspace has a default team; there is no personal team
 description: Decided 2026-09-26 by the human: neither the messaging service nor OATS has a "personal team" concept; a workspace's instances live in the workspace's default team and join other teams explicitly; the default team comes from the root identity the deployment holds, creating a team is an owner's account-level act outside OATS, and nothing in spawn, mint, retire or wake ever requires a human login.
+about: [workstream/provider-integration, workstream/messaging]
+id: dec-2ee5be2e6860
 tags: [decision, integrations, messaging, teams, identity, naming]
 timestamp: 2026-09-26
 ---

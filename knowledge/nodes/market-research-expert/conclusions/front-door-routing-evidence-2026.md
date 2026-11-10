@@ -2,6 +2,9 @@
 type: Conclusion
 title: Intake routing has analogue evidence, not an established agent-outcome advantage
 description: The 2026-11-02 investigation leaves agent intake-routing outcomes unresolved and treats human handoff findings and proposed router state as analogues and hypotheses, not a proven architecture.
+about: [workstream/positioning]
+kind: finding
+id: ins-8fdfa3e86dfc
 tags: [research, routing, handoffs, coordination, uncertainty]
 timestamp: 2026-11-02
 ---

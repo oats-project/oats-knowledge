@@ -2,6 +2,9 @@
 type: Lesson
 title: Real-pi opening races need an executed CI gate
 description: The opening-task deadlock escaped a green host-model suite while real-pi tests skipped, so bridge-hold changes need version-qualified real-runtime evidence until CI actually exercises the claimed lifecycle.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-5d70a2b8fa48
 tags: [kernel, pi, testing, ci, knowledge-debt, compatibility]
 timestamp: 2026-10-16
 ---

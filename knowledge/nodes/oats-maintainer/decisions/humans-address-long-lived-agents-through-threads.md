@@ -2,6 +2,8 @@
 type: Decision
 title: A human addresses a long-lived agent through threads that are aweb conversations; the soul declares an interaction kind in its messaging settings
 description: Keep the deferred aweb-conversation design and current one-input-surface rule, with a later thread-inbox vision of curated mail and chat for depth as a design criterion after coordination rather than authorization to resume the build.
+about: [workstream/oats-direction, system/oats-desktop, workstream/messaging]
+id: dec-eb583151ef8c
 tags: [desktop, messaging, aweb, threads, human-interaction, soul-settings, direction, deferred]
 timestamp: 2026-11-02
 ---

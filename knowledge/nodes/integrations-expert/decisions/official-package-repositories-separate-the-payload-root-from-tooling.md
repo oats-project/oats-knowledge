@@ -2,6 +2,8 @@
 type: Decision
 title: Official package repositories separate the distributed payload root from repository tooling, and every resource resolves inside that root
 description: A package repository keeps everything the kernel copies under one payload root that carries the distribution manifest, and everything else (schemas, scripts, tests, workflows, the package expert's soul) outside it; the integrity digest covers the payload only, a Git or catalog reference reads the payload root, and every manifest-named resource resolves beneath it or the integrity check is meaningless.
+about: [workstream/provider-integration]
+id: dec-17ae1d7577a0
 tags: [decision, integrations, packaging, payload-root, distribution, integrity, paths]
 timestamp: 2026-07-28
 ---

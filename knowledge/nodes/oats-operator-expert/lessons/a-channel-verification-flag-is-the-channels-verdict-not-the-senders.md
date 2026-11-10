@@ -2,6 +2,9 @@
 type: Lesson
 title: A channel's verified=false is the channel's verdict; confirm with a CLI fetch before suspecting the sender
 description: The push channel and the CLI verify a message independently and can disagree; when the CLI fetch says verified and the registry mapping is consistent, the failure is channel-local state and the sender should not rotate anything.
+about: [workstream/operations, workstream/messaging]
+kind: lesson
+id: ins-80c5bf878c1f
 tags: [lesson, messaging, verification, channel, diagnostics]
 timestamp: 2026-09-24
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Coordination policy lives in capabilities, not in the kernel or oats.core
 description: Keep coordination policy in composed capabilities, deliver the redesign as tagged template repositories adapted into workspace-owned capabilities with a human guide (template-v tags that no package pin can resolve, the frozen package left for existing pins, the package-rename route rejected), and retain the existing cleanup and action-required lifecycle-message rules until explicitly changed.
+about: [workstream/oats-direction]
+id: dec-5ee56bcf899c
 tags: [stewardship, coordination, capabilities, instructions, retirement, templates]
 timestamp: 2026-11-10
 ---

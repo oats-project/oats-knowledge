@@ -2,6 +2,9 @@
 type: Lesson
 title: "The messaging root is a deployment-bounded host fact: where it sits decides which team residents mint into, and a root above the deployment is a silent cross-team leak"
 description: A rebuilt deployment mints no messaging identities until its root sits where the provider hook searches, and that placement — not any configuration text — decides the team a resident joins. Keep exactly one root per deployment inside the boundary, pin the team explicitly, and verify each new certificate before trusting the roster.
+about: [workstream/operations, workstream/messaging]
+kind: lesson
+id: ins-4b93d9edff70
 tags: [lesson, operator, messaging, identity, rebuild, team-boundary, placement, custody, verification]
 timestamp: 2026-09-23
 ---

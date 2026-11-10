@@ -2,6 +2,8 @@
 type: Decision
 title: Per-agent scopes are probe-guarded and execution-only
 description: Per-agent scope placement uses a real probe in the launch environment and adds no home marker, accepting a residual exit-classification ambiguity rather than changing retirement or process observation.
+about: [system/oats-kernel, workstream/oats-direction]
+id: dec-dcd0e5bb70a9
 tags: [kernel, launch, systemd, lifecycle, resource-isolation]
 timestamp: 2026-10-27
 ---

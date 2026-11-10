@@ -2,6 +2,9 @@
 type: Lesson
 title: Release judgement for the tag-driven lane
 description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, runs the kernel tests that read a package's mirror before the package tag or plans their port, contains failed-tag repairs, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them, coordinates source, tag, mirror, every form of version pin and the framework release that carries them, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
+about: [workstream/oats-direction, workstream/provider-integration]
+kind: lesson
+id: ins-559dbb88da8b
 tags: [stewardship, release, ci, npm, packaging, pins, templates]
 timestamp: 2026-11-10
 ---

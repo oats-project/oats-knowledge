@@ -2,6 +2,9 @@
 type: Lesson
 title: Scripted provider checks separate product questions from harness blockers
 description: Run a harness-free provider pre-check before newcomer onboarding to expose setup and join failures without waiting for model login, while keeping test-rig faults and full acceptance separate.
+about: [workstream/operations]
+kind: lesson
+id: ins-a3eaadb2eb39
 tags: [operator, onboarding, acceptance, trials, failure-attribution]
 timestamp: 2026-11-05
 ---

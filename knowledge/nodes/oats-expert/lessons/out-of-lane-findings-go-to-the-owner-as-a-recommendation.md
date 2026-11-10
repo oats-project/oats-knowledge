@@ -2,6 +2,9 @@
 type: Lesson
 title: A finding outside the finder's lane goes to the area's owner as a recommendation, never to a human as an FYI or an offer
 description: In two coordination trials, out-of-lane findings reported to a human as information or "if you like" were never acted on and cost hidden checks, while the same kind of finding raised to whoever owns the area as a decision with a recommendation was fixed within the hour; whether to fix a pre-existing defect unasked is a policy choice the measures disagree on, so the lead raises it rather than deciding it silently.
+about: [workstream/coordination]
+kind: lesson
+id: ins-93dd54a39586
 tags: [coordination, findings, scope, recommendations, human-interaction, trials]
 timestamp: 2026-11-09
 ---

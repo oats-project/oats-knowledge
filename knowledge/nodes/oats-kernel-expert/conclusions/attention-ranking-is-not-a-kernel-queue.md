@@ -2,6 +2,9 @@
 type: Conclusion
 title: Keep attention ranking out of the kernel's claim record
 description: The source's provisional position places request deadlines with messaging and ranking in a client view, because a person's request queue extends beyond instances on their kernel hosts and a claim is only a local report.
+about: [system/oats-kernel, workstream/messaging]
+kind: finding
+id: ins-f364414c99ae
 tags: [kernel, attention, messaging, clients, rejected-alternatives]
 timestamp: 2026-11-03
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Terminal tabs are viewers, not session owners
 description: Exact-source terminal viewers preserve native interaction and atomic redraws without owning durable sessions, changing other clients or silently switching agents.
+about: [system/oats-desktop]
+id: dec-14e550337fcf
 tags: [desktop, terminal, viewers, tmux, ownership, integration-limits, synchronized-output]
 timestamp: 2026-10-15
 ---

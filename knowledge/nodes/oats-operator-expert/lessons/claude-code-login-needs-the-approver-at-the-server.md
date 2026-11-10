@@ -2,6 +2,9 @@
 type: Lesson
 title: Claude Code's subscription login needs the approver at the server
 description: Claude Code's subscription login reportedly hands the browser a code that must be typed back into the server's own terminal, so a headless or remote onboarding needs the approver on a shell at that machine or a pre-supplied login, and an agent never relays the code.
+about: [workstream/operations]
+kind: lesson
+id: ins-74c7d0514b2f
 tags: [operator, onboarding, harnesses, claude, authentication, headless, remote]
 timestamp: 2026-11-09
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: Continuous triggers must account for every input
 description: When specifying a trigger driven by observed state, derive scope from the producer's authoritative field and account for every triggering input even when the completed run omits it.
+about: [workstream/coordination]
+kind: lesson
+id: ins-893889387644
 tags: [planning, verification, triggers, integration, scope]
 timestamp: 2026-10-27
 ---

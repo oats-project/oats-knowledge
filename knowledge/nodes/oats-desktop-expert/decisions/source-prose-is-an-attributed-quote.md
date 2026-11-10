@@ -2,6 +2,8 @@
 type: Decision
 title: Source-supplied prose is an attributed quote, not Desktop's voice
 description: Display prose from trigger sources, trigger files and capability manifests as visibly attributed text so untrusted words cannot impersonate Desktop's own explanation.
+about: [system/oats-desktop]
+id: dec-d4f71013d984
 tags: [desktop, trust, attribution, accessibility, triggers]
 timestamp: 2026-10-09
 ---

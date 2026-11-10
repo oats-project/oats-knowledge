@@ -57,6 +57,18 @@
     "oats-apps-expert": {
       "path": "nodes/oats-apps-expert",
       "owner": "6d8e9505-f2d2-4cd5-8a10-2beec836e733"
+    },
+    "claims": {
+      "path": "claims",
+      "owner": "00000000-0000-0000-0000-000000000000"
+    },
+    "subjects": {
+      "path": "subjects",
+      "owner": "00000000-0000-0000-0000-000000000000"
+    },
+    "verdicts": {
+      "path": "verdicts",
+      "owner": "00000000-0000-0000-0000-000000000000"
     }
   }
 }

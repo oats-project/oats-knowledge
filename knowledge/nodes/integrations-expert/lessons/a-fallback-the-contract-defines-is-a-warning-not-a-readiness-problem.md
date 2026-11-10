@@ -2,6 +2,9 @@
 type: Lesson
 title: A fallback the contract defines is implemented in every path, readiness included, and is a warning, not a readiness problem
 description: When the contract says an input degrades to a defined default, every code path that consumes the value (each identity mode, spawn, readiness, remedies) takes that default and warns; readiness derives the value exactly as spawn does, and a provider that blocks on a defined fallback, or implements it in one mode only, turns the kernel's warning into an outage.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-7ea8b5bd68e3
 tags: [integrations, readiness, fallback, contracts, warnings, identity]
 timestamp: 2026-09-25
 ---

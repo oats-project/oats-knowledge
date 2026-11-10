@@ -2,6 +2,9 @@
 type: Lesson
 title: Accessibility is proven on effective colours, not token pairs
 description: Opacity, colour-mix foregrounds, raw fallbacks and JavaScript-owned theme fields create effective colours a token table never lists, so a passing token-pair check can ship failing text; the bar is an inventory of every shipped foreground against every surface it lands on.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-a21ca7d36411
 tags: [desktop, accessibility, contrast, theming, wcag]
 timestamp: 2026-07-24
 ---

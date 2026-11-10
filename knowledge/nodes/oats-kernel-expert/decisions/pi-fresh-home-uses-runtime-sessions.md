@@ -2,6 +2,8 @@
 type: Decision
 title: The pi fresh-home signal comes from runtime sessions filtered to the incarnation
 description: The pi bridge uses earlier filed sessions for the current home incarnation to gate its startup resume nudge, avoiding provider-template coupling, home markers and a new kernel-history dependency.
+about: [system/oats-kernel]
+id: dec-6e9d23cfcea0
 tags: [kernel, runtime, pi, bridges, lifecycle, incarnation]
 timestamp: 2026-10-15
 ---

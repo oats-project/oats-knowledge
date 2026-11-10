@@ -2,6 +2,8 @@
 type: Decision
 title: A launch opens a running instance's terminal without taking input focus
 description: Let Desktop launch intent reveal a running local instance's terminal while keeping keyboard input behind the person's explicit focus action.
+about: [system/oats-desktop]
+id: dec-e117832c2522
 tags: [desktop, launch, navigation, keyboard, intent]
 timestamp: 2026-11-06
 ---

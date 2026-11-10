@@ -2,6 +2,8 @@
 type: Decision
 title: No GitHub account means assisted signup, not local-only onboarding
 description: Help a newcomer create a GitHub account in their browser rather than add a local-only onboarding route, preserving one workspace hosting model and the attested Desktop path.
+about: [workstream/operations]
+id: dec-5be70c8edb16
 tags: [operator, onboarding, github, workspace-hosting, human-direction]
 timestamp: 2026-11-03
 ---

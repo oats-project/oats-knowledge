@@ -2,6 +2,9 @@
 type: Lesson
 title: A check run within a minute of a transfer can read an empty repository; a post-move check refuses empty reads and retries, and a timed-out transfer call is read before it is repeated
 description: Right after a GitHub transfer, git may answer 403 "repository disabled" for about a minute, so a scripted post-move check that compares an empty read passes or fails on nothing; make it treat no tags or no head as an error and retry, and read the repository's owner before repeating a transfer call that timed out.
+about: [workstream/coordination]
+kind: lesson
+id: ins-441108e6bf63
 tags: [planning, migration, repositories, verification, retries, tooling]
 timestamp: 2026-11-04
 ---

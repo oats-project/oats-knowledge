@@ -2,6 +2,9 @@
 type: Lesson
 title: Evaluate merge gates beyond code-seed catches
 description: Compare a coordination gate's direction and evidence duties separately from code catches, and distinguish new human decisions from repeated requests for settled ones before treating request counts as necessary oversight.
+about: [workstream/coordination, workstream/oats-direction]
+kind: lesson
+id: ins-8adc01288746
 tags: [coordination, trials, review, gates, human-oversight]
 timestamp: 2026-11-06
 ---

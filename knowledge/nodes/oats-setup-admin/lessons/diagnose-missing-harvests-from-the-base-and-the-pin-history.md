@@ -2,6 +2,9 @@
 type: Lesson
 title: Diagnose "no harvests lately" from the base's PR history and the provider pin history, then read the captured instructions against the host
 description: When asked why knowledge harvests stopped, count the base's `okf-harvest/*` PRs by date, line the drop up with the oats.okf pin history, and read the captured harvest instructions for host-dependent gates before auditing live instances; a provider fix reaches a home only on respawn, so the PR count recovers after respawns.
+about: [workstream/workspace-administration]
+kind: lesson
+id: ins-2fc99a947b33
 tags: [lesson, setup-admin, okf, harvest, diagnosis, provider-pin, host, capture]
 timestamp: 2026-10-23
 ---

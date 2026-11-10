@@ -2,6 +2,9 @@
 type: Lesson
 title: Prepare an open-head trial before the merge order is fixed
 description: Before merge order is fixed, prepare combined-tree evidence and a tested resolution handoff for overlapping PRs, and check whether inventory tests require a producer to land before its gated consumer.
+about: [workstream/coordination, workstream/oats-direction]
+kind: lesson
+id: ins-cb558bef39eb
 tags: [integration, coordination, testing, handover]
 timestamp: 2026-10-29
 ---

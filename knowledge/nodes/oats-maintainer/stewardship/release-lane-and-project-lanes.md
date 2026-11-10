@@ -2,6 +2,8 @@
 type: Decision
 title: One release lane does the final review, merge and tags; project lanes are defined by their own maintainers
 description: One release lane owns final review, merge and tags; project maintainers define lanes without sign-off, route follow-ups by the map, review with one second reader, record changed practice and hand over approved heads, while the directing human's lanes launch routine filed work without asking again; child overflow preserves accountability and the onboarding redesign has bounded human-sign-off and reviewer-routing exceptions.
+about: [workstream/oats-direction]
+id: dec-1d2a5106b721
 tags: [stewardship, lanes, release, review, process, multi-human]
 timestamp: 2026-10-30
 ---

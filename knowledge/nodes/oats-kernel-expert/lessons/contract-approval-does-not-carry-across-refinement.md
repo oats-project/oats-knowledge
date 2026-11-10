@@ -2,6 +2,9 @@
 type: Lesson
 title: Contract approval does not carry across a refinement
 description: The kernel expert must obtain both maintainer sides' agreement to a changed contract shape before building it, because approval of earlier wording and a coordinating expert's agreement do not approve the refinement.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-84c1de6c257b
 tags: [kernel, contracts, specification, review, handover]
 timestamp: 2026-10-15
 ---

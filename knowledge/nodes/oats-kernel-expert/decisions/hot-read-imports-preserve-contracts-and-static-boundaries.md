@@ -2,6 +2,8 @@
 type: Decision
 title: Hot-read imports preserve contracts and static boundaries
 description: Use a narrow hot-read import table with re-exported leaves and literal specifiers to reduce startup work without changing synchronous consumers, non-hot commands or soul-resolution errors.
+about: [system/oats-kernel]
+id: dec-0300d669fbcd
 tags: [kernel, cli, performance, imports, compatibility, testing]
 timestamp: 2026-10-28
 ---

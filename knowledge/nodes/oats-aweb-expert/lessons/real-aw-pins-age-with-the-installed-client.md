@@ -2,6 +2,9 @@
 type: Lesson
 title: The suite's real-aw pins age with the installed client — compare against the clean base on the same host before calling a failure a regression
 description: The package pins the real binary's refusals (exit code and message), and those pins break when the installed aw changes behaviour, as `team join` with a bad token did from aw 1.36.43 (first seen here on 1.36.49); run the suite on the clean base on the same host before attributing a failure to a branch, and re-pin the real-aw tables in a dedicated PR, never inside a feature PR.
+about: [system/oats-aweb]
+kind: lesson
+id: ins-3973b6ed3346
 tags: [oats.aweb, testing, real-aw, pins, aw-version, review]
 timestamp: 2026-10-30
 ---

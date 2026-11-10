@@ -2,6 +2,9 @@
 type: Lesson
 title: A provider test that fakes the kernel's payload proves nothing about the kernel; a provider's meaning for a settings key is only as good as what the kernel puts there
 description: When a provider gives a settings key a meaning the contract does not guarantee (settings.team as "the default team a host chose"), a test that hand-writes the payload without the key passes while the real kernel, which merges the primary label's team into that key, makes the provider do the opposite; check what the kernel actually merges before assigning meaning, and when the meaning is right, change the kernel's merge rather than guess from equality in the provider.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-99454983a442
 tags: [integrations, kernel-contract, settings, teams, testing]
 timestamp: 2026-09-25
 ---

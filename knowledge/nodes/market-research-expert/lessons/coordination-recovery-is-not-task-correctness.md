@@ -2,6 +2,9 @@
 type: Lesson
 title: Separate coordination recovery guarantees from task correctness
 description: The 2026-11-02 research synthesis distinguishes ownership, recorded progress and resumable execution from evidence that an agent's result is correct, without asserting uniform protocol guarantees.
+about: [workstream/positioning]
+kind: lesson
+id: ins-8bc7239dd345
 tags: [research, coordination, distributed-systems, recovery, evaluation]
 timestamp: 2026-11-02
 ---

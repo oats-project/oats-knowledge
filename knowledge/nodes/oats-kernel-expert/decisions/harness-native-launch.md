@@ -2,6 +2,8 @@
 type: Decision
 title: Harnesses start natively; OATS contributes skills and instructions and sandboxes nothing
 description: Every harness (pi, Claude Code, Codex) starts with its own discovery, settings and permissions intact; OATS copies the resolved capability skills where the harness already looks and composes AGENTS.md, and adds permission-bypass flags only on an explicit yolo opt-in.
+about: [system/oats-kernel]
+id: dec-291b1999eb38
 tags: [kernel, runtime, harnesses, claude-code, codex, pi, curriculum, permissions, supersession]
 timestamp: 2026-09-18
 ---

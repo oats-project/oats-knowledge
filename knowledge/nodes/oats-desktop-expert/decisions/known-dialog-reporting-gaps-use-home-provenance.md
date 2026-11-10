@@ -2,6 +2,8 @@
 type: Decision
 title: Known dialog-reporting gaps use the home's provenance
 description: Explain a known historical Claude dialog-reporting gap from the home's recorded module source, keeping the notice separate from live attention and avoiding warnings based on unknown coverage.
+about: [system/oats-desktop]
+id: dec-703621628af3
 tags: [desktop, attention, provenance, warnings, rejected-alternatives]
 timestamp: 2026-10-31
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: When changing a shared layer, enumerate the guarantees the old behaviour held up
 description: Before removing shared behaviour, lifting a refusal or allowing unilateral state changes, inventory the affected paths and guarantees beyond the changed code's callers, assign each a disposition, and verify what no longer holds by construction.
+about: [workstream/coordination]
+kind: lesson
+id: ins-2a6e6449564b
 tags: [planning, specification, verification, cross-area, shared-layers, delivery, contracts]
 timestamp: 2026-10-27
 ---

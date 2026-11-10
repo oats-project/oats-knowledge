@@ -2,6 +2,9 @@
 type: Lesson
 title: Narrow race evidence needs unpaused controls and bounded fixtures
 description: An exact CLI pause establishes a possible interleaving, not its ordinary reachability, so pair it with unpaused trials and measured window width while bounding fixture resource use.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-cc1d2a43c0ea
 tags: [kernel, testing, concurrency, evidence, environment]
 timestamp: 2026-10-10
 ---

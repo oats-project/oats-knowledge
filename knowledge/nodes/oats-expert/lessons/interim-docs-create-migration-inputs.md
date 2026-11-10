@@ -2,6 +2,9 @@
 type: Lesson
 title: Interim docs create migration inputs for the later command
 description: When interim docs teach a manual artifact that a later command will manage, name those copies in the command spec, justify adoption or refusal from their authorship and ownership, and plan the migration text with the command's docs follow-up.
+about: [workstream/coordination]
+kind: lesson
+id: ins-fd87abe8897b
 tags: [planning, documentation, migration, ownership]
 timestamp: 2026-10-15
 ---

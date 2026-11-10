@@ -2,6 +2,9 @@
 type: Lesson
 title: Admit failed-run leftovers by type, not name
 description: Widening a provider's directory admission to accept failed-run leftovers requires expected-type checks before effects, exclusive creation of new outputs, and collision checks across the whole output set.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-1c8f419d31d3
 tags: [integrations, filesystem, admission, recovery, symlinks]
 timestamp: 2026-11-03
 ---

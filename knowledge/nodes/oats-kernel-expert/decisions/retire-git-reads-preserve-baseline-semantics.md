@@ -2,6 +2,8 @@
 type: Decision
 title: Retire Git reads preserve the spawn baseline's configuration semantics
 description: Retire keeps operator global and system Git configuration to remain comparable with the spawn baseline, so its read profile must not be unified with fully isolated observation without an explicit baseline transition.
+about: [system/oats-kernel]
+id: dec-3656709c4e5f
 tags: [kernel, retire, recovery, git, security, compatibility]
 timestamp: 2026-10-08
 ---

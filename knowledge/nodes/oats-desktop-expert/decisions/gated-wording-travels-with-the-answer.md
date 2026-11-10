@@ -2,6 +2,8 @@
 type: Decision
 title: Feature-gated wording travels with the answer
 description: Choose refusal wording where the answering kernel's feature declaration is known and carry it beside the code, rather than reconstruct a gated guarantee from a page's code-only table.
+about: [system/oats-desktop, system/oats-kernel]
+id: dec-79ae7fe98830
 tags: [desktop, kernel, wording, compatibility, rejected-alternatives]
 timestamp: 2026-10-30
 ---

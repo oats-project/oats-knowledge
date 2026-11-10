@@ -2,6 +2,9 @@
 type: Lesson
 title: A provider release is tagged first, then mirrored and pinned in one re-proven framework PR
 description: Tag first, then review the tag-identical mirror and every pin as one diff; the gate keeps the Desktop suite, with the suites in CI and only named affected test files run locally, and a pin is re-proven after another shared-file change lands.
+about: [workstream/provider-integration, system/oats-desktop, workstream/oats-direction]
+kind: lesson
+id: ins-1e61da3a31bb
 tags: [integrations, release, mirror, catalog, pins, desktop, tests]
 timestamp: 2026-10-12
 ---

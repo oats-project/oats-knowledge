@@ -2,6 +2,9 @@
 type: Lesson
 title: Open a CI-only draft during kernel review convergence
 description: When the kernel branch needs a PR to trigger CI, the expert opens a clearly non-review draft on the first push so exact-head CI runs during convergence rather than starting only after acceptance, and states green only from the completed run of the exact head, never from a watch that returned with zero checks.
+about: [system/oats-kernel, workstream/oats-direction]
+kind: lesson
+id: ins-be4288aecacb
 tags: [kernel, ci, review, handover]
 timestamp: 2026-10-30
 ---

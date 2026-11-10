@@ -2,6 +2,8 @@
 type: Decision
 title: Health receive evidence follows the delivery mode
 description: The health publisher uses matching live and fresh native-stream receipts or fail-closed broker readiness according to delivery mode, because neither a leftover file nor a missing inapplicable receipt proves receive health.
+about: [system/oats-aweb]
+id: dec-9945f142d81d
 tags: [oats.aweb, health, receive, receipts, readiness]
 timestamp: 2026-10-15
 ---

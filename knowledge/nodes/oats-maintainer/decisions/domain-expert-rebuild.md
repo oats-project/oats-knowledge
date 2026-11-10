@@ -2,6 +2,8 @@
 type: Decision
 title: "The OATS soul roster: expert domains own knowledge nodes, developers own none"
 description: The one canonical record of the OATS roster — six domain experts and six package experts own nodes, four developer souls and the setup admin own none, release stewardship is a Playbook, and knowledge is rebuilt by audit, never bulk-copied.
+about: [workstream/oats-direction, workstream/knowledge, workstream/operations]
+id: dec-3697f43f967c
 tags: [souls, roster, expertise, knowledge, developers, operator, integration]
 timestamp: 2026-11-09
 ---

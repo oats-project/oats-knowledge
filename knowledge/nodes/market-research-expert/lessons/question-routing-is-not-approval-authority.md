@@ -2,6 +2,9 @@
 type: Lesson
 title: Distinguish question routing from human approval authority
 description: Source-reported product readings from 2026-11-02 distinguish question routing, teammate-plan approval, merge-review credit, the surface that accepts confirmation and human permission or consent, and a reported ADK revert corrects an earlier fix claim, without establishing uniform product authorization rules.
+about: [workstream/positioning]
+kind: lesson
+id: ins-d54d82cdd1a1
 tags: [research, consent, authorization, delegation, personal-agents]
 timestamp: 2026-11-02
 ---

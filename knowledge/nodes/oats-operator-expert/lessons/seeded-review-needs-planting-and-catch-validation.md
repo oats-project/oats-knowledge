@@ -2,6 +2,9 @@
 type: Lesson
 title: Seeded review needs planting and catch validation
 description: Post-authorship defect injection triggered tamper handling and cooperative planting varied between instances, so seeded-review comparisons need actual planted populations and validated catch stages rather than raw counts.
+about: [workstream/operations]
+kind: lesson
+id: ins-33045c0385e3
 tags: [operator, trials, review, measurement, seeds]
 timestamp: 2026-11-03
 ---

@@ -2,6 +2,8 @@
 type: Decision
 title: Preserve recovery authority until the outcome is proven
 description: Partial failures must retain the identity and obligations needed for retry rather than mistaking plausible descriptors for completed cleanup.
+about: [system/oats-kernel]
+id: dec-1fe1a70600e5
 tags: [kernel, rollback, lifecycle, spawn, retire, fail-closed]
 timestamp: 2026-09-21
 ---

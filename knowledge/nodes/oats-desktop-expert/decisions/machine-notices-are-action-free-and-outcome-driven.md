@@ -2,6 +2,8 @@
 type: Decision
 title: Desktop shows no session-resume sweep notice
 description: Show no Desktop notice or summary for the session-resume sweep, explicitly superseding its app-scoped notice exception without changing recovery policy or deciding TUI presentation.
+about: [system/oats-desktop]
+id: dec-6177c7fc98e1
 tags: [desktop, notifications, scope, recovery, truthfulness]
 timestamp: 2026-10-27
 ---

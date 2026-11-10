@@ -2,6 +2,8 @@
 type: Decision
 title: Optional reference theory, capability-owned runtime
 description: OATS offers an adoptable reference knowledge theory while each capability owns its runtime behavior and may choose a different model.
+about: [workstream/oats-direction, workstream/knowledge]
+id: dec-20d6d915ebfc
 tags: [knowledge, architecture, capabilities]
 timestamp: 2026-09-17
 ---

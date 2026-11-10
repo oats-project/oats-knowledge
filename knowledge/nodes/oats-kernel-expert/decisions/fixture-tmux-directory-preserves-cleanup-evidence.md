@@ -2,6 +2,8 @@
 type: Decision
 title: A fixture's tmux directory preserves evidence of unfinished cleanup
 description: A fixture's private tmux directory stays outside its removable base because relocating it inside would let base deletion hide an unended fixture and its surviving server.
+about: [system/oats-kernel]
+id: dec-cc3f5757e866
 tags: [kernel, testing, tmux, cleanup, evidence]
 timestamp: 2026-10-15
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: How the OATS project ships and reviews
 description: Maintainer review binds verdicts to content and issue-recorded contract decisions, carries them only across an unchanged delta, preserves same-area integration evidence, requires timely and safely obtained verification, uses fresh readers and one second reader per PR, checks hand-written release claims, and judges tests against requirements rather than implementations.
+about: [workstream/oats-direction, system/oats-kernel, workstream/provider-integration]
+kind: lesson
+id: ins-db8a67988ea3
 tags: [stewardship, review, pull-requests, process]
 timestamp: 2026-11-09
 ---

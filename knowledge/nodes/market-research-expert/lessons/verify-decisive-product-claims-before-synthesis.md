@@ -2,6 +2,9 @@
 type: Lesson
 title: Verify decisive product claims before synthesizing a market comparison
 description: Source-reported verification passes on 2026-11-02/03 show how product claims and research figures lose their conditions or comparator, motivating primary-source checks and explicit measurement and authority boundaries.
+about: [workstream/positioning]
+kind: lesson
+id: ins-234e59646891
 tags: [research, verification, product-status, evidence-quality]
 timestamp: 2026-11-03
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: A failed turn's claim splits by error class, and Claude's hook matchers are not a partition
 description: Only a usage-limit text opens Claude's menu and only rate_limit carries one, while a provider's refusal lands in class unknown, so a failed-turn claim reads attention for classes measured to open no dialog and question for the rest, decided in one hook entry that parses its input because every matcher entry runs for an empty class.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-6385b6be27ea
 tags: [kernel, harnesses, claude, claims, dialogs, input-safety]
 timestamp: 2026-10-30
 ---

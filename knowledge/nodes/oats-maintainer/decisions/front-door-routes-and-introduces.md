@@ -2,6 +2,8 @@
 type: Decision
 title: A workspace front door routes and introduces without mandatory brokering
 description: For most workspaces, keep an always-alive intake agent that finds or starts the owner and introduces the human, without requiring every later message to pass through it.
+about: [workstream/oats-direction]
+id: dec-a68592f7f2d9
 tags: [coordination, human-interaction, routing, direction]
 timestamp: 2026-11-02
 ---

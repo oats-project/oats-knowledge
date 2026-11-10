@@ -2,6 +2,9 @@
 type: Lesson
 title: A cross-client redesign starts with a classified feature inventory and one shared design that each client renders
 description: Before drawing anything for two clients, inventory every feature of the existing clients and classify each as essential, useful, nice-to-have or internal plumbing; derive one design from the human's questions and have each client's proposal render that same design, so parity is a ledger and comments on either apply to both; when the proposals become one interactive prototype, both renderers draw only from shared selectors and the build asserts no cut words and the keyboard model in both frames.
+about: [workstream/coordination]
+kind: lesson
+id: ins-92f4a9e9c2b9
 tags: [design, redesign, clients, parity, inventory, mockups, prototype, method]
 timestamp: 2026-10-27
 ---

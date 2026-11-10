@@ -2,6 +2,8 @@
 type: Decision
 title: No public announcement of OATS until it is polished; a launch is the humans' joint call
 description: OATS is not announced publicly until its humans together judge it polished enough, so work framed as being for a launch is reviewed on its own merits without launch urgency, and what counts as polished waits on the directing human's list.
+about: [workstream/oats-direction]
+id: dec-0921f97ac662
 tags: [direction, launch, release, review, stewardship]
 timestamp: 2026-11-06
 ---

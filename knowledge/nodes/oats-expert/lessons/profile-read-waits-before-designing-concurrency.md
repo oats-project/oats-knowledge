@@ -2,6 +2,9 @@
 type: Lesson
 title: Profile a slow read's waits before designing concurrency
 description: Before specifying parallel reads, lanes or extra reader processes, obtain child invocation counts and wall times so an architectural comparison does not hide the wait that dominates the workload.
+about: [workstream/coordination]
+kind: lesson
+id: ins-87c7950cd453
 tags: [planning, performance, profiling, concurrency]
 timestamp: 2026-10-29
 ---

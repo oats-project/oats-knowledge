@@ -2,6 +2,9 @@
 type: Conclusion
 title: Coordination practice disagrees on review, messaging, delegation and breadth
 description: The 2026-11-02 synthesis preserves vendor disagreements and model-specific findings while distinguishing collaboration, fleet telemetry and the unresolved multi-human coordination boundary.
+about: [workstream/positioning]
+kind: finding
+id: ins-87e3179cd44f
 tags: [coordination, multi-agent, research, positioning]
 timestamp: 2026-11-02
 ---

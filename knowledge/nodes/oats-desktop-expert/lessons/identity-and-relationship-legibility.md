@@ -2,6 +2,9 @@
 type: Lesson
 title: Identity and relationships must stay legible under ambiguity
 description: Qualified identity and full-roster ambiguity checks preserve agents without inventing relationships from filtered views.
+about: [system/oats-desktop]
+kind: lesson
+id: ins-a5704dfdfb95
 tags: [desktop, identity, roster, hierarchy, legibility, accessibility]
 timestamp: 2026-07-25
 ---

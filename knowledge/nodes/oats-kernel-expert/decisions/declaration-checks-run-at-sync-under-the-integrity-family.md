@@ -2,6 +2,8 @@
 type: Decision
 title: A declaration-versus-content check runs at sync and reuses the integrity family
 description: A pin whose fetched manifest names another package id is refused by sync, the lock's only writer, under the existing E_PACKAGE_INTEGRITY family with a new why, rather than at spawn, under the manifest-malformed code or a new code; the compatibility claim was proved by enumerating the published tags.
+about: [system/oats-kernel]
+id: dec-f804310bc660
 tags: [kernel, packages, sync, lock, integrity, error-codes, compatibility]
 timestamp: 2026-11-09
 ---

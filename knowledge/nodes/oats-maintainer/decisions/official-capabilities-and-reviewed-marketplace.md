@@ -2,6 +2,8 @@
 type: Decision
 title: Operating OATS is capability content; the reviewed list is the marketplace
 description: Knowing how to operate OATS ships as two official capabilities — a core every soul receives by kernel default and a setup capability held by the souls that administer a deployment — and the reviewed package catalog in the framework repository is the official marketplace, without a hosted registry.
+about: [workstream/oats-direction, system/oats-kernel]
+id: dec-feb06c322c75
 tags: [distribution, capabilities, marketplace, onboarding, souls, kernel]
 timestamp: 2026-09-20
 ---

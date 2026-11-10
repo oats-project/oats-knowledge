@@ -2,6 +2,8 @@
 type: Decision
 title: Refresh maintainer context with a new instance after a coordination-skills release
 description: For the directing human's lanes, use fresh maintainer instances after syncing coordination skills rather than upgrading retained context, defer occupied seats until their efforts land, and replace the release lane last.
+about: [workstream/oats-direction]
+id: dec-6f2505b7fdb5
 tags: [maintainers, coordination, releases, handover]
 timestamp: 2026-10-28
 ---

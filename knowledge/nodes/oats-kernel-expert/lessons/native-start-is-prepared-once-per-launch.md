@@ -2,6 +2,9 @@
 type: Lesson
 title: A native start belongs to the launch, not each rendering of its command
 description: Preparing native-record state during command rendering can strand an undispatched pending receipt and make history unreadable, so one launch owns one prepared start reused by every render.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-6f41b7e715da
 tags: [kernel, launch, native-records, receipts, history]
 timestamp: 2026-10-27
 ---

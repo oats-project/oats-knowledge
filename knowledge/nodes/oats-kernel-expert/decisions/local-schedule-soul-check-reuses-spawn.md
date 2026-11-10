@@ -2,6 +2,8 @@
 type: Decision
 title: A local schedule's soul check reuses spawn without narrowing legacy acceptance
 description: Check newly admitted local schedule souls through spawn preview with the run's selectors, retaining the existing local-directory fast path rather than adding a second resolver or new refusals for previously accepted jobs.
+about: [system/oats-kernel]
+id: dec-508212de4c5e
 tags: [kernel, schedules, spawn, resolution, compatibility]
 timestamp: 2026-11-03
 ---

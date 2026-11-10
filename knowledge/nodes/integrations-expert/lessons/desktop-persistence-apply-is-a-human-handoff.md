@@ -2,6 +2,9 @@
 type: Lesson
 title: Desktop persistence apply is a human handoff, not a classifier workaround
 description: Agent-assisted desktop setup separates plan and check from the person's persistence-changing act, respects harness refusals, and limits each chosen option to its own effects.
+about: [workstream/provider-integration, system/oats-desktop]
+kind: lesson
+id: ins-76cdf7bfe1e3
 tags: [integrations, desktop, persistence, consent, harnesses]
 timestamp: 2026-10-26
 ---

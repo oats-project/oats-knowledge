@@ -2,6 +2,9 @@
 type: Limitation
 title: Cross-repository change coordination does not establish architecture ownership
 description: The 2026-11-02 investigation found cross-repository change tools but no documented standing agent architecture owner in its search, and its WideSWE reading does not measure the effect of such a role.
+about: [workstream/positioning]
+kind: constraint
+id: ins-f1009a607385
 tags: [research, architecture, cross-repository, authority, uncertainty]
 timestamp: 2026-11-02
 ---

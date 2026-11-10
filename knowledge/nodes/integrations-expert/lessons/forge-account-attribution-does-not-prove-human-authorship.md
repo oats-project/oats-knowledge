@@ -2,6 +2,9 @@
 type: Lesson
 title: Forge account attribution does not prove human authorship
 description: When agents share a person's forge account, an author check establishes the account record, not human authorship or independent approval.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-9a62122e4a5d
 tags: [integrations, evidence, approval, identity, forge]
 timestamp: 2026-10-29
 ---

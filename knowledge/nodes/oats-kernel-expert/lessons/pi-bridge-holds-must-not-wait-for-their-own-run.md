@@ -2,6 +2,9 @@
 type: Lesson
 title: Pi bridge holds must not wait for their own run
 description: Detect pi's active-before-start lifecycle by the event's messageType rather than a version gate, because an idle wait inside that run deadlocks and apparent agent work can mask a missing opening task.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-fd823e1aa727
 tags: [kernel, pi, bridges, lifecycle, compatibility, evidence]
 timestamp: 2026-10-16
 ---

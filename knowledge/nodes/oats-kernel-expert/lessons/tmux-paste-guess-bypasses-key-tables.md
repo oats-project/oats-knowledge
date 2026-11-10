@@ -2,6 +2,9 @@
 type: Lesson
 title: tmux's paste guess can bypass a key-table test
 description: Burst input can bypass every tmux key table and mask coverage, so disable paste guessing on private key-table test servers rather than changing production paste handling to fix CI.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-aaaaf261b8f7
 tags: [tmux, viewers, key-tables, testing, compatibility]
 timestamp: 2026-11-04
 ---

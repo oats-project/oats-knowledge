@@ -2,6 +2,8 @@
 type: Decision
 title: Team as a first-class config entity
 description: On the classic configuration path a team block at a config scope declared the deployment boundary, drove instance identity and cross-repo discovery, and fixed the contract that the instance name is the messaging alias; the workspace model supersedes the block, and the alias contract survives.
+about: [workstream/oats-direction, workstream/messaging]
+id: dec-000acd98ff38
 tags: [decision, config, team, aweb, discovery, messaging, supersession]
 timestamp: 2026-09-24
 ---

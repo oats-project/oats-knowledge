@@ -2,6 +2,8 @@
 type: Decision
 title: Shared Desktop code keeps one relative path in the repository and package
 description: Preserve one source and one relative import path for shared client code, avoiding stale generated copies while making packaging boundaries explicit and testable.
+about: [system/oats-desktop]
+id: dec-90fac7a05891
 tags: [desktop, packaging, shared-code, verification, rejected-alternatives]
 timestamp: 2026-10-09
 ---

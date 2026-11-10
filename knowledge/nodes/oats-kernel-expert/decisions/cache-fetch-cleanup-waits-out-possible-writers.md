@@ -2,6 +2,8 @@
 type: Decision
 title: Cache fetch cleanup waits out possible writers
 description: Failed-fetch temporary files are reclaimed only after the longest fetch can have elapsed because a new write lock and a before-and-after listing cannot establish ownership against older lock-free Git writers.
+about: [system/oats-kernel]
+id: dec-94c0f85ee995
 tags: [kernel, git, cache, cleanup, concurrency, compatibility]
 timestamp: 2026-10-13
 ---

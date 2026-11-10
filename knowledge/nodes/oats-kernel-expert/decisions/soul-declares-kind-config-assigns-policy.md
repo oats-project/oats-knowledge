@@ -2,6 +2,8 @@
 type: Decision
 title: Soul declares identity and where its capabilities come from; the workspace versions; the host supplies facts
 description: A soul names each capability with a location and never a version and carries its slot payloads; the workspace pins package versions and declares defaults; oats-local.yaml holds host-only facts and spawn flags hold per-instance ones; packages never carry deployment targets or policy.
+about: [system/oats-kernel]
+id: dec-8d54cb3f5291
 tags: [kernel, config, souls, workspace, provider-payloads, layers]
 timestamp: 2026-09-20
 ---

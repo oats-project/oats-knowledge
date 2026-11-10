@@ -2,6 +2,9 @@
 type: Lesson
 title: A document a provider writes for the kernel passes the kernel's own rule on the provider's stage; a reviewer reading a new key as a feature is how a strict wire breaks
 description: Check answers, hook outputs and manifests are kernel-consumed documents; the provider's stage vendors the kernel's validator or shape rule and runs every produced document through it, a new key is a wire question before it is a feature, and manifest keys follow the kernel's grammar (operations are keyed by bare name; the kernel adds the layer).
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-b5a72b169b7d
 tags: [integrations, kernel-contract, readiness, manifests, operations, review, testing]
 timestamp: 2026-09-25
 ---

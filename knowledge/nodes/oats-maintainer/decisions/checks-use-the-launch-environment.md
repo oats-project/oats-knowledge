@@ -2,6 +2,8 @@
 type: Decision
 title: A launch check judges the environment the launch will have
 description: Launch checks share the launched process's environment model, disclose what they cannot establish, and never pass by silently substituting the spawner's account.
+about: [workstream/oats-direction]
+id: dec-53d4b9eb1583
 tags: [coherence, launch, environment, readiness, trust]
 timestamp: 2026-10-14
 ---

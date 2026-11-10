@@ -2,6 +2,8 @@
 type: Decision
 title: Agent-centered navigation makes the action target legible
 description: A stable roster and one authoritative inspection flow keep artifacts contextual and launch intent explicit.
+about: [system/oats-desktop]
+id: dec-1ac7c52a4b85
 tags: [desktop, navigation, information-architecture, workspaces]
 timestamp: 2026-10-30
 ---

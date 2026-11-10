@@ -2,6 +2,9 @@
 type: Lesson
 title: Code that observes another agent's tree must not be able to harm the observer
 description: Observing a tree someone else works in is a security boundary; Git reads must be helper-free (repo-local config and lazy fetch both run executables) and non-writing, signals need verified PIDs, and untrusted entries are never followed or read blocking.
+about: [system/oats-kernel, system/oats-desktop]
+kind: lesson
+id: ins-5b4696448a96
 tags: [kernel, security, git, process, observation, desktop]
 timestamp: 2026-10-08
 ---

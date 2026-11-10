@@ -2,6 +2,8 @@
 type: Decision
 title: Join an existing workspace with one invite, not team ensure
 description: Choose one-paste invite onboarding for an existing workspace, reject team ensure because it can create a separate team, and revisit tokenless enrollment only if measured join friction warrants the service-side authority work.
+about: [workstream/operations, workstream/messaging]
+id: dec-360c4194160c
 tags: [operator, onboarding, messaging, teams, rejected-alternative]
 timestamp: 2026-11-03
 ---

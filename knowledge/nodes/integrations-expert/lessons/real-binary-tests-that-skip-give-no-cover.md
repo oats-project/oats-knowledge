@@ -2,6 +2,9 @@
 type: Lesson
 title: A skipped real-binary test gives no compatibility evidence
 description: Real-binary coverage needs installed floor and newer-version runs that fail on skipped required cases and prove the intended paths executed, not just a matrix or a green suite.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-ac499caa45a7
 tags: [integrations, testing, external-cli, ci, compatibility]
 timestamp: 2026-10-30
 ---

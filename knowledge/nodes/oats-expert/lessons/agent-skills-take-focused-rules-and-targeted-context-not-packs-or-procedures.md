@@ -2,6 +2,9 @@
 type: Lesson
 title: When writing or adopting agent skills, take a few focused rules and targeted context, not packs or procedures
 description: A 2026-11-09 survey for the engineering template found no community skill pack with published evidence of better code, while measured results favoured focused skills over exhaustive bundles, telling the agent which tests a change affects over test-first procedure (which alone made regressions worse), and quality guidance re-applied on every change; so the lead takes individual permissively licensed rules in its own words, points at each skill from the always-loaded text, and never installs a pack whole.
+about: [workstream/coordination]
+kind: lesson
+id: ins-370803e0dd31
 tags: [skills, instructions, research, developers, cross-area]
 timestamp: 2026-11-09
 ---

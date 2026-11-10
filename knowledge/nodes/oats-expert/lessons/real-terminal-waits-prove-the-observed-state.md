@@ -2,6 +2,9 @@
 type: Lesson
 title: Real-terminal waits must prove the state they observe
 description: Before trusting a real-terminal content or absence check, establish the intended view and fixture state, account for capture transformations, and wait for a closing transition before sending the next key.
+about: [workstream/coordination]
+kind: lesson
+id: ins-09526ea2b7e9
 tags: [testing, terminal, tmux, controls, integration]
 timestamp: 2026-10-15
 ---

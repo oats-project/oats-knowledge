@@ -2,6 +2,9 @@
 type: Lesson
 title: Prove a contract flip on the real repositories, one patch at a time, as well as on a state matrix
 description: A synthetic state matrix shows which states pass; serving the real repositories from local bare copies under both owners and applying the real patches in order shows how an old client degrades step by step, proves the patches as written, and writes to no remote.
+about: [workstream/coordination]
+kind: lesson
+id: ins-1d1545f72950
 tags: [planning, migration, contracts, verification, rehearsal, repositories, evidence]
 timestamp: 2026-10-30
 ---

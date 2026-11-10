@@ -2,6 +2,9 @@
 type: Lesson
 title: Intake consent does not predict auto-mode approval
 description: Onboarding handoffs need actual scoped consent on record, but neither that consent nor suppressing intake questions guarantees Claude Code will permit consequential setup steps.
+about: [workstream/operations]
+kind: lesson
+id: ins-6cacee08ba45
 tags: [operator, onboarding, harnesses, consent, acceptance]
 timestamp: 2026-11-03
 ---

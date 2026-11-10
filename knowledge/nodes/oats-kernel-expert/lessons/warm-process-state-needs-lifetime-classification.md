@@ -2,6 +2,9 @@
 type: Lesson
 title: A warm process needs lifetime classification, not just a cache-reset list
 description: A warm-reader review missed a process-long WeakMap and misclassified a live-child registry, so repeated kernel calls need explicit reset, drain and safe-with-reason lifetimes backed by closure and equivalence tests.
+about: [system/oats-kernel]
+kind: lesson
+id: ins-f23ad24489f3
 tags: [kernel, lifecycle, performance, caching, testing]
 timestamp: 2026-10-29
 ---

@@ -2,6 +2,9 @@
 type: Lesson
 title: Type availability failures for the operator, but rethrow domain errors untouched
 description: When a knowledge or messaging provider wraps remote operations to produce typed, operator-friendly availability errors, the wrapper must catch only transport and unusable-source failures and let custody, confirmation, path and validation errors pass through with their original codes.
+about: [workstream/provider-integration]
+kind: lesson
+id: ins-ad19c8e37b1a
 tags: [lesson, integrations, errors, git, availability, custody]
 timestamp: 2026-09-24
 ---

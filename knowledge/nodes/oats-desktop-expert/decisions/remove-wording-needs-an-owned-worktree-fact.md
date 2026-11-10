@@ -2,6 +2,8 @@
 type: Decision
 title: Remove wording needs an owned-worktree fact, not a mode or default
 description: Base Remove's worktree promises on the kernel's explicit ownership fact because a recorded work mode and a retention default do not establish what belongs to the instance.
+about: [system/oats-desktop]
+id: dec-dd2b29b22c18
 tags: [desktop, lifecycle, confirmation, contracts, truthfulness]
 timestamp: 2026-10-14
 ---

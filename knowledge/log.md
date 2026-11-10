@@ -1,5 +1,9 @@
 # Knowledge log
 
+## 2026-11-10
+
+* **Update**: Bridge to the subject layout, by PR [#342](https://github.com/oats-project/oats-knowledge/pull/342): the reserved nodes [claims](/claims/index.md), [subjects](/subjects/index.md) and [verdicts](/verdicts/index.md) under a placeholder owner, 22 [subject files](/subjects/index.md) with generated views, and `about:`, `kind:` and `id:` frontmatter on all 429 concepts. No file moved and no concept body changed. The base declares 17 nodes.
+
 ## 2026-10-07
 
 * **Creation**: Chartered the [oats-apps-expert](/nodes/oats-apps-expert/index.md) node for the package expert soul of `oats.apps` (capabilities `oats.folio` and `oats.library`, repository `oats-apps`): that package's facts, nothing cross-package; it reads the integrations node. The base declares fourteen nodes.
