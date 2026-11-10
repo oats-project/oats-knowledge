@@ -1,9 +1,9 @@
 ---
 type: Decision
 title: Coordination policy lives in capabilities, not in the kernel or oats.core
-description: Keep coordination policy in composed capabilities, deliver the redesign as templates adapted into workspace-owned capabilities with a human guide, and retain the existing cleanup and action-required lifecycle-message rules until explicitly changed.
-tags: [stewardship, coordination, capabilities, instructions, retirement]
-timestamp: 2026-11-02
+description: Keep coordination policy in composed capabilities, deliver the redesign as tagged template repositories adapted into workspace-owned capabilities with a human guide (template-v tags that no package pin can resolve, the frozen package left for existing pins, the package-rename route rejected), and retain the existing cleanup and action-required lifecycle-message rules until explicitly changed.
+tags: [stewardship, coordination, capabilities, instructions, retirement, templates]
+timestamp: 2026-11-10
 ---
 **Owner: oats-maintainer. Update-on-change: whoever changes this coordination
 boundary records the new decision and its rationale here.**
@@ -46,8 +46,10 @@ This refines **delivery and ownership of the text**, not the capability
 boundary above. It is not a ban on packages generally, nor evidence that
 existing coordination packages have been removed. The adaptive-onboarding
 step waits on the templates as part of the already-recorded coordination
-outcome dependency. No delivered template, completed trial or installed
-workspace change is certified here; current operating rules remain until
+outcome dependency. At this capture no delivered template, completed trial or
+installed workspace change was certified; the
+[2026-11-09 record below](#delivered-as-tagged-template-repositories-the-package-rename-route-rejected-2026-11-09)
+records the first deliveries. Current operating rules remain until
 explicitly changed.
 
 Acceptance is **source-reported**: Pepe in the coordination-rethink lead's
@@ -58,6 +60,81 @@ direction was given.
 
 Evidence: OKF proposal from oats-maintainer/release-maintainer-pepe,
 2026-11-02; notes/coordination-ships-as-templates.md.
+
+## Delivered as tagged template repositories; the package-rename route rejected (2026-11-09)
+
+**State, 2026-11-10.** The first coordination template is delivered:
+oats-project/oats-engineering-coordination, `template-v2.0.0` (2026-11-09),
+followed by `template-v2.1.0` and `template-v2.2.0`. The second,
+oats-project/oats-research-coordination, released `template-v1.0.0` and
+`template-v1.0.1` on 2026-11-10 by the same procedure. One repository holds
+one template; the source reports scientific-research coordination planned as
+its own repository. A template repository carries the guide and the
+capabilities and souls a workspace copies, and deliberately **no OATS package
+manifest**. The `oats.engineering` package stays frozen in
+oats-project/oats-engineering at `v1.18.0`, catalog entry and aliases
+included, so existing pins keep resolving; retiring it later is still open.
+The tags, the merged PRs and the `v1.18.0` tag were read on the forge at
+harvest on 2026-11-10; whether any workspace has copied a template, or the
+pin has been removed from OATS's own workspace, is not certified here (the
+source reported neither at capture; the
+[review lesson of 2026-11-09](/nodes/oats-maintainer/stewardship/review-protocol.md#an-adapted-template-answers-its-release-markers-with-the-lane-map-never-with-a-stricter-per-person-gate-2026-11-09)
+separately records a copy PR read as merged).
+
+**Coherence rule: a template release is tagged `template-v<version>`, never
+`v<version>`.** A template repository has no package manifest, so a package
+pin cannot resolve one of its releases; the tag shape makes that visible and
+keeps the two delivery forms apart. The source reports that pointing the
+`oats.engineering` pin at the template fails `oats sync` with
+`E_PACKAGE_MANIFEST` (cause `E_REMOTE_PATH_MISSING`) and writes no lock, in
+a scratch run on OATS 0.69.12 recorded in the first template PR's
+description (read on the forge); it was not re-run at the tag. **Review
+consequence:** reject a `v*` tag, or an OATS package manifest, in a template
+repository. A copy records the release it came from, so an adaptation can be
+read against its tag
+([verify a template adaptation twice](/nodes/oats-expert/lessons/verify-a-template-adaptation-by-its-diff-against-the-tag-and-the-authorities-it-grants.md)).
+How a template release is cut is release judgement:
+[a template repository is cut by an annotated tag on its prep merge commit](/nodes/oats-maintainer/stewardship/release-traps.md#a-template-repository-is-cut-by-an-annotated-tag-on-its-prep-merge-commit-2026-11-09).
+
+**Rejected alternative: rename the package.** The same day's plan was to
+rename `oats.engineering` to `oats.engineering-coordination` at v2.0.0, a new
+package major, with a kernel package-id move table so that existing pins and
+soul keys carried over. Pepe rejected it on 2026-11-09: coordination is
+adapted per organisation, so a pinned package is the wrong delivery form,
+whatever its name. Leaving the package frozen needs no kernel change and
+breaks no existing lock; a workspace moving off the pin does a few hand
+steps, its host `souls.launch` keys first, which the template's CHANGELOG
+("From v1.18.0") and the pin-removal release note list, not this record.
+Acceptance is **source-reported**: Pepe in the coordination lead's session on
+2026-11-09, relayed to the source by that lead as a decision made with Pepe;
+the session was not inspected. This applies the 2026-11-02 direction above;
+it supersedes nothing accepted in this base, since the rename plan was never
+recorded here.
+
+What the rejected route would have cost is worth keeping, so nobody proposes
+it as cheap. An OATS package id is recorded wherever deployments name it:
+soul selectors, host `souls.launch` and `souls.disabled` keys, team-policy
+keys (exact and `<old>/*`), schedule and trigger soul names, and the homes
+recorded under the old id. The source verified that impact list in a scratch
+deployment: without a kernel move table resolving the old id at read time,
+the rename becomes a per-machine hand checklist on every adopter's machine (a
+stale `souls.launch` key blocks every spawn; a stale `/*` team key is ignored
+silently; schedules and triggers fail at every poll). The source records the
+maintainers' view (Juan's side and the release lane, 2026-11-09,
+source-reported) that any future official package-id rename ships such a
+table no later than the renamed pin, or ships the new content under the old
+id as a major version and renames later; a rename with a migration checklist
+in the release notes was rejected. That is recorded as the rejected route's
+requirement and the maintainers' position, not as an accepted kernel
+contract. The npm-side rename trap is separate:
+[a package rename is a republish, not a move](/nodes/oats-maintainer/stewardship/release-traps.md#a-package-rename-is-a-republish-not-a-move-2026-10-30).
+
+Evidence: OKF proposal from oats-maintainer/release-maintainer-pepe,
+2026-11-10; notes/coordination-ships-as-templates.md;
+notes/package-rename-ships-with-a-move-table.md. The template tags and their
+merge commits, the first template PR's E_PACKAGE_MANIFEST evidence and the
+`v1.18.0` tag were read on the forge; the reviews, the human's words, the
+scratch deployment and the hand-step count are source-reported.
 
 # Review consequence
 

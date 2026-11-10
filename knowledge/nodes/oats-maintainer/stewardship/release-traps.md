@@ -1,9 +1,9 @@
 ---
 type: Lesson
 title: Release judgement for the tag-driven lane
-description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, runs the kernel tests that read a package's mirror before the package tag or plans their port, contains failed-tag repairs, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them, coordinates source, tag, mirror, every form of version pin and the framework release that carries them, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, and plans tags around a hosted runner image's retirement brownouts.
-tags: [stewardship, release, ci, npm, packaging, pins]
-timestamp: 2026-11-06
+description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, runs the kernel tests that read a package's mirror before the package tag or plans their port, contains failed-tag repairs, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them, coordinates source, tag, mirror, every form of version pin and the framework release that carries them, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
+tags: [stewardship, release, ci, npm, packaging, pins, templates]
+timestamp: 2026-11-10
 ---
 **Owner: oats-maintainer. Update-on-change: whoever changes the release workflow,
 the runnerless lane or the release skill revises this concept in the same
@@ -360,6 +360,63 @@ old packages left in place for their readers. Two traps follow:
   token) set up before then, and a new scope is a fresh trust
   configuration, not an inherited one. Plan the rename before the lane's
   tokens stop publishing, not around that date.
+
+Renaming an OATS **package id** (the `packages:` key) is a different trap,
+recorded with the rejected coordination-package rename in
+[capability-owned coordination](/nodes/oats-maintainer/stewardship/coordination-policy-lives-in-capabilities.md#delivered-as-tagged-template-repositories-the-package-rename-route-rejected-2026-11-09):
+the id is recorded in soul selectors, host keys, team policies and
+schedules, so a rename without a kernel move table is a per-machine hand
+check-list.
+
+# A template repository is cut by an annotated tag on its prep merge commit (2026-11-09)
+
+Coordination templates are delivered as tagged repositories, not packages
+([capability-owned coordination](/nodes/oats-maintainer/stewardship/coordination-policy-lives-in-capabilities.md#delivered-as-tagged-template-repositories-the-package-rename-route-rejected-2026-11-09)
+owns that decision and the `template-v<version>` tag shape). Their release
+follows the lane rule of the
+[release-lane decision](/nodes/oats-maintainer/stewardship/release-lane-and-project-lanes.md):
+the project lane reads first (Juan's side, for these templates, as the
+source reports), and the release lane gives the final read, the sign-off,
+the merge and the tag. The judgement the release lane needs:
+
+- **The tag goes on the prep PR's merge commit, after main CI is green
+  there.** A content PR merges on the release lane's sign-off after Juan's
+  side's read. A release-prep PR, the release lane's own, turns the
+  CHANGELOG's unreleased heading into `## template-v<version> - <date>`;
+  Juan's side is its second reader. Once main CI is green on that merge
+  commit, the release lane pushes an annotated `template-v<version>` tag on
+  it: the dated heading and the tag name the same commit.
+- **The heading's date is the UTC day of the tag.** If the prep is dated for
+  the next UTC day, hold the merge and the tag until 00:00Z rather than
+  pushing a new head: a new head would void the second read, a short wait
+  does not. The research template's `template-v1.0.0` was cut this way (its
+  tag is timestamped one minute into 2026-11-10 on the forge).
+- **The prep is one line only when the content PRs already moved the
+  versions.** The template's validator ties every capability's `version`,
+  and its "Copied from … template-v<version>." sentence, to the latest
+  CHANGELOG heading, so a copy can tell which release it came from. When
+  the content PRs left the versions alone (`template-v2.2.0` of the
+  engineering template, `template-v1.0.1` of the research template), the
+  prep bumps every version the validator ties to the heading and adds the
+  heading's summary line; the second read covers them.
+- **Text adapted from outside sources ships with its notices.** The
+  repository's THIRD-PARTY-NOTICES.md names each source repository, the
+  commit read, its copyright line and its full licence, and the adapted
+  skill points to it. The content read checks each licence on the forge,
+  and a copy keeps the file with the skills it adapted.
+
+The validator already makes a stale version a red check; a check that the
+heading's date matches the tag's UTC day is the elimination route for the
+date rule, not delivered. The procedure itself belongs to the template
+repositories' own release documentation and the lane map; this record holds
+the judgement (where the tag goes, why a date waits, what a prep carries, what
+ships with adapted text).
+
+Evidence: OKF proposal from oats-maintainer/release-maintainer-pepe,
+2026-11-10; notes/coordination-ships-as-templates.md. Five template releases
+across two repositories, 2026-11-09 and 2026-11-10: the annotated tags and
+the prep merge commits they peel to were read on the forge; the reads,
+sign-offs, CI state and licence checks are source-reported.
 
 # What the pre-merge gate cannot rehearse
 
