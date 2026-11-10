@@ -1,7 +1,7 @@
 ---
 type: Lesson
 title: Release judgement for the tag-driven lane
-description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, runs the kernel tests that read a package's mirror before the package tag or plans their port, contains failed-tag repairs, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them, coordinates source, tag, mirror, every form of version pin and the framework release that carries them, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
+description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, compares what each job sets up before a step that both the PR installer build and the tag workflow run, runs the kernel tests that read a package's mirror before the package tag or plans their port, contains failed-tag repairs and re-runs only a clearly timing failure from the same unpublished tag, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them, coordinates source, tag, mirror, every form of version pin and the framework release that carries them, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
 about: [workstream/oats-direction, workstream/provider-integration]
 kind: lesson
 id: ins-559dbb88da8b
@@ -469,6 +469,75 @@ release gate requiring evidence for the candidate being tagged. That is not
 a claim such coverage has landed. Keep the remaining release judgment in
 the existing release skill, and remove the workaround only when the
 relevant platform path is actually covered before the tag.
+
+## A step both workflows run can pass on every PR and fail on the tag (2026-11-10)
+
+The PR-time installer build (`build-installers.yml`) and the tag's release
+workflow (`release.yml`) are separate workflows that set their jobs up
+differently. A green installer build on every PR therefore proves only that a
+step passes **in the installer job's setup**; the same step can fail on the tag
+when the release job installs or configures less before it. This narrows the
+opening rule of this section: a path need not be tag-only to be unrehearsed.
+What the PR run rehearses is the step inside its own job's environment, not
+the step as the tag will run it.
+
+- **In review**, when a PR adds or changes a step that both workflows run,
+  compare what each job installs and sets up before that step, not only the
+  step's text. A step that reaches outside its job's own install (a Desktop
+  fixture that loads a root dependency, for example) is the case to look for.
+- **At release prep**, read `release.yml`'s diff since the last tag the same
+  way: which steps changed, and what each job that runs them provides first.
+- **Which repair a failed tag takes.** A failure whose cause is in the tagged
+  source needs a source change, as 0.69.13's did, and the fresh patch is the
+  usual route; whether an unpublished version may be recut instead stays with
+  [publish first, housekeep second](#publish-first-housekeep-second), which
+  owns the publication boundary and the recut rule and is not narrowed here.
+  A failure that is clearly timing on the runner, with nothing published, is
+  **re-run from the same tag, failed jobs only**: the tagged source is
+  exactly what a new version would re-ship, and re-running an unpublished
+  attempt burns no version. A failed-jobs re-run repeats the revision it
+  first ran ([as on PR runs](/nodes/oats-maintainer/lessons/a-rerun-does-not-pick-up-a-base-fix.md)),
+  so it is the right repair only when nothing needs fixing.
+  "Clearly timing" means the same checks are green on PR CI at the same tree
+  and the failure is a wait or a capture window, not a missing input; when
+  that is not clear, treat it as a source fault.
+
+The elimination route is one job setup shared by both workflows (a reusable
+workflow or composite action) so they cannot diverge, or a test that pins the
+release job's setup to what its steps need. The source reports that
+`test/release-workflow.test.mjs` now pins one such case (root dependencies
+installed before the Linux launch check) and that other setup differences are
+not pinned; this lesson delivers nothing beyond that reported case.
+
+Evidence: OKF proposal from oats-maintainer/release-maintainer-pepe,
+2026-11-10; notes/release-workflow-differs-from-pr-installers.md. The source
+reports that v0.69.13's release run failed on the Desktop's Linux
+packaged-window launch check added by
+[oats#1757](https://github.com/oats-project/oats/pull/1757): the launch
+fixture could not resolve a root dependency, because the installer build
+installs root and Desktop dependencies while the release workflow's Desktop
+job installed only the Desktop's, so publication was skipped. The fix,
+[oats#1826](https://github.com/oats-project/oats/pull/1826), shipped as
+0.69.14, keeping the Desktop-only install up to packaging and adding a
+Linux-only root install before the launch; 0.69.14's first attempt then
+failed two timing checks that were green on PR CI at the same tree, and a
+failed-jobs re-run from the same tag passed and published. The harvest read
+on the forge that both PRs are merged, that v0.69.13's release run failed and
+has no release, and that v0.69.14's release run succeeded on its second
+attempt and its release was published on 2026-11-10. The setup difference,
+the dependency error and the timing nature of the second failure are
+source-reported; the workflows and job logs were not read. The incident
+confirmed the tag-is-the-version and never-retag decisions above and adds
+no new rule to them.
+
+Verified by the knowledge maintainer at review on 2026-11-10 from public
+GitHub records: oats#1757 merged 2026-11-06 and oats#1826 on 2026-11-10; the
+`v0.69.13` release run failed on its only attempt and no release exists at
+that tag; the `v0.69.14` release run succeeded on attempt 2 and its release
+was published on 2026-11-10; `release.yml` on `main` carries a Linux-only
+root-dependency install before the packaged-window launch step, and
+`test/release-workflow.test.mjs` exists. Job logs and the test's assertions
+were not read.
 
 ## Rehearse newly taught commands before the package tag (2026-10-28)
 
