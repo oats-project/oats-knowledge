@@ -73,7 +73,11 @@ Likewise, message and remedy belong together at the attributed-rendering
 boundary: the source's `kernelLines(message, fix, terms)` decision prevents
 each caller from reconstructing that rule. A client must not recognize a
 kernel warning by matching its prose. The producer owns that prose, and a
-rewording is not a new machine contract.
+rewording is not a new machine contract. Where the kernel discriminates a
+code's causes with a documented `details.why`, the reader may carry that one
+validated slug and word per value; the
+[wording lesson](../lessons/client-wording-must-hold-at-every-code-producer.md#a-documented-discriminator-is-worded-as-data-with-the-family-meaning-as-fallback)
+owns that rule and its fallback.
 
 This supplies the interface rationale needed to apply
 [attributed source prose](source-prose-is-an-attributed-quote.md); that concept
