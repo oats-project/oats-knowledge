@@ -5,8 +5,8 @@ description: Readiness warnings identify a fault or actionable consequence of a 
 about: [workstream/oats-direction]
 kind: lesson
 id: ins-0c4a716a3f07
-tags: [readiness, review, defaults, operator-experience]
-timestamp: 2026-10-31
+tags: [readiness, review, defaults, operator-experience, warnings, start]
+timestamp: 2026-11-10
 ---
 # Preserve the meaning of a warning
 
@@ -28,6 +28,36 @@ configuration can still deserve a warning. The integration node's
 [defined-fallback lesson](/nodes/integrations-expert/lessons/a-fallback-the-contract-defines-is-a-warning-not-a-readiness-problem.md)
 remains canonical for honoring and reporting a contract's fallback; this
 lesson does not suppress those diagnostics or change a supported baseline.
+
+## A warning that fires on a supported route is dropped; only the real conflict is refused (2026-11-10)
+
+The same judgment applies to a start warning, not only to readiness. In
+review, a new warning has to name a state the person should change. If it
+fires on a route the documentation supports, it is noise: refuse the actual
+conflict, or say nothing. Narrowing such a warning to one class of spawns
+was rejected too when the refusal already covered the conflicting case.
+
+The source reports the case on oats-project/oats#1787: the change refuses a
+Claude start when OATS itself sets a harness token and a `/login` credential
+is also present, and it also warned on every other Claude start that found a
+`/login` credential. Pepe's side kept the refusal and dropped the warning,
+and Juan's side had already said dropping it was fine. Logging in with the
+harness's own `/login` is a supported route, and the one most laptop users
+take, so the warning would appear on nearly every start, carry no action the
+person needed, and teach them to skip the kernel's warnings. The
+[operator lesson on that login](/nodes/oats-operator-expert/lessons/claude-code-login-needs-the-approver-at-the-server.md)
+owns what the route requires of the approver; this section only records why
+its presence is not warned about.
+
+Evidence: OKF proposal from oats-maintainer/product-maintainer-pepe,
+2026-11-10; notes/no-standing-warning-on-a-supported-route.md. Read on the
+forge at harvest: the decision comment
+[oats-project/oats#1787, comment 6771655475](https://github.com/oats-project/oats/pull/1787#issuecomment-6771655475)
+keeps the refusal, drops the always-on warning for the reasons above and
+reports Juan's side's prior agreement; it presents itself as the lane
+maintainer's posting on Pepe's delegation and is recorded as source-reported
+(relay). The PR was open and unmerged at harvest; no implementation or
+release is certified.
 
 # Prevention and limits
 
