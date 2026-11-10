@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { realpathSync } from 'node:fs';
 import { join } from 'node:path';
 import test from 'node:test';
-import { BASE_ID, OWNERS, REPO_ROOT, loadOkf, validateOwnership, assertStrictResult } from '../scripts/validate.mjs';
+import { BASE_ID, OWNERS, PLACEHOLDER_OWNER, RESERVED, REPO_ROOT, loadOkf, validateOwnership, assertStrictResult } from '../scripts/validate.mjs';
 
 const okf = await loadOkf();
 const files = okf.tree(realpathSync(join(REPO_ROOT, 'knowledge')));
@@ -14,11 +14,12 @@ const mutate = change => {
   return { ...files, 'okf-base.json': encode(candidate) };
 };
 
-test('whole base has the fourteen reviewed owner UUIDs and resolvable declarations', () => {
+test('whole base has the fourteen reviewed owner UUIDs, the three reserved nodes and resolvable declarations', () => {
   const result = validateOwnership(files, okf);
   assert.equal(result.id, BASE_ID);
-  assert.equal(Object.keys(result.nodes).length, 14);
+  assert.equal(Object.keys(result.nodes).length, 17);
   for (const [name, owner] of Object.entries(OWNERS)) assert.equal(result.nodes[name].owner, owner);
+  for (const name of RESERVED) assert.deepEqual(result.nodes[name], { path: name, owner: PLACEHOLDER_OWNER });
 });
 
 const malformed = [
@@ -34,12 +35,17 @@ const malformed = [
   ['hidden path', b => { b.nodes['oats-expert'].path = '.hidden'; }],
   ['missing node', b => { delete b.nodes['oats-operator-expert']; }],
   ['extra node alias', b => { b.nodes.extra = { ...b.nodes['oats-expert'] }; }],
+  ['missing reserved node', b => { delete b.nodes.verdicts; }],
+  ['reserved node owned by a soul', b => { b.nodes.claims.owner = OWNERS['oats-expert']; }],
+  ['reserved node moved', b => { b.nodes.subjects.path = 'nodes/subjects'; }],
+  ['soul node on the placeholder owner', b => { b.nodes['oats-expert'].owner = PLACEHOLDER_OWNER; }],
+  ['extra node on the placeholder owner', b => { b.nodes.extra = { path: 'extra', owner: PLACEHOLDER_OWNER }; }],
 ];
 for (const [label, change] of malformed) test(`rejects ${label}`, () => {
   assert.throws(() => validateOwnership(mutate(change), okf));
 });
 
-for (const path of ['index.md', 'log.md', 'nodes/oats-expert/index.md', 'nodes/oats-expert/log.md']) {
+for (const path of ['index.md', 'log.md', 'nodes/oats-expert/index.md', 'nodes/oats-expert/log.md', 'subjects/index.md', 'claims/log.md']) {
   test(`rejects missing ${path}`, () => {
     const candidate = { ...files }; delete candidate[path];
     assert.throws(() => validateOwnership(candidate, okf));
