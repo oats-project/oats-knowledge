@@ -49,6 +49,10 @@ So the lead's rule for an out-of-lane finding:
 - **Do not retire before the finding has an owner.** A session that reports
   and closes has handed it to nobody.
 
+When the finding is a defect in another lane's test that is failing the
+lead's own PR, the same route applies with the diagnosis attached:
+[a test that fails only on your branch may still not be yours](/nodes/oats-expert/lessons/a-test-that-fails-only-on-your-branch-may-still-not-be-yours.md).
+
 # Fixing it unasked is a policy choice, not a default
 
 The trial measures pull against each other on an unasked fix outside the

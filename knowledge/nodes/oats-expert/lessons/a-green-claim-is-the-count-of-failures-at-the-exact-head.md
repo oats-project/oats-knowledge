@@ -53,6 +53,13 @@ omit a consumer. This lesson is about reading the results of the runs that
 did happen: a listing can be read as green while one of its entries is a
 failure. The two checks are separate and both sit at the lead's hand-over.
 
+Two more readings sit beside the counts. A pipeline that stops at its
+first failure reports nothing for the stages after it, so one red result
+can stand in front of others:
+[a pin that removes something carries its repairs in one PR](/nodes/oats-expert/lessons/soul-text-lands-with-its-capability-pin.md#a-pin-that-removes-something-carries-its-repairs-in-one-pr-2026-11-11).
+And a failure counted at the lead's head is not yet the branch's failure:
+[a test that fails only on your branch may still not be yours](/nodes/oats-expert/lessons/a-test-that-fails-only-on-your-branch-may-still-not-be-yours.md).
+
 # Elimination route
 
 A hand-over template whose CI field asks for counts by state at a sha
