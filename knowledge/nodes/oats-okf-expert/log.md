@@ -2,6 +2,8 @@
 
 ## 2026-11-11
 
+* **Creation** (proposal, operator form from the retired source bridge-pr-developer; maintainer verified each against the oats.okf 5.8.0/6.0.2 source and this base's CI adapter, stamped ids): three lessons from the bridge PR — [a local Git base under the instance home is refused as disposable custody](/nodes/oats-okf-expert/lessons/a-local-git-base-under-the-instance-home-is-refused-as-disposable-custody.md), [the frontmatter reader strips one leading and one trailing quote](/nodes/oats-okf-expert/lessons/the-frontmatter-reader-strips-one-leading-and-one-trailing-quote.md), [the base's own CI pins the node roster](/nodes/oats-okf-expert/lessons/the-oats-bases-own-ci-pins-the-node-roster.md).
+
 * **Proposal** (operator form, retired source base-moved-recovery-developer): new lesson [a fetch inside the publication gate passes an empty --refmap= and reads the tip from FETCH_HEAD](/nodes/oats-okf-expert/lessons/a-fetch-inside-the-publication-gate-passes-an-empty-refmap.md): a source-only fetch applies configured refspec destinations and can move local refs before the gate's compare-and-swap (oats-okf #129/#130). Nothing is superseded. The maintainer review verified the fix commit, its regression test (fails without the flag) and the Git behaviour; it stamped the id, qualified the claim for a checked-out branch (Git refuses the fetch instead), marked the review-round details as source-reported, replaced a paraphrase presented as a quotation of Git's documentation, and named the test that would retire the lesson.
 
 ## 2026-11-06
