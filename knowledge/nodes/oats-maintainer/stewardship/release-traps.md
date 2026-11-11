@@ -6,7 +6,7 @@ about: [workstream/oats-direction, workstream/provider-integration]
 kind: lesson
 id: ins-559dbb88da8b
 tags: [stewardship, release, ci, npm, packaging, pins, templates]
-timestamp: 2026-11-10
+timestamp: 2026-11-11
 ---
 **Owner: oats-maintainer. Update-on-change: whoever changes the release workflow,
 the runnerless lane or the release skill revises this concept in the same
@@ -326,6 +326,45 @@ alone as successful artifact verification, or seventeen minutes as a bound.
 Release-verification automation should handle delayed availability explicitly
 and leave verification incomplete when its bounded check cannot obtain the
 artifact. This extends the existing no-republish rule, not a retry permission.
+
+**Refinement, 2026-11-11:** the lag has two more faces, and a fixed
+reference to read it against. First, inside the window the packument's
+`latest` can still name the previous version while the new version's own
+endpoint answers not found: a stale `latest` is the same lag, not a failed
+dist-tag. Second, the release workflow's documented order publishes npm
+before it creates the GitHub Release, so a live Release for the tag beside
+a registry that does not yet serve the version is the expected shape of the
+window, not a partial publication; partial-publication recovery starts by
+observing what was published, and an observation taken inside the window
+makes a clean release look partial. Third, the claim to verify is the
+publish log's own `npm notice version`, `shasum` and `+ <pkg>@<version>`
+lines: wait until the registry serves `<pkg>/<version>` itself, then compare
+the served `gitHead` with the tag's commit and the served shasum with the
+log's. The source reports that the npm CLI's view can lag the registry's
+own answer; read the version endpoint directly rather than relying on the
+CLI's cached view. Only a version still absent well after the window, or a
+served shasum that differs from the log's, is a publication fault. Two
+observations on one registry set no bound. The prevention route is the one
+named above: release verification that polls the exact version with a
+stated bound and compares it against the publish log, not delivered here.
+
+Evidence: OKF proposal from oats-maintainer/release-maintainer-pepe,
+2026-11-11; notes/npm-registry-lags-a-fresh-publish.md. The source reports
+that `npm view` lagged 0.69.14's publish (2026-11-10) and that three minutes
+after 0.69.15's publish (2026-11-11, run 42957483846) the version endpoint
+answered not found and `latest` read 0.69.14, before both packages served
+0.69.15 with `gitHead` equal to the tagged commit and shasums equal to the
+log. The harvest read on the forge that the run succeeded on its first
+attempt, that the Release was published seconds before the run completed,
+that the registry now serves `@awebai/oats@0.69.15` and
+`@awebai/oats-pi@0.69.15` with `gitHead` equal to the commit `v0.69.15`
+peels to, and that each packument's `time` entry for 0.69.15 is about three
+and a half minutes after the run completed, which is consistent with the
+reported window. The workflow's header states the npm-before-Release order;
+its job graph, the publish log and the shasums in it were not read. The
+general rule and its no-republish consequence were already recorded above
+and are confirmed, not changed; the proposal's statement that this concept
+held no such trap was mistaken.
 
 ## A package rename is a republish, not a move (2026-10-30)
 
