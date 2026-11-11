@@ -1,7 +1,7 @@
 ---
 type: Lesson
 title: Release judgement for the tag-driven lane
-description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, compares what each job sets up before a step that both the PR installer build and the tag workflow run, runs the kernel tests that read a package's mirror before the package tag or plans their port, contains failed-tag repairs and re-runs only a clearly timing failure from the same unpublished tag, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them, coordinates source, tag, mirror, every form of version pin and the framework release that carries them, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
+description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, compares what each job sets up before a step that both the PR installer build and the tag workflow run, runs the kernel tests that read a package's mirror before the package tag or plans their port, contains failed-tag repairs and re-runs only a clearly timing failure from the same unpublished tag, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them, coordinates source, tag, mirror, every form of version pin and the framework release that carries them, pins a provider release that removes a component inside the adoption PR that rewrites the texts and kernel tests for it, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
 about: [workstream/oats-direction, workstream/provider-integration]
 kind: lesson
 id: ins-559dbb88da8b
@@ -634,7 +634,10 @@ already places "any kernel tests the release reclassifies" in the one pin
 PR; this section adds **when** that is known, before the package tag rather
 than after it. It is a sibling of the newly-taught-commands rehearsal above:
 that one checks the package's commands against the kernel, this one checks
-the kernel's tests against the package.
+the kernel's tests against the package. When what those tests exercise is a
+component the release removes, the finding is not a port the pin PR can
+carry:
+[the pin rides the adoption PR](#a-provider-release-that-removes-a-component-is-pinned-inside-its-adoption-pr-2026-11-11).
 
 The source reports two cases in the OATS 0.69.12 preparation (2026-11-04):
 the oats.okf 5.8.0 pin,
@@ -757,6 +760,83 @@ framework release before okf was ready, so
 [#1606](https://github.com/awebai/oats/pull/1606) re-pinned it. The ordering,
 coupling and cost are source-reported, not independently audited release or
 CI receipts.
+
+## A provider release that removes a component is pinned inside its adoption PR (2026-11-11)
+
+The one-PR rule above is normally met by the release lane's own prep PR:
+mirror, catalog and workspace pins, literals, and any kernel tests the
+release reclassifies. That shape holds for an additive provider release. It
+does not hold when the release **removes** something the framework
+repository's own kernel tests, docs or instructional texts still exercise.
+The pin and the adoption of the removal are then one change, and neither
+half can merge first:
+
+- **Pin first** fails its own CI. The kernel tests read the package through
+  its mirror, so every test that spawns or runs the removed component fails
+  at once, and the link check fails on docs that point into the old mirror.
+- **Texts first** leaves an interval in which a spawn receives instructions
+  for the new release's route while its pinned release still ships the old
+  one. This is the generalist's
+  [dependent-text ordering](/nodes/oats-expert/lessons/soul-text-lands-with-its-capability-pin.md)
+  with its "or after" closed as well: for a removal the texts land **with**
+  the pin, in the same merge.
+
+So at release planning the release lane reads the crossed CHANGELOG sections
+of each package it is about to pin for removals; the
+[mirror-test check](#a-package-cut-runs-the-kernel-tests-that-read-its-mirror-2026-11-04)
+surfaces the same thing before the package tag. Where there is one, the pin
+is not planned as a standalone prep PR:
+
+- The release lane still **builds the pin as one commit**, by the route of
+  any pin: the mirror generated from the tag, the catalog, the workspace
+  pins and the literals. It hands that commit to the lead of the adoption
+  work instead of opening its own PR.
+- The **adoption PR carries that commit unchanged** and adds, on top of it,
+  the texts and the kernel tests rewritten for the release. Its author does
+  not hand-edit the generated files: mirror bytes stay the parity checker's.
+- The release lane **signs off last**, and that sign-off includes that the
+  pin commit in the PR is the one it built.
+- When a **patch of the package is cut before the adoption PR merges**, the
+  release lane builds a replacement pin commit on fresh `main` and the PR
+  rebases onto it once. The framework then pins the patch directly, rather
+  than pinning a superseded version and moving again.
+
+This keeps tag first, generated mirror bytes and one reviewed diff for
+mirror and pins; it changes only which PR carries them and who leads it.
+It is not a reason to fold other work into an additive pin, which stays the
+release lane's prep PR. Who else reads the adoption PR follows the lane map
+and the
+[one-second-reader rule](/nodes/oats-maintainer/stewardship/review-protocol.md#peer-maintainers-own-lanes-each-pr-gets-one-second-reader-2026-10-13),
+which this section does not change. The source's plan for its one case
+named the lane that owns the texts, and the product lane for the rewritten
+kernel tests, ahead of the release lane's sign-off; that is one PR's
+reported routing, not a standing rule for PRs that span lanes.
+
+No check delivers this. The mirror-test section's routes would show the
+removal before the package tag, but they do not remove the coupling: while
+kernel tests, docs and texts in the framework repository exercise a mirrored
+package, removing a component there is a framework change too. The planning
+read for removals is release-planning judgement, not automation.
+
+Evidence: OKF proposal from oats-maintainer/release-maintainer-pepe,
+2026-11-11;
+notes/a-provider-major-that-removes-a-component-pins-with-its-adoption.md.
+One occurrence: oats.okf 6.0, which removed the knowledge harvester. Read on
+the forge at harvest:
+[oats#1853](https://github.com/oats-project/oats/pull/1853), the 6.0.0 pin
+alone, was closed unmerged on 2026-11-11; its CI run 43016839006 failed in
+five of six test shards, in the poisoned-session suites and in the schema
+and public-link validation step; comments on that PR say the
+pin commit will ride the coordination lead's adoption PR and name a
+replacement 6.0.1 pin commit; and commit `949d0bda` (a 6.0.1 pin of
+generated mirror, catalog, workspace and literals) exists in the repository
+and belonged to no pull request yet. Source-reported and not read: the nine
+failing tests across five files, the removed component's spawn hook
+refusing with `E_REMOVED`, which docs link broke, and the coordination
+lead's agreement to carry the pin. The adoption PR had not merged and was
+not identified at harvest, so the unchanged carried commit, the single
+rebase and the reader routing are the agreed plan, not a completed delivery.
+The texts-first failure is reasoned from the pin dependency, not observed.
 
 # Every version literal is a release step
 
