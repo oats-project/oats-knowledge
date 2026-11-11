@@ -162,6 +162,11 @@ check is proven on the outgoing releases, not only on the new diagnostic.
 applies the tested-remedy obligation to the input a remedy is built from: a
 remedy assumes a shape the input must actually have.
 
+[A typed refusal carries its remedy only where its condition was observed](/nodes/oats-kernel-expert/decisions/refusal-remedy-requires-an-observed-condition.md)
+carries the unclassified-failure rule from categories to remedies: a failure
+the kernel cannot tell from another cause keeps the generic code, and the
+retry's precheck answers the typed code with its remedy.
+
 [Retire exclusion belongs to a whole-run claim, not a plan or retry key](/nodes/oats-kernel-expert/decisions/retire-exclusion-is-a-whole-run-claim.md)
 separates exclusion from plan freshness and replay of an already recorded
 outcome; neither existing guard serializes an in-flight retirement.
