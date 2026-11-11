@@ -17,6 +17,7 @@ Subject file: [oats.aweb messaging package](/subjects/system/oats-aweb.md)
 
 ### lesson
 
+* [A tested-aw bump rests on aw's own tag-to-tag diff, not on a relayed change list](/claims/lessons/a-tested-aw-bump-rests-on-the-tag-to-tag-diff.md) - Before oats.aweb records a new tested aw, read the aw source paths oats.aweb consumes across every tag from the old tested release to the new one, and write the release note from that; a change list relayed with the request is someone's selection and can miss what reaches oats.aweb.
 * [Identity polling should not buy a server request for local facts](/nodes/oats-aweb-expert/lessons/identity-polling-uses-offline-reads.md) - The health publisher chooses offline identity inspection because a per-minute whoami call adds a server request per identity for identifiers already held locally.
 * [The suite's real-aw pins age with the installed client — compare against the clean base on the same host before calling a failure a regression](/nodes/oats-aweb-expert/lessons/real-aw-pins-age-with-the-installed-client.md) - The package pins the real binary's refusals (exit code and message), and those pins break when the installed aw changes behaviour, as `team join` with a bad token did from aw 1.36.43 (first seen here on 1.36.49); run the suite on the clean base on the same host before attributing a failure to a branch, and re-pin the real-aw tables in a dedicated PR, never inside a feature PR.
 
