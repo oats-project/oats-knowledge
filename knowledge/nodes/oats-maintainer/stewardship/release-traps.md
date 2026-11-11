@@ -1,7 +1,7 @@
 ---
 type: Lesson
 title: Release judgement for the tag-driven lane
-description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, compares what each job sets up before a step that both the PR installer build and the tag workflow run, runs the kernel tests that read a package's mirror before the package tag or plans their port, contains failed-tag repairs and re-runs only a clearly timing failure from the same unpublished tag, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them, coordinates source, tag, mirror, every form of version pin and the framework release that carries them, pins a provider release that removes a component inside the adoption PR that rewrites the texts and kernel tests for it, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
+description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, compares what each job sets up before a step that both the PR installer build and the tag workflow run, runs the kernel tests that read a package's mirror before the package tag or plans their port, contains failed-tag repairs and re-runs only a clearly timing failure from the same unpublished tag, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them and a file a provider reads beside such a soul until every following host's lock carries a provider that reads it, coordinates source, tag, mirror, every form of version pin and the framework release that carries them, pins a provider release that removes a component inside the adoption PR that rewrites the texts and kernel tests for it, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
 about: [workstream/oats-direction, workstream/provider-integration]
 kind: lesson
 id: ins-559dbb88da8b
@@ -294,6 +294,100 @@ have moved. Keep deployment acceptance evidence in the rollout, and make
 schema compatibility a checked adoption gate rather than a memory-only
 warning. The [background decision](/nodes/oats-maintainer/decisions/background-is-presentation-not-lifecycle.md)
 is the motivating application, not a second home for the general rule.
+
+## A file a provider reads beside the soul waits for that provider in every host's lock (2026-11-11)
+
+The gate above is stated for a schema key and the kernel that parses it.
+It holds in the same way for a file beside `soul.yaml` that a capability
+provider reads, such as the knowledge declaration `okf.json`. The reader is
+then the provider, and the file and its reader reach a host by different
+routes:
+
+- A deployment that follows `main` reads a member soul's files from the
+  member repository, so the merge is the adoption.
+- The same deployment runs the provider release that its own lock names,
+  and the lock moves only when that host syncs.
+
+A soul moved to a declaration format that only a newer provider reads
+therefore cannot be spawned on any such host that still locks the older
+provider, from the merge until that host has synced.
+
+**A provider pin on `main` is not a provider in a host's lock**, just as a
+released parser is not an installed parser. In the one case recorded here
+the review made the merge wait for the pin of the provider release that
+reads the new format, and the PR was rebased onto that pin. Nobody asked
+what this section already asks about the kernel: which deployments read
+this soul from the member repository, and which release of the parsing
+component each one runs. Landing the soul change in the same merge as the
+pin, as the
+[removal rule](#a-provider-release-that-removes-a-component-is-pinned-inside-its-adoption-pr-2026-11-11)
+does for texts, would not meet the gate either: a merge moves the
+repository's pin, not a host's lock.
+
+When a shared member soul changes, the review asks of each changed file
+which component parses it, and applies the gate to that component:
+
+- **The soul's change waits** until every deployment that reads the soul
+  from the member repository has synced to a provider release that accepts
+  the new format. Either the merge is held until then, or the release that
+  carries the provider ships first and those hosts sync before the soul
+  change merges.
+- **A change that has already merged ahead of a host is contained, not
+  excused.** The release lane ships the carrying release promptly, tells
+  that host's human that the changed souls cannot spawn there until the
+  host has synced, and routes launches of those souls to a synced host
+  until then.
+- **The release note states the precondition.** "Respawn once after
+  `oats sync`" reads as a step to take when convenient. On a host that
+  follows `main` the changed soul does not spawn at all before the sync,
+  and the Upgrade section says so.
+  [Provider-pin upgrade coverage](/nodes/oats-maintainer/lessons/provider-pin-upgrade-notes-belong-in-the-kernel-release.md)
+  owns what that section carries.
+
+The 2026-10-30 scope is unchanged: a packaged soul has a catalog, tag or
+pin between merge and reader, and the package-soul section owns it. The
+generalist's
+[soul removal lesson](/nodes/oats-expert/lessons/a-soul-removal-is-live-for-deployments-that-follow-main-so-add-first-remove-later.md)
+is the same merge-is-adoption fact applied to the roster, where the answer
+is to add first and remove later. This record establishes no additive route
+for a format change. Whether a declaration format can change without this
+window is the provider owner's design question and is not decided here. One
+candidate is a reader that accepts the new format, released before any soul
+uses it, which is what the
+[closed-shape rule](/nodes/oats-maintainer/stewardship/review-protocol.md#a-kernel-owned-file-that-several-kernel-versions-read-is-a-closed-shape-contract-a-new-field-goes-in-a-sidecar-or-waits-for-a-tolerant-reader-2026-11-10)
+asks for kernel-owned files.
+
+No check delivers this gate. A host's lock is not in the repository, so
+the question stays a review question put to each side. The refusal in the
+recorded case named an unknown property in the soul's declaration. It did
+not say that the declaration is newer than the provider that read it, so it
+is another [pin that can lag](#a-pin-that-can-lag-names-its-lag) whose
+message does not name the lag. A provider that refuses a declaration
+version it does not know by naming that version and the sync that brings
+its reader would make the failure legible. That is a prevention route for
+the provider's owner, not delivered here, and it cannot reach provider
+releases already published.
+
+Evidence: OKF proposal from oats-maintainer/release-maintainer-pepe,
+2026-11-11;
+notes/soul-format-changes-reach-hosts-before-their-provider.md. One
+occurrence on one host. Read on the forge at harvest:
+[oats#1860](https://github.com/oats-project/oats/pull/1860) moved the
+`okf.json` of two member souls to version 2 and merged on 2026-11-11 as
+`589b2767`; its review comments, from both sides and the release lane,
+record that the merge waited for the oats.okf 6.0.2 pin and approve the
+head rebased onto it; its release-note fragment's Upgrade step asks for one
+respawn after `oats sync` and does not say that the souls refuse to spawn
+before it; and the v0.69.17 tag is on `93b2461d`, two commits after that
+merge and created about fifteen minutes later. Source-reported and not
+read: the host followed `main` and locked oats.okf 5.8.0; its spawn of
+`oats-engineering-expert` refused with `E_CONFIG`, naming the unknown
+declaration property `subjects`; and a launch was blocked until the host
+ran 0.69.17 and synced. That a host reads a member soul's files at `main`
+while its provider comes from its lock is the source's account, consistent
+with the generalist's lesson above; neither was read in code. Why the host
+needed the kernel release as well as a sync, and whether oats.okf 6 still
+reads a version 1 declaration, were not established.
 
 # Publish first, housekeep second
 

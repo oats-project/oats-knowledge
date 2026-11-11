@@ -13,7 +13,7 @@ Subject file: [oats.aweb messaging package](/subjects/system/oats-aweb.md)
 * [A readiness cache needs measured publisher cost](/nodes/oats-aweb-expert/decisions/readiness-cache-needs-measured-cost.md) - The health publisher deferred a readiness cache below an agreed approximate one-second per-home threshold, using bounded CLI CPU measurements and a remeasurement trigger rather than treating scratch timings as a production budget.
 * [Health receive evidence follows the delivery mode](/nodes/oats-aweb-expert/decisions/receive-evidence-follows-delivery-mode.md) - The health publisher uses matching live and fresh native-stream receipts or fail-closed broker readiness according to delivery mode, because neither a leftover file nor a missing inapplicable receipt proves receive health.
 
-## Lesson
+## Insight
 
 ### lesson
 

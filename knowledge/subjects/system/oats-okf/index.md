@@ -11,15 +11,13 @@ Subject file: [oats.okf knowledge package](/subjects/system/oats-okf.md)
 * [Personal-data exclusion is one shared instruction, not a publication guarantee](/nodes/oats-okf-expert/decisions/personal-data-exclusion-is-not-a-publication-guarantee.md) - The personal-data exclusion uses one shared wording to preserve lessons without identifying outsiders, while a pre-push hold was rejected as a guarantee unless publication authority is separated.
 * [The package's retired 4.x source admission ignores non-soul removed harvest keys and decides the soul opt-out first](/nodes/oats-okf-expert/decisions/retired-4x-host-harvest-keys-carry-no-authority.md) - For a source resolved through its retirement recovery, the knowledge package ignores the removed 4.x keys `harvest`, `harvest-runtime` and `harvest-model` when the host, spawn or workspace recorded them, decides the opt-out first from the recorded soul.yaml text, keeps refusing live 4.x records and refuses any soul `harvest:` value other than `off`; the decision and its rationale are canonical in the oats-maintainer node.
 
-## Lesson
+## Insight
+
+### constraint
+
+* [oats spawn --preview runs no spawn hook, so the harvester's source check only runs at apply](/nodes/oats-okf-expert/limitations/spawn-preview-runs-no-spawn-hook.md) - The kernel (0.69.x) runs no provider spawn hook in a spawn preview, so the harvester's source check runs only at apply, where a refusal rolls the spawn back and may leave the chosen name occupied as a messaging alias; the provider cannot make preview refuse, documents the fact, and keeps its read-only source check separate from the writing snapshot so a kernel spawn-preview phase would be cheap to adopt.
 
 ### lesson
 
 * [Respawn under 5.0 before harvesting" never carried a 4.x seat's notes](/nodes/oats-okf-expert/lessons/respawn-never-carried-a-4x-seats-notes.md) - Respawn is retire-then-spawn, a record is never rewritten and the old notes survive only in the retirement recovery copy whose record carries the same removed 4.x keys, so respawn gives the soul a fresh 5.x seat with empty notes; the retired-source admission is the route to an old seat's notes, and hand-copying into a live 5.x seat that re-proposes under its own name is the only fallback.
 * [A text check of a soul.yaml declaration must match a key position, not a word boundary](/nodes/oats-okf-expert/lessons/soul-yaml-text-check-anchors-to-a-key-position.md) - The harvester reads the source soul's soul.yaml as text on purpose, so every check of a declaration there is a regex over the whole file; anchor it to a key position (a line start, or after `{` or `,` in a flow mapping), never to `\b`, which sits between `-` and a letter and makes a bare-word setting match a capability id such as `oats.okf-harvest:`; and sweep the repository's real soul files when reviewing or testing a new text check, because a fixture without such a capability cannot catch it.
-
-## Limitation
-
-### constraint
-
-* [oats spawn --preview runs no spawn hook, so the harvester's source check only runs at apply](/nodes/oats-okf-expert/limitations/spawn-preview-runs-no-spawn-hook.md) - The kernel (0.69.x) runs no provider spawn hook in a spawn preview, so the harvester's source check runs only at apply, where a refusal rolls the spawn back and may leave the chosen name occupied as a messaging alias; the provider cannot make preview refuse, documents the fact, and keeps its read-only source check separate from the writing snapshot so a kernel spawn-preview phase would be cheap to adopt.

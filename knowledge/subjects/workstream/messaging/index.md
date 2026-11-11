@@ -10,13 +10,6 @@ Subject file: [Messaging](/subjects/workstream/messaging.md)
 * [aweb](/subjects/system/aweb.md) - The aweb messaging service OATS integrates: identities, teams, mail and chat.
 * [oats.aweb messaging package](/subjects/system/oats-aweb.md) - The messaging provider on aweb: per-instance identities, teams, and mail and chat delivered into sessions.
 
-## Conclusion
-
-### finding
-
-* [Keep attention ranking out of the kernel's claim record](/nodes/oats-kernel-expert/conclusions/attention-ranking-is-not-a-kernel-queue.md) - The source's provisional position places request deadlines with messaging and ranking in a client view, because a person's request queue extends beyond instances on their kernel hosts and a claim is only a local report.
-* [An optional waiting-claim reference would convey no authority](/nodes/oats-kernel-expert/conclusions/waiting-claim-references-convey-no-authority.md) - The source proposes an opaque capability-and-id reference as a claim-to-request join key, with no kernel dereference or mandatory permission reference because a claim cannot establish consent.
-
 ## Decision
 
 * [A workspace has a default team; there is no personal team](/nodes/integrations-expert/decisions/a-workspace-has-a-default-team-there-is-no-personal-team.md) - Decided 2026-09-26 by the human: neither the messaging service nor OATS has a "personal team" concept; a workspace's instances live in the workspace's default team and join other teams explicitly; the default team comes from the root identity the deployment holds, creating a team is an owner's account-level act outside OATS, and nothing in spawn, mint, retire or wake ever requires a human login.
@@ -37,7 +30,12 @@ Subject file: [Messaging](/subjects/workstream/messaging.md)
 * [Disposable trials prefer local messaging over throwaway hosted accounts](/nodes/oats-operator-expert/decisions/disposable-trials-prefer-local-messaging.md) - Prefer a local rootless messaging stack when teardown must remove trial service state, reserving hosted trials for explicitly needed hosted-build behavior.
 * [Join an existing workspace with one invite, not team ensure](/nodes/oats-operator-expert/decisions/existing-workspace-join-uses-one-paste-invite.md) - Choose one-paste invite onboarding for an existing workspace, reject team ensure because it can create a separate team, and revisit tokenless enrollment only if measured join friction warrants the service-side authority work.
 
-## Lesson
+## Insight
+
+### finding
+
+* [Keep attention ranking out of the kernel's claim record](/nodes/oats-kernel-expert/conclusions/attention-ranking-is-not-a-kernel-queue.md) - The source's provisional position places request deadlines with messaging and ranking in a client view, because a person's request queue extends beyond instances on their kernel hosts and a claim is only a local report.
+* [An optional waiting-claim reference would convey no authority](/nodes/oats-kernel-expert/conclusions/waiting-claim-references-convey-no-authority.md) - The source proposes an opaque capability-and-id reference as a claim-to-request join key, with no kernel dereference or mandatory permission reference because a claim cannot establish consent.
 
 ### lesson
 
