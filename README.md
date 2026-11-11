@@ -78,7 +78,7 @@ location **outside this repository**, then run:
 export OKF_SOURCE="$(mktemp -d)"
 git init "$OKF_SOURCE"
 GIT_TERMINAL_PROMPT=0 git -C "$OKF_SOURCE" -c credential.helper= -c core.askPass= \
-  fetch --depth=1 https://github.com/awebai/oats-okf.git \
+  fetch --depth=1 https://github.com/oats-project/oats-okf.git \
   01b48dfc9d763b5b8cc4606aea3e361bf2ef783d
 git -C "$OKF_SOURCE" checkout --detach FETCH_HEAD
 node scripts/validate.mjs
@@ -93,6 +93,25 @@ unowned or hidden files, and owner resolution. Local assertions enforce the
 fourteen reviewed UUIDs and the three reserved nodes. Tests include malformed metadata, owner drift, unauthorized
 cross-node ownership and warning-as-failure cases, without provisioning anything.
 These pinned helpers are a CI adapter, not a promise of a stable runtime API.
+
+The generated subject views (`subjects/**/index.md`, `subjects/index.md`,
+`verdicts/index.md`, the root `## Subjects` section) are written by the
+oats.okf 6 regenerator, whose output format is frozen for the 6.x line. CI
+checks they are current against the pinned oats.okf **6.0.1** source (its regenerator is byte-identical in 6.0.2):
+
+```sh
+export OKF6_SOURCE="$(mktemp -d)"
+git init "$OKF6_SOURCE"
+GIT_TERMINAL_PROMPT=0 git -C "$OKF6_SOURCE" -c credential.helper= -c core.askPass= \
+  fetch --depth=1 https://github.com/oats-project/oats-okf.git \
+  95449a665146f36fbaecddeea413c9421d109912
+git -C "$OKF6_SOURCE" checkout --detach FETCH_HEAD
+node "$OKF6_SOURCE/oats-package/capabilities/oats-okf/lib/okf-reindex.mjs" knowledge --check
+```
+
+A PR that adds or changes a concept's `about:`, `type`, `title` or
+`description` regenerates the views with the same command without `--check`
+(a 6.x `oats okf propose --check` does it for the proposer).
 
 [GitHub Actions](.github/workflows/validate.yml) runs the same commands on PRs
 and pushes to `main`. Actions and OKF source use full commit pins. Only checkout
