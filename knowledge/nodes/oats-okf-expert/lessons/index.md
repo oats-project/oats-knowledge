@@ -17,3 +17,13 @@ Lessons learned operating and evolving the knowledge package.
 * [A local publish command binds what it publishes to immutable objects](a-local-publish-command-binds-what-it-publishes-to-immutable-objects.md) - Six rules keep `oats okf propose --apply` publishing only what `--check` showed, although other processes of the same user can change the proposal directory and clone between the two steps: bind by immutable ids, keep Git state inside the clone, pass no file-read value to Git as an option, validate stored blobs not a checkout, carry no tool output in errors, and share one grammar between the provenance writer and parser.
 
 * [GitHub branch-protection reads answer in three ways, and only two successful reads mean no protection](github-branch-protection-reads-answer-in-three-ways.md) - The rulesets read never shows classic protection and the classic read tells "unprotected" from "unreadable" only by its 404 body, so a branch can be concluded unprotected only when both reads succeed and neither gates; a failed read means unknown, never none.
+
+* [Code that writes into a base checkout refuses links and non-regular files before its first read](code-that-writes-into-a-base-checkout-refuses-links-before-its-first-read.md) - The regenerator and `propose --check` walk the tree first and write through temp files; strict validation runs too late to protect a write.
+
+* [Anything that newly parses a value every base carries must be linear in the input](new-parsing-on-every-base-must-be-linear.md) - New parsers run on every base inside a 30 s deadline; 5.8's comment-strip regex is quadratic on long whitespace; cursor scanners with equivalence tests.
+
+* [A generated Markdown link must read back its own file through consult's path rules](a-generated-link-must-read-back-through-consults-path-rules.md) - Paths holding `?`, `#` or `%` are never linked (`E_PATH`), else an index entry resolves to a different claim.
+
+* [On Node, a Map or Set keyed by long untrusted text is quadratic; key through a bounded key](long-untrusted-keys-make-a-map-quadratic-on-node.md) - V8 hashes strings over 16383 characters by length; key base text through a bounded key and filter against short trusted keys.
+
+* [propose prepares, judges and publishes one tree of stored blobs, never a checkout](propose-judges-and-publishes-stored-blobs-not-a-checkout.md) - Git ident, working-tree-encoding and clean filters make checkout bytes differ from committed bytes; the accepted side is read from blobs and `--apply` stages the checked tree.
