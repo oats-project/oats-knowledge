@@ -1,5 +1,9 @@
 # oats-okf-expert log
 
+## 2026-11-11
+
+* **Proposal** (operator form, retired source base-moved-recovery-developer): new lesson [a fetch inside the publication gate passes an empty --refmap= and reads the tip from FETCH_HEAD](/nodes/oats-okf-expert/lessons/a-fetch-inside-the-publication-gate-passes-an-empty-refmap.md): a source-only fetch applies configured refspec destinations and can move local refs before the gate's compare-and-swap (oats-okf #129/#130). Nothing is superseded. The maintainer review verified the fix commit, its regression test (fails without the flag) and the Git behaviour; it stamped the id, qualified the claim for a checked-out branch (Git refuses the fetch instead), marked the review-round details as source-reported, replaced a paraphrase presented as a quotation of Git's documentation, and named the test that would retire the lesson.
+
 ## 2026-11-06
 
 * **Harvest**: new lesson [a text check of a soul.yaml declaration must match a key position, not a word boundary](/nodes/oats-okf-expert/lessons/soul-yaml-text-check-anchors-to-a-key-position.md): why the harvester reads soul.yaml as text, how `\b` made the fail-closed `harvest:` check match the `oats.okf-harvest` capability id and would have refused every 5.x source, the key-position shape to reuse, the fail-safe asymmetry, and the rule to sweep the repository's real soul files in review or a test. Merge of oats-okf PR 128 verified; the review exchange is source-reported. The [retired 4.x source admission](/nodes/oats-okf-expert/decisions/retired-4x-host-harvest-keys-carry-no-authority.md) gains a link to it; nothing is superseded. The maintainer review restated the asymmetry rule consistently (looseness only in the opt-out match itself) and corrected the prose example of what `\b` matches.
