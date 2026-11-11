@@ -27,7 +27,8 @@ maintainer's provenance parser is checked against them before review, not re-der
 3. **Values read from files never reach Git as options.** Full object ids, aliases in the bindings' identifier
    grammar, paths after `--`.
 4. **Validate stored blobs, never a checkout.** Ident, working-tree-encoding and clean filters make a checkout differ
-   from what is committed; the validator and the screen read the stored bytes.
+   from what is committed; the validator and the screen read the stored bytes. The subject layout's preparation, write
+   surface and verdict lanes keep the same rule: [propose prepares, judges and publishes one tree of stored blobs](/nodes/oats-okf-expert/lessons/propose-judges-and-publishes-stored-blobs-not-a-checkout.md).
 5. **Errors carry no tool output.** Git's and gh's stderr can echo paths, remotes and tokens; the error names the
    step and the cause class only.
 6. **One grammar for writer and parser.** The proposer's provenance writer and the maintainer's parser share the
