@@ -17,7 +17,7 @@ Subject file: [Operations](/subjects/workstream/operations.md)
 * [If any workspace member is private, host the workspace definition in a dedicated private repository that is not itself a public member](/nodes/oats-operator-expert/decisions/private-member-requires-a-private-workspace-host.md) - The workspace definition names every member, so whoever can read its host sees the member list; with mixed public/private membership the only honest host is a dedicated private repository, chosen before the first sync because every deployment points at it.
 * [A resident's custody is a host fact: one custody host per resident, one custody per resident across teams, custody services co-located and fail-closed](/nodes/oats-operator-expert/decisions/resident-custody-is-a-host-fact.md) - Fixes the multi-machine custody layout for residents whose external identity reaches instances through grants — custody lives on exactly one host, declared in that host's local config, shared by every team the resident acts in, with custody-class services co-located and reporting unavailability instead of serving stale or from another machine. Renewal is a host action at restart, never something an instance does for itself.
 
-## Lesson
+## Insight
 
 ### lesson
 

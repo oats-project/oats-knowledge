@@ -55,7 +55,7 @@ Subject file: [OATS Desktop](/subjects/system/oats-desktop.md)
 * [CLI speed comes from Node fixes and an app-owned warm reader, not a native rewrite](/nodes/oats-maintainer/decisions/no-cli-rewrite-app-owned-reader.md) - Reject native CLI rewrites in favor of Node fixes and an app-owned warm reader, with a source-reported bilateral contract preserving request freshness, installation checks and CLI fallback.
 * [The served identity is a messaging-layer fact the kernel binds and shows, never kernel vocabulary](/nodes/oats-maintainer/decisions/served-identity-is-a-messaging-layer-fact.md) - A per-spawn choice between an instance-lifetime messaging identity and serving a durable resident through a grant travels through the existing provider payload with no new spawn flags; the kernel binds every provider fact in the spawn decision and shows the served principal on the roster, while the messaging capability owns every identity rule.
 
-## Lesson
+## Insight
 
 ### lesson
 

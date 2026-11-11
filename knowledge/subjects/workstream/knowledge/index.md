@@ -10,14 +10,6 @@ Subject file: [Knowledge](/subjects/workstream/knowledge.md)
 * [oats.okf knowledge package](/subjects/system/oats-okf.md) - The knowledge provider: OKF bases and bindings, consultation of accepted knowledge, and how knowledge is proposed and reviewed.
 * [oats.okf 5](/subjects/project/okf-5.md) - The oats.okf 5 release line.
 
-## Conclusion
-
-### finding
-
-* [Separate knowledge consolidation from approval and review outcomes](/nodes/market-research-expert/conclusions/agent-knowledge-practice-2026.md) - The 2026-11-02 investigation reports proposal and consolidation workflows but establishes neither a universal vendor approval contract nor the outcome advantage of a separate knowledge judge.
-* [Knowledge-shape evidence does not establish a durable-project-memory winner](/nodes/market-research-expert/conclusions/agent-knowledge-shape-evidence-2026.md) - The 2026-11-02 research pass identifies no experiment isolating a type-label benefit and reports competitive simple memory baselines, without establishing a best representation for durable project judgment or current models.
-* [Compare knowledge systems by authority and retrieval evidence, not storage format](/nodes/market-research-expert/conclusions/agent-knowledge-storage-2026.md) - The 2026-11-02 research distinguishes authority, recall, retrieval and maintenance evidence without treating storage format, layout or edit frequency as guarantees of knowledge quality.
-
 ## Decision
 
 * [A retired 4.x seat is harvested from its recovery; a host harvest switch is not an opt-out, the soul's is](/nodes/oats-maintainer/decisions/a-retired-4x-seat-is-harvested-from-its-recovery.md) - For a retired source only, the knowledge package ignores the removed 4.x harvest keys written by the host, spawn or workspace layer, because they never carried the soul's consent; the opt-out stays the recorded soul.yaml text, which no layer can mask, and a 4.x host harvest-off switch is not a privacy opt-out, since under 5.x the deployment's own act of writing a proposal and spawning a harvester is the consent. Live 4.x homes keep refusing, with the remedy to retire first.
@@ -30,7 +22,17 @@ Subject file: [Knowledge](/subjects/workstream/knowledge.md)
 * [An uncertain publication refusal carries fixed diagnostic constants, never git's or the remote's text](/nodes/oats-maintainer/decisions/uncertain-push-refusals-carry-fixed-diagnostics.md) - The knowledge package's uncertain push and delete refusals carry a phase, exit code, allowlisted signal, timeout, elapsed time and an optional cause token from a fixed table matched only on git's own client-side stderr under a C locale; raw and redacted stderr were both rejected, because a gate that withholds output for safety still owes a fixed-vocabulary diagnosis of its own failures.
 * [Consult explores accepted knowledge remotely; instances get no knowledge copy](/nodes/oats-okf-expert/decisions/consult-explores-accepted-knowledge-remotely-no-per-instance-copy.md) - Instances read their soul's OKF bases remotely at the accepted commit through read-only consult commands served from one host-wide cache, with receipts and base confinement; no instance holds a knowledge copy, and consultation works whether harvest is on or off.
 
-## Lesson
+### direction
+
+* [Direct knowledge proposals should retain doctrine and maintainer review](/nodes/oats-maintainer/stewardship/direct-knowledge-proposals-retain-maintainer-review.md) - Move toward working agents opening knowledge PRs themselves under unchanged promotion doctrine, but retain current harvest duties until the knowledge-package owner designs and ships the authority and independent-review transition.
+
+## Insight
+
+### finding
+
+* [Separate knowledge consolidation from approval and review outcomes](/nodes/market-research-expert/conclusions/agent-knowledge-practice-2026.md) - The 2026-11-02 investigation reports proposal and consolidation workflows but establishes neither a universal vendor approval contract nor the outcome advantage of a separate knowledge judge.
+* [Knowledge-shape evidence does not establish a durable-project-memory winner](/nodes/market-research-expert/conclusions/agent-knowledge-shape-evidence-2026.md) - The 2026-11-02 research pass identifies no experiment isolating a type-label benefit and reports competitive simple memory baselines, without establishing a best representation for durable project judgment or current models.
+* [Compare knowledge systems by authority and retrieval evidence, not storage format](/nodes/market-research-expert/conclusions/agent-knowledge-storage-2026.md) - The 2026-11-02 research distinguishes authority, recall, retrieval and maintenance evidence without treating storage format, layout or edit frequency as guarantees of knowledge quality.
 
 ### lesson
 
@@ -39,9 +41,3 @@ Subject file: [Knowledge](/subjects/workstream/knowledge.md)
 * [Check local knowledge bindings from a spawned home](/nodes/oats-operator-expert/lessons/check-local-knowledge-bindings-from-a-spawned-home.md) - An oats.okf 5.7.0 trial failed to read a local Git base through a file URL and recovered with a plain path after respawn, so binding acceptance must include a spawned-home read rather than a configuration edit alone.
 * [Knowledge onboarding must check package-soul launches](/nodes/oats-operator-expert/lessons/knowledge-onboarding-must-check-package-soul-launches.md) - A Claude-only trial launched its working souls successfully but refused harvesters until an explicit host launch preference was selected, so onboarding must check the knowledge-operation souls before the first checkpoint.
 * [Anything read through a shared checkout is only as current as that tree — validity is not currency, and repair belongs to the tree's owner](/nodes/oats-operator-expert/lessons/shared-checkout-serves-a-stale-soul.md) - Content an instance reads through a shared checkout is a coherent but possibly weeks-old picture, and nothing in it signals that. Verify the tree's position against the remote before trusting what you read, read canonical content from the remote ref when behind, and leave repair of a shared tree to its owner.
-
-## Roadmap
-
-### direction
-
-* [Direct knowledge proposals should retain doctrine and maintainer review](/nodes/oats-maintainer/stewardship/direct-knowledge-proposals-retain-maintainer-review.md) - Move toward working agents opening knowledge PRs themselves under unchanged promotion doctrine, but retain current harvest duties until the knowledge-package owner designs and ships the authority and independent-review transition.
