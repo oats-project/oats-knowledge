@@ -29,3 +29,15 @@ Lessons learned operating and evolving the knowledge package.
 * [propose prepares, judges and publishes one tree of stored blobs, never a checkout](propose-judges-and-publishes-stored-blobs-not-a-checkout.md) - Git ident, working-tree-encoding and clean filters make checkout bytes differ from committed bytes; the accepted side is read from blobs and `--apply` stages the checked tree.
 
 * [Widening what a reader tolerates moves the validation cache version, or a cached refusal sticks](widening-reader-tolerance-moves-the-validation-cache-version.md) - Verdicts are cached per commit with a version; a tolerance change without a bump leaves hosts refusing the commit they cached; the three reading surfaces report one line per commit.
+
+* [An exact title hash as verdict identity catches wording, not claim identity](an-exact-title-hash-catches-wording-not-claim-identity.md) - Probe P4: 0/180 paraphrases matched the hash; identity is a maintainer-assigned id, and similarity only retrieves candidates for a reviewer.
+
+* [Committed generated subject indexes are the read path for a subject walk; frontmatter scans are for building them](committed-generated-subject-indexes-are-the-read-path.md) - Probe P1: one index blob instead of every concept's from a partial clone; the case is selective I/O, and the scan runs once at regeneration.
+
+* [A version-1 base carries the subject layout as reserved nodes, so 5.8 readers keep working unchanged](a-version-1-base-carries-the-subject-layout-as-reserved-nodes.md) - 5.x refuses unknown `okf-base.json` keys and non-Markdown files, so the layout is announced by three reserved node names under a sentinel owner.
+
+* [Proposals are same-repository branches: the publication helper refuses a cross-repository PR, so there is no fork flow](proposals-are-same-repository-branches-there-is-no-fork-flow.md) - Why the spec's fork fallback was not built; a host without branch-create proposes through the operator form from a host that has it (D11).
+
+* [A reviewer loop on hardening edge cases does not converge by itself; a must-fix cut-off closes it without losing a must-fix](a-hardening-review-loop-needs-a-cut-off.md) - The cut-off rule for a long hardening review loop, and the live rehearsal as the external check.
+
+* [The package's Git and gh calls see only HOME-level configuration; a scratch deployment needs the credential helper in its HOME](the-packages-git-and-gh-calls-see-only-home-level-configuration.md) - `cleanEnv` removes `GIT_*` and `OATS_*`, so credentials come from the HOME's `~/.gitconfig`; unset the instance variables when rehearsing another deployment.
