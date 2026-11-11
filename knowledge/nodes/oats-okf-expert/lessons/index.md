@@ -27,3 +27,5 @@ Lessons learned operating and evolving the knowledge package.
 * [On Node, a Map or Set keyed by long untrusted text is quadratic; key through a bounded key](long-untrusted-keys-make-a-map-quadratic-on-node.md) - V8 hashes strings over 16383 characters by length; key base text through a bounded key and filter against short trusted keys.
 
 * [propose prepares, judges and publishes one tree of stored blobs, never a checkout](propose-judges-and-publishes-stored-blobs-not-a-checkout.md) - Git ident, working-tree-encoding and clean filters make checkout bytes differ from committed bytes; the accepted side is read from blobs and `--apply` stages the checked tree.
+
+* [Widening what a reader tolerates moves the validation cache version, or a cached refusal sticks](widening-reader-tolerance-moves-the-validation-cache-version.md) - Verdicts are cached per commit with a version; a tolerance change without a bump leaves hosts refusing the commit they cached; the three reading surfaces report one line per commit.
