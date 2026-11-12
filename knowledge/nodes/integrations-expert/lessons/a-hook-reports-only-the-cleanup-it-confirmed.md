@@ -1,7 +1,7 @@
 ---
 type: Lesson
 title: A hook reports only the cleanup it confirmed, and keeps the credential a retry needs
-description: Emit meta before failing and write a killable effect's intent to disk before it happens, report only confirmed cleanup, re-check uncertain effects, retain credentials for key-dependent retries, and pair credential exclusion from retirement recovery with fail-closed hooks.
+description: Emit meta before failing and write a killable effect's intent to disk before it happens, decide a destructive compensation branch from the kernel-captured settings, report only confirmed cleanup, re-check uncertain effects, retain credentials for key-dependent retries, and pair credential exclusion from retirement recovery with fail-closed hooks.
 about: [workstream/provider-integration]
 kind: lesson
 id: ins-c6200a56b377
@@ -126,6 +126,41 @@ Test it with a fake that kills its caller after the external effect (the
 fake's command sends SIGKILL to its parent), and on the real binary with a
 wrapper that does the same after the real command succeeds.
 
+# Decide a destructive branch from what the kernel captured
+
+**Refinement, 2026-11-12.** A retained seat (a standing identity copied into
+a home) whose spawn failed after its connect, or was killed, answered no
+meta. Its compensating retire then took the ordinary route and self-deleted
+the standing identity's workspace. Writing a marker into the home first, the
+intent rule above, was tried and rejected in review. An unreadable marker
+must fail closed, and the only remedy it could name (remove it and retire
+again) led straight into the self-delete. A marker that vanishes reads as
+absent: a dangling symlink, for example, passes an existence check as
+missing.
+
+- **Prefer a fact the kernel already captured.** The home's captured
+  settings still carry the setting that made the spawn take its route (here
+  `identity.source`), and nothing in the home can corrupt or remove them.
+  Classify by it, with the same predicate the spawn uses, so the two can't
+  disagree on a malformed value; refuse that value at spawn, before any
+  effect. Keep a write-ahead record for what settings cannot hold, such as a
+  random id minted during the spawn.
+- **A call that may bind remotely is uncertain from the moment it starts.**
+  Some external CLIs apply the remote effect before they write their local
+  file. aw's `workspace connect` posts the binding, then writes the home's
+  `workspace.yaml`. A call that exited nonzero, or a kill between the two,
+  can leave the remote effect with no local trace. Mark the effect attempted
+  before the call, so the hook's own rollback restores it after any failure.
+  Base the retire's advice on what the hook itself did (it held the lock),
+  not on the tool's local file.
+- **Say what happened to each local guard.** A lock this home does not hold,
+  or cannot check or remove, is left in place and the retire says why. A
+  missing file is "gone" only on ENOENT.
+
+Test it with a fake that models the tool's order of effects: a kill point
+and a nonzero exit between the remote effect and the local write, as well as
+after both.
+
 # Consequences
 
 - Tests cover the failure branches of compensation: revoke fails, revoke
@@ -160,3 +195,11 @@ Evidence: OKF proposal from integrations-expert/integrations-expert-aweb-disposa
 2026-10-08; notes/retired-local-identity-keys-stay-usable.md (recovery-exclusion
 refinement; the note's source-only investigation does not establish hosted
 self-retirement or post-retirement authentication outcomes).
+
+Evidence (2026-11-12 refinement): OKF proposal from integrations-expert/aweb-seat-defects-lead, 2026-11-12; notes/classify-compensation-by-captured-settings.md; notes/aw-connect-remote-before-local.md.
+Source: awebai/oats-aweb#228 and its PR awebai/oats-aweb#237 (open when
+proposed): its first commit wrote a retained-seat record, and the round 1
+review replaced it with classification by the captured `identity.source`.
+Maintainer review of oats-knowledge#375 read aw at 4d5eafd
+(`cmd/aw/init_connect.go`, `initCertificateConnectWithOptions`): `postConnect`
+runs, then error returns are still possible, before `SaveWorktreeWorkspaceTo`.

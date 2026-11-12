@@ -50,6 +50,26 @@ project is unset must only warn.
   and inputs a hook acts on never come from its ambient environment
   ([a lifecycle hook never trusts the ambient environment](/nodes/integrations-expert/lessons/a-lifecycle-hook-never-trusts-the-ambient-environment.md)).
 
+# Spawn-time values are strings
+
+**Refinement, 2026-11-12.** A setting given at spawn, `oats spawn --provider
+<capability> key=value`, reaches the payload as a string. Values a
+deployment declares in YAML keep their types. A hook that tests a boolean
+with `=== true` or `!== false` therefore ignores the command-line form, and
+a refusal whose remedy is "spawn with `--provider … key=true`" names a
+remedy that does nothing. When a hook reads a boolean setting that an
+operator may give at spawn, accept the string too, exactly `"true"` (or
+`"false"`) and nothing looser, and test the hook with the string the kernel
+passes, not only with a boolean fixture. Whether the kernel should type these
+values is the kernel's question, not the provider's to settle.
+
+Evidence: OKF proposal from integrations-expert/aweb-seat-defects-lead, 2026-11-12; notes/provider-flag-values-are-strings.md.
+Source: the fix in awebai/oats-aweb#234 (#227), and the general case
+awebai/oats-aweb#232. Maintainer review of oats-knowledge#375 read the
+kernel's `parseProviderFlags` (awebai/oats `lib/instance-resolution.mjs` at
+1286cfa): its doc comment says values are strings, and it assigns the raw
+text after the first `=`.
+
 # Citations
 
 - Migrated from agents/integrations-expert/soul/knowledge @ dade3270.
