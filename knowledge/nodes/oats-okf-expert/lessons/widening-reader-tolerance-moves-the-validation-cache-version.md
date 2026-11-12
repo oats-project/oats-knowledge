@@ -6,7 +6,7 @@ about: [system/oats-okf]
 kind: lesson
 id: ins-44d160ef84eb
 tags: [lesson, okf, validation-cache, readers, w-id-missing, upgrade]
-timestamp: 2026-11-11
+timestamp: 2026-11-12
 ---
 
 # The cache remembers the old rule
@@ -23,6 +23,11 @@ fix looks broken exactly where it was needed.
 
 Any change to what a reader accepts, or to the verdict's fields, bumps the verdict version (6.0.2: 3 → 4), and the
 regression test plants the previous version's invalid verdict and asserts the new reader re-judges the commit.
+
+From 6.0.3 there is one narrower exception: fields that only an invalid verdict gains do not move the version; an
+invalid verdict cached without them is judged again once instead. The decision and its reason are in
+[readers tolerate a stale index and a missing id; writers refuse them](/nodes/oats-okf-expert/decisions/readers-tolerate-a-stale-index-and-a-missing-id-writers-refuse-them.md)
+(oats-okf #140, #144).
 
 Nothing in the code ties the version to the reader rules: in 6.0.2 it is a literal written in `verdict()` in
 `lib/consult.mjs` (twice where a verdict is produced, once where a cached one is accepted), and the comment there
