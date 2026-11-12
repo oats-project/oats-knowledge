@@ -15,7 +15,9 @@ Subject file: [oats.okf knowledge package](/subjects/system/oats-okf.md)
 
 ### decision
 
+* [A missing gh refuses `propose --apply` before the push; oats.okf does not declare gh in its manifest](/nodes/oats-okf-expert/decisions/propose-checks-gh-at-the-write-not-in-the-manifest.md) - The gh precondition of a proposal is checked at the write, before the attempt marker and the first push, with a refusal that leaves the proposal re-appliable (`E_GH_UNAVAILABLE`); it is not a manifest `requires`, because that is checked at spawn and would take consult-only souls off their knowledge on a host without gh.
 * [Readers tolerate a stale generated index and a missing id on a bridged base; writers' gates refuse them](/nodes/oats-okf-expert/decisions/readers-tolerate-a-stale-index-and-a-missing-id-writers-refuse-them.md) - On a base with the subject layout, readers (the spawn hook, the subject verbs and, from 6.0.2, `oats okf bases`) read the committed generated indexes as they are and warn, `W_INDEX_STALE` for stale views (6.0.0) and `W_ID_MISSING` for a `claims/` concept merged without its id (6.0.2), while strict validation, `okf-reindex --check`, migration and publication still refuse them; because a refusing reader takes every version-2 soul off the air at spawn for one maintainer-upkeep slip; consequence: the 6.0 view format is final, and a renderer change costs every bridged base a regeneration PR.
+* [The publish preflight reads REST `permissions.push` and passes only on an explicit true](/nodes/oats-okf-expert/decisions/the-publish-preflight-passes-only-on-an-explicit-rest-push-permission.md) - The gh write check before a proposal's push is `gh api repos/<repo> --jq .permissions.push` and passes only on `true`, because GraphQL's `viewerPermission` is null under GitHub App authentication and a gate that lets an unstated permission through publishes half a proposal.
 
 ## Insight
 
