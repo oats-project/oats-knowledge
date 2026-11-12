@@ -58,6 +58,7 @@ Subject file: [OATS Desktop](/subjects/system/oats-desktop.md)
 ### decision
 
 * [The Desktop's CLI ceiling is a tested bound, with an allowlist above it](/claims/decisions/desktop-cli-ceiling-is-a-tested-bound-with-an-allowlist.md) - A Desktop accepts a released oats CLI of a later minor or major than its own and flags it aboveTested. Only an explicit allowlist (reads, terminals, Spawn, Start, Restart, colour, background) stays on; every other operation, future ones included, is refused at the backend's entry before any CLI runs, with one notice naming the Desktop to install.
+* [Instance names end in the coordination role, chosen by whoever names them; nothing appends the soul's role](/claims/decisions/instance-names-end-in-the-coordination-role-chosen-by-the-namer.md) - An instance is named `<descriptive>-<role>`, at most five words, where the role is its role in the spawner's coordination. A person, an agent or the naming model chooses it, reading the role from the task text. The kernel knows no role list and appends nothing. `--purpose` and the numbered fallback keep the soul's name for automations.
 
 ## Insight
 
