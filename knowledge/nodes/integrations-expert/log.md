@@ -2,6 +2,9 @@
 
 ## 2026-11-12
 
+* **Creation**: [a lifecycle hook ends its own children before the kernel kills it](/nodes/integrations-expert/lessons/a-lifecycle-hook-ends-its-own-children-before-the-kernel-kills-it.md), from five review rounds of a messaging provider's hook deadline. Maintainer review of oats-knowledge#375 stamped its id and added checkable sources to it and to both refinements.
+* **Update**: Refined [a hook reports only the cleanup it confirmed](/nodes/integrations-expert/lessons/a-hook-reports-only-the-cleanup-it-confirmed.md): decide a destructive compensation branch from the kernel-captured settings rather than a marker in the home, and treat a call that may apply its remote effect before its local write as uncertain from the moment it starts.
+* **Update**: Refined [settings reach hooks as a payload](/nodes/integrations-expert/lessons/settings-reach-hooks-as-a-payload-and-the-brief-tells-the-agent-where-they-are.md): spawn-time `--provider` values are strings, so a boolean setting accepts exactly the string form too.
 * **Update**: Refined [a hook reports only the cleanup it confirmed](/nodes/integrations-expert/lessons/a-hook-reports-only-the-cleanup-it-confirmed.md): a killed hook emits no meta, so a killable external effect writes its intent to provider-owned state first, recovery adopts and then releases through the existing path, and the intent records the authority (root) the effect used. From awebai/oats-aweb#217; its PR was open when proposed. Maintainer review of oats-knowledge#372 corrected the absence rule: a successful read without the effect proves absence only when the external tool's own in-flight marker (aw's `pending-hosted-accept`) is gone too; otherwise the key is kept and the recovery reported.
 
 ## 2026-11-09
