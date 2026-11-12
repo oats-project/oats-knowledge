@@ -55,10 +55,15 @@ Subject file: [OATS Desktop](/subjects/system/oats-desktop.md)
 * [CLI speed comes from Node fixes and an app-owned warm reader, not a native rewrite](/nodes/oats-maintainer/decisions/no-cli-rewrite-app-owned-reader.md) - Reject native CLI rewrites in favor of Node fixes and an app-owned warm reader, with a source-reported bilateral contract preserving request freshness, installation checks and CLI fallback.
 * [The served identity is a messaging-layer fact the kernel binds and shows, never kernel vocabulary](/nodes/oats-maintainer/decisions/served-identity-is-a-messaging-layer-fact.md) - A per-spawn choice between an instance-lifetime messaging identity and serving a durable resident through a grant travels through the existing provider payload with no new spawn flags; the kernel binds every provider fact in the spawn decision and shows the served principal on the roster, while the messaging capability owns every identity rule.
 
+### decision
+
+* [The Desktop's CLI ceiling is a tested bound, with an allowlist above it](/claims/decisions/desktop-cli-ceiling-is-a-tested-bound-with-an-allowlist.md) - A Desktop accepts a released oats CLI of a later minor or major than its own and flags it aboveTested. Only an explicit allowlist (reads, terminals, Spawn, Start, Restart, colour, background) stays on; every other operation, future ones included, is refused at the backend's entry before any CLI runs, with one notice naming the Desktop to install.
+
 ## Insight
 
 ### lesson
 
+* [An older Desktop does worse against a newer kernel where it words the consequence itself](/claims/lessons/an-older-desktop-does-worse-where-it-words-the-consequence.md) - In the traced kernel minors, the N-1 Desktop did worse than show less or be refused in four cases, all where it writes the consequence sentence of a destructive action (Stop, Remove) or saves a whole definition (schedule edit). API integers and feature names never caught them, because each change kept the JSON shape and changed its meaning.
 * [A provider release is tagged first, then mirrored and pinned in one re-proven framework PR](/nodes/integrations-expert/lessons/a-provider-release-is-mirrored-and-pinned-in-one-pr.md) - Tag first, then review the tag-identical mirror and every pin as one diff; the gate keeps the Desktop suite, with the suites in CI and only named affected test files run locally, and a pin is re-proven after another shared-file change lands.
 * [Desktop persistence apply is a human handoff, not a classifier workaround](/nodes/integrations-expert/lessons/desktop-persistence-apply-is-a-human-handoff.md) - Agent-assisted desktop setup separates plan and check from the person's persistence-changing act, respects harness refusals, and limits each chosen option to its own effects.
 * [Async completion must still own the user's intent](/nodes/oats-desktop-expert/lessons/asynchronous-intent-and-truthful-outcomes.md) - Background work preserves intent and separates creation, readiness and success; confirmations describe effect boundaries without suppressing unrelated reads or inventing stale-result state.
