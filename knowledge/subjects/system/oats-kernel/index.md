@@ -87,6 +87,7 @@ Subject file: [OATS kernel and CLI](/subjects/system/oats-kernel.md)
 ### decision
 
 * [The Desktop's CLI ceiling is a tested bound, with an allowlist above it](/claims/decisions/desktop-cli-ceiling-is-a-tested-bound-with-an-allowlist.md) - A Desktop accepts a released oats CLI of a later minor or major than its own and flags it aboveTested. Only an explicit allowlist (reads, terminals, Spawn, Start, Restart, colour, background) stays on; every other operation, future ones included, is refused at the backend's entry before any CLI runs, with one notice naming the Desktop to install.
+* [Instance names end in the coordination role, chosen by whoever names them; nothing appends the soul's role](/claims/decisions/instance-names-end-in-the-coordination-role-chosen-by-the-namer.md) - An instance is named `<descriptive>-<role>`, at most five words, where the role is its role in the spawner's coordination. A person, an agent or the naming model chooses it, reading the role from the task text. The kernel knows no role list and appends nothing. `--purpose` and the numbered fallback keep the soul's name for automations.
 
 ## Insight
 
@@ -103,6 +104,7 @@ Subject file: [OATS kernel and CLI](/subjects/system/oats-kernel.md)
 
 ### lesson
 
+* [A small naming model reads an instance's role from the task text only when the task states it early](/claims/lessons/a-naming-model-reads-the-role-from-the-tasks-first-lines.md) - Given only the task text, a haiku-class naming call ended the name with the right coordination role on 35 of 42 runs. Its failures came from the task, not the prompt: a person-suffixed instance name, an embedded spec of another role, a helper called a probe. The fix is that spawn tasks state the role in their first lines.
 * [An older Desktop does worse against a newer kernel where it words the consequence itself](/claims/lessons/an-older-desktop-does-worse-where-it-words-the-consequence.md) - In the traced kernel minors, the N-1 Desktop did worse than show less or be refused in four cases, all where it writes the consequence sentence of a destructive action (Stop, Remove) or saves a whole definition (schedule edit). API integers and feature names never caught them, because each change kept the JSON shape and changed its meaning.
 * [A client's sentence must hold at every producer of a kernel code](/nodes/oats-desktop-expert/lessons/client-wording-must-hold-at-every-code-producer.md) - Audit a client-authored sentence separately from its outcome classification, because a shared kernel code can cover causes the first example does not.
 * [Prove coupled Desktop changes on main and on the prospective kernel merge](/nodes/oats-desktop-expert/lessons/coupled-kernel-and-desktop-landings.md) - When a kernel change would make Desktop actively wrong, keep the Desktop delta reviewable on main but prove the combined tree before maintainers land the pair together.
