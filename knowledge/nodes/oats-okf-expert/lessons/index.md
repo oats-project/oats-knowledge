@@ -41,3 +41,5 @@ Lessons learned operating and evolving the knowledge package.
 * [A reviewer loop on hardening edge cases does not converge by itself; a must-fix cut-off closes it without losing a must-fix](a-hardening-review-loop-needs-a-cut-off.md) - The cut-off rule for a long hardening review loop, and the live rehearsal as the external check.
 
 * [The package's Git and gh calls see only HOME-level configuration; a scratch deployment needs the credential helper in its HOME](the-packages-git-and-gh-calls-see-only-home-level-configuration.md) - `cleanEnv` removes `GIT_*` and `OATS_*`, so credentials come from the HOME's `~/.gitconfig`; unset the instance variables when rehearsing another deployment.
+
+* [A refusal names a destructive remedy only for a target it has verified](a-refusal-names-a-destructive-remedy-only-for-a-target-it-has-verified.md) - A refusal must name its whole fix, but when the fix is removal by hand the command first proves the path is what the remedy assumes (a lock directory, by existence and name); and a caller that swallows a refusal to serve stale data carries the refusal's fix in its stale reason.
