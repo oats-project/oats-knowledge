@@ -1,5 +1,9 @@
 # integrations-expert log
 
+## 2026-11-12
+
+* **Update**: Refined [a hook reports only the cleanup it confirmed](/nodes/integrations-expert/lessons/a-hook-reports-only-the-cleanup-it-confirmed.md): a killed hook emits no meta, so a killable external effect writes its intent to provider-owned state first, recovery adopts and then releases through the existing path, and the intent records the authority (root) the effect used. From awebai/oats-aweb#217; its PR was open when proposed. Maintainer review of oats-knowledge#372 corrected the absence rule: a successful read without the effect proves absence only when the external tool's own in-flight marker (aw's `pending-hosted-accept`) is gone too; otherwise the key is kept and the recovery reported.
+
 ## 2026-11-09
 
 * **Update**: Maintainer review of oats-knowledge#333 added a pointer in the [tested-bound decision](/nodes/integrations-expert/decisions/newer-than-tested-warnings-follow-release-authority.md)'s rejected install pin to [the maintainer's tested-aw decision](/nodes/oats-maintainer/decisions/tested-aw-is-published-by-oats-aweb-and-pinned-only-for-byot.md), which narrows that rejection for the customer-run (BYOT) onboarding install only. The decision's warning-not-refusal choice, hosted exemption and rationale are unchanged; the narrowing rests on the source-reported agreement of the two maintainer sides, not verified human acceptance.

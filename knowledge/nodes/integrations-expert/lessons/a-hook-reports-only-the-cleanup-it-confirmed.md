@@ -1,12 +1,12 @@
 ---
 type: Lesson
 title: A hook reports only the cleanup it confirmed, and keeps the credential a retry needs
-description: Emit meta before failing, report only confirmed cleanup, re-check uncertain effects, retain credentials for key-dependent retries, and pair credential exclusion from retirement recovery with fail-closed hooks.
+description: Emit meta before failing and write a killable effect's intent to disk before it happens, report only confirmed cleanup, re-check uncertain effects, retain credentials for key-dependent retries, and pair credential exclusion from retirement recovery with fail-closed hooks.
 about: [workstream/provider-integration]
 kind: lesson
 id: ins-c6200a56b377
 tags: [lesson, integrations, hooks, compensation, retire, external-state, truthfulness]
-timestamp: 2026-10-08
+timestamp: 2026-11-12
 ---
 
 Learned 2026-09-24 in a live rehearsal: a recovery path reported "revoked"
@@ -85,6 +85,47 @@ Keeping secrets in recovery to conceal a broken failure path is not a fix.
   and a recognized handoff reports the remaining obligation, never claims
   that the controller already completed it.
 
+# A killed hook emits nothing: write the intent ahead
+
+**Refinement, 2026-11-12.** Rule 1 covers a hook that fails; a hook that is
+killed (SIGKILL, a lost host) emits no meta at all. A provider's joined-team
+join accepted an invite, so the membership existed at the service, and only
+then recorded the team in its own state; a kill in between left a membership
+that leave and retire, which work from that record, would never release.
+
+- **Write the intent before the external effect,** atomically, in state the
+  provider owns, and drop it in the same atomic write that records the
+  result. What is on disk after a kill is then exactly what needs settling.
+- **Recover by adopting, then releasing through the existing release path.**
+  The next explicit action finishes the effect (adopts it); a release adopts
+  first so the ordinary remote-first, key-last release runs unchanged. A
+  second release path for half-finished effects is a second thing to get
+  wrong.
+- **Record the authority the effect used** (here, the root it minted from).
+  Recovery can run in another context than the effect did: another verb, or
+  retire under the home's captured settings, which may never have named a
+  root the live settings supplied at join time. A review caught exactly that:
+  recovery could not reach the service until the intent carried the root.
+- **Confirm absence, never assume it:** no artefact written means drop the
+  intent; a failed read keeps everything and fails closed, by rule 5; and a
+  successful read without the effect proves absence only when the external
+  tool's own in-flight marker is gone too. A marker written before its remote
+  call means the remote may hold the effect: keep the key, and report the
+  recovery. (aw's hosted accept writes `pending-hosted-accept` in the
+  identity home before its server call and removes it only after it stores
+  the certificate, so a kill in between leaves a team list without the team
+  while the server may hold the membership; deleting the home then recreates
+  the orphan.)
+- **Never record what this effect did not create.** State that existed before
+  it (an identity already in the directory) gets no intent, so recovery never
+  removes a key that is someone else's.
+- **A start only reports** the unfinished effect and names both fixes
+  (finish, release); it does not finish an effect nobody asked it to.
+
+Test it with a fake that kills its caller after the external effect (the
+fake's command sends SIGKILL to its parent), and on the real binary with a
+wrapper that does the same after the real command succeeds.
+
 # Consequences
 
 - Tests cover the failure branches of compensation: revoke fails, revoke
@@ -103,6 +144,17 @@ Keeping secrets in recovery to conceal a broken failure path is not a fix.
 - A spawn-captured declaration is not retroactive. Qualification must
   distinguish new homes from homes spawned before the change; a provider
   release is not proof that existing recovery copies have been sanitized.
+
+Evidence (write-ahead refinement): OKF proposal from integrations-expert/oats-aweb-followups-integrations-expert,
+2026-11-12; notes/write-ahead-intent-for-a-killed-hook.md (awebai/oats-aweb#217,
+[PR #224](https://github.com/awebai/oats-aweb/pull/224), open and unmerged when
+proposed: its 20 fake-kill cases and its real-stack CI row at aw 1.36.33 and
+1.36.58, run 43254548049, are the evidence; release is not established).
+The in-flight-marker clause was amended at review, from PR #224's second read
+at 0dea5a06 (a RETURN finding) and aw's source at aw-v1.36.58
+(`cli/go/cmd/aw/id_team.go` in awebai/aweb, `writeHostedAcceptPendingMarker`
+and `removeHostedAcceptPendingMarker`); neither the fake-kill cases nor the
+real-stack row exercised that marker when reviewed.
 
 Evidence: OKF proposal from integrations-expert/integrations-expert-aweb-disposable-keys,
 2026-10-08; notes/retired-local-identity-keys-stay-usable.md (recovery-exclusion
