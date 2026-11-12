@@ -84,6 +84,10 @@ Subject file: [OATS kernel and CLI](/subjects/system/oats-kernel.md)
 * [Operating OATS is capability content; the reviewed list is the marketplace](/nodes/oats-maintainer/decisions/official-capabilities-and-reviewed-marketplace.md) - Knowing how to operate OATS ships as two official capabilities — a core every soul receives by kernel default and a setup capability held by the souls that administer a deployment — and the reviewed package catalog in the framework repository is the official marketplace, without a hosted registry.
 * [Workspace model v2 — membership is trust, location is not version, every capability is copied whole into the instance](/nodes/oats-maintainer/decisions/workspace-model-v2.md) - One workspace per organisation whose reciprocal membership is the whole trust decision for member capabilities; a soul says where each capability comes from and never which version, packages are the only versioned thing, nothing is installed, every capability is copied whole into the instance at spawn, and harnesses start normally. Supersedes the revision-pinned import model of 2026-09-20 and the classic per-deployment activation surface.
 
+### decision
+
+* [The Desktop's CLI ceiling is a tested bound, with an allowlist above it](/claims/decisions/desktop-cli-ceiling-is-a-tested-bound-with-an-allowlist.md) - A Desktop accepts a released oats CLI of a later minor or major than its own and flags it aboveTested. Only an explicit allowlist (reads, terminals, Spawn, Start, Restart, colour, background) stays on; every other operation, future ones included, is refused at the backend's entry before any CLI runs, with one notice naming the Desktop to install.
+
 ## Insight
 
 ### constraint
@@ -99,6 +103,7 @@ Subject file: [OATS kernel and CLI](/subjects/system/oats-kernel.md)
 
 ### lesson
 
+* [An older Desktop does worse against a newer kernel where it words the consequence itself](/claims/lessons/an-older-desktop-does-worse-where-it-words-the-consequence.md) - In the traced kernel minors, the N-1 Desktop did worse than show less or be refused in four cases, all where it writes the consequence sentence of a destructive action (Stop, Remove) or saves a whole definition (schedule edit). API integers and feature names never caught them, because each change kept the JSON shape and changed its meaning.
 * [A client's sentence must hold at every producer of a kernel code](/nodes/oats-desktop-expert/lessons/client-wording-must-hold-at-every-code-producer.md) - Audit a client-authored sentence separately from its outcome classification, because a shared kernel code can cover causes the first example does not.
 * [Prove coupled Desktop changes on main and on the prospective kernel merge](/nodes/oats-desktop-expert/lessons/coupled-kernel-and-desktop-landings.md) - When a kernel change would make Desktop actively wrong, keep the Desktop delta reviewable on main but prove the combined tree before maintainers land the pair together.
 * [Tests of kernel text own the client's reading, not the kernel's sentences](/nodes/oats-desktop-expert/lessons/kernel-text-tests-own-the-client-reading.md) - Test the client's handling of live producer text without freezing relations between kernel sentences, and derive forbidden-text checks from the producer rather than copied wording.
