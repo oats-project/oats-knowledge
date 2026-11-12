@@ -6,7 +6,7 @@ about: [workstream/coordination]
 kind: lesson
 id: ins-45bc7a4330dd
 tags: [hand-over, specification, release-notes, review, provenance, privacy]
-timestamp: 2026-10-26
+timestamp: 2026-11-12
 ---
 # Where a spec's facts came from is not what the spec says
 
@@ -57,6 +57,11 @@ deployment's host names, the humans' names and absolute-path patterns,
 run as a lint or a review-bot comment) would catch most of these before a
 reviewer does. Until such a check exists, this lesson is the manual step at
 hand-over. A reviewer in the release lane remains the final guard.
+
+Refined 2026-11-12: a deny-list of host names and people's names committed to a public
+repository publishes them, even hashed. Only the path pattern belongs in the repository, as an
+allow-list of invented owners, and a personal deny-list stays outside it; see
+[a guard against deployment specifics checks shapes, never a list of the names](/claims/lessons/a-deny-list-of-deployment-names-publishes-them.md).
 
 # Evidence and limits
 
