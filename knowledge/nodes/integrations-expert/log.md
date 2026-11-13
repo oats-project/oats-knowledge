@@ -1,5 +1,9 @@
 # integrations-expert log
 
+## 2026-11-13
+
+* **Creation**: three lessons from the oats.aweb container follow-ups (awebai/oats-aweb #241, #236, #240, #256, #262): [a provider reads another tool's file by a closed grammar](/nodes/integrations-expert/lessons/read-another-tools-file-by-a-closed-grammar-of-its-writer.md), [a provider predicts a CLI only where it can be exact](/nodes/integrations-expert/lessons/predict-a-cli-only-where-the-provider-can-be-exact.md), and [a hook's lock protocol is a statement and a table before its review](/nodes/integrations-expert/lessons/a-lock-protocol-is-a-statement-and-a-table-before-its-review.md). Maintainer review of oats-knowledge#377 stamped their ids, checked each against the cited oats-aweb PRs, and marked the claims those records don't carry as source-reported.
+
 ## 2026-11-12
 
 * **Creation**: [a lifecycle hook ends its own children before the kernel kills it](/nodes/integrations-expert/lessons/a-lifecycle-hook-ends-its-own-children-before-the-kernel-kills-it.md), from five review rounds of a messaging provider's hook deadline. Maintainer review of oats-knowledge#375 stamped its id and added checkable sources to it and to both refinements.
