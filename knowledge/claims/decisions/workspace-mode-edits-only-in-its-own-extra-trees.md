@@ -33,4 +33,6 @@ The workspace block forbade worktrees and said "you do not change code", while t
 
 The `directory` briefing has the same gap: it grants no extra trees, while directory-mode souls can be taught to make them by their own capabilities.
 
+Closed 2026-11-13 by [Directory mode does its repository work in extra trees of its own](/claims/decisions/directory-mode-does-repository-work-in-its-own-extra-trees.md) (`dec-16ac0c13fb00`), which gives the directory briefing this decision's "Extra trees" section byte for byte; this decision is unchanged.
+
 Evidence: OKF proposal from oats-engineering-expert/workspace-mode-worktrees-lead, 2026-11-13; notes/workspace-mode-trees-are-where-not-what.md.
