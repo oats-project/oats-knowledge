@@ -6,7 +6,7 @@ about: [system/oats-okf]
 kind: decision
 id: dec-3d462893fdbb
 tags: [decision, okf, propose, publication, gh, github, permissions, preflight]
-timestamp: 2026-11-12
+timestamp: 2026-11-13
 ---
 
 # The decision
@@ -35,6 +35,8 @@ fixed reason, never a pass.
 
 - Not established: what `permissions.push` answers for a GitHub App installation token or a fine-grained token. A
   credential mode that carries one is rehearsed against GitHub before it is relied on.
+  Since 13 November 2026: for an installation token the field is reported all false or absent, and oats-okf #157
+  (open when this was written) proposes a second route for one; see [a check of one GitHub credential asks GitHub directly](/nodes/oats-okf-expert/lessons/a-check-of-one-github-credential-asks-github-directly-not-through-git.md).
 - The field describes the credential's access to the repository. It does not prove that a narrowly scoped token may
   create a label or open a pull request.
 
