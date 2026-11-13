@@ -43,6 +43,8 @@ policy without becoming a writable target. Knowledge files, capture and
 publication mechanics belong to the selected capability, not to inferred
 work-mode privileges.
 
+**Refined 2026-11-13** by [Workspace mode keeps member clones read-only and does its repository work in extra trees of its own](/claims/decisions/workspace-mode-edits-only-in-its-own-extra-trees.md) (`dec-bfc86391e5ec`): "edit-none" means none of the shared member clones; a workspace instance may work in extra trees of its own, and whether it changes code is its role's and task's call. This decision is otherwise unchanged; the change merged under the repository owner's account in oats-project/oats#1929 (verified).
+
 # Related
 
 [External knowledge needs source-independent custody](/nodes/oats-maintainer/decisions/external-knowledge-custody.md);
