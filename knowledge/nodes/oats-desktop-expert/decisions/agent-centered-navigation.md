@@ -79,8 +79,10 @@ run. These are design tradeoffs, not interchangeable sorting implementations.
 The palette uses the sidebar's relationship cues as recorded in
 [Explicit sibling display](sibling-relations-are-shown-apart-from-parentage.md#one-relation-distinct-visual-and-accessible-readings).
 The sidebar's [name-order decision](roster-name-order-preserves-recognition.md)
-remains intact. This instance-switching choice does not supersede the
-soul-inspection and explicit-launch flow above.
+was left intact by this choice; it was later superseded (2026-11-13) by
+[spawn order, newest first](/claims/decisions/rosters-order-by-spawn-time-newest-first.md),
+which leaves this palette recency projection unchanged. This instance-switching
+choice does not supersede the soul-inspection and explicit-launch flow above.
 
 Reject reordering the sidebar roster by recency. It would make fast keyboard
 switching compete with the spatial memory that makes the roster useful.
