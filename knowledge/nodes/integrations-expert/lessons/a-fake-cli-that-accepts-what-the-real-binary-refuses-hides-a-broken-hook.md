@@ -6,7 +6,7 @@ about: [workstream/provider-integration]
 kind: lesson
 id: ins-cf384ff257b7
 tags: [lesson, integrations, hooks, testing, fake-cli, rehearsal, acceptance, versioning]
-timestamp: 2026-11-02
+timestamp: 2026-11-13
 ---
 
 Learned 2026-09-23/24 across five review rounds of one messaging provider,
@@ -54,6 +54,15 @@ identity home.
    in the rehearsal log. Install test-only tools into a prefix outside the
    repository: `npm install --prefix <repo>` saves them into the package's
    manifest and lock, and a capability must ship no dependency closure.
+   A unit test controls the binaries a hook reaches in the same way, the
+   kernel's CLI included. A hook that falls back to `oats` on PATH when the
+   kernel locator is unset (in oats.aweb 1.42 the health host needs both
+   `OATS_NODE_BIN` and `OATS_CLI_BIN`) reaches the host's real kernel from a
+   test that leaves it unset: on a host that runs OATS the test can fail, and
+   in CI, with no `oats` on PATH, it passes. Pin the kernel such a test
+   reaches (a fake kernel through every locator variable the hook reads, or
+   a PATH without `oats`). Read a failure seen only on a host that runs OATS
+   as host leakage before you call it a regression.
 6. **When the rehearsal finds a refusal the fake accepted, fix the fake in the
    same round as the hook**, naming the tool's source of truth in the test.
 
@@ -270,6 +279,7 @@ failure and its limits, rather than a universal command recipe.
 
 # Citations
 
+- Evidence: OKF proposal from integrations-expert/aweb-1-42-pin-fixes-lead, 2026-11-13; notes/hook-tests-reach-host-oats-cli.md. Maintainer review of oats-knowledge#384 read [oats-project/oats#1932](https://github.com/oats-project/oats/pull/1932) at `7faec682` and its first commit `30c78732` (the oats.aweb 1.42.0 mirror): `lib/health-host.mjs` uses `OATS_NODE_BIN` with `OATS_CLI_BIN`, else `oats` on PATH; the retire hook clears its attention claim only when that kernel's `version --json` lists `waiting-on-you`, and warns "oats.aweb attention claim could not be cleared" when that kernel's clear does not answer ok; the cited test's hook runner inherits the host's PATH and sets no kernel locator. The host failure on OATS 0.69.18 and the CI pass are source-reported; that PR's CI was still running at review, and no fix to the test is certified here.
 - Evidence: OKF proposal from integrations-expert/overdue-step-checkpoint-integrations-expert, 2026-11-02; notes/a-reader-that-stops-early-meets-split-output.md. The split-output failures and their repair are source-reported; no independent implementation, CI or release verification is claimed.
 - Maintainer review of oats-knowledge#234, 2026-10-30, read [awebai/oats-aweb#167](https://github.com/awebai/oats-aweb/pull/167) and its diff, and [#165](https://github.com/awebai/oats-aweb/pull/165) with its correction comment. The fix keeps the whole-refusal match with exit 2 and adds only this home's own name. The journey jobs failed at aw 1.36.33 and 1.36.51 before it (run 41117898173) and passed after it (run 41119385387), read by job conclusion only. It merged at `26297493` and the changelog still listed it as Unreleased, so shipment stays uncertified. The tool owner's statement appears there only as the source's report, and one approving review says it did not re-check each of the eight other matches. Not human acceptance.
 - Evidence: OKF proposal from integrations-expert/overdue-step-checkpoint-integrations-expert, 2026-10-30; notes/a-fake-that-prints-what-the-code-expects.md. The refusal mismatch, failed wording-based audit and tool-owner statement are source-reported; this harvest did not rerun the reported fixes or independently verify the owner's statement.
