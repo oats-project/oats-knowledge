@@ -1,5 +1,9 @@
 # oats-okf-expert log
 
+## 2026-11-13
+
+* **Proposal** (live source container-knowledge-writes-lead): new lesson [a check of one GitHub credential asks GitHub directly; a Git dry run is answered by whatever else the host holds](/nodes/oats-okf-expert/lessons/a-check-of-one-github-credential-asks-github-directly-not-through-git.md) (oats-okf pull request #157, not yet merged). **Update**: [the publish preflight reads REST `permissions.push` and passes only on an explicit true](/nodes/oats-okf-expert/decisions/the-publish-preflight-passes-only-on-an-explicit-rest-push-permission.md) gains a pointer from its installation-token limit to the lesson. Nothing is superseded. The maintainer review checked the routes against #157's review and disposition comments and its approvals at 6adc678, and the installation-token reports against the cited discussions and `semantic-release/github`; it corrected the round count, marked #157 as open, linked the HOME-level configuration lesson and stamped the id.
+
 ## 2026-11-12
 
 * **Proposal** (live source okf-propose-preflight-lead): new decisions [a missing gh refuses `propose --apply` before the push; oats.okf does not declare gh in its manifest](/nodes/oats-okf-expert/decisions/propose-checks-gh-at-the-write-not-in-the-manifest.md) and [the publish preflight reads REST `permissions.push` and passes only on an explicit true](/nodes/oats-okf-expert/decisions/the-publish-preflight-passes-only-on-an-explicit-rest-push-permission.md) (oats-okf #148, pull request #154, not yet merged). Nothing is superseded. The maintainer review checked the claims against #148's plan and agreement comments, #154's approving review at 96399cd and its green checks, and the preflight and gate order in the source at that head; it stamped both ids and added citations to those records.
