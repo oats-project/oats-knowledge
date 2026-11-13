@@ -1,12 +1,20 @@
 ---
 type: Decision
-title: The loopback interface is Desktop's trust boundary
-description: Because Desktop's backend can type into live agent terminals, it binds loopback only, guards Host on every request and Origin on every command-running route, and treats remote use as the operator's own SSH forward; polling over push transport was a deliberate deferral.
+title: The loopback interface was Desktop's trust boundary; its browser-facing rules stand
+description: SUPERSEDED IN PART 2026-11-13 - main and its backend now meet over a private socket with a per-child credential, not a loopback bind. Still in force - because Desktop's backend can type into live agent terminals, it guards Host on every request and Origin on every command-running route, treats navigation, fetch and workspace strings in the privileged window as part of the boundary, and keeps polling over push transport.
 about: [system/oats-desktop]
 id: dec-28db07ceee3a
-tags: [desktop, security, trust-boundary, loopback, transport, renderer]
-timestamp: 2026-07-27
+tags: [desktop, security, trust-boundary, loopback, transport, renderer, superseded-in-part]
+timestamp: 2026-11-13
 ---
+**Superseded in part 2026-11-13** by [Desktop's backend boundary is a private socket and a per-child credential](backend-boundary-is-a-private-socket-and-a-per-child-credential.md),
+with Pepe's acceptance source-reported (relay at
+<https://github.com/oats-project/oats/pull/1891#issuecomment-6856731215>).
+Superseded: the first paragraph of the Decision below (the loopback bind as
+the boundary, and remote use by SSH port-forward). Everything else here
+still holds, and applies to the development harness, which still listens on
+loopback. Kept as the record of why loopback was chosen.
+
 # Context
 
 Decided with the founder on 2026-07-17 for the browser-panel predecessor and
@@ -17,10 +25,11 @@ on the machine. That single fact shapes the whole boundary.
 
 # Decision
 
-**Bind loopback only, and make the loopback interface itself the trust
-boundary.** Remote use is the operator's own SSH port-forward, never a public
-bind; Desktop is not a network product and must not grow into one by
-convenience.
+**Superseded 2026-11-13 (see the note above):** ~~Bind loopback only, and
+make the loopback interface itself the trust boundary. Remote use is the
+operator's own SSH port-forward, never a public bind.~~ What stands from this
+paragraph, and is now stronger: Desktop is not a network product and must not
+grow into one by convenience; its backend has no network listener at all.
 
 **The Host guard covers every request, not only mutations.** A hostile page
 can DNS-rebind its own hostname to the loopback address and read through GET
@@ -108,6 +117,7 @@ refresh in flight at a time. Benchmark under concurrent load, not solo.
 
 # Related
 
+[Desktop's backend boundary is a private socket and a per-child credential](backend-boundary-is-a-private-socket-and-a-per-child-credential.md) (supersedes this decision's loopback bind);
 [One standalone Desktop product, no hidden operational kernel](standalone-product-and-cli-authority.md);
 [Terminal tabs are viewers, not session owners](terminal-viewers-not-session-owners.md);
 [Verification judgment for Desktop's privileged surfaces](../lessons/verification-judgment-for-privileged-surfaces.md);
