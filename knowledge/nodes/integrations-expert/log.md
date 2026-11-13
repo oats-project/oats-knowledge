@@ -2,6 +2,7 @@
 
 ## 2026-11-13
 
+* **Update**: Refined [a fake CLI that accepts what the real binary refuses hides a broken hook](/nodes/integrations-expert/lessons/a-fake-cli-that-accepts-what-the-real-binary-refuses-hides-a-broken-hook.md), rule 5: a unit test controls the kernel CLI a hook reaches too, since a hook that falls back to `oats` on PATH reaches the host's kernel from a test that leaves `OATS_CLI_BIN` unset, failing on a host that runs OATS and passing in CI. Maintainer review of oats-knowledge#384 checked the mechanism in oats-project/oats#1932's oats.aweb 1.42 mirror, named both kernel locator variables the health host reads, and added the citation; the host failure and CI pass stay source-reported.
 * **Creation**: three lessons from the oats.aweb container follow-ups (awebai/oats-aweb #241, #236, #240, #256, #262): [a provider reads another tool's file by a closed grammar](/nodes/integrations-expert/lessons/read-another-tools-file-by-a-closed-grammar-of-its-writer.md), [a provider predicts a CLI only where it can be exact](/nodes/integrations-expert/lessons/predict-a-cli-only-where-the-provider-can-be-exact.md), and [a hook's lock protocol is a statement and a table before its review](/nodes/integrations-expert/lessons/a-lock-protocol-is-a-statement-and-a-table-before-its-review.md). Maintainer review of oats-knowledge#377 stamped their ids, checked each against the cited oats-aweb PRs, and marked the claims those records don't carry as source-reported.
 
 ## 2026-11-12
