@@ -1,5 +1,11 @@
 # claims log
 
+## 2026-11-13
+
+* **Creation**: [Onboarding's setup expert keeps its derived name, `<workspace>-oats-setup-expert`](/claims/decisions/onboarding-names-its-setup-expert-for-the-workspace-and-soul.md), accepted as `dec-36806a9c549a` by maintainer review of PR [#378](https://github.com/oats-project/oats-knowledge/pull/378), amended (`packageInstanceName` checked at oats `d81c7dce2` and the no-name cases added; the owner's acceptance recorded as source-reported; the hand-over's reliance on the name cited to the getting-started skill and the second reader's comment on oats-project/oats#1896, verified). It refines [instance names end in the coordination role](/claims/decisions/instance-names-end-in-the-coordination-role-chosen-by-the-namer.md) with a third kept name, which now links it.
+* **Creation**: [A naming change's inventory greps every `--name` the kernel and the skills write, not only the naming calls](/claims/lessons/a-naming-inventory-greps-every-name-the-kernel-writes.md), accepted as `ins-571751c05262` by maintainer review of PR [#378](https://github.com/oats-project/oats-knowledge/pull/378), amended (the second reader's finding cited and verified; the decision card marked source-reported). It refines [inventory spawn routes before specifying a feature](/nodes/oats-expert/lessons/inventory-spawn-routes-before-specifying-a-feature.md) for naming.
+* **Update**: [Instance names end in the coordination role](/claims/decisions/instance-names-end-in-the-coordination-role-chosen-by-the-namer.md): its three PRs recorded as merged on 2026-11-12 (oats-project/oats#1897, #1896, #1898, verified), and a link to the onboarding refinement added; the decision itself is unchanged.
+
 ## 2026-11-12
 
 * **Creation**: [A guard against deployment specifics in a public repository checks shapes, never a list of the names](/claims/lessons/a-deny-list-of-deployment-names-publishes-them.md), accepted as `ins-991c1f04cebb` by maintainer review of PR [#374](https://github.com/oats-project/oats-knowledge/pull/374), amended (the guard's scope and merge verified on oats-project/oats#1910; the correction by mail and the branch-only hash list marked source-reported; refines the elimination route of [design records name no deployment specifics](/nodes/oats-expert/lessons/design-records-name-no-deployment-specifics.md), which now links it).

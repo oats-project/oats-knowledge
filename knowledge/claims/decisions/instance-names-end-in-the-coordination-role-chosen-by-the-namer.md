@@ -6,7 +6,7 @@ about: [system/oats-kernel, system/oats-desktop, workstream/coordination]
 kind: decision
 id: dec-d2b7cfe5553a
 tags: [naming, instance-name, suggest-name, coordination-role, contract]
-timestamp: 2026-11-12
+timestamp: 2026-11-13
 ---
 
 # The decision
@@ -17,7 +17,7 @@ The deployment's owner decided on 2026-11-12 that names should not carry the sou
 - [oats-project/oats#1896](https://github.com/oats-project/oats/pull/1896): oats.core;
 - a Desktop PR for the typed name, still to come when #1897 opened.
 
-None of them was merged when this was proposed. What the decision says:
+None of them was merged when this was proposed. All three merged on 2026-11-12: #1897 (`9810a8ee`), #1896 (`75982b65`) and the Desktop's [oats-project/oats#1898](https://github.com/oats-project/oats/pull/1898) (`2b122547`). What the decision says:
 
 - **The rule lives once,** in oats.core's oats-souls "Name the instance". Docs point at it and don't restate it.
   - The name is `--name <descriptive>-<role>`, at most five words.
@@ -29,6 +29,7 @@ None of them was merged when this was proposed. What the decision says:
 - **What doesn't change.** The JSON, the reasons and the features stay the same, and `--soul` is accepted but unused. No client needs to tell the old rule from the new one. An older side gives a valid but longer name, and the release notes say so.
 - **A typed `--name`** is used exactly as given; the Desktop's dialog stops adding the role to a typed name (the Desktop PR).
 - **`--purpose`** (`<soul>-<purpose>`) and the numbered `<soul>-<n>` stay, by the owner's decision ("for now"). Schedules and triggers name their runs that way, and schedule reconciliation finds a lost run by that name, with no model in the loop (see [a derived name's absence proves nothing unless it is the producer's name](/nodes/oats-kernel-expert/lessons/derived-name-absence-needs-producer-identity.md)).
+- **Onboarding's setup expert** keeps its derived `<workspace>-oats-setup-expert` too, by the owner's later decision: [onboarding's setup expert keeps its derived name](/claims/decisions/onboarding-names-its-setup-expert-for-the-workspace-and-soul.md) (2026-11-13) refines this decision with a third kept name; it is not a leftover to fix.
 
 # Why
 
