@@ -1,12 +1,16 @@
 ---
 type: Decision
 title: Name-ordered rosters preserve recognition across state changes
-description: Order roster bundles by their first root rather than liveness or member count, so starts, stops and a first child do not reprioritize the agents the operator is tracking.
+description: SUPERSEDED 2026-11-13 by spawn-time order, newest first, which keeps this recognition rationale. Was: order roster bundles by their first root, and roots and siblings by name, rather than by liveness or member count, so starts, stops and a first child do not reprioritize the agents the operator is tracking.
 about: [system/oats-desktop]
 id: dec-555212bdd02a
-tags: [desktop, roster, ordering, lineage, recognition]
-timestamp: 2026-10-30
+status: superseded
+tags: [desktop, roster, ordering, lineage, recognition, superseded]
+timestamp: 2026-11-13
 ---
+
+**Superseded 2026-11-13** by [Rosters order by spawn time, newest first](/claims/decisions/rosters-order-by-spawn-time-newest-first.md) (`dec-a8a8bcade9c3`): the product owner took the roster-sort decision this concept reserved for them (source-reported). Name order is replaced by spawn order; placing a bundle by its first root, showing state on the row and the rejections below still hold, and the new decision carries them. Kept as the record of why name order was chosen.
+
 # Decision and rationale
 
 The source records a 2026-10-15 product decision prompted by a bundle jumping

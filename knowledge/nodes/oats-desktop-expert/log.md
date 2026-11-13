@@ -1,5 +1,9 @@
 # oats-desktop-expert log
 
+## 2026-11-13
+
+* **Update**: superseded [Name-ordered rosters](decisions/roster-name-order-preserves-recognition.md) with [Rosters order by spawn time, newest first](/claims/decisions/rosters-order-by-spawn-time-newest-first.md): the product owner took the roster-sort decision on 2026-11-13 (source-reported). Bundle-by-root placement, state on the row and the rejected running-first and multi-member-first orders still hold. Marked the old concept superseded, linked its successor, and corrected [Agent-centered navigation](decisions/agent-centered-navigation.md)'s "remains intact" note; maintainer review of PR [#379](https://github.com/oats-project/oats-knowledge/pull/379).
+
 ## 2026-11-10
 
 * **Harvest**: refined [Client wording across code producers](lessons/client-wording-must-hold-at-every-code-producer.md#a-documented-discriminator-is-worded-as-data-with-the-family-meaning-as-fallback) with the sync `E_PACKAGE_INTEGRITY` case: when a kernel code discriminates its causes with a documented `details.why`, word per `why` as data, and fall back to the family's cause-neutral meaning for no or unknown `why`; rejected a single cause-neutral sentence because the remedy differs per producer. Recorded the source-reported no-`details` reader stance with its one-slug exception, and the source-reported producer regression test as this code's elimination route. Linked the kernel's [integrity-family decision](/nodes/oats-kernel-expert/decisions/declaration-checks-run-at-sync-under-the-integrity-family.md) and pointed the [shared-readers decision](decisions/shared-readers-separate-client-terms-and-kernel-prose.md) at the rule rather than restating prose-is-not-a-contract. Change open and unmerged at capture; no release, code audit or test rerun is claimed.
