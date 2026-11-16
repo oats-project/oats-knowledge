@@ -1,5 +1,9 @@
 # claims log
 
+## 2026-11-16
+
+* **Creation**: [The owning human is the first Lineage fact of the instance panel, and a roster fact never waits on another read](/claims/decisions/owning-human-is-a-lineage-fact-in-the-instance-panel.md), accepted as `dec-ef3883f898b6` by maintainer review of PR [#391](https://github.com/oats-project/oats-knowledge/pull/391), amended (the relay of the product owner's request corrected to the product lane's approval comment on oats-project/oats#1942 and marked source-reported; the merge and both lane approvals linked; the header and sidebar rejections marked as the source's reasoning; the repository docs section linked as the home of the description).
+
 ## 2026-11-14
 
 * **Creation**: [A review loop that keeps finding record-state defects converges with a transition table, not more rounds](/claims/lessons/a-review-loop-that-keeps-finding-state-defects-converges-with-a-transition-table.md), accepted as `ins-1f10c618a0bc` by maintainer review of PR [#388](https://github.com/oats-project/oats-knowledge/pull/388), amended (the rounds corrected to 5 to 8 and "all in that area" to most, against the round-labelled commits of awebai/oats-aweb#271, open and unmerged; the later rounds' findings marked source-reported; the text-guard contract lesson linked).
