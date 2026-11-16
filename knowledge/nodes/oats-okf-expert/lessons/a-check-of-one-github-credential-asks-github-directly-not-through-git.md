@@ -70,7 +70,9 @@ names `--hostname`.
 # What follows for other work
 
 - The same four routes apply to any mode that means Git to use one named credential, such as a token file passed as
-  a credential helper: a netrc or a URL rewrite on the host can be used instead of it.
+  a credential helper: a netrc or a URL rewrite on the host can be used instead of it. [Making one token Git's
+  credential takes more than a credential helper](/nodes/oats-okf-expert/lessons/a-git-credential-helper-is-not-the-only-thing-that-answers-for-a-host.md)
+  adds the `core.askPass` fallback and what a scan of the host's Git configuration for these routes must do.
 - This is the other side of [the package's Git and gh calls see only HOME-level configuration](/nodes/oats-okf-expert/lessons/the-packages-git-and-gh-calls-see-only-home-level-configuration.md):
   the HOME's configuration the package relies on for credentials is also what answers in place of a named one.
 - Cost of the direct request: it uses no proxy, so a host that reaches github.com only through one cannot be checked
