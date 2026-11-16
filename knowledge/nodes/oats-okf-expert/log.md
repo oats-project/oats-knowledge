@@ -1,5 +1,9 @@
 # oats-okf-expert log
 
+## 2026-11-16
+
+* **Proposal** (live source container-knowledge-writes-lead): new lesson [making one token Git's credential takes more than a credential helper](/nodes/oats-okf-expert/lessons/a-git-credential-helper-is-not-the-only-thing-that-answers-for-a-host.md), from the reviews of the token-file mode and its bring-up check (oats-okf #153 and #155, open). **Update**: [a check of one GitHub credential asks GitHub directly](/nodes/oats-okf-expert/lessons/a-check-of-one-github-credential-asks-github-directly-not-through-git.md) gains a pointer to it. Nothing is superseded. The maintainer review checked each claim against the cited review comments, corrected the command-scope reset sentence after running git 2.55 against a local server (a header scoped to the same or the full repository URL is cleared; a full-URL rewrite is not undone), marked both pull requests as open and stamped the id.
+
 ## 2026-11-13
 
 * **Proposal** (live source container-knowledge-writes-lead): new lesson [a check of one GitHub credential asks GitHub directly; a Git dry run is answered by whatever else the host holds](/nodes/oats-okf-expert/lessons/a-check-of-one-github-credential-asks-github-directly-not-through-git.md) (oats-okf pull request #157, not yet merged). **Update**: [the publish preflight reads REST `permissions.push` and passes only on an explicit true](/nodes/oats-okf-expert/decisions/the-publish-preflight-passes-only-on-an-explicit-rest-push-permission.md) gains a pointer from its installation-token limit to the lesson. Nothing is superseded. The maintainer review checked the routes against #157's review and disposition comments and its approvals at 6adc678, and the installation-token reports against the cited discussions and `semantic-release/github`; it corrected the round count, marked #157 as open, linked the HOME-level configuration lesson and stamped the id.
