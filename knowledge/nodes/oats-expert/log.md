@@ -1,5 +1,9 @@
 # oats-expert log
 
+## 2026-11-16
+
+* **Harvest**: add [a step that gates on another text's list of conditions names the items it waits for](/nodes/oats-expert/lessons/a-gate-pointing-at-another-texts-list-names-the-items-it-waits-for.md): after a rule moves to one home, a pointer saying "when every agreement holds" inherits the whole list, outcome included, so the gate can't be met; find each pointer and make it name its subset, and merge shared texts between ways of working whole, never by rows. Links [condensing instructions](/nodes/oats-expert/lessons/condensing-instructions-preserves-load-triggers.md) and [composed review](/nodes/oats-expert/lessons/rule-changes-need-cross-capability-composed-review.md) rather than restating them. Evidence: OKF proposal from oats-expert/research-template-v3-expert, 2026-11-16; notes/a-gate-that-points-to-another-texts-list-names-the-items-it-waits-for.md. One rework; the findings are its review reports, not a rate. Maintainer review of PR [#389](https://github.com/oats-project/oats-knowledge/pull/389): stamped its id, checked the pre-move pointer wording against the public template at template-v2.1.2, and marked the unpublished template-v3.0.0 findings as source-reported; no human-accepted decision is superseded.
+
 ## 2026-11-12
 
 * **Update**: the elimination route of [design records name no deployment specifics](/nodes/oats-expert/lessons/design-records-name-no-deployment-specifics.md) is refined by [a guard against deployment specifics checks shapes, never a list of the names](/claims/lessons/a-deny-list-of-deployment-names-publishes-them.md) (maintainer review of PR [#374](https://github.com/oats-project/oats-knowledge/pull/374)). Committed to a public repository, its deny-list of host and human names would publish them, so only the path pattern stays in the repository's check. The lesson's hand-over rule is unchanged, and no human-accepted decision is superseded.
