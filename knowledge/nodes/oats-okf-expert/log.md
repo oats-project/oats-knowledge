@@ -2,6 +2,7 @@
 
 ## 2026-11-16
 
+* **Proposal** (live source container-knowledge-writes-lead): new decision [the token-file credential mode does not isolate Git from the host; it states the limit, detects it and refuses before publishing](/nodes/oats-okf-expert/decisions/the-token-file-mode-does-not-isolate-git-it-states-detects-and-refuses.md) (oats-okf #153 and #155 merged; #160 open). Nothing is superseded. The maintainer review checked each item against #153, #155, #160 and the design's section 7, corrected the command-scope sentence to the accepted lesson, cited both sides' acceptances on #153 (verified at their comments) and stamped the id.
 * **Proposal** (live source container-knowledge-writes-lead): new lesson [making one token Git's credential takes more than a credential helper](/nodes/oats-okf-expert/lessons/a-git-credential-helper-is-not-the-only-thing-that-answers-for-a-host.md), from the reviews of the token-file mode and its bring-up check (oats-okf #153 and #155, open). **Update**: [a check of one GitHub credential asks GitHub directly](/nodes/oats-okf-expert/lessons/a-check-of-one-github-credential-asks-github-directly-not-through-git.md) gains a pointer to it. Nothing is superseded. The maintainer review checked each claim against the cited review comments, corrected the command-scope reset sentence after running git 2.55 against a local server (a header scoped to the same or the full repository URL is cleared; a full-URL rewrite is not undone), marked both pull requests as open and stamped the id.
 
 ## 2026-11-13
