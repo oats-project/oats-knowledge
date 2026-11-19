@@ -5,7 +5,7 @@ description: One release lane owns final review, merge and tags; project maintai
 about: [workstream/oats-direction]
 id: dec-1d2a5106b721
 tags: [stewardship, lanes, release, review, process, multi-human]
-timestamp: 2026-10-30
+timestamp: 2026-11-19
 ---
 **Owner: oats-maintainer. Update-on-change: whoever changes the lane map's
 rules, the routing judgment, the release lane's ownership or the
@@ -55,8 +55,11 @@ in flight, the lane maintainer can spawn an overflow seat:
   hand-back;
 - it has no merge, second-read, sign-off-request or contract-answer
   authority, and never spawns another overflow seat;
-- its parent retires it like a finished child; it does not retire itself
-  when idle.
+- ~~its parent retires it like a finished child; it does not retire itself
+  when idle.~~ **Superseded 2026-11-19**
+  ([a finished overflow seat retires itself](#a-finished-overflow-seat-retires-itself-2026-11-19)):
+  once its efforts are handed back it retires itself, like any finished
+  lead, and its parent checks that it is gone.
 
 One accountable maintainer per human per lane still holds. The parent keeps
 those review and coordination responsibilities; this does **not** give a
@@ -69,6 +72,9 @@ rejected equal-authority second maintainer would split accountability and
 conflict with the existing newcomer-stands-down and lane-split rules.
 Idle self-retirement was also rejected: it was not part of the human's
 request and would turn extra capacity into a separate lifecycle authority.
+(That rejection is superseded for a *finished* overflow seat:
+[a finished overflow seat retires itself](#a-finished-overflow-seat-retires-itself-2026-11-19);
+an overflow seat that still holds efforts still does not retire itself.)
 The operating terms belong in the lane map and maintainer skills, not a
 second roster here.
 
@@ -92,6 +98,44 @@ reviews each PR at its head before handing it to its parent. That moves part
 of the review load the accepted cost above says stays with the parent; second
 reads, the hand-over, sign-off and the merge stay with the parent. The map and
 skill own the terms; this section keeps the decision and why.
+
+## A finished overflow seat retires itself (2026-11-19)
+
+The coordination templates' rule that every finished instance retires
+itself, children first, and its parent sweeps for what is still listed
+([dec-e16916c07d41](/claims/decisions/every-finished-instance-retires-itself-and-its-parent-sweeps.md))
+now covers the overflow seat too. Once its efforts are handed back, it
+retires itself, and its parent checks on `oats status` that it is gone. An
+overflow seat that still holds efforts does not retire itself. The rest of
+the overflow form stands: the seat is still the lane maintainer's child,
+with no entry, merge, second-read, sign-off-request or contract-answer
+authority of its own.
+
+Rejected: keeping the overflow seat as the one finished child its parent
+retires. That would be two rules for one act, and it is the gap the template
+rule closed: finished instances were left running.
+
+**Acceptance: source-reported (relay at
+[the lane map](https://github.com/oats-project/oats/issues/1566)).** The
+source reports that the release lane asked the lane's human directly, on
+2026-11-19, whether template v4's self-retirement rule was his decision,
+since it supersedes the parent-retires line above, and that he answered it
+was. The lane map's overflow bullet, which the release lane keeps, was
+edited the same day to say the seat retires itself once its efforts are
+handed back, attributing that to him. This is a further source-reported
+confirmation of the decision recorded in dec-e16916c07d41; it does not make
+that acceptance verified.
+
+The 2026-10-27 overflow form was decided with the other human's side. Their
+objection was to an independent second maintainer, which this change does
+not touch. No agreement by the other side to this change is recorded; it was
+confirmed by the lane's human alone.
+
+Evidence: OKF proposal from oats-maintainer/release-maintainer, 2026-11-19;
+notes/finished-overflow-seat-retires-itself.md;
+notes/handover-from-release-maintainer-pepe-v4/notes/handover-seat/notes/v4-supersedes-parent-retires-children.md.
+Checked at maintainer review of oats-knowledge#400, 2026-11-19: the lane
+map's body carries the new overflow terms, added in its edit of 2026-11-19.
 
 # One product lane replaces separate kernel and Desktop lanes (2026-10-28)
 
