@@ -4,9 +4,15 @@ title: Desktop chrome uses sans names and role-based type hierarchy
 description: Give primary names foreground sans at weight 600 and reserve monospace for secondary machine strings, using a short size-and-weight hierarchy instead of extra colours or uppercase labels.
 about: [system/oats-desktop]
 id: dec-d3a5f460c7ea
-tags: [desktop, typography, hierarchy, design, accessibility]
+tags: [desktop, typography, hierarchy, design, accessibility, superseded-in-part]
 timestamp: 2026-10-15
 ---
+**Superseded in part 2026-11-19** by [The Desktop rework's design and UX direction is decided by Joan's side](/nodes/oats-maintainer/decisions/desktop-rework-design-direction-is-joans-side.md),
+with Pepe's acceptance source-reported. Chrome uses the system sans and
+monospace appears only in terminals, so the monospace role for secondary
+machine strings below no longer holds. That decision names no other part
+of this one.
+
 # Decision and rationale
 
 The source reports that the product owner approved this hierarchy in the

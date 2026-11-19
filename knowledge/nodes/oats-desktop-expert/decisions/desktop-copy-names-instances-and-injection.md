@@ -4,9 +4,15 @@ title: Desktop copy names a soul's instances and instruction injection
 description: Say a soul's instances rather than its agents, and describe capability instructions as injected into the instance's composed AGENTS.md so explanations preserve the definition/runtime and authored/injected distinctions.
 about: [system/oats-desktop]
 id: dec-7228ee560fc3
-tags: [desktop, copy, souls, instances, capabilities, composition]
+tags: [desktop, copy, souls, instances, capabilities, composition, superseded-in-part]
 timestamp: 2026-10-23
 ---
+**Superseded in part 2026-11-19** by [The Desktop rework's design and UX direction is decided by Joan's side](/nodes/oats-maintainer/decisions/desktop-rework-design-direction-is-joans-side.md),
+with Pepe's acceptance source-reported. On Desktop's primary surface
+"agent" replaces "instance"; "soul" and "capability" stay, and the CLI
+and the docs keep "instance". That decision names no change to the
+injection wording below.
+
 # Decision
 
 The source reports two product-owner corrections on 2026-10-23 that apply
