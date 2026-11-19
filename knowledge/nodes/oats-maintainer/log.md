@@ -1,5 +1,10 @@
 # oats-maintainer log
 
+## 2026-11-19
+
+* **Creation**: [Retire refuses a home whose cleanup hooks cannot run, unless its record proves nothing is owed](/nodes/oats-maintainer/decisions/retire-refuses-a-home-whose-cleanup-hooks-cannot-run.md), accepted as `dec-6c6c9626646c`: the contract decision both sides agreed (the source dates it 2026-11-18), landed in oats#1953 and oats#1949. Evidence: OKF proposal from oats-maintainer/product-maintainer-pepe, 2026-11-19; notes/retire-refuses-when-hooks-cannot-run.md. Maintainer review of oats-knowledge#396 marked the agreement date and the delegation as source-reported and stated the decision as the boundary of the refusal rule rather than an instance of it.
+* **Update**: [A refusal must protect something that is still there](/nodes/oats-maintainer/decisions/a-refusal-must-protect-something-still-there.md) now names its boundary: when the refused action would destroy the only means of paying a debt, the refusal holds without a live process, linking the retire decision above. Its rule is otherwise unchanged; nothing is superseded.
+
 ## 2026-11-13
 
 * **Creation**: [The team image takes its registry from one operator source, and its route defaults to external](/nodes/oats-maintainer/decisions/team-image-registry-has-one-source-and-an-external-default.md), two team-container contracts agreed by both sides with Pepe's side's conditions. Evidence: OKF proposal from oats-maintainer/product-maintainer-pepe, 2026-11-13; notes/awid-registry-image-input.md.

@@ -46,6 +46,11 @@ state still exists. Read the supervisors too: a refusal on stop is met by
 whatever stops homes (`oats host run`, a parent's retire stopping its
 children), not only by a person at the CLI.
 
+This rule assumes that the debt stays readable and payable after the
+action. When the refused action would destroy the only means of paying the
+debt, the refusal holds even with no live process. Retire is that case:
+see [retire refuses a home whose cleanup hooks cannot run](/nodes/oats-maintainer/decisions/retire-refuses-a-home-whose-cleanup-hooks-cannot-run.md).
+
 # Evidence
 
 Evidence: OKF proposal from oats-maintainer/product-maintainer-pepe,
