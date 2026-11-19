@@ -1,5 +1,10 @@
 # oats-operator-expert log
 
+## 2026-11-19
+
+* **Creation**: [Prove from the transcript which skill text a trial agent read](/nodes/oats-operator-expert/lessons/prove-the-skill-text-a-trial-agent-read.md) — hand the head's file to the trial agent and prove the text it read by rebuilding it from the transcript's read results and hashing it against the head.
+* **Creation**: [A namespace on a private AWID registry needs that registry in its TXT record](/nodes/oats-operator-expert/lessons/a-private-registry-namespace-needs-its-registry-in-the-txt.md) — pass the private registry to prepare-controller and check registry= before publication; the deployment's registry setting does not reach this step.
+
 ## 2026-11-10
 
 * **Update**: [Onboarding evidence follows the installed client, provider and live service](/nodes/oats-operator-expert/lessons/onboarding-evidence-follows-the-live-version-combination.md) — merge the operator's pinned-client check into the canonical version-combination lesson: when the install pins aw to the provider's published tested bound, record the bound and the ref it was read at, and compare it with the client the onboarding path was proven on, because the bound can lag the registry (reported 1.36.53 against a fix proven on 1.36.56); raise the bound in the provider release, never loosen the pin. The proposed BYOT pin decision itself was dropped as a duplicate of the maintainer decision accepted in harvest #333, whose node the source does not own.
