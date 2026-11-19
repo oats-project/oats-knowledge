@@ -1,7 +1,7 @@
 ---
 type: Lesson
 title: Release judgement for the tag-driven lane
-description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, compares what each job sets up before a step that both the PR installer build and the tag workflow run, runs the kernel tests that read a package's mirror before the package tag or plans their port, contains failed-tag repairs and re-runs only a clearly timing failure from the same unpublished tag, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them and a file a provider reads beside such a soul until every following host's lock carries a provider that reads it, coordinates source, tag, mirror, every form of version pin and the framework release that carries them, pins a provider release that removes a component inside the adoption PR that rewrites the texts and kernel tests for it, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
+description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, compares what each job sets up before a step that both the PR installer build and the tag workflow run, runs the kernel tests that read a package's mirror before the package tag or plans their port (a provider hook's new aw call included, checked at its second read), contains failed-tag repairs and re-runs only a clearly timing failure from the same unpublished tag, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them and a file a provider reads beside such a soul until every following host's lock carries a provider that reads it, coordinates source, tag, mirror, every form of version pin and the framework release that carries them, pins a provider release that removes a component inside the adoption PR that rewrites the texts and kernel tests for it, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
 about: [workstream/oats-direction, workstream/provider-integration]
 kind: lesson
 id: ins-559dbb88da8b
@@ -757,6 +757,35 @@ lesson, and it adds no release authority.
 
 Evidence: OKF proposal from oats-maintainer/release-maintainer-pepe,
 2026-11-04; notes/a-package-cut-runs-the-kernel-tests-that-read-its-mirror.md.
+
+### A provider hook's new `aw` call needs the kernel's mirror-hook fakes (2026-11-11)
+
+The same failure comes from hook code, not only from skill text. The kernel
+runs the mirrored oats.aweb hooks in its own tests, each with an inline fake
+`aw`. Those fakes don't share the package's own test helpers. So when a
+provider change makes a new `aw` call on the spawn or launch path, or reads
+a new field from one, the package's CI is green and the pin PR is red.
+
+Check this earlier than the cut: at the second read of the provider PR.
+When it adds an `aw` call or field on a hook path, find the kernel tests
+whose fakes answer that command. Name the fixture change on the package PR,
+and plan it into the pin PR before the package is tagged.
+
+The source reports one case. oats-aweb#218 added `aw wake status` before
+spawn and start, and updated the package's fakes. The pin,
+[oats#1886](https://github.com/oats-project/oats/pull/1886), then failed
+tests in four mirror-hook test files and the capability tests with
+`wake-daemon-not-running`. Its author fixed the fakes on the pin branch,
+and it merged green. The second read had approved the package PR without
+checking the kernel's mirror tests. The failing test count is
+source-reported.
+
+The elimination route is the one above, plus a shared fake `aw` that both
+the package and the kernel tests use. Until then, this is a check at the
+second read.
+
+Evidence: OKF proposal from oats-maintainer/release-maintainer-pepe-v4,
+2026-11-19; notes/handover-seat/notes/package-hook-calls-break-oats-mirror-tests.md.
 
 # Verify the artifact, not the diff
 

@@ -13,7 +13,7 @@ until 2026-10-03 this node was `nodes/oats-expert`.
 * [Durable specialization preserves judgment across sessions](decisions/durable-specialization.md) - Preserve expertise as a versioned project artifact and the soul as canonical curated birth context, while treating agent genomics and speciation as direction rather than replacing shared specialization with per-instance configuration.
 * [Optional reference theory, capability-owned runtime](decisions/optional-reference-theory.md) - A reference knowledge theory that capabilities may adopt or replace.
 * [Second-operator acceptance](lessons/second-operator-acceptance.md) - The acceptance gate for published definitions and how to read its failures.
-* [How the OATS project ships and reviews](stewardship/review-protocol.md) - Maintainer review binds verdicts to content and issue-recorded contract decisions, carries them only across an unchanged delta, preserves same-area integration evidence, requires timely and safely obtained verification, uses fresh readers and one second reader per PR, checks hand-written release claims, and judges tests against requirements rather than implementations.
+* [How the OATS project ships and reviews](stewardship/review-protocol.md) - Maintainer review binds verdicts to content and issue-recorded contract decisions, carries them only across an unchanged delta, preserves same-area integration evidence, requires timely and safely obtained verification, uses fresh readers and one second reader per PR, gives a lane maintainer's green light five checks while the release lane's sign-off keeps four gates, checks hand-written release claims, and judges tests against requirements rather than implementations.
 
 ## Sections
 

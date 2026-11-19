@@ -1,12 +1,12 @@
 ---
 type: Lesson
 title: How the OATS project ships and reviews
-description: Maintainer review binds verdicts to content and issue-recorded contract decisions, carries them only across an unchanged delta, preserves same-area integration evidence, requires timely and safely obtained verification, uses fresh readers and one second reader per PR, checks hand-written release claims, and judges tests against requirements rather than implementations.
+description: Maintainer review binds verdicts to content and issue-recorded contract decisions, carries them only across an unchanged delta, preserves same-area integration evidence, requires timely and safely obtained verification, uses fresh readers and one second reader per PR, gives a lane maintainer's green light five checks while the release lane's sign-off keeps four gates, checks hand-written release claims, and judges tests against requirements rather than implementations.
 about: [workstream/oats-direction, system/oats-kernel, workstream/provider-integration]
 kind: lesson
 id: ins-db8a67988ea3
 tags: [stewardship, review, pull-requests, process]
-timestamp: 2026-11-10
+timestamp: 2026-11-17
 ---
 **Owner: oats-maintainer (the PR gate). Update-on-change: whoever changes the
 review skill, the repository gate or the delivery flow revises this concept in
@@ -42,6 +42,54 @@ green, secure, mergeable PR in the wrong direction is still returned. When the
 human redirects a slice, the amendment is recorded in the design record
 **before** the review, so the direction gate reviews against what was asked,
 not against a frame the human has since changed.
+
+**Superseded in part (2026-11-17):** for a lane maintainer's green light
+these four gates are replaced by
+[five checks and one read of the whole diff](#a-lane-maintainers-green-light-has-five-checks-the-release-lanes-sign-off-keeps-the-four-gates-2026-11-17).
+They still hold for the release lane's sign-off.
+
+## A lane maintainer's green light has five checks; the release lane's sign-off keeps the four gates (2026-11-17)
+
+**Supersedes, for lane maintainers' reads only,** the four gates above as
+the shape of every maintainer review. The four gates still hold for the
+release lane's sign-off, and
+[the release lane's one final-review gate](/nodes/oats-maintainer/stewardship/release-lane-and-project-lanes.md)
+stands unchanged.
+
+- **A lane maintainer's green light** (from the engineering-coordination
+  template v4, where a lane asks for one) is a verdict at an exact head on
+  five checks: direction, roadmap and product fit first; then contracts and
+  interfaces, coherence rules, scope against the task, and evidence against
+  the acceptance criteria. The maintainer also reads the whole diff once,
+  from its own checkout. A defect found there blocks. It runs no review
+  rounds of its own: the author's reviewers run those.
+- **The release lane's sign-off** keeps the four gates, with gate 1 now
+  named direction, roadmap and product fit. It is given at the exact head
+  being merged, as the one final gate on main.
+
+**Why.** Taken whole, the template would have made the release lane's
+sign-off the same five-point read, leaving correctness and general
+security to the author's fresh-reviewer loop and the review bot. That
+would have removed the final gate on main without a decision from the
+human who set it up. The human chose to keep both reads looking at the
+code and judging it against the roadmap, the direction and product fit.
+
+**Rejected:** (a) every maintainer read, the sign-off included, as the
+five checks; (c) every maintainer read keeping the four gates inside the
+green-light form. The record gives no reason for rejecting (c) beyond the
+human's choice of (b).
+
+Acceptance: the release lane's human chose (b) on the ESCALATE of
+[oats-project/oats#1943](https://github.com/oats-project/oats/pull/1943#issuecomment-6923354397),
+in words relayed by his lead and recorded on the PR at
+[issuecomment-6947337142](https://github.com/oats-project/oats/pull/1943#issuecomment-6947337142),
+followed by his go to merge at `ca074af8`, after being shown that it
+replaces this record for lane maintainers' reads. Source-reported (relay at
+that link), not his own record. The OATS copy's `pr-review` skill carries
+the rule.
+
+Evidence: OKF proposal from oats-maintainer/release-maintainer-pepe-v4,
+2026-11-19; notes/handover-seat/notes/2026-11-17-two-maintainer-reads.md.
 
 For instructions about when agents coordinate or retire children, apply the
 [capability-owned coordination policy boundary](/nodes/oats-maintainer/stewardship/coordination-policy-lives-in-capabilities.md):
