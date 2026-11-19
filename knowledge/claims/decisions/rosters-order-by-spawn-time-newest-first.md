@@ -7,7 +7,7 @@ kind: decision
 id: dec-a8a8bcade9c3
 supersedes: [dec-555212bdd02a]
 tags: [desktop, tui, roster, ordering, lineage, recognition]
-timestamp: 2026-11-13
+timestamp: 2026-11-19
 ---
 
 # The decision
@@ -48,6 +48,14 @@ These were decided by the lead, delegated with the request, and told to the owne
 
 The palette's own recency projection, the deployment panel's running-first list and the graph view are
 outside this decision.
+
+# Refined
+
+On 2026-11-19 [Pinned instances lead their machine's list](/claims/decisions/pinned-instances-lead-their-machine-list.md)
+refined this order without replacing it, on the product owner's request (source-reported): at every level
+above, a node whose subtree holds a pin comes first, then this order, and under one parent the same-work
+split stays first. Pinning and unpinning, a person's explicit act, are the one change besides adding or
+removing rows that moves a row. Everything else here stands.
 
 # Evidence
 
