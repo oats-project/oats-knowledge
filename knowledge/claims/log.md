@@ -1,5 +1,9 @@
 # claims log
 
+## 2026-11-20
+
+* **Update**: [A bb restart holds wake-broker mail cleanly but strands a wake already steered into a turn](/claims/lessons/a-bb-restart-holds-broker-mail-but-strands-a-steered-wake.md) (`ins-c046f24af7d0`): its related note on the runtime/messaging decision now points forward to [the wake broker marks mail read only after presenting it in the agent's own turn](/nodes/oats-maintainer/decisions/wake-broker-marks-read-only-after-presentation.md) (`dec-0c60a8fdf4b7`), which narrows the rejected alternative the lesson quoted. The observations are unchanged. Maintainer review of oats-knowledge#420.
+
 ## 2026-11-19
 
 * **Creation**: [A supervisor that restarts a launcher must own its process group, or a killed launcher's children hold the ports](/claims/lessons/a-supervisor-that-restarts-a-launcher-owns-its-process-group.md), accepted as `ins-c1d338d6de91` by maintainer review of PR [#417](https://github.com/oats-project/oats-knowledge/pull/417), amended (the process-group fix and its test verified at oats-project/oats#1984 `f81858abf`, open and unmerged; the observation, counts and timings marked as the source's report; the surviving processes restated as the docs' version lookups). It complements [the bb restart lesson](/claims/lessons/a-bb-restart-holds-broker-mail-but-strands-a-steered-wake.md) and supersedes nothing.

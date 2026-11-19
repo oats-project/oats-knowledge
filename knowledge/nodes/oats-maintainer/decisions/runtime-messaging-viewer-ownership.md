@@ -1,12 +1,17 @@
 ---
 type: Decision
 title: Runtime, messaging and viewers have separate owners; a wake is a hint, not consumption
-description: The kernel owns execution lifecycle, the messaging capability owns identity and delivery, viewers are clients; the wake broker never fetches or acknowledges mail for an agent, and recovery means a fresh receipt with one identity holder.
+description: The kernel owns execution lifecycle, the messaging capability owns identity and delivery, viewers are clients; the wake broker never marks mail read without presenting it in the agent's own turn, and recovery means a fresh receipt with one identity holder.
 about: [workstream/oats-direction, workstream/messaging, workstream/provider-integration]
 id: dec-1328de872184
-tags: [integrations, messaging, runtime, recovery, ownership]
-timestamp: 2026-09-05
+tags: [integrations, messaging, runtime, recovery, ownership, superseded-in-part]
+timestamp: 2026-11-19
 ---
+**Superseded in part 2026-11-19** by [The wake broker marks mail read only after presenting it in the agent's own turn](/nodes/oats-maintainer/decisions/wake-broker-marks-read-only-after-presentation.md)
+(`dec-0c60a8fdf4b7`), with the human acceptance source-reported: the
+rejection of broker acknowledgement is narrowed (see the partial
+supersession section below). The rest of this decision stands.
+
 # Decision
 
 Accepted 2026-09-05 from the operator's runtime and migration requests and
@@ -23,17 +28,31 @@ unchanged:
   session must continue when every viewer closes
   ([viewers are not session owners](/nodes/oats-desktop-expert/decisions/terminal-viewers-not-session-owners.md)).
 
+# Partial supersession — 2026-11-19
+
+The original blanket rejection of a broker fetching or acknowledging mail
+for an agent is superseded in part by [the presentation-before-read
+decision](wake-broker-marks-read-only-after-presentation.md). The wake broker
+never marks mail read without presenting it in the agent's own turn, under
+that decision's four acceptance and recovery conditions. A wake remains a
+hint in hint-only delivery modes, including channel wakes. The agent still
+fetches mail under its own identity; the ownership split and fresh-receipt,
+single-identity-holder recovery requirements above remain in force.
+
+The linked decision records the source-reported human acceptance and the
+scope of this supersession.
+
 # Rejected alternatives and why
 
 - **Harness-native messaging channels in the kernel.** Rejected: terminal
   input already wakes any harness that has a terminal. If a native channel is
   ever justified, it belongs to the messaging capability, keeping the kernel
   runtime-neutral ([kernel responsibility boundary](/nodes/oats-kernel-expert/decisions/kernel-and-capability-responsibility.md)).
-- **A broker that fetches or acknowledges mail on the agent's behalf.**
-  Rejected: a wake is a *hint* to the instance to fetch work under its own
-  identity. A message consumed by proxy is exactly the invisible loss that
-  made polling unsafe; submission is not consumption, and qualification checks
-  the actual fetch/reply path
+- **A broker that marks mail read without presenting it in the agent's own turn.**
+  Rejected: a read-marked message the agent never saw is the invisible loss
+  the original decision guarded against. Hint-only wakes still ask the
+  instance to fetch work under its own identity. Accepted presentation is
+  not task completion, and qualification checks the actual fetch/reply path
   ([adoption evidence](/nodes/oats-maintainer/lessons/adoption-evidence-and-approved-scope.md)).
 - **Replaying a saved launch command as "restart".** Rejected: it proves
   nothing about who holds the identity. Recovery of a standing seat is a fresh
@@ -86,3 +105,4 @@ Mechanics live with the code and move with it: `docs/execution-targets.md`,
 # Citations
 
 1. Migrated from agents/lead/soul @ 7838d3ca (`knowledge/operating-boundaries`, 2026-09-05; the AGENTS.md identity-handover clause).
+2. Evidence: OKF proposal from oats-maintainer/product-maintainer-juan, 2026-11-19; notes/wake-broker-presentation-narrowing.md. Acceptance of the partial supersession is source-reported in the linked decision.
