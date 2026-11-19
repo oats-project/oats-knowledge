@@ -28,6 +28,10 @@ Subject file: [Provider integration](/subjects/workstream/provider-integration.m
 * [Human attribution is an optional messaging-capability contract](/nodes/oats-maintainer/decisions/human-attribution-is-an-optional-messaging-contract.md) - Add human attribution through a provider-neutral messaging contract, default new onboarding to human-bound mode where supported, and preserve unchanged operation for capabilities and deployments without human identities.
 * [Runtime, messaging and viewers have separate owners; a wake is a hint, not consumption](/nodes/oats-maintainer/decisions/runtime-messaging-viewer-ownership.md) - The kernel owns execution lifecycle, the messaging capability owns identity and delivery, viewers are clients; the wake broker never fetches or acknowledges mail for an agent, and recovery means a fresh receipt with one identity holder.
 
+### decision
+
+* [A live test against another party's BYOT lab uses a dedicated sub-namespace whose controller key is generated on the test VM](/claims/decisions/a-live-byot-test-generates-its-controller-key-on-the-test-vm.md) - The test VM generates a fresh controller key for a sub-namespace kept for the run; only the public DID and the _awid TXT value leave it, the lab publishes the record, and the key is shredded with the VM. No key moves between hosts, and no outside party needs a route into the tester's host.
+
 ## Insight
 
 ### lesson
