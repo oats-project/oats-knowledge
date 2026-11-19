@@ -12,6 +12,11 @@ timestamp: 2026-11-19
 oats-project/oats#1984, or decides the session-provider contract that will use this server, updates
 this decision and records any supersession in the claims log.
 
+**Refined 2026-11-19** by [the bb switch in the team image's supervisor is an interim](/claims/decisions/the-bb-switch-in-the-team-image-supervisor-is-an-interim.md)
+(`dec-30e79e778d2e`): #1984 merged as `ba81ddb37eb5` with the switch, the derived image and the relay
+marked experimental; the end state is a generic optional child in a bb-unaware supervisor.
+Nothing here is superseded.
+
 # The decision
 
 The source reports that on 2026-11-19 the owner of the team image (Juan's side, through its

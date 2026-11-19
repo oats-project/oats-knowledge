@@ -33,6 +33,7 @@ Subject file: [Provider integration](/subjects/workstream/provider-integration.m
 ### decision
 
 * [A live test against another party's BYOT lab uses a dedicated sub-namespace whose controller key is generated on the test VM](/claims/decisions/a-live-byot-test-generates-its-controller-key-on-the-test-vm.md) - The test VM generates a fresh controller key for a sub-namespace kept for the run; only the public DID and the _awid TXT value leave it, the lab publishes the record, and the key is shredded with the VM. No key moves between hosts, and no outside party needs a route into the tester's host.
+* [The bb switch in the team image's supervisor is an interim: the end state is a generic optional child, with bb's image and relay in bb's own repository](/claims/decisions/the-bb-switch-in-the-team-image-supervisor-is-an-interim.md) - Pepe's side accepted the bb-specific supervisor switch, derived image and relay in the oats repository only as an experimental interim with no compatibility promise; the end state is a base supervisor that knows nothing of bb and runs a generic optional child a derived image declares, with the bb image, its pin and the relay beside the bb provider.
 
 ## Insight
 
