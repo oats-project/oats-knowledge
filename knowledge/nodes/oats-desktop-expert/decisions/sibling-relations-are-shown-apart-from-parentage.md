@@ -4,9 +4,15 @@ title: Explicit sibling links are shown on both ends and apart from parentage
 description: Show only direct explicit sibling links on both endpoints, using separate dotted sibling and solid lineage cues in the sidebar and palette with an accessible word-based reading so siblinghood cannot be mistaken for parentage.
 about: [system/oats-desktop]
 id: dec-4098247f8e33
-tags: [desktop, siblings, lineage, roster, accessibility, rejected-alternatives]
+tags: [desktop, siblings, lineage, roster, accessibility, rejected-alternatives, superseded-in-part]
 timestamp: 2026-10-19
 ---
+**Superseded in part 2026-11-19** by [The Desktop rework's design and UX direction is decided by Joan's side](/nodes/oats-maintainer/decisions/desktop-rework-design-direction-is-joans-side.md),
+with Pepe's acceptance source-reported. A same-work group is shown by
+indentation and spacing, with no lineage lines, so the line cues below no
+longer hold for the Desktop. That decision names no change to the
+direct explicit-link semantics.
+
 # Decision and rationale
 
 The source records a 2026-10-16 design decision: show a sibling relation

@@ -4,9 +4,16 @@ title: Parent-child lines require declared shared work, not inferred organisatio
 description: Keep parent-child placement while drawing its connector only from a parent-bound shared-work declaration, with coordination guidance owned by capabilities rather than the kernel or oats.core.
 about: [workstream/oats-direction]
 id: dec-97cfed58e463
-tags: [clients, lineage, coordination, capabilities, rejected-alternatives]
+tags: [clients, lineage, coordination, capabilities, rejected-alternatives, superseded-in-part]
 timestamp: 2026-10-27
 ---
+**Superseded in part 2026-11-19** by [The Desktop rework's design and UX direction is decided by Joan's side](/nodes/oats-maintainer/decisions/desktop-rework-design-direction-is-joans-side.md),
+with Pepe's acceptance source-reported. The Desktop shows a same-work
+group by indentation and spacing, with no lineage lines, so a parent-child
+line is no longer the visible mark of declared shared work there. The
+declaration, its binding to the parent and the capability-owned
+coordination policy stand.
+
 # Decision and rationale
 
 The source reports direct product-owner direction on 2026-10-27: the instance
