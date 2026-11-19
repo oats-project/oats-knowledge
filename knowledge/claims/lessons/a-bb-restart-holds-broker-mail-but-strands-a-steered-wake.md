@@ -57,7 +57,7 @@ thread.
 
 - [In a bb Claude thread a permission prompt becomes oats.core's claim, and a bb tell waits behind it](/claims/lessons/a-bb-permission-prompt-is-an-oats-claim-and-a-tell-waits-behind-it.md): tells queue behind a permission prompt; this lesson covers restarts.
 - [A human addresses a long-lived agent through threads that are aweb conversations](/nodes/oats-maintainer/decisions/humans-address-long-lived-agents-through-threads.md) records that presentation's acknowledgement is what stops redelivery. The broker acknowledging at presentation is why a stranded wake is not delivered again.
-- [Runtime, messaging and viewers have separate owners; a wake is a hint, not consumption](/nodes/oats-maintainer/decisions/runtime-messaging-viewer-ownership.md): unchanged by this lesson. Its rejected alternative is a broker that fetches or acknowledges mail on the agent's behalf. The lesson only records what the shipped broker does at presentation.
+- [Runtime, messaging and viewers have separate owners; a wake is a hint, not consumption](/nodes/oats-maintainer/decisions/runtime-messaging-viewer-ownership.md): unchanged by this lesson. The lesson only records what the shipped broker does at presentation. Since 2026-11-19 that decision's rejected alternative is narrowed to a broker that marks mail read without presenting it in the agent's own turn ([presentation before read](/nodes/oats-maintainer/decisions/wake-broker-marks-read-only-after-presentation.md), `dec-0c60a8fdf4b7`); the stranded steer above is why that decision keeps read state apart from completed work.
 
 # Citations
 
