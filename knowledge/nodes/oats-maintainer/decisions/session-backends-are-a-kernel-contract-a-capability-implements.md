@@ -5,7 +5,7 @@ description: The kernel keeps tmux built in and gains a small session-provider c
 about: [workstream/oats-direction, system/oats-kernel, workstream/provider-integration]
 id: dec-faf9af131d69
 tags: [kernel, sessions, backends, capabilities, contracts, bb, rejected-alternatives]
-timestamp: 2026-11-19
+timestamp: 2026-11-20
 ---
 # Decision
 
@@ -94,12 +94,17 @@ of each one; see
 [allowed only behind a provider floor](/nodes/oats-maintainer/decisions/a-provider-wire-ships-before-its-version-only-behind-a-floor.md)
 (`dec-687440ee8ef3`).
 
-# Still open at this record
+# Settled since this record
 
-The exact shape of the sandbox allowances a provider may write for OATS's own
-messaging and events. Its rule is decided: only the provider, only exact
-hosts and paths derived from recorded configuration, never more than the same
-launch gets on tmux.
+Open at this record: the exact shape of the sandbox allowances a provider
+may write for OATS's own messaging and events. Its rule was decided: only the
+provider, only exact hosts and paths derived from recorded configuration,
+never more than the same launch gets on tmux.
+
+That shape, and what a provider's sandboxed modes contain, were decided on
+2026-11-20 within that rule (source-reported):
+[a harness sandbox in a provider home is not a security boundary unless the agent cannot switch it off](/nodes/oats-maintainer/decisions/a-harness-sandbox-is-not-a-boundary-unless-its-switch-is-out-of-reach.md)
+(`dec-375435ce318a`).
 
 # Related
 
