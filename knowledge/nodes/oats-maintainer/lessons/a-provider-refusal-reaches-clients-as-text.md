@@ -42,6 +42,12 @@ Before claiming that something never reaches a client:
 The repository's docs do not state this path; documenting it where the docs
 describe a hook's output is the route that would retire this lesson.
 
+The converse holds too: the text reaches the client, and a failing hook's
+structured `meta` does not. See [a failing spawn hook hands its caller only its
+text, the code and whether the rollback was
+confirmed](/claims/lessons/a-failing-spawn-hook-hands-back-only-its-text-code-and-unconfirmed.md)
+(`ins-f5c73b7ba1c5`).
+
 # Evidence
 
 Evidence: OKF proposal from oats-maintainer/product-maintainer-pepe,
