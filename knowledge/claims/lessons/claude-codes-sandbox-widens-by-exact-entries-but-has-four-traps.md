@@ -41,6 +41,10 @@ decided rule for a provider's allowances in
 [the session-provider contract](/nodes/oats-maintainer/decisions/session-backends-are-a-kernel-contract-a-capability-implements.md)
 (`dec-faf9af131d69`), whose exact shape it leaves open; these traps are input to that open point,
 not its answer. Not probed under a managed policy that requires the sandbox.
+That open point was decided on 2026-11-20 in
+[a harness sandbox in a provider home is not a security boundary unless the agent cannot switch it off](/nodes/oats-maintainer/decisions/a-harness-sandbox-is-not-a-boundary-unless-its-switch-is-out-of-reach.md)
+(`dec-375435ce318a`): a provider never reads hosts or settings from the home, so the widening
+shown here is not a route a provider uses.
 
 # Citations
 
