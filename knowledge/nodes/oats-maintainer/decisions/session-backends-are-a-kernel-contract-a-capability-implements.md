@@ -84,6 +84,16 @@ the manifest, the feature word and the inspect answer.
   older kernel reads every `when` key as a setting and would silently skip
   the row. A sibling key is refused loudly by an older kernel.
 
+# Who decides later changes (2026-11-20)
+
+Changes to this contract that are part of Joan's bb work are decided by
+Pepe's side, with the release lane giving its half, and Juan's side is told
+of each one; see
+[Joan's bb effort is pre-approved on Pepe's side](/nodes/oats-maintainer/decisions/joans-bb-effort-is-pre-approved-on-pepes-side.md)
+(`dec-155756953d6e`). Releasing the first wire before the versioned one is
+[allowed only behind a provider floor](/nodes/oats-maintainer/decisions/a-provider-wire-ships-before-its-version-only-behind-a-floor.md)
+(`dec-687440ee8ef3`).
+
 # Still open at this record
 
 The exact shape of the sandbox allowances a provider may write for OATS's own
