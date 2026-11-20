@@ -32,6 +32,10 @@ without rulesets included, leaves the answer unknown.
 authoritative statement of its rule. Whoever changes that report, or advises a deployment from it, keeps `none`
 for two successful reads and never reads `unknown` as unprotected.
 
+A decision to push straight to a default branch reads the plan's upgrade 403 differently: it counts as no rulesets
+there. See [for a direct-push decision, the plan-upgrade 403 counts as no rulesets](/claims/lessons/a-free-plans-upgrade-403-on-the-rules-read-is-no-rulesets-for-a-push-decision.md)
+(`ins-c1ffa404a770`).
+
 # Evidence
 
 - Verified by the maintainer review on 2026-11-11: the rule is `protection()` in `lib/consult.mjs` of oats.okf (from

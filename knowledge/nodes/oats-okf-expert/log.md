@@ -1,5 +1,9 @@
 # oats-okf-expert log
 
+## 2026-11-20
+
+* **Update**: [GitHub branch-protection reads answer in three ways](/nodes/oats-okf-expert/lessons/github-branch-protection-reads-answer-in-three-ways.md) gains a pointer to [for a direct-push decision, the plan-upgrade 403 counts as no rulesets](/claims/lessons/a-free-plans-upgrade-403-on-the-rules-read-is-no-rulesets-for-a-push-decision.md) (`ins-c1ffa404a770`), added by the maintainer review of PR [#432](https://github.com/oats-project/oats-knowledge/pull/432). Its `unknown` reading for `oats okf bases` is unchanged, and nothing is superseded.
+
 ## 2026-11-16
 
 * **Proposal** (live source container-knowledge-writes-lead): new decision [the token-file credential mode does not isolate Git from the host; it states the limit, detects it and refuses before publishing](/nodes/oats-okf-expert/decisions/the-token-file-mode-does-not-isolate-git-it-states-detects-and-refuses.md) (oats-okf #153 and #155 merged; #160 open). Nothing is superseded. The maintainer review checked each item against #153, #155, #160 and the design's section 7, corrected the command-scope sentence to the accepted lesson, cited both sides' acceptances on #153 (verified at their comments) and stamped the id.
