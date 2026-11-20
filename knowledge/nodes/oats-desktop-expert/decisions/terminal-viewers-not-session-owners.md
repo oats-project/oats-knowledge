@@ -202,7 +202,8 @@ implementation details are source-reported, not independently audited.
 [Identity and relationships must stay legible under ambiguity](../lessons/identity-and-relationship-legibility.md);
 [Keyboard policy follows actions and user intent](../lessons/keyboard-focus-and-action-ownership.md);
 [Browser-owned state and accessibility under repaint](../lessons/browser-owned-state-and-accessibility-under-repaint.md) (copy in a mouse-mode viewer);
-[The loopback interface is Desktop's trust boundary](loopback-trust-boundary-and-transport-simplicity.md).
+[The loopback interface is Desktop's trust boundary](loopback-trust-boundary-and-transport-simplicity.md);
+[The agent view never guesses the terminal input line](/claims/decisions/the-agent-view-never-guesses-the-terminal-input-line.md) (`dec-78e0d9d8bc24`): numbered answers go through this one input surface only on a pane read as not in a tmux mode.
 
 # Current contracts
 
