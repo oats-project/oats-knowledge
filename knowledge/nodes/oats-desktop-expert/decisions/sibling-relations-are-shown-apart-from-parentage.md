@@ -7,6 +7,12 @@ id: dec-4098247f8e33
 tags: [desktop, siblings, lineage, roster, accessibility, rejected-alternatives, superseded-in-part]
 timestamp: 2026-10-19
 ---
+**Line cues restored for related work, 2026-11-20** by [The sidebar draws lines only for related work, in the pre-rework look](/claims/decisions/related-work-lines-are-direct-edges-in-the-pre-rework-look.md)
+(`dec-9b5c89b8c540`), which supersedes in part the 2026-11-19 note below: a
+child's line and a top-level sibling's dotted link are drawn again where the
+row carries related work, as direct edges on both ends, meeting 3:1. Rows
+without it carry no line.
+
 **Superseded in part 2026-11-19** by [The Desktop rework's design and UX direction is decided by Joan's side](/nodes/oats-maintainer/decisions/desktop-rework-design-direction-is-joans-side.md),
 with Pepe's acceptance source-reported. A same-work group is shown by
 indentation and spacing, with no lineage lines, so the line cues below no

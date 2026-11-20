@@ -1,5 +1,9 @@
 # oats-desktop-expert log
 
+## 2026-11-20
+
+* **Update**: noted in [Explicit sibling display](decisions/sibling-relations-are-shown-apart-from-parentage.md) (`dec-4098247f8e33`) that [the sidebar draws lines only for related work](/claims/decisions/related-work-lines-are-direct-edges-in-the-pre-rework-look.md) (`dec-9b5c89b8c540`) restores its line cues for related work, superseding in part the 2026-11-19 no-lineage-lines note. The product owner's acceptance is source-reported (relay at oats-project/oats#2011). Maintainer review of oats-knowledge#439.
+
 ## 2026-11-19
 
 * **Update**: marked [Desktop chrome typography](decisions/chrome-typography-follows-information-role.md) (`dec-d3a5f460c7ea`), [Desktop copy](decisions/desktop-copy-names-instances-and-injection.md) (`dec-7228ee560fc3`) and [Explicit sibling display](decisions/sibling-relations-are-shown-apart-from-parentage.md) (`dec-4098247f8e33`) as superseded in part by the maintainer's [Desktop rework direction](/nodes/oats-maintainer/decisions/desktop-rework-design-direction-is-joans-side.md): system sans in chrome with monospace only in terminals, "agent" for "instance" on the primary surface, and same-work groups by indentation and spacing with no lineage lines. Pepe's acceptance is source-reported. The rest of each concept is not named by that decision. Maintainer review of oats-knowledge#401.
