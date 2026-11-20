@@ -18,7 +18,8 @@ them was read at review. It settles the point that contract left open (the
 shape of a provider's sandbox allowances) within the rule the contract had
 already decided: only the provider writes them, only exact hosts and paths
 derived from recorded configuration, never more than the same launch gets on
-tmux.
+tmux. One later point (the home's instruction files, below) was decided by
+Pepe's side alone, under the delegation for Joan's bb work.
 
 **The rule.** Nothing the agent can write is run, or read as configuration,
 outside its sandbox. A new path is judged by this rule, never only by a list
@@ -29,7 +30,8 @@ of known paths.
 - The provider denies the agent's writes to what runs or configures outside
   the sandbox: the home's module copies and instance record, the harness's
   own settings and server definitions (in the home, in its ancestors and in
-  the OS user's harness configuration), the identity's key files, and the
+  the OS user's harness configuration), the identity's key files, the home's
+  instruction files, and the
   work trees' git configuration and hooks. It rewrites that block from the
   deployment's configuration at every launch and never reads what the home
   holds.
@@ -65,6 +67,26 @@ operator's account. The one exception is a host whose operator set the managed
 policy, and only once the provider's contract test pins that hardened case.
 Readiness says which case a host is in.
 
+**The home's instruction files are denied too** (decided 2026-11-20, after
+the first record of this decision, by Pepe's side through the release lane,
+on a point raised by Juan's side's maintainer). The acceptance is
+**source-reported**: the release lane's maintainer reported it to the source
+by message the same day, and the contract's specialist's finding that no
+legitimate writer exists for these files is the source's report too; no forge
+record of either was read at review. One side suffices because
+[Joan's bb effort is pre-approved on Pepe's side](/nodes/oats-maintainer/decisions/joans-bb-effort-is-pre-approved-on-pepes-side.md)
+(`dec-155756953d6e`) has the release lane give Pepe's side's contract half
+for this work, without waiting on Juan's side. The files OATS composes from the soul, the task file the
+kernel writes at spawn, and the harness's local memory file are all read at a
+later launch. If that launch is unsandboxed, a file edited during a sandboxed
+launch is read as configuration outside the sandbox, which is the rule's own
+wording. No legitimate writer inside the agent's session exists for any of
+them: an agent keeps its own memory in its state and notes files. Had one
+existed, that file would stay writable and the documentation would say the
+no-boundary statement covers it. This supersedes the earlier judgement in
+this record that left those files writable as outside the rule (kept, marked
+superseded, under Rejected alternatives).
+
 # Why
 
 A sandbox whose switch the sandboxed party can reach is a convenience. Calling
@@ -91,9 +113,12 @@ are what turns an operator's own hardening into a real boundary.
 - **Reading hosts or settings from the home.** The agent can write the home.
 - **OATS writing the harness's managed policy.** It is the operator's machine
   policy; the docs name it as the operator's hardening.
-- **Denying the home's own instruction files.** The harness reads them only
-  inside the agent's own session, so they are outside the rule, and an agent
-  keeps its own notes there.
+- **Denying the home's own instruction files** (superseded 2026-11-20 by
+  "The home's instruction files are denied too", above). First recorded as
+  rejected because the harness reads them only inside the agent's own
+  session, so they were judged outside the rule, and an agent was taken to
+  keep its own notes there. A later unsandboxed launch reads them too, and
+  the agent's notes live in its state and notes files.
 - **A digest check for tmux homes.** It would read as an integrity guarantee
   the trust model does not give.
 
@@ -123,3 +148,8 @@ repository's documentation.
    `sandbox.allowUnsandboxedCommands: false`, and a `false` there in user
    settings, `--settings` or managed settings holds against a project's
    `true`; command-line settings rank below managed settings only.
+3. Update of 2026-11-20 (the home's instruction files are denied): OKF
+   proposal from oats-maintainer/joan-product-maintainer, 2026-11-20
+   (oats-knowledge#426); notes/bb-backend-direction.md. The proposer's
+   correction comment on oats-knowledge#425, read at review, states the same
+   change; it is the source's own report, not a record of the decision.
