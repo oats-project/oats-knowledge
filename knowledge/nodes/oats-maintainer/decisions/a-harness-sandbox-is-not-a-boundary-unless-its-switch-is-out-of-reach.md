@@ -1,7 +1,7 @@
 ---
 type: Decision
 title: A harness sandbox in a provider home is not a security boundary unless the agent cannot switch it off
-description: OATS judges what a sandboxed agent can reach by one rule (nothing the agent can write is run, or read as configuration, outside its sandbox), builds the defences that rule asks for, and still documents bb's sandboxed modes as limiting accidents only, because the agent can leave the sandbox and no provider can stop it; since a probe found the sandbox holds the shell only, a provider home runs unsandboxed until a probe shows every write path closed.
+description: OATS judges what a sandboxed agent can reach by one rule (nothing the agent can write is run, or read as configuration, outside its sandbox), builds the defences that rule asks for, and says bb's sandboxed modes would limit accidents only, because the agent can leave the sandbox and no provider can stop it; since a probe found the sandbox holds the shell only, no sandboxed mode is offered at all, and the provider's refusal lifts only by a later amendment that brings the hardened-host probe's receipts, the released module-digest check and the defences in place.
 about: [workstream/oats-direction, system/oats-kernel, workstream/provider-integration]
 id: dec-375435ce318a
 tags: [security, sandbox, sessions, backends, bb, capabilities, rejected-alternatives]
@@ -91,9 +91,34 @@ earlier exception for a host hardened by its operator's managed policy is
 withdrawn until a probe shows, with every one of these settings in that
 managed policy, that neither route gets out. Until then a provider home runs
 only in the harness's unsandboxed mode, which claims no boundary in the docs
-or in readiness. "Recorded outside the home" protects nothing by itself: each
+or in readiness (refined below: the probe alone no longer lifts this; see "What
+lifts the unsandboxed-only rule"). "Recorded outside the home" protects nothing by itself: each
 such record is safe only as far as every write path of the harness is shown
 closed to it.
+
+**What lifts the unsandboxed-only rule (refined 2026-11-20).** The release lane
+read "full mode only" strictly, for Pepe's side: no sandboxed mode is offered at
+all, not even one documented as limiting accidents only. A sandboxed mode
+offered beside full mode would read as the safer choice while it has measured
+escapes, and nothing needs it yet. The provider keeps refusing every launch that
+is not unsandboxed. It may ship the defences the rule asks for behind that
+refusal, unreachable and tested. Lifting the refusal is a later amendment,
+brought to Pepe's side with three things in hand:
+1. the hardened-host probe's receipts, showing that neither route gets out;
+2. the kernel's module-digest check released, so that no provider home exists
+   before it;
+3. the default-deny setting, the deny of the directory-moving tool, the pinned
+   list of pre-allowed tools, and readiness reporting a home sandboxed only
+   when both settings are present.
+This supersedes in part the condition above, under which a probe alone lifted
+the unsandboxed-only rule. The decision is **source-reported**: the release
+lane gave Pepe's side's answer under
+[Joan's bb effort is pre-approved on Pepe's side](/nodes/oats-maintainer/decisions/joans-bb-effort-is-pre-approved-on-pepes-side.md)
+(`dec-155756953d6e`), which has the release lane give Pepe's side's contract
+half for this work, and it was written into the session-provider contract's
+text of record as an amendment. No forge record of it was found at review. The
+merged provider (oats-project/oats-bb#3) refuses every launch that is not in
+full mode, as this records (citation 5).
 
 This supersedes in part the first record of this decision: its exception for
 a host hardened by the operator's managed policy (kept, marked superseded,
@@ -217,3 +242,10 @@ repository's documentation.
    write, edit and notebook-edit tools refuse paths outside the working
    directories, unset by default. No setting that stops the session moving
    its working directory was found in the pages read.
+5. Update of 2026-11-20 (what lifts the unsandboxed-only rule): OKF
+   proposal from oats-maintainer/release-maintainer, 2026-11-20
+   (oats-knowledge#445); notes/bb-full-mode-only-reading.md. The release
+   lane's answer and the contract amendment are the source's report. Checked
+   at maintainer review 2026-11-20: oats-project/oats-bb#3 (merged
+   2026-11-20) and its `lib/mode.mjs` on main refuse every launch that is not
+   in bb's full mode (`E_BACKEND_SANDBOXED_MODE`), with nothing started.
