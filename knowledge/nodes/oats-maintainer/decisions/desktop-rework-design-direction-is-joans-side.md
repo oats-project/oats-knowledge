@@ -1,11 +1,11 @@
 ---
 type: Decision
 title: The Desktop rework's design and UX direction is decided by Joan's side; contracts and landing rules are unchanged
-description: For the client redesign built Desktop-first, Joan's side decides design and UX direction without a round with Pepe, also where it supersedes a Desktop design decision Pepe accepted; every contract change still goes to both sides before a build, and each PR still lands by its lane's rules.
+description: For the client redesign built Desktop-first, Joan's side decides design and UX direction without a round with Pepe, also where it supersedes a Desktop design decision Pepe accepted; every contract change still goes to both sides before a build, and each PR still lands by its lane's rules. Since 2026-11-20 the contracts clause is superseded in part: a contract decision for Joan's work, this rework included, no longer waits for Juan's side's half (dec-155756953d6e).
 about: [workstream/oats-direction]
 id: dec-7d36e6fb3bc1
 tags: [desktop, redesign, direction, delegation, contracts, lanes, supersession]
-timestamp: 2026-11-19
+timestamp: 2026-11-20
 ---
 # Decision
 
@@ -57,6 +57,12 @@ them to Pepe's side first.
   command is decided by Pepe's side and Juan's side together before it is
   built. A design the delegation covers may not assume a kernel fact that
   does not exist: that fact is a contract proposal of its own.
+  **Superseded in part (2026-11-20):** for Joan's work, this rework
+  included, a contract decision no longer waits for Juan's side's half.
+  Pepe's side's yes decides and Juan's side is told; see
+  [Joan's bb effort is pre-approved on Pepe's side](/nodes/oats-maintainer/decisions/joans-bb-effort-is-pre-approved-on-pepes-side.md)
+  (`dec-155756953d6e`), widened that day on Pepe's word. A contract is still
+  decided before it is built.
 - **Landing rules.** Every PR of the rework still needs the green light of
   Joan's `lane:product` maintainer and the release lane's sign-off at the
   head being merged.

@@ -825,8 +825,9 @@ maintainer approved; a PR authored by that maintainer goes to the second
 reader without waiting for its author's approval. Where another side already
 reads every PR, peers on the same side do not add reads of one another's PRs.
 Contract changes still need both sides' agreement before implementation.
-**Excepted for one effort (2026-11-20):** for Joan's bb work, Pepe's side
-decides contract changes alone and Juan's side is kept informed; see
+**Excepted for Joan's work (2026-11-20):** for Joan's bb work, and since
+later that day for all of Joan's work, Pepe's side decides contract changes
+alone and Juan's side is kept informed; see
 [Joan's bb effort is pre-approved on Pepe's side](/nodes/oats-maintainer/decisions/joans-bb-effort-is-pre-approved-on-pepes-side.md)
 (`dec-155756953d6e`). The rule stands for all other work.
 
