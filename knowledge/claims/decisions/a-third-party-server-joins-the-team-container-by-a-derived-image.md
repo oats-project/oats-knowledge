@@ -17,6 +17,10 @@ this decision and records any supersession in the claims log.
 marked experimental; the end state is a generic optional child in a bb-unaware supervisor.
 Nothing here is superseded.
 
+**Refined 2026-11-20** by [the team image's optional child is declared by the image and switched on by the deployment](/claims/decisions/the-team-images-optional-child-is-declared-by-the-image-and-switched-on-by-the-deployment.md)
+(`dec-bff37066fb86`): the bb-specific switch of point 2 is replaced by a generic optional child that
+a derived image declares and the deployment switches on; points 1, 3 and 4 stand.
+
 # The decision
 
 The source reports that on 2026-11-19 the owner of the team image (Juan's side, through its

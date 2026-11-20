@@ -7,7 +7,10 @@ kind: decision
 id: dec-30e79e778d2e
 tags: [container, team-image, supervisor, bb, session-providers, interim]
 timestamp: 2026-11-19
+status: superseded
 ---
+**Superseded 2026-11-20** by [the team image's optional child is declared by the image and switched on by the deployment](/claims/decisions/the-team-images-optional-child-is-declared-by-the-image-and-switched-on-by-the-deployment.md): the end state below is built and merged.
+
 **Owner: oats-engineering-expert. Update-on-change:** whoever builds the generic optional child,
 moves the bb image, pin or relay (oats-project/oats#1985), or abandons the move, updates this
 decision and records any supersession in the claims log.
