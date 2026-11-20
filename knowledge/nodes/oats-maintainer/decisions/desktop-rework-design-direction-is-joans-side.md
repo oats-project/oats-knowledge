@@ -1,7 +1,7 @@
 ---
 type: Decision
 title: The Desktop rework's design and UX direction is decided by Joan's side; contracts and landing rules are unchanged
-description: For the client redesign built Desktop-first, Joan's side decides design and UX direction without a round with Pepe, also where it supersedes a Desktop design decision Pepe accepted; every contract change still goes to both sides before a build, and each PR still lands by its lane's rules. Since 2026-11-20 the contracts clause is superseded in part: a contract decision for Joan's work, this rework included, no longer waits for Juan's side's half (dec-155756953d6e).
+description: For the client redesign built Desktop-first, Joan's side decides design and UX direction without a round with Pepe, also where it supersedes a Desktop design decision Pepe accepted; every contract change still goes to both sides before a build, and each PR still lands by its lane's rules. Since 2026-11-20 the contracts clause is superseded in part: a contract decision for Joan's work, this rework included, no longer waits for Juan's side's half (dec-155756953d6e). Since 2026-11-20 the no-lineage-lines item is superseded in part: related work draws its lines again (dec-9b5c89b8c540).
 about: [workstream/oats-direction]
 id: dec-7d36e6fb3bc1
 tags: [desktop, redesign, direction, delegation, contracts, lanes, supersession]
@@ -33,7 +33,12 @@ Two things were decided.
   [keyboard policy follows actions and user intent](/nodes/oats-desktop-expert/lessons/keyboard-focus-and-action-ownership.md)
   still applies to it.
 - A same-work group is shown by indentation and spacing, with no lineage
-  lines. This supersedes the line cues of
+  lines. **Superseded in part (2026-11-20)** by
+  [The sidebar draws lines only for related work, in the pre-rework look](/claims/decisions/related-work-lines-are-direct-edges-in-the-pre-rework-look.md)
+  (`dec-9b5c89b8c540`), on the product owner's word (source-reported, relay at
+  oats-project/oats#2011): related work draws its lines again, child and
+  sibling, as before the rework; rows without it keep indentation and
+  spacing only. This supersedes the line cues of
   [Explicit sibling links are shown on both ends and apart from parentage](/nodes/oats-desktop-expert/decisions/sibling-relations-are-shown-apart-from-parentage.md).
   It also supersedes in part
   [Parent-child lines require declared shared work](/nodes/oats-maintainer/decisions/parent-child-lines-require-declared-shared-work.md)

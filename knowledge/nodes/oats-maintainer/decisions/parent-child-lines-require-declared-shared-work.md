@@ -9,6 +9,13 @@ timestamp: 2026-10-27
 ---
 **Superseded in part 2026-11-20** by [Related work binds the recorded parent, else the recorded sibling, and the same-work spellings stay as aliases](/nodes/oats-maintainer/decisions/related-work-binds-parent-else-sibling-and-keeps-old-spellings.md): the flag is renamed related work and binds the recorded sibling when the home has no parent; the declaration-only rule and the capability-owned policy stand.
 
+**Lines restored for related work, 2026-11-20** by [The sidebar draws lines only for related work, in the pre-rework look](/claims/decisions/related-work-lines-are-direct-edges-in-the-pre-rework-look.md)
+(`dec-9b5c89b8c540`): the Desktop draws a child's line again only where the
+child carries related work, so the 2026-11-19 note below no longer holds for
+it. OATS's own convention below is refined, not superseded, by
+[a lead's children and its sibling leads get related work](/claims/decisions/a-leads-children-and-sibling-leads-get-related-work.md)
+(`dec-31b4c8d0cc8f`).
+
 **Superseded in part 2026-11-19** by [The Desktop rework's design and UX direction is decided by Joan's side](/nodes/oats-maintainer/decisions/desktop-rework-design-direction-is-joans-side.md),
 with Pepe's acceptance source-reported. The Desktop shows a same-work
 group by indentation and spacing, with no lineage lines, so a parent-child
