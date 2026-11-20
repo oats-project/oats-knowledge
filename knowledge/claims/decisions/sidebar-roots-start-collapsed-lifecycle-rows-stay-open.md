@@ -1,13 +1,16 @@
 ---
 type: Decision
 title: Sidebar roots start collapsed behind a disclosure before the name, and a row its lifecycle takes stays open
-description: In the Desktop sidebar a row with children wears a chevron and the count of every row under it, first on its name line; each section root with children starts collapsed in every window and nested parents start open; a row drawn as a pending spawn or a held home is always drawn open with no disclosure, because its state leaves no room for the needs-input roll-up.
+description: SUPERSEDED 2026-11-20 by the disclosure-after-the-name decision. Was: in the Desktop sidebar a row with children wears a chevron and the count of every row under it, first on its name line; each section root with children starts collapsed in every window and nested parents start open; a row drawn as a pending spawn or a held home is always drawn open with no disclosure, because its state leaves no room for the needs-input roll-up.
 about: [system/oats-desktop]
 kind: decision
 id: dec-dd808302b7d3
-tags: [desktop, roster, sidebar, collapse, attention, accessibility]
+tags: [desktop, roster, sidebar, collapse, attention, accessibility, superseded]
 timestamp: 2026-11-19
+status: superseded
 ---
+
+**Superseded 2026-11-20** by [Sidebar roots start collapsed behind a disclosure right after the name](/claims/decisions/sidebar-disclosure-follows-the-name.md) (`dec-e071d489f772`), on the product owner's request of 2026-11-20 (source-reported): the disclosure now sits right after the name, because instance rows no longer carry row tools over their end. The rest of this decision stands and the new one carries it. Kept as the record of why the mark first went before the name.
 
 # The decision
 
