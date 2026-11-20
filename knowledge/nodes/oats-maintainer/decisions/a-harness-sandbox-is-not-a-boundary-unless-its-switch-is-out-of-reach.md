@@ -1,7 +1,7 @@
 ---
 type: Decision
 title: A harness sandbox in a provider home is not a security boundary unless the agent cannot switch it off
-description: OATS judges what a sandboxed agent can reach by one rule (nothing the agent can write is run, or read as configuration, outside its sandbox), builds the defences that rule asks for, and still documents bb's sandboxed modes as limiting accidents only, because the agent can leave the sandbox and no provider can stop it.
+description: OATS judges what a sandboxed agent can reach by one rule (nothing the agent can write is run, or read as configuration, outside its sandbox), builds the defences that rule asks for, and still documents bb's sandboxed modes as limiting accidents only, because the agent can leave the sandbox and no provider can stop it; since a probe found the sandbox holds the shell only, a provider home runs unsandboxed until a probe shows every write path closed.
 about: [workstream/oats-direction, system/oats-kernel, workstream/provider-integration]
 id: dec-375435ce318a
 tags: [security, sandbox, sessions, backends, bb, capabilities, rejected-alternatives]
@@ -63,9 +63,50 @@ and OATS never writes that policy.
 
 So the documentation says, permanently, that these modes limit accidents, not
 a determined agent, and are not a security boundary between an agent and the
-operator's account. The one exception is a host whose operator set the managed
-policy, and only once the provider's contract test pins that hardened case.
-Readiness says which case a host is in.
+operator's account.
+
+**The sandbox holds the shell only** (probed and decided 2026-11-20, after the
+first record of this decision, by Pepe's side through the release lane;
+source-reported). The first record assumed a sandboxed agent could write its
+home and the allowed paths and nothing else, and several defences leaned on
+"recorded outside the home". A probe in a disposable container, with a mock
+model, withdrew that premise:
+
+- The operating-system sandbox confined shell commands. The harness's own
+  file tools were held only by deny rules, and with the listed deny set they
+  wrote the deployment's configuration, the session receipt, the lock, a
+  module in the store, another instance's home and the OS user's shell
+  start-up file, which then ran unsandboxed at the next shell call.
+- A tool the launcher pre-allows moved the session's working directory out of
+  the home, after which the home's settings, deny rules and sandbox block no
+  longer loaded.
+- No deny pattern covers "everything outside the home". The harness has a
+  default-deny setting for file-tool writes outside the working directory,
+  and it held; it does not limit shell commands or the launcher's tools.
+
+What follows. The deny rule adds that default-deny setting and a deny of the
+directory-moving tool, and the provider's contract test pins the list of tools
+the launcher pre-allows, so a new one is a decision before it ships. The
+earlier exception for a host hardened by its operator's managed policy is
+withdrawn until a probe shows, with every one of these settings in that
+managed policy, that neither route gets out. Until then a provider home runs
+only in the harness's unsandboxed mode, which claims no boundary in the docs
+or in readiness. "Recorded outside the home" protects nothing by itself: each
+such record is safe only as far as every write path of the harness is shown
+closed to it.
+
+This supersedes in part the first record of this decision: its exception for
+a host hardened by the operator's managed policy (kept, marked superseded,
+under Rejected alternatives). The acceptance is **source-reported**: the
+release lane's maintainer reported Pepe's side's decision to the source by
+message on 2026-11-20, under
+[Joan's bb effort is pre-approved on Pepe's side](/nodes/oats-maintainer/decisions/joans-bb-effort-is-pre-approved-on-pepes-side.md)
+(`dec-155756953d6e`); no forge record of it was read at review, and the
+probe is the contract specialist's report, not reproduced at review. The
+harness's documentation, read at review, agrees on two points: its sandbox
+covers shell commands only, its file tools following permission rules
+instead; and it has a setting that makes the file-writing tools refuse paths
+outside the working directories, unset by default (citation 4).
 
 **The home's instruction files are denied too** (decided 2026-11-20, after
 the first record of this decision, by Pepe's side through the release lane,
@@ -91,8 +132,9 @@ superseded, under Rejected alternatives).
 
 A sandbox whose switch the sandboxed party can reach is a convenience. Calling
 it a boundary would let an operator place trust in it that the code cannot
-honour. The defences are still worth building: they stop accidents, and they
-are what turns an operator's own hardening into a real boundary.
+honour. The defences are still worth building: they stop accidents, and an
+operator's own hardening could become a real boundary only with them in
+place, which no probe has yet shown (see "The sandbox holds the shell only").
 
 # Coherence rules a maintainer applies
 
@@ -103,6 +145,9 @@ are what turns an operator's own hardening into a real boundary.
   module-digest check, or lands after it.
 - A probe with a mock model shows what the harness allows, not what a real
   model's classifier would refuse. Say which was run.
+- A harness has several write paths (the shell, its file tools, a notebook
+  tool, the launcher's own tools). Probe a sandbox claim on each path, and
+  ask of every "outside the home" record which of them could still write it.
 
 # Rejected alternatives
 
@@ -119,6 +164,13 @@ are what turns an operator's own hardening into a real boundary.
   session, so they were judged outside the rule, and an agent was taken to
   keep its own notes there. A later unsandboxed launch reads them too, and
   the agent's notes live in its state and notes files.
+- **A host hardened by its operator's managed policy as the one exception**
+  (superseded 2026-11-20 by "The sandbox holds the shell only", above). First
+  recorded as: the one exception to the no-boundary statement is a host whose
+  operator set the managed policy, once the provider's contract test pins that
+  hardened case, with readiness saying which case a host is in. Withdrawn
+  because the probe found the file tools and a launcher-allowed tool get out
+  of a home whatever closes the shell's switch.
 - **A digest check for tmux homes.** It would read as an integrity guarantee
   the trust model does not give.
 
@@ -153,3 +205,15 @@ repository's documentation.
    (oats-knowledge#426); notes/bb-backend-direction.md. The proposer's
    correction comment on oats-knowledge#425, read at review, states the same
    change; it is the source's own report, not a record of the decision.
+4. Update of 2026-11-20 (the sandbox holds the shell only): OKF proposal
+   from oats-maintainer/joan-product-maintainer, 2026-11-20
+   (oats-knowledge#436); notes/bb-backend-direction.md. The probe (a
+   disposable container, the launcher and harness at pinned versions, a mock
+   model, one run per case and mode) and the decision are the source's
+   report. Claude Code's sandboxing and settings documentation
+   (code.claude.com/docs/en/sandboxing, code.claude.com/docs/en/settings),
+   read at maintainer review 2026-11-20: the sandbox covers shell commands
+   only and the file tools follow permission rules; a setting makes the
+   write, edit and notebook-edit tools refuse paths outside the working
+   directories, unset by default. No setting that stops the session moving
+   its working directory was found in the pages read.
