@@ -2,6 +2,7 @@
 
 ## 2026-11-20
 
+* **Update**: linked [Terminal tabs are viewers, not session owners](decisions/terminal-viewers-not-session-owners.md) (`dec-14e550337fcf`) to [the agent view never guesses the terminal input line](/claims/decisions/the-agent-view-never-guesses-the-terminal-input-line.md) (`dec-78e0d9d8bc24`), which refines it: answers keep the one input surface and type only on a pane read as not in a tmux mode. Nothing superseded. Maintainer review of oats-knowledge#442.
 * **Update**: noted in [Explicit sibling display](decisions/sibling-relations-are-shown-apart-from-parentage.md) (`dec-4098247f8e33`) that [the sidebar draws lines only for related work](/claims/decisions/related-work-lines-are-direct-edges-in-the-pre-rework-look.md) (`dec-9b5c89b8c540`) restores its line cues for related work, superseding in part the 2026-11-19 no-lineage-lines note. The product owner's acceptance is source-reported (relay at oats-project/oats#2011). Maintainer review of oats-knowledge#439.
 
 ## 2026-11-19
