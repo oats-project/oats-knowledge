@@ -1,11 +1,11 @@
 ---
 type: Decision
 title: A harness sandbox in a provider home is not a security boundary unless the agent cannot switch it off
-description: OATS judges what a sandboxed agent can reach by one rule (nothing the agent can write is run, or read as configuration, outside its sandbox), builds the defences that rule asks for, and says bb's sandboxed modes would limit accidents only, because the agent can leave the sandbox and no provider can stop it; since a probe found the sandbox holds the shell only, no sandboxed mode is offered at all, and the provider's refusal lifts only by a later amendment that brings the hardened-host probe's receipts, the released module-digest check and the defences in place.
+description: OATS judges what a sandboxed agent can reach by one rule (nothing the agent can write is run, or read as configuration, outside its sandbox), builds the defences that rule asks for, and says bb's sandboxed modes would limit accidents only, because the agent can leave the sandbox and no provider can stop it; since a probe found the sandbox holds the shell only, no sandboxed mode is offered at all, and the provider's refusal lifts only by a later amendment that brings the hardened-host probe's receipts, the kernel's own module copy released and the defences in place; for a provider home the kernel runs only its own copy of the modules, kept outside the home, never a copy it checked in the home.
 about: [workstream/oats-direction, system/oats-kernel, workstream/provider-integration]
 id: dec-375435ce318a
 tags: [security, sandbox, sessions, backends, bb, capabilities, rejected-alternatives]
-timestamp: 2026-11-20
+timestamp: 2026-11-21
 ---
 # Decision
 
@@ -35,12 +35,14 @@ of known paths.
   work trees' git configuration and hooks. It rewrites that block from the
   deployment's configuration at every launch and never reads what the home
   holds.
-- The kernel runs a provider home's module copy only when its digest matches
-  one recorded **outside** the home, before every provider call, reads
-  included, for every provider home whatever its current mode. A mismatch
+- For every provider home, whatever its current mode, the kernel runs only
+  its **own copy** of the home's modules, kept **outside** the home, and
+  takes the home's capability settings and hook commands from the record it
+  keeps there too (see "The kernel runs its own copy", below, which replaced
+  the digest check first recorded here). A home whose kernel copy is missing
   reads as unavailable, never as stopped. A tmux home is unchanged: its agent
   already runs unsandboxed as the operator's user and can do directly anything
-  a tampered module could, so the check would promise nothing there.
+  a tampered module could, so the rule would promise nothing there.
 - What the sandbox may reach (hosts, writable paths) is resolved at every
   launch from the deployment's configuration by an offline read, never from
   the home. A start needs no network that a tmux start does not. Hosts come
@@ -105,8 +107,9 @@ is not unsandboxed. It may ship the defences the rule asks for behind that
 refusal, unreachable and tested. Lifting the refusal is a later amendment,
 brought to Pepe's side with three things in hand:
 1. the hardened-host probe's receipts, showing that neither route gets out;
-2. the kernel's module-digest check released, so that no provider home exists
-   before it;
+2. the kernel's own module copy released (first recorded as the
+   module-digest check; see "The kernel runs its own copy"), so that no
+   provider home exists before it;
 3. the default-deny setting, the deny of the directory-moving tool, the pinned
    list of pre-allowed tools, and readiness reporting a home sandboxed only
    when both settings are present.
@@ -132,6 +135,59 @@ harness's documentation, read at review, agrees on two points: its sandbox
 covers shell commands only, its file tools following permission rules
 instead; and it has a setting that makes the file-writing tools refuse paths
 outside the working directories, unset by default (citation 4).
+
+**The kernel runs its own copy** (decided 2026-11-20 and 2026-11-21 by Pepe's
+side through the release lane, with Juan's side informed and its two points
+taken). The acceptance is **source-reported (relay at
+[the release lane's sign-off on oats#2048](https://github.com/oats-project/oats/pull/2048#issuecomment-7057379191))**:
+it says the change builds the rule "as decided on Pepe's side", with Juan's
+side's key shape, under
+[Joan's bb effort is pre-approved on Pepe's side](/nodes/oats-maintainer/decisions/joans-bb-effort-is-pre-approved-on-pepes-side.md)
+(`dec-155756953d6e`), which covers later changes to the session-provider
+contract made for the bb work. The digest check above could not be made true. The
+copy it checked is in the home, which the agent writes, so "hash, then run"
+is a race: in the contract specialist's review a process that swapped a
+provider script back and forth got its edited script run in 3 of 11 kernel
+reads. The window is the command's start-up and, for a command that loads
+other files of the copy, its whole run. What was decided instead:
+
+- At a spawn, before the provider is asked anything and before any hook, the
+  kernel makes its own copy of the home's modules outside the home, beside
+  the home's session receipt. It runs every hook, provider command, readiness
+  check and dispatched command of that home from there, and reads the
+  manifests there. The copy in the home stays the agent's own.
+- The receipt records which copy that is and the capability rows as the spawn
+  resolved them from the deployment. The kernel reads settings and hook
+  commands there, never from the home's record. The sandbox's allowances stay
+  resolved live at each launch: settings have never reached a running home
+  without an upgrade, allowances always have.
+- An upgrade builds a new copy and names it, with its rows, in **one** write
+  of the receipt; the pair it replaced is kept for an undo, and nothing is
+  removed before a receipt write. An interrupted upgrade of such a home is
+  not resumed, since its journal is in the home: the home is retired and
+  spawned again. A retire removes the copies.
+- Hooks find themselves by their location, so a path a hook hands the harness
+  points into the kernel's copy. A provider that sandboxes keeps that copy
+  readable and executable from the session, never writable, at that same
+  path, or refuses to start the sandbox. This closed, with no change to the
+  capability, an earlier finding that an agent could rewrite a script the
+  harness then ran outside the sandbox.
+- The kernel **tells** the provider which paths a sandboxed agent must never
+  write (its own state beside the homes), in the launch input, and creates
+  them first. The provider derives none of them from the home or from a
+  naming convention.
+- A status row of a provider home says which copy the kernel runs and
+  whether the home's own record of its modules is the kernel's, from records
+  alone. Whether the files differ is a diagnosis, reported by the readiness
+  read only: an edit to the home's copy no longer changes what the kernel
+  runs, and comparing trees on every status read costs too much.
+
+Lifting the unsandboxed-only rule now also needs: every field of the home's
+own record that still reaches a hook or the kernel outside the sandbox closed
+or shown harmless; the kernel's state shown unwritable, and its module copy
+readable and executable, from a sandbox at the paths hooks recorded; and a
+dispatched command no longer taking the nearest home above its working
+directory. Each is a filed issue (oats-project/oats#2046, #2047 and #2049).
 
 **The home's instruction files are denied too** (decided 2026-11-20, after
 the first record of this decision, by Pepe's side through the release lane,
@@ -167,7 +223,12 @@ place, which no probe has yet shown (see "The sandbox holds the shell only").
   defences are pinned by tests and the switch is shown to be out of the
   agent's reach.
 - The first change that lets a sandboxed provider home exist carries the
-  module-digest check, or lands after it.
+  kernel's own module copy, or lands after it.
+- A check of something the checked party can write, followed by its use, is
+  a race for as long as the use lasts. Ask for a copy the party cannot
+  write, not for a better check.
+- The kernel names its own state to a provider; a provider that guesses a
+  kernel path from the home or from a naming convention is returned.
 - A probe with a mock model shows what the harness allows, not what a real
   model's classifier would refuse. Say which was run.
 - A harness has several write paths (the shell, its file tools, a notebook
@@ -196,6 +257,21 @@ place, which no probe has yet shown (see "The sandbox holds the shell only").
   hardened case, with readiness saying which case a host is in. Withdrawn
   because the probe found the file tools and a launcher-allowed tool get out
   of a home whatever closes the shell's switch.
+- **Running the home's module copy when its digest matches a record outside
+  the home** (superseded 2026-11-21 by "The kernel runs its own copy",
+  above). First recorded as the rule: checked before every provider call,
+  the deployment's lock or the receipt holding the digest. Withdrawn because
+  the agent can exchange the copy between the hash and the run, and did in a
+  review's test. Keeping it and documenting "holds for a copy at rest" would
+  have left the hole open in the very case the rule is for.
+- **Copying the module outside the home at every call, hashing and running
+  that copy.** It keeps the old rule's words true, but breaks hooks that
+  record their own location for the harness to run later.
+- **A hook handing the harness the home's copy, with one variable for each
+  copy.** Pepe's side's first answer, withdrawn the same day for Juan's
+  side's wording: one copy that a sandbox keeps readable, executable and
+  unwritable serves the kernel and the harness alike, so no second variable
+  and no second path are needed.
 - **A digest check for tmux homes.** It would read as an integrity guarantee
   the trust model does not give.
 
@@ -249,3 +325,16 @@ repository's documentation.
    at maintainer review 2026-11-20: oats-project/oats-bb#3 (merged
    2026-11-20) and its `lib/mode.mjs` on main refuse every launch that is not
    in bb's full mode (`E_BACKEND_SANDBOXED_MODE`), with nothing started.
+6. Update of 2026-11-21 (the kernel runs its own copy): OKF proposal from
+   oats-maintainer/joan-product-maintainer, 2026-11-21;
+   notes/bb-backend-direction.md. The race, its 3-of-11 run and the release
+   lane's answers are the source's report. The source read the change that
+   builds it (oats-project/oats#2048, merged 2026-11-21) in full under `lib/`
+   and `bin/`, and its tests by their names. Checked at maintainer review
+   2026-11-21 (oats-knowledge#446): oats#2048 is merged and its description
+   states the rule, the receipt's capability rows, the one receipt write per
+   upgrade and no resume, `protected`, `moduleCopy` and `kernelCopies`, and the
+   3-of-11 race as found in its first review round; the release lane's
+   sign-off on it (the relay cited above) gives Pepe's side's yes to the rule
+   and to the contract details; oats#2046, #2047 and #2049 are open. The
+   code was not read at review.
