@@ -1,5 +1,9 @@
 # verdicts log
 
+## 2026-11-21
+
+* **Creation**: [ins-3af10a389cac](/verdicts/ins-3af10a389cac.md), a duplicate of `dec-375435ce318a`, by maintainer review of PR [#448](https://github.com/oats-project/oats-knowledge/pull/448).
+
 ## 2026-11-20
 
 * **Creation**: [dec-dd808302b7d3](/verdicts/dec-dd808302b7d3.md), superseded by `dec-e071d489f772`, by maintainer review of PR [#430](https://github.com/oats-project/oats-knowledge/pull/430).
