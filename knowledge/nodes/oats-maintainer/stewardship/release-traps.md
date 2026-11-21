@@ -1,12 +1,12 @@
 ---
 type: Lesson
 title: Release judgement for the tag-driven lane
-description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, compares what each job sets up before a step that both the PR installer build and the tag workflow run, runs the kernel tests that read a package's mirror before the package tag or plans their port (a provider hook's new aw call included, checked at its second read), contains failed-tag repairs and re-runs only a clearly timing failure from the same unpublished tag, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them and a file a provider reads beside such a soul until every following host's lock carries a provider that reads it, coordinates source, tag, mirror, every form of version pin and the framework release that carries them (whose own guide pin the kernel prep re-syncs after the framework tag), pins a provider release that removes a component inside the adoption PR that rewrites the texts and kernel tests for it, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
+description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, compares what each job sets up before a step that both the PR installer build and the tag workflow run, runs the kernel tests that read a package's mirror before the package tag or plans their port (a provider hook's new aw call included, checked at its second read), contains failed-tag repairs and re-runs only a clearly timing failure from the same unpublished tag, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them and a file a provider reads beside such a soul until every following host's lock carries a provider that reads it, coordinates source, tag, mirror, every form of version pin and the framework release that carries them (whose own guide pin the kernel prep re-syncs after the framework tag, a sync that alone owes no framework release), pins a provider release that removes a component inside the adoption PR that rewrites the texts and kernel tests for it, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
 about: [workstream/oats-direction, workstream/provider-integration]
 kind: lesson
 id: ins-559dbb88da8b
 tags: [stewardship, release, ci, npm, packaging, pins, templates]
-timestamp: 2026-11-20
+timestamp: 2026-11-21
 ---
 **Owner: oats-maintainer. Update-on-change: whoever changes the release workflow,
 the runnerless lane or the release skill revises this concept in the same
@@ -900,6 +900,26 @@ carries that sync. Plan the re-sync in the kernel prep, and don't hold it
 back for the next framework release: validate fails until it lands. Before a
 kernel prep, grep `oats-package/` for every framework-version literal a check
 compares with the catalog.
+
+**When that sync is the only change, it does not call for a framework
+release (2026-11-21).** The release lane's rule is that a kernel release whose
+PRs touched `oats-package/` ships a framework bump with it. This sync is the
+exception. A framework diff since the last framework tag that holds only the
+re-synced guide pin is not a change to ship. A framework release cut for it
+would tag a copy that recommends the previous version again, so the lag would
+just move by one release, and so would the next "change". Plan such a kernel
+release without a framework bump: the framework pin stays, and the release
+plan says why. The re-sync rides along with the next framework release that
+has a real change. Before applying the rule, diff `oats-package/` against the
+last framework tag. Any other line in that diff brings the bump back.
+
+Evidence: OKF proposal from oats-maintainer/release-maintainer, 2026-11-21;
+notes/framework-prep-self-literal.md. At the OATS 0.70.0 plan
+([oats#2050](https://github.com/oats-project/oats/issues/2050)), the only diff
+under `oats-package/` since `oats-framework/v1.28.0` was this pin, moved to
+v1.28.0 by the 0.69.24 kernel prep. 0.70.0 shipped with oats.framework staying
+at 1.28.0 (prep [oats#2051](https://github.com/oats-project/oats/pull/2051)),
+and validate and CI passed.
 
 This is a lesson that should be code. The elimination route is to exempt the
 framework's own pin in its packaged copy from the catalog check, or to drop
