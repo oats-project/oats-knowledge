@@ -106,6 +106,14 @@ That shape, and what a provider's sandboxed modes contain, were decided on
 [a harness sandbox in a provider home is not a security boundary unless the agent cannot switch it off](/nodes/oats-maintainer/decisions/a-harness-sandbox-is-not-a-boundary-unless-its-switch-is-out-of-reach.md)
 (`dec-375435ce318a`).
 
+On 2026-11-21 the pi slice added to the provider rules, within the
+delegation above (source-reported): bb runs pi as well as Claude Code, three
+names only through bb's project environment, delivery as a refusing
+readiness fact of the bb server, a failed thread present or lost by whether
+its process lives, and pi's needs-input through the existing question claim:
+[pi is a harness of the bb provider](/nodes/oats-maintainer/decisions/pi-is-a-harness-of-the-bb-provider.md)
+(`dec-3f9f26ddc697`).
+
 # Related
 
 - [bb thread tell answers "sent" in ordinary states, and its "queued" drains by itself](/claims/lessons/bb-tell-answers-sent-in-ordinary-states-and-queued-drains-itself.md)
