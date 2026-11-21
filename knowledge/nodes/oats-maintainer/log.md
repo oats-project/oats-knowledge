@@ -88,6 +88,8 @@
 
 ## 2026-11-05
 
+* **Update**: [Copy-literal skill review](/nodes/oats-maintainer/stewardship/review-protocol.md#skill-examples-must-be-safe-to-run-literally-on-a-shared-host-2026-11-05) adds the shared-draft correctness and confidentiality finding and the source-reported choice to fix examples with private, unique instance-home files rather than a launch-time temporary-directory workaround. Links the existing composed-instruction lesson; bounded checks and isolated regressions are prevention routes, not delivered enforcement. Evidence: OKF proposal from oats-maintainer/setup-maintainer-pepe, 2026-11-05; notes/agent-examples-are-copied-literally.md. No runtime-wide failure rate, cross-user write mechanism, completed fix or human policy acceptance is certified.
+
 * **Update**: [Agent-read claim severity](/nodes/oats-maintainer/stewardship/review-protocol.md#an-agent-read-claim-false-under-a-supported-setting-blocks-approval-2026-11-05) adds why a known false behavioral claim under a supported configuration blocks approval rather than becoming a wording follow-up. Links the existing composed-instruction and version-qualified-claim lessons instead of duplicating their rationale or provider contracts. Evidence: OKF proposal from oats-maintainer/setup-maintainer-pepe, 2026-11-05; notes/agent-read-claims-false-in-a-supported-config-block.md. One source-reported review miss and return; conditional-outcome regressions and exact refusal assertions are prevention routes, not delivered enforcement or independently verified provider behavior.
 
 ## 2026-11-04

@@ -756,6 +756,51 @@ predicates remain repository-owned; no release, deployment, universal agent
 compliance or measured failure rate is certified. No human-accepted review
 rule is superseded.
 
+## Skill examples must be safe to run literally on a shared host (2026-11-05)
+
+Review each command in a skill or inject as something an agent may run
+verbatim on a host shared with other agents and users. A fixed shared draft
+path or a world-readable message body is a correctness and confidentiality
+finding, not an editorial preference. Do not rely on an agent replacing an
+example path with a private scratch location.
+
+The source reports that agents copied fixed message-body paths from a
+messaging skill during a shared-host coordination pilot. Drafts overwrote
+one another, messages went out with another agent's text, and drafts were
+world-readable. The report includes a cross-user case; the capture does not
+establish the permission or ownership conditions that allowed it. This is a
+source-reported incident, not an independently reproduced cross-user write
+mechanism or a measured failure rate for any runtime.
+
+The source's setup-lane decision was to fix the examples themselves: create
+private, unique files under the instance home, with restrictive creation
+permissions (`umask 077`). Uniqueness and privacy are separate requirements:
+private permissions do not prevent same-user agents from reusing a fixed
+name, and a unique name alone does not make a draft private. A private
+per-instance `TMPDIR` at launch was rejected for this fix, not ruled out for
+all purposes: it requires a kernel change and leaves the unsafe teaching
+untouched. In particular, changing an environment variable does not redirect
+an absolute path copied from an example.
+
+The [composed-instruction lesson](/nodes/oats-kernel-expert/lessons/kernel-composed-text-is-executable-surface.md)
+already owns why agent-facing text is an execution surface. This refinement
+adds shared-host draft isolation and the choice to repair the teaching,
+not another composition contract or a new scratch-storage service.
+
+The elimination route is corrected capability-owned examples, backed by
+bounded checks for fixed shared write paths and isolated regression tests
+for unique names and restrictive permissions. Such checks do not prove all
+shell examples safe; residual copy-literal review belongs in the existing
+`pr-review` skill. This record preserves the decision and rationale, not a
+permanent substitute for fixing the skill. No code, tests or soul skills
+change here, and no completed fix, release or deployment is certified.
+
+Evidence: OKF proposal from oats-maintainer/setup-maintainer-pepe,
+2026-11-05; notes/agent-examples-are-copied-literally.md. Incident and lane
+decision are source-reported; no private messages or live drafts were read.
+No human acceptance of a new policy is claimed and no human-accepted review
+rule is superseded.
+
 # Delegating implementation
 
 When an expert delegates to several helpers communicating asynchronously, most
