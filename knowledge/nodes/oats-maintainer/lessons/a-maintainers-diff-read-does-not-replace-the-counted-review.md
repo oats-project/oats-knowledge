@@ -6,7 +6,7 @@ about: [workstream/oats-direction]
 kind: lesson
 id: ins-404a6d8f44f5
 tags: [lesson, pr-review, landing-rules, model-floor, evidence]
-timestamp: 2026-11-20
+timestamp: 2026-11-21
 ---
 
 Learned 2026-11-19 and 2026-11-20 by a lane maintainer holding a merge gate
@@ -35,6 +35,13 @@ established, and none was posted on the PR.
   reads the delta and the read is repeated at the new head. Commits after the
   last such read that are its own nits (a sentence, a list entry) may be
   carried when the maintainer reads them and says so in the verdict.
+- A commit after that read is not carried when it answers a finding with
+  logic of its own in a guard (a counter in place of a flag, state moved to
+  another scope), however small. Return on evidence for a delta read on the
+  floor model; if that finds a major, for a read of the whole change at the
+  head. Say in the return what will block and what will not, and where the
+  class that already exists on the main branch goes, so the returns end
+  (2026-11-21, citation 4).
 - Say in the verdict what was read in full and what was read against a spec's
   tables only. A large rewrite's correctness then rests, visibly, on its tests
   and on the counted read, not on the maintainer's name.
@@ -90,3 +97,12 @@ earlier rounds and the merge collision are source-reported.
    read's copy-mode major:
    [oats-project/oats#2024 return](https://github.com/oats-project/oats/pull/2024#issuecomment-7044503983),
    [review](https://github.com/oats-project/oats/pull/2024#issuecomment-7044667377).
+4. Update of 2026-11-21 (a fix commit that adds logic in a guard is not
+   carried): OKF proposal from oats-maintainer/joan-product-maintainer,
+   2026-11-21; notes/maintainer-gate-lessons.md. A form's guard against saving
+   a stale definition: the maintainer returned twice on evidence; the delta
+   read it asked for found a major, the next whole-change read another, and
+   the third whole-change read at the head was clean:
+   [oats-project/oats#2061 first return](https://github.com/oats-project/oats/pull/2061#issuecomment-7067164109),
+   [second return](https://github.com/oats-project/oats/pull/2061#issuecomment-7067607509),
+   [green light](https://github.com/oats-project/oats/pull/2061#issuecomment-7067704883).
