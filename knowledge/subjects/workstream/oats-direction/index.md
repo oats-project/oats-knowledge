@@ -85,6 +85,10 @@ Subject file: [OATS direction](/subjects/workstream/oats-direction.md)
 * [Presentation features reuse one state contract unless divergence is justified](/nodes/oats-maintainer/stewardship/presentation-features-reuse-one-contract.md) - Review new instance-presentation features against the established state and mutation boundaries, requiring a reason for divergence so display choices do not acquire identity, policy or lifecycle meaning.
 * [One release lane does the final review, merge and tags; project lanes are defined by their own maintainers](/nodes/oats-maintainer/stewardship/release-lane-and-project-lanes.md) - One release lane owns final review, merge and tags; project maintainers define lanes without sign-off, route follow-ups by the map, review with one second reader, record changed practice and hand over approved heads, while the directing human's lanes launch routine filed work without asking again; child overflow preserves accountability and the onboarding redesign has bounded human-sign-off and reviewer-routing exceptions.
 
+### decision
+
+* [OATS inside bb uses bb's own keys, one workspace per bb server, and accepts what bb cannot give](/claims/decisions/oats-in-bb-keeps-bbs-keys-one-workspace-per-server-and-bbs-limits.md) - Joan decided, from the parity matrix's list of what bb's plugin surface cannot or need not give, that the plugin gets bb-native keys and a palette of its own but no leader key, shows one workspace per bb server, and records bb's remaining limits as limits; bb itself stays unchanged.
+
 ### direction
 
 * [Reassess coordination across use cases before adaptive onboarding](/nodes/oats-maintainer/stewardship/coordination-redesign-precedes-adaptive-onboarding.md) - Treat the current role model as a candidate rather than a design constraint, evaluate alternatives through research and real trials with human oversight central, and hold use-case-adaptive onboarding for the coordination outcome.
