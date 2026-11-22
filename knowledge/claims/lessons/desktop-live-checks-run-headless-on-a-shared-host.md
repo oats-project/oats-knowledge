@@ -6,7 +6,7 @@ id: ins-092027700372
 about: [system/oats-desktop]
 kind: lesson
 tags: [desktop, electron, live-check, cdp, headless, testing, jsdom]
-timestamp: 2026-11-20
+timestamp: 2026-11-22
 ---
 
 # Recipe
@@ -15,7 +15,10 @@ timestamp: 2026-11-20
   reports), inside a `systemd-run --user` unit, with a private HOME, OATS_HOME_DIR and a short
   TMUX_TMPDIR. Developers asked for an Xvfb install (sudo) when this already worked.
 - Unset the calling instance's environment (OATS_INSTANCE, OATS_INSTANCE_HOME, TMUX, TMUX_PANE,
-  AWEB_IDENTITY_HOME, PI_*): the kernel refuses to create a session server from inside an instance.
+  AWEB_IDENTITY_HOME, PI_*): the kernel never gives a session server an instance's own environment.
+  That alone is not enough: run from an instance home, the fixture's spawns get a copy of the
+  operator's tmux server environment. Run fixture commands from /tmp under `env -i` and check one
+  agent's `/proc` environ (see [the fixture lesson](/claims/lessons/a-fixture-spawned-from-an-instance-home-inherits-the-hosts-tmux-environment.md)).
 - Pin the fixture's harness by absolute path (a launch config's `executable`). A bare `claude`
   resolves on the pane's login PATH and starts the real binary.
 - Wrap every command in a timeout, and never wait on an Electron in the foreground. One developer's
