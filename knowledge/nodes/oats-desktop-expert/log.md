@@ -1,5 +1,9 @@
 # oats-desktop-expert log
 
+## 2026-11-22
+
+* **Creation**: added the lessons [A port of Desktop surfaces inherits its word pairs](lessons/a-port-of-desktop-surfaces-inherits-its-word-pairs.md) (`ins-c1e226dfa414`) and [A still shows where the scene left the page](lessons/a-still-shows-where-the-scene-left-the-page.md) (`ins-85caacf0ce26`). Maintainer review of oats-knowledge#458 checked the Desktop's words at oats main `24403e17` and the bb plugin's confirmation scene, corrected the row's state words to assistive-technology text, narrowed "usually" to the one observed port, and added citations and related links. Nothing superseded.
+
 ## 2026-11-20
 
 * **Update**: linked [Terminal tabs are viewers, not session owners](decisions/terminal-viewers-not-session-owners.md) (`dec-14e550337fcf`) to [the agent view never guesses the terminal input line](/claims/decisions/the-agent-view-never-guesses-the-terminal-input-line.md) (`dec-78e0d9d8bc24`), which refines it: answers keep the one input surface and type only on a pane read as not in a tmux mode. Nothing superseded. Maintainer review of oats-knowledge#442.
