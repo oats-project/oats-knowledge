@@ -1,7 +1,7 @@
 ---
 type: Lesson
 title: GitHub answers a renamed or transferred repository's old name with a 301 for reads and a 307 for writes, so publication must not write through the old name
-description: After a rename or transfer, REST GETs to the old name follow a 301 to the canonical repository, GraphQL resolves the old name, and `gh pr create` prints the PR URL under the canonical name; but a REST POST to the old name gets a 307 to /repositories/<id>/..., which `gh api` did not follow, so a check that compares GitHub's URL with the bound name fails and a write through the old name depends on each gh subcommand's redirect handling.
+description: After a rename or transfer, REST GETs to the old name follow a 301 to the canonical repository, GraphQL resolves the old name, and `gh pr create` prints the PR URL under the canonical name; but an empty-body REST POST to the old name got a 307 to /repositories/<id>/..., which `gh api` did not follow (other writes have since been carried, so the 307 is not every write's answer), so a check that compares GitHub's URL with the bound name fails and a write through the old name depends on each gh subcommand's redirect handling.
 about: [system/oats-okf, workstream/provider-integration]
 kind: lesson
 id: ins-822c3d82cbe9
@@ -16,6 +16,8 @@ Read-only probes on 2026-11-20, gh 2.102.0, against `awebai/oats-knowledge`, whi
 - GraphQL `repository(owner, name)` resolves the old name.
 - `gh api -i -X POST repos/<old>/labels` with an empty body answers `HTTP/2.0 307`, with `Location: https://api.github.com/repositories/<id>/labels`, and gh does not follow it. GitHub refuses before writing anything.
 - `gh pr create --repo <old>` prints `https://github.com/<canonical>/pull/<n>`.
+
+Narrowed on 2026-11-23: [REST writes through awebai/oats were carried](/claims/lessons/rest-writes-through-a-renamed-repositorys-old-name-were-carried-for-oats.md). POSTs with fields and a PUT merge through that old name succeeded, so the 307 above is what this empty-body probe got, not GitHub's answer to every write; which writes it hits is not established. The rule below is unchanged.
 
 # What it cost
 
