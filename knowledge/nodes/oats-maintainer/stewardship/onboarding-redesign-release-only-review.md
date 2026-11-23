@@ -5,7 +5,7 @@ description: For the onboarding redesign only, Juan's side decides the design an
 about: [workstream/oats-direction]
 id: dec-21b304584347
 tags: [stewardship, onboarding, review, delegation, contracts]
-timestamp: 2026-10-30
+timestamp: 2026-11-23
 ---
 **Owner: oats-maintainer. Update-on-change: whoever changes this effort's
 review delegation records the supersession here and on the canonical lane
@@ -58,9 +58,11 @@ The existing onboarding-only release delegation remains: the release lane
 tags and deploys this work as it lands after approval, without asking Pepe
 again each time. That authority and its acceptance history remain in the
 [earlier delegation](/nodes/oats-maintainer/stewardship/release-lane-and-project-lanes.md#onboarding-redesign-delegation-2026-10-30),
-not a new general release grant here. Every other kernel tag still needs
-his direct go, and every other deploy his word. Head-bound review, CI and
-the usual verification gates remain.
+not a new general release grant here. Every other deploy still needs his
+word. The general rule that every other kernel tag needs his direct go is
+superseded (2026-11-23) by
+[releases are cut as fixes and features land](/nodes/oats-maintainer/stewardship/releases-are-cut-as-fixes-and-features-land.md).
+Head-bound review, CI and the usual verification gates remain.
 
 The architectural review bar remains
 [optional, provider-neutral human attribution with no-human compatibility](/nodes/oats-maintainer/decisions/human-attribution-is-an-optional-messaging-contract.md),
