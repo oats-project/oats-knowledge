@@ -5,7 +5,7 @@ description: One release lane owns final review, merge and tags; project maintai
 about: [workstream/oats-direction]
 id: dec-1d2a5106b721
 tags: [stewardship, lanes, release, review, process, multi-human]
-timestamp: 2026-11-19
+timestamp: 2026-11-23
 ---
 **Owner: oats-maintainer. Update-on-change: whoever changes the lane map's
 rules, the routing judgment, the release lane's ownership or the
@@ -247,9 +247,11 @@ themselves. The arrangement is specific to this effort:
   tags this effort's releases without another go from Pepe. His later direct
   clarification includes kernel tags and deploys for this effort; it is not
   merely permission to give PR verdicts.
-- Every other kernel tag still needs Pepe's direct go, and every other
-  deploy his word: the standing authority in the
+- Every other deploy still needs Pepe's word: the standing authority in the
   [release lane's 2026-10-28 hand-over](https://github.com/awebai/oats/issues/1566#issuecomment-6475980012).
+  That hand-over's rule that every other kernel tag needs his direct go is
+  **superseded** (2026-11-23, source-reported) by
+  [releases are cut as fixes and features land](/nodes/oats-maintainer/stewardship/releases-are-cut-as-fixes-and-features-land.md).
   The release lane's final review, merge and tag ownership and the usual
   verification gates are unchanged. The later release-only review decision
   changes who supplies the read on Pepe's side, not the general
@@ -375,7 +377,10 @@ acceptance source-reported. Its later
 [release-only review refinement](/nodes/oats-maintainer/stewardship/onboarding-redesign-release-only-review.md)
 supersedes the original area-lane routing and product-lane contract
 participation for this effort only. Both leave the release lane's ownership
-and all other kernel-tag and deploy approval requirements intact.
+and all other deploy approval requirements intact. The general kernel-tag
+go was superseded later by
+[releases are cut as fixes and features land](/nodes/oats-maintainer/stewardship/releases-are-cut-as-fixes-and-features-land.md)
+(2026-11-23).
 
 A copy of generic role text that touches releases, merges or tags answers
 with this record, not with a stricter default of its own: see
