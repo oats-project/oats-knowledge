@@ -71,6 +71,9 @@ binds new code. Existing gates may predate it; such a gate is a follow-up of its
 (awebai/oats-aweb#319).
 
 Relates to:
+- [a credential entry a setting names stays in place at retire](/claims/decisions/a-credential-entry-a-setting-names-stays-in-place-at-retire.md):
+  narrows which entries are the instance's own, and keeps held entries held when settings don't parse
+  (awebai/oats-aweb#321, #323).
 - [a hook reports only the cleanup it confirmed](/nodes/integrations-expert/lessons/a-hook-reports-only-the-cleanup-it-confirmed.md):
   it refines that lesson's credential-declaration rule.
 - [preserve recovery authority until the outcome is proven](/nodes/oats-kernel-expert/decisions/preserve-authority-until-cleanup-is-proven.md):
