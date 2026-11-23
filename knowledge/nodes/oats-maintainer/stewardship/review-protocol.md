@@ -930,6 +930,35 @@ miss to 2026-11-02 on
 `1503e65`. The missed assertion and second-reader finding remain source-reported;
 this harvest did not audit the test diff or rerun the suite.
 
+## A real-binary gate is checked per assertion, not per job (2026-11-23)
+
+When a gate requires certain assertions to pass against a real external
+binary or service rather than a fake, the green light names the test that
+makes each of those assertions and how that test obtains the binary. A job
+that installs the real binary at its pinned integrity proves only the
+assertions whose tests actually call it. A suite that mixes real-binary and
+fake-binary tests makes a green job look like real evidence for all of them.
+For each criterion that names a real binary, find its test, read how the
+binary reaches it (fixture, PATH, injected fake), and say in the verdict which
+criteria are proven on the real thing and which only on a fake.
+
+This refines "a fake more generous than the real tool" above: here the fake
+was no more generous, but credit for the real binary went to assertions that
+never ran on it. It changes no gate or skill. The integrations expert's
+[a skipped real-binary test gives no compatibility evidence](/nodes/integrations-expert/lessons/real-binary-tests-that-skip-give-no-cover.md)
+owns making real-binary coverage fail in CI when it does not execute; this
+is the reviewer's read of which assertions that coverage actually reaches.
+
+Evidence: OKF proposal from oats-maintainer/setup-maintainer, 2026-11-23;
+notes/real-binary-evidence-per-assertion.md. Both OATS sides gave
+[awebai/oats-aweb#308](https://github.com/awebai/oats-aweb/pull/308) their
+verdicts at `d28f2df7` while its CI (run 45152178535) had aw 1.36.59
+installed. Of the human IDs contract's G1 assertions, only P4's `--parent`
+argv ran on the real binary; the adopted-root assertions ran on a fake aw.
+The contract's r3 ([oats#2108](https://github.com/oats-project/oats/pull/2108),
+merged `d9949d7d`) records G1 as not met at that merge, and moves those
+assertions to a gate on opening hosted adoption.
+
 ## Consult cross-lane findings before commissioning another rehearsal (2026-10-31)
 
 When a delivery review exposes a missing state, first check the other
