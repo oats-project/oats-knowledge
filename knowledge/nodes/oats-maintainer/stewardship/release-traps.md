@@ -1,12 +1,12 @@
 ---
 type: Lesson
 title: Release judgement for the tag-driven lane
-description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, compares what each job sets up before a step that both the PR installer build and the tag workflow run, runs the kernel tests that read a package's mirror before the package tag or plans their port (a provider hook's new aw call included, checked at its second read), contains failed-tag repairs and re-runs only a clearly timing failure from the same unpublished tag, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them and a file a provider reads beside such a soul until every following host's lock carries a provider that reads it, coordinates source, tag, mirror, every form of version pin and the framework release that carries them (whose own guide pin the kernel prep re-syncs after the framework tag, a sync that alone owes no framework release), pins a provider release that removes a component inside the adoption PR that rewrites the texts and kernel tests for it, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
+description: Release judgment distinguishes publication from artifact availability, rehearses released-state upgrades, changed macOS tests and newly taught skill commands before tags, compares what each job sets up before a step that both the PR installer build and the tag workflow run, runs the kernel tests that read a package's mirror before the package tag or plans their port (a provider hook's new aw call included, checked at its second read), contains failed-tag repairs and re-runs only a clearly timing failure from the same unpublished tag, separates one-off package patches from maintenance lines, gates package-soul adoption through catalog, explicit-tag and shared-workspace routes, holds new keys in shared member-repository souls until every reader accepts them and a file a provider reads beside such a soul until every following host's lock carries a provider that reads it, coordinates source, tag, mirror, every form of version pin and the framework release that carries them (whose own knowledge-theory guide names no framework version since 2026-11-25), pins a provider release that removes a component inside the adoption PR that rewrites the texts and kernel tests for it, pairs changes to shared instructional behaviour across separately released packages, treats a package rename as a republish whose old package is never uninstalled from a running host, cuts a template repository by an annotated template-v tag on its dated prep merge commit with its third-party notices, and plans tags around a hosted runner image's retirement brownouts.
 about: [workstream/oats-direction, workstream/provider-integration]
 kind: lesson
 id: ins-559dbb88da8b
 tags: [stewardship, release, ci, npm, packaging, pins, templates]
-timestamp: 2026-11-21
+timestamp: 2026-11-25
 ---
 **Owner: oats-maintainer. Update-on-change: whoever changes the release workflow,
 the runnerless lane or the release skill revises this concept in the same
@@ -886,6 +886,14 @@ CI receipts.
 
 ## A framework's own guide pin is re-synced by the kernel prep after the framework tag (2026-11-20)
 
+**Superseded in part (2026-11-25)** by
+[text shipped inside oats.framework names no version the catalog check tracks](/claims/decisions/framework-shipped-text-names-no-catalog-version.md)
+(`dec-488655830b27`): since oats-project/oats#2144 the guide writes
+`oats.framework: vX.Y.Z`, and its package check refuses a concrete framework
+version, so no kernel prep re-syncs it and the "sync alone" rule below has
+nothing left to apply to. The rest of this section is kept as the history of
+the trap; its closing grep stays good practice for any other literal.
+
 The same coupling has a self-referential case. The knowledge-capability
 authors' guide recommends an `oats.framework: vX` pin. Its canonical text is
 in the repository's docs, and the framework carries a generated copy of it
@@ -923,7 +931,9 @@ and validate and CI passed.
 
 This is a lesson that should be code. The elimination route is to exempt the
 framework's own pin in its packaged copy from the catalog check, or to drop
-the version literal from the guide. This lesson delivers neither.
+the version literal from the guide. This lesson delivers neither; the second
+route was delivered by oats-project/oats#2144, recorded in
+[the placeholder decision](/claims/decisions/framework-shipped-text-names-no-catalog-version.md).
 
 Evidence: OKF proposal from oats-maintainer/release-maintainer, 2026-11-20;
 notes/framework-prep-self-literal.md. Observed at the 0.69.23 cut:
