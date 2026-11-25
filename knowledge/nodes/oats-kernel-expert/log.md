@@ -1,5 +1,9 @@
 # oats-kernel-expert log
 
+## 2026-11-25
+
+* **Update**: [Waiting claims may withhold an automated keystroke but never authorize one](decisions/waiting-claims-may-only-withhold-automated-input.md) now says it is narrowed by [a permission claim refuses direct session input on a tmux home](/nodes/oats-maintainer/decisions/direct-session-input-is-refused-over-a-permission-claim.md) (`dec-01f97bb63236`): from OATS 0.70.8 a `permission` claim gates direct `oats session input` on a tmux home, decided in oats-project/oats#2125 (verified at review). The rest of the decision is unchanged; the unreadable-claims case for an input is open in oats-project/oats#2131. maintainer review of PR [#479](https://github.com/oats-project/oats-knowledge/pull/479).
+
 ## 2026-11-13
 
 * **Update**: [Separate operational home from granted work authority](decisions/home-work-authority.md) now links its refinement [Workspace mode keeps member clones read-only and does its repository work in extra trees of its own](/claims/decisions/workspace-mode-edits-only-in-its-own-extra-trees.md): "edit-none" means none of the shared member clones, and a workspace instance works in extra trees of its own. The founder-accepted decision is otherwise unchanged; the change merged under the repository owner's account in oats-project/oats#1929 (verified); maintainer review of PR [#383](https://github.com/oats-project/oats-knowledge/pull/383).
