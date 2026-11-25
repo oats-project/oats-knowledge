@@ -1,5 +1,9 @@
 # oats-desktop-expert log
 
+## 2026-11-25
+
+* **Creation**: added the lessons [A cold read of a multi-surface UI finds its defects between surfaces](lessons/a-cold-read-of-a-multi-surface-ui-finds-its-defects-between-surfaces.md) (`ins-4b218774958a`) and [A hidden row's mark sits beside the disclosure control](lessons/a-hidden-rows-mark-sits-beside-the-disclosure-never-in-its-place.md) (`ins-09681339d6de`). Maintainer review of oats-knowledge#469 checked oats-project/oats-bb#85 and the Desktop's roll-up at oats main `73da4592`; scoped the second lesson to the port, dropped its control-before-the-name order (the Desktop puts the disclosure after the name, `dec-e071d489f772`), narrowed "never in the parent's state line" to a bare mark, and linked both lessons to the 2026-11-22 lessons they extend. Nothing superseded.
+
 ## 2026-11-22
 
 * **Creation**: added the lessons [A port of Desktop surfaces inherits its word pairs](lessons/a-port-of-desktop-surfaces-inherits-its-word-pairs.md) (`ins-c1e226dfa414`) and [A still shows where the scene left the page](lessons/a-still-shows-where-the-scene-left-the-page.md) (`ins-85caacf0ce26`). Maintainer review of oats-knowledge#458 checked the Desktop's words at oats main `24403e17` and the bb plugin's confirmation scene, corrected the row's state words to assistive-technology text, narrowed "usually" to the one observed port, and added citations and related links. Nothing superseded.
