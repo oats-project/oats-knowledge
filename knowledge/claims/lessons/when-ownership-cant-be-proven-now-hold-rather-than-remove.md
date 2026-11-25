@@ -6,7 +6,7 @@ about: [workstream/provider-integration]
 kind: lesson
 id: ins-076d03d1540d
 tags: [retire, credentials, reversibility, exit-code, aweb]
-timestamp: 2026-11-23
+timestamp: 2026-11-25
 ---
 
 # Lesson
@@ -24,9 +24,11 @@ Two wrong turns in a row:
 Holding puts the key where the client doesn't look, which is the goal, and a wrong hold can be
 undone. A wrong removal destroys someone else's key. A later run with readable settings settles it.
 The same reasoning applies to the person: a warning that names an entry left in place should tell
-them to fix the setting and run the cleanup again, not to delete the entry by hand. That is the second
-reader's non-blocking follow-up on #323; the warning merged there still says "fix the setting, then
-remove it".
+them to fix the setting and run the cleanup again, not to delete the entry by hand: the rerun, with
+readable settings, is the act that judges whose the entry is. A manual fallback, for when the cleanup
+can't be rerun, carries the same test the cleanup would apply. The retire's warning now says "fix the
+setting, then retire again; where a retire can't be rerun, remove it yourself only if no setting names
+it" (awebai/oats-aweb#330, closing #324, the second reader's follow-up on #323).
 
 It extends [the kernel decision to preserve recovery authority until the outcome is proven](/nodes/oats-kernel-expert/decisions/preserve-authority-until-cleanup-is-proven.md)
 to authority whose owner is uncertain. The first wrong turn repeats, for a new case, the exit-code lesson
@@ -38,3 +40,5 @@ in [the kept-home decision](/claims/decisions/a-kept-home-holds-no-usable-creden
    dead keys; suggests removing or holding what the run restored), the hold-only change at deadac4
    ("settings can change between runs ... a hold can be undone"), and the second reader's APPROVE with
    its follow-up on the warning's wording.
+2. awebai/oats-aweb#330 (closes #324): the warning's wording changed to "retire again", with the
+   fallback; an existing test pins that a rerun with the setting fixed settles the entries.
