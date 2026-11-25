@@ -2,6 +2,7 @@
 
 ## 2026-11-25
 
+* **Creation**: [ins-5b5c4d7f7a24](/verdicts/ins-5b5c4d7f7a24.md), superseded by `ins-a351988a8d0f`, by maintainer review of PR [#481](https://github.com/oats-project/oats-knowledge/pull/481).
 * **Creation**: [dec-20500ebd1512](/verdicts/dec-20500ebd1512.md), a duplicate of `dec-f65756c23ba2`, by maintainer review of PR [#479](https://github.com/oats-project/oats-knowledge/pull/479).
 
 ## 2026-11-21
