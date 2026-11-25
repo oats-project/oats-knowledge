@@ -35,7 +35,8 @@ manager found the same stack and seats work without them:
   a customer-held team.
 - With session delivery, every home (tmux too) read `degraded` / `oats.receive_unproven` from about 30 seconds after
   the broker's last inspection of it, and `yes` just after a start: compare a provider's rows with a tmux control in
-  the same deployment before calling a difference the provider's.
+  the same deployment before calling a difference the provider's. The cause was later traced to the broker's
+  inspection cadence: see [the freshness-check lesson](/claims/lessons/a-freshness-check-ages-against-the-cadence-its-producer-actually-has.md).
 
 # Citations
 
