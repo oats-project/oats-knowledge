@@ -3,6 +3,7 @@
 How the OATS project ships: judgement only, each concept with an owner and an
 update-on-change rule; procedures live in the oats-expert soul's skills.
 
+* [A reader or a gate the maintainer asked for is waited for, before a merge or a decision](a-verdict-asked-for-is-waited-for.md) - Merge only with every requested verdict posted at the head; decide a contract item only after reading every posted or announced gate and side's answer; settle two texts in one superseding comment.
 * [Direct knowledge proposals should retain doctrine and maintainer review](direct-knowledge-proposals-retain-maintainer-review.md) - Move toward working agents opening knowledge PRs themselves under unchanged promotion doctrine, but retain current harvest duties until the knowledge-package owner designs and ships the authority and independent-review transition.
 * [Reassess coordination across use cases before adaptive onboarding](coordination-redesign-precedes-adaptive-onboarding.md) - Treat the current role model as a candidate rather than a design constraint, evaluate alternatives through research and real trials with human oversight central, and hold use-case-adaptive onboarding for the coordination outcome.
 * [Presentation features reuse one state contract unless divergence is justified](presentation-features-reuse-one-contract.md) - Review new instance-presentation features against the established state and mutation boundaries, requiring a reason for divergence so display choices do not acquire identity, policy or lifecycle meaning.
