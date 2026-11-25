@@ -25,6 +25,8 @@ an inherited `BB_HOST_DAEMON_PORT` stripped so a caller's port is never paired w
 checks the daemon's serverUrl and that its hostId is a connected host of the configured server. One bb per workspace
 on one host means setting `server` and `hostDaemonPort` per workspace.
 
+Through oats-bb v0.5.0 a real kernel refused `hostDaemonPort` alone, because the manifest's `daemon` default reached the provider as a setting; oats-bb#98 (merged 2026-11-25) dropped that default. See [a capability's manifest default reaches its provider as if the deployment had set it](/claims/lessons/a-manifest-default-reaches-the-provider-as-if-the-deployment-set-it.md).
+
 # Citations
 
 1. oats-project/oats-bb#57 (A23, merged 2026-11-23): bb's CLI finds the host daemon by `BB_HOST_DAEMON_PORT` alone, never from `BB_SERVER_URL`; "Host not found" or "Cannot reach local host daemon" at `bb project create`; readiness proves the daemon at the port is a connected host of the configured server (its `/status` and the server's `bb host list`).

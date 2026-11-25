@@ -4,10 +4,13 @@ title: A restart runs the provider's check before it stops, but the check never 
 description: In OATS 0.70.5 a session restart runs the session provider's planned-launch check before stopping the old session, so an unready harness is refused with nothing stopped; but the planned launch carries no model, so a model the provider would refuse is refused only at the launch, after the old session was stopped, leaving a working agent stopped.
 about: [system/oats-kernel, workstream/provider-integration]
 kind: lesson
+status: superseded
 id: ins-5b5c4d7f7a24
 tags: [restart, provider, check, model]
 timestamp: 2026-11-24
 ---
+
+**Superseded 2026-11-25** by [A session provider's planned-launch check sees the launch's model, so a restart refuses a bad model before it stops](/claims/lessons/a-restart-checks-the-launchs-model-before-it-stops.md) (`ins-a351988a8d0f`): oats-project/oats#2126 added `launch.model` to the planned launch. This record stays true of OATS 0.70.5 and of kernels without the feature `launch-model-and-check-warnings`.
 
 # What was observed (OATS 0.70.5, bb-app 0.50.1, oats-bb #65 probes, 2026-11-24)
 
