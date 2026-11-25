@@ -31,6 +31,12 @@ OATS 0.70.5, tmux 3.3a, pi 1.5.2 and Claude Code 2.1.328 as tmux agents in a dis
 
 # What it changes
 
+- **Narrowed 2026-11-25:** #2125 was decided for `permission` only, and from OATS 0.70.8 an input to a tmux home
+  whose session holds a `permission` claim is refused `E_SESSION_PROMPT_OPEN` with nothing typed
+  ([a permission claim refuses direct session input on a tmux home](/nodes/oats-maintainer/decisions/direct-session-input-is-refused-over-a-permission-claim.md),
+  `dec-01f97bb63236`). The observations below are of 0.70.5; a `question` claim, a startup dialog with no claim, and
+  a home whose claims cannot be read are still typed to.
+
 - The documented warning is not theoretical: any client that types to a tmux agent for a person who does not see the
   pane can approve a command by sending any text.
 - A session provider's home refuses the same input with `E_SESSION_PROMPT_OPEN` and sends nothing. A client that treats

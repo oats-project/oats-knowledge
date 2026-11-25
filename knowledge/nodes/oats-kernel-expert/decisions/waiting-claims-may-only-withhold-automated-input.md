@@ -22,6 +22,13 @@ separate input path. Neither a missing claim nor clearing a claim establishes
 that a session is safe to type into. The [coverage limitation](../lessons/dialog-claims-do-not-enumerate-all-dialogs.md)
 remains part of this decision.
 
+**Narrowed 2026-11-25:** from OATS 0.70.8 a `permission` claim is such a
+gate on a tmux home, decided on new evidence in oats-project/oats#2125:
+[a permission claim refuses direct session input on a tmux home](/nodes/oats-maintainer/decisions/direct-session-input-is-refused-over-a-permission-claim.md)
+(`dec-01f97bb63236`). The rest of this decision stands; whether an input
+should also refuse where claims cannot be read, as a wake holds here, is
+open in oats-project/oats#2131.
+
 The rationale applies [observation reuse never authorizes](/nodes/oats-maintainer/decisions/observation-reuse-never-authorizes.md)
 without copying its login-cache policy: stale evidence may delay an act,
 but cannot create permission for it. It also preserves the structurally
