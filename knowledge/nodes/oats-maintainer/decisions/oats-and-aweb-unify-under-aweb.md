@@ -19,7 +19,7 @@ On 2026-11-25 Pepe told the release lane directly that he, Juan and Joan had agr
 
 - **Who proposes what.** Juan's side proposes the shape of the joined CLI, its names, the repositories and packages, and the migration for existing deployments. Pepe's side doesn't design it.
 - **Contracts stay bilateral.** A contract change the unification needs is still decided by both sides before it is built. Pepe's side answers quickly, in support. For the unification, the release lane holds Pepe's side's half: the CLI join, its names, repositories and migration. Other contracts stay with the lanes that hold them now. Where one of those turns out to be part of the unification, the two maintainers settle which of them answers, so there is one text.
-- **Releases.** Releases and tags of OATS and the official packages stay with the release lane until the unification changes how they are cut. Then the release lane asks Pepe.
+- **Releases.** Releases and tags of OATS and the official packages stay with the release lane until the unification changes how they are cut. Then the release lane asks Pepe. **Refined 2026-11-26:** OATS is frozen and no release is cut, the bb integration work excepted: see [OATS is frozen](oats-is-frozen-and-the-work-moves-to-a-fresh-workspace-on-awebs.md).
 - **Every Pepe-side lane** answers Juan's side's questions about its own area promptly.
 
 # What it does not change yet
