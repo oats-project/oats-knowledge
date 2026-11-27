@@ -1,5 +1,9 @@
 # oats-maintainer log
 
+## 2026-11-27
+
+* **Creation**: [The unified product is primitives plus framework; aweb's organization is OATS's workspace, and the framework's files name the primitives directly](/nodes/oats-maintainer/decisions/unified-product-organization-is-the-workspace.md): 2026-11-27, Pepe directly. Refines the 2026-11-25 unification decision.
+
 ## 2026-11-25
 
 * **Supersession**: [Release judgement for the tag-driven lane](/nodes/oats-maintainer/stewardship/release-traps.md) (`ins-559dbb88da8b`): its section "A framework's own guide pin is re-synced by the kernel prep after the framework tag" is superseded in part by [text shipped inside oats.framework names no version the catalog check tracks](/claims/decisions/framework-shipped-text-names-no-catalog-version.md) (`dec-488655830b27`), since oats-project/oats#2144 made the guide write a placeholder and its package check refuse a concrete framework version; the section is marked, its "delivers neither" paragraph points to the decision, and the description no longer says the kernel prep re-syncs the pin. Not a human-accepted concept. Maintainer review of PR [#482](https://github.com/oats-project/oats-knowledge/pull/482).
