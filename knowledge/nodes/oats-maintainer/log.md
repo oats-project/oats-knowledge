@@ -1,5 +1,11 @@
 # oats-maintainer log
 
+## 2026-11-27
+
+* **Creation**: [In the unified product the human id is the membership primitive; the app starts from the person, and Git forge access decides what they see](/nodes/oats-maintainer/decisions/human-id-is-the-membership-primitive-of-the-unified-product.md): Pepe, directly to the release lane, 2026-11-27.
+* **Creation**: [In the unified product a soul is not owned by one team; a team chooses the souls it uses](/nodes/oats-maintainer/decisions/a-soul-is-not-owned-by-one-team-in-the-unified-product.md): Pepe, directly to the release lane, 2026-11-27.
+* **Creation**: [In the unified product apps are secondary and tasks are an optional capability](/nodes/oats-maintainer/decisions/apps-are-secondary-and-tasks-are-an-optional-capability.md): Pepe, directly to the release lane, 2026-11-27.
+
 ## 2026-11-25
 
 * **Supersession**: [Release judgement for the tag-driven lane](/nodes/oats-maintainer/stewardship/release-traps.md) (`ins-559dbb88da8b`): its section "A framework's own guide pin is re-synced by the kernel prep after the framework tag" is superseded in part by [text shipped inside oats.framework names no version the catalog check tracks](/claims/decisions/framework-shipped-text-names-no-catalog-version.md) (`dec-488655830b27`), since oats-project/oats#2144 made the guide write a placeholder and its package check refuse a concrete framework version; the section is marked, its "delivers neither" paragraph points to the decision, and the description no longer says the kernel prep re-syncs the pin. Not a human-accepted concept. Maintainer review of PR [#482](https://github.com/oats-project/oats-knowledge/pull/482).
